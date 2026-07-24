@@ -36,26 +36,3 @@ ItemEvents.modification((event) => {
 		item.setCraftingRemainder('minecraft:bucket');
 	});
 });
-
-
-const $BlueprintScreen = Java.loadClass("top.ribs.scguns.client.screen.BlueprintScreen")
-const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
-//mod:blueprint: ["gun1", "gun2"]
-const LORE_ONLY_ITEMS = {
-    'scguns:antique_blueprint': [
-        'defender_pistol' //NO NAMESPACE, ONLY PATH
-    ]
-}
-
-
-
-ClientEvents.init((event) => {
-    for (let [blueprint, items] of Object.entries(LORE_ONLY_ITEMS)) {
-        items.forEach(item => {
-            let namespace = blueprint.split(':')[0]
-            let path = blueprint.split(':')[1]
-
-            $BlueprintScreen.registerLoreOnlyItem(new $ResourceLocation(namespace, path), item)
-        })
-    }
-})
