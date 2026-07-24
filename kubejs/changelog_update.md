@@ -131,6 +131,7 @@
   - Delightful Fixes
   - EMIAccelerator
   - Durability Overhaul
+  - LightStar
 - Removed mods:
     - Ixeris
     - Cascades/Hybrid Beta**

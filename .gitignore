@@ -25,3 +25,9 @@ visual_keybinder/preset to load on first startup.txt
 .curseclient
 minecraftinstance.json
 /fancymenu_data
+/XaeroWaypoints_BACKUP240807
+config/embeddium-fingerprint.json
+*.emic
+/config/emi-accelerator
+config/oculus.properties
+config/packetfixer.properties
