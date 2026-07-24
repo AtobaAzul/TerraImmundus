@@ -1,0 +1,14 @@
+{
+    "__comment": "Shitty workaround to fix wither music. Not good. REMOVE ME WHEN ITS FIXED.",
+    "priority": 100,
+    "layer": "encounter",
+    "sound_event": "witherreincarnated:music.wither",
+    "condition": {
+        "type": "maestro:entity",
+        "required_amount": 1,
+        "search_radius": 64,
+        "values": [
+            "minecraft:wither"
+        ]
+    }
+}

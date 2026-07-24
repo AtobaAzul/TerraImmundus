@@ -1,0 +1,26 @@
+/.vscode
+/asm
+/crash-reports
+emi.json
+/local/kubejs/event_groups
+/saves
+/xaero
+usernamecache.json
+usercache.json
+user-prefs.json
+servers.essential.dat
+servers.dat_old
+whitelist.json
+/screenshots
+rhino.local.properties
+ops.json
+options.txt
+/local
+/logs
+/modernfix
+/panoramas
+visual_keybinder/preset to load on first startup.txt
+/particular_cache
+.qmenu_opened.marker
+.curseclient
+minecraftinstance.json

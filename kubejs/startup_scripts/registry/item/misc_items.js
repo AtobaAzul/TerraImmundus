@@ -1,0 +1,49 @@
+StartupEvents.registry('item', (event) => {
+
+	for (const [material, name] of Object.entries(NEW_DUST_DEF)) {
+		event
+			.create(`${material}_dust`)
+			.tag(`forge:dusts`)
+			.tag(`forge:dusts/${material}`)
+			.displayName(name);
+	}
+
+	event
+		.create('sporemeter')
+		.finishUsing((ctx) => {}) //Dummy function to make the item usable. The actual function is in server_scripts/item.js
+		.maxStackSize(1)
+		.displayName('Sporemeter');
+	const template = event.create(
+		'purity_upgrade_template',
+		'smithing_template'
+	);
+	template.appliesTo('Meteorite Weapons');
+	template.ingredientsText = Text.blue('Soulite Shard');
+	template.ingredientsSlotDescription('Soulite Shard');
+    template.appliesToSlotDescription("Applies to Meteorite Weapons")
+	template.ingredientSlotDescriptionText = 'Soulite Shard';
+    template.swordIcon()
+    template.addIngredientsSlotIcon('terraimmundus:item/empty_slot_soulite_shard')
+	template.rarity('epic');
+
+	const basic_items = [
+		'iron_gun_barrel',
+		'iron_heavy_gun_barrel',
+		//'flintlock_mechanism',
+		'firing_hammer',
+		'hardened_firing_unit',
+		'hardened_rapid_firing_unit',
+		'smokeless_powder',
+		'smokeless_powder_dust',
+		'steel_gun_barrel',
+		'steel_heavy_gun_barrel',
+		'reinforced_gun_parts',
+		'enderium_gun_frame',
+		'resonant_gun_parts',
+        'redstone_cell',
+        'titanium_dust',
+        'laser_optics'
+	].forEach((item) => {
+		event.create(item);
+	});
+});

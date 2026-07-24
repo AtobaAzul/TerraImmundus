@@ -1,0 +1,307 @@
+{
+    "item.at_gun.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "terraimmundus:item/at_gun/fire_01"
+            },
+            {
+                "name": "terraimmundus:item/at_gun/fire_02"
+            },
+            {
+                "name": "terraimmundus:item/at_gun/fire_03"
+            }
+        ]
+    },
+    "item.at_rifle.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "terraimmundus:item/at_rifle/fire_01"
+            },
+            {
+                "name": "terraimmundus:item/at_rifle/fire_02"
+            },
+            {
+                "name": "terraimmundus:item/at_rifle/fire_03"
+            }
+        ]
+    },
+    "item.pistol.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "terraimmundus:item/pistol/fire_01"
+            },
+            {
+                "name": "terraimmundus:item/pistol/fire_02"
+            },
+            {
+                "name": "terraimmundus:item/pistol/fire_03"
+            },
+            {
+                "name": "terraimmundus:item/pistol/fire_04"
+            },
+            {
+                "name": "terraimmundus:item/pistol/fire_05"
+            }
+        ]
+    },
+    "item.revolver.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "terraimmundus:item/revolver/fire_01"
+            },
+            {
+                "name": "terraimmundus:item/revolver/fire_02"
+            },
+            {
+                "name": "terraimmundus:item/revolver/fire_03"
+            }
+        ]
+    },
+    "item.rifle.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "terraimmundus:item/rifle/fire_01"
+            },
+            {
+                "name": "terraimmundus:item/rifle/fire_02"
+            },
+            {
+                "name": "terraimmundus:item/rifle/fire_03"
+            }
+        ]
+    },
+    "item.rifle_heavy_c.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "terraimmundus:item/rifle_heavy_c/fire_01"
+            },
+            {
+                "name": "terraimmundus:item/rifle_heavy_c/fire_02"
+            },
+            {
+                "name": "terraimmundus:item/rifle_heavy_c/fire_03"
+            }
+        ]
+    },
+    "item.rifle_heavy_w.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "terraimmundus:item/rifle_heavy_w/fire_01"
+            },
+            {
+                "name": "terraimmundus:item/rifle_heavy_w/fire_02"
+            },
+            {
+                "name": "terraimmundus:item/rifle_heavy_w/fire_03"
+            }
+        ]
+    },
+    "item.rifle_long_c.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "terraimmundus:item/rifle_long_c/fire_01"
+            },
+            {
+                "name": "terraimmundus:item/rifle_long_c/fire_02"
+            },
+            {
+                "name": "terraimmundus:item/rifle_long_c/fire_03"
+            }
+        ]
+    },
+    "item.rifle_long_w.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "terraimmundus:item/rifle_long_w/fire_01"
+            },
+            {
+                "name": "terraimmundus:item/rifle_long_w/fire_02"
+            },
+            {
+                "name": "terraimmundus:item/rifle_long_w/fire_03"
+            }
+        ]
+    },
+    "item.rifle_short.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "terraimmundus:item/rifle_short/fire_01"
+            },
+            {
+                "name": "terraimmundus:item/rifle_short/fire_02"
+            },
+            {
+                "name": "terraimmundus:item/rifle_short/fire_03"
+            }
+        ]
+    },
+    "item.semi.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "terraimmundus:item/semi/fire_01"
+            },
+            {
+                "name": "terraimmundus:item/semi/fire_02"
+            },
+            {
+                "name": "terraimmundus:item/semi/fire_03"
+            }
+        ]
+    },
+    "item.sniper.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "terraimmundus:item/sniper/fire_01"
+            },
+            {
+                "name": "terraimmundus:item/sniper/fire_02"
+            },
+            {
+                "name": "terraimmundus:item/sniper/fire_03"
+            }
+        ]
+    },
+    "item.sniper_c.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "terraimmundus:item/sniper_c/fire_01"
+            },
+            {
+                "name": "terraimmundus:item/sniper_c/fire_02"
+            },
+            {
+                "name": "terraimmundus:item/sniper_c/fire_03"
+            }
+        ]
+    },
+    "item.heavy_artillery.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "terraimmundus:item/heavy_artillery/fire_01"
+            },
+            {
+                "name": "terraimmundus:item/heavy_artillery/fire_02"
+            }
+        ]
+    },
+    "music.underscore.general": {
+        "sounds": [
+            {
+                "name": "terraimmundus:music/underscore/ams",
+                "stream": true,
+                "volume": 0.5
+            },
+            {
+                "name": "terraimmundus:music/underscore/smooth_fall",
+                "stream": true,
+                "volume": 0.5
+            },
+            {
+                "name": "terraimmundus:music/underscore/keighley",
+                "stream": true,
+                "volume": 0.5
+            },
+            {
+                "name": "terraimmundus:music/underscore/imaginary_interlude",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+    },
+    "music.encounter.sculk_combat": {
+        "sounds": [
+            {
+                "name": "terraimmundus:music/sculk_combat/fake_triplets",
+                "stream": true,
+                "volume": 0.5
+            },
+            {
+                "name": "terraimmundus:music/sculk_combat/figure_8",
+                "stream": true,
+                "volume": 0.5
+            },
+            {
+                "name": "terraimmundus:music/sculk_combat/leak",
+                "stream": true,
+                "volume": 0.5
+            },
+            {
+                "name": "terraimmundus:music/sculk_combat/nest",
+                "stream": true,
+                "volume": 0.5
+            },
+            {
+                "name": "terraimmundus:music/sculk_combat/the_president_is_dead",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+    },
+    "music.encounter.sculk_tomb": {
+        "sounds": [
+            {
+                "name": "terraimmundus:music/structure/home",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+    },
+    "music.main_menu": {
+        "sounds": [
+            {
+                "name": "terraimmundus:music/main_menu/hope",
+                "stream": true,
+                "volume": 0.25
+            }
+        ]
+    },
+    "music.underscore.underground": {
+        "sounds": [
+            {
+                "name": "music/game/nether/nether1",
+                "stream": true
+            },
+            {
+                "name": "music/game/nether/nether2",
+                "stream": true
+            },
+            {
+                "name": "music/game/nether/nether3",
+                "stream": true
+            },
+            {
+                "name": "music/game/nether/nether4",
+                "stream": true
+            },
+            {
+                "name": "music/game/nether/soulsand_valley/so_below",
+                "stream": true,
+                "volume": 0.5
+            },
+            {
+                "name": "music/game/nether/crimson_forest/chrysopoeia",
+                "stream": true,
+                "volume": 0.5
+            },
+            {
+                "name": "music/game/nether/nether_wastes/rubedo",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+    }
+}

@@ -1,0 +1,7 @@
+type = last_world
+
+last_world {
+  is_server = false
+  world = C:/Users/marth/curseforge/minecraft/Instances/Sculked/saves/New World (57)
+}
+

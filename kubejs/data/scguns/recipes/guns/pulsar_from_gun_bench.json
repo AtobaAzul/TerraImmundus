@@ -1,0 +1,27 @@
+{
+  "type": "scguns:gun_bench",
+  "result": {
+    "item": "scguns:pulsar",
+    "count": 1
+  },
+  "ingredients": {
+    "gun_internal_1": {
+      "item": "kubejs:hardened_firing_unit"
+    },
+    "gun_internal_2": {
+      "item": "scguns:heavy_gun_parts"
+    },
+    "gun_top_internal_2": {
+      "item": "thermal:rf_coil"
+    },
+    "gun_barrel_1": {
+      "item": "scguns:gun_barrel"
+    },
+    "gun_top_barrel_1": {
+      "tag": "minecraft:planks"
+    },
+    "gun_grip": {
+      "item": "scguns:gun_grip"
+    }
+  }
+}

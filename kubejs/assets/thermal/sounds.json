@@ -1,0 +1,13 @@
+{
+    "block.device_water_gen": {
+        "replace": true,
+        "category": "block",
+        "sounds": [
+            {
+                "name": "thermal:block/device/water_gen",
+                "volume": 0.1
+            }
+        ],
+        "subtitle": "subtitles.thermal.block.device_water_gen"
+    }
+}

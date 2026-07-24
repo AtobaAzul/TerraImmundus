@@ -1,0 +1,18 @@
+{
+    "priority": 70,
+    "layer": "underscore",
+    "sound_event": "terraimmundus:music.underscore.general",
+    "condition": {
+        "type": "maestro:all_of",
+        "terms": [
+            {
+                "type": "maestro:day_cycle",
+                "is_night": true
+            },
+            {
+                "type": "maestro:boss_event",
+                "value": false
+            }
+        ]
+    }
+}

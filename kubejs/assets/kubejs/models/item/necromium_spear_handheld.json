@@ -1,0 +1,8 @@
+{
+	"parent": "moonsweaponry:item/netherite_spear_handheld",
+	"textures": {
+		"0": "kubejs:item/necromium_spear_handheld",
+		"layer0": "kubejs:item/necromium_spear_handheld",
+		"particle": "kubejs:item/necromium_spear_handheld"
+	}
+}

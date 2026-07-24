@@ -1,0 +1,139 @@
+# Changes
+- Removed Sapphire, replaced with Zirconia
+- Sulfur ore and block now are soul fire base blocks
+- Sulfur and sulfur dust are now soul fire base blocks for recipes.
+- Renamed Soul fire and related things to Sulfuric Fire.
+- Renamed Golden Apples to Purity Apples
+- Retextured Energy, Item and Fluid Pipes
+- Renamed Item Pipes to Item Ducts
+- Renamed Simple Radio's Cable to Audio Cable
+- Renamed Energy Pipe to Energy Cable
+- Renamed Refined Storage's Cable to Data Cable
+- Several quest changes & improvements.
+- Gunner mobs now drop the ammo of their gun, and don't drop arrows.
+- Improved Dynamo placement. Sneaking while placing a dynamo will place it in the oposite way.
+- Changed Forge version
+- Removed Bejeweled Anvil
+
+# Balancing & Progression.
+- Default World Size is now 6000 by 6000. Defeating the Sculk Horde sets it back to the default.
+- Player now is given the quest book on first spawn, to make it more clear the modpack has quests.
+- Nerfed RG Jigsaw fire rate.
+- Removed Dandelion and Vine rubber recipes.
+- Increased steam power generation by 75%
+- Homemaker, Inertial and Jackhammer can now use Copper Slugs
+- Soulite now requires Netherite to mine.
+- Added Laser Optics, made with rubies, used for all laser guns.
+- Purity Weapons now require Netherite base tools.
+- Nerfed Defender Pistol.
+- Nerfed Reforming repair speed.
+- Arboreal Extractor is now faster.
+- Buffed Sculk Enderman HP.
+- Item Pipes now use Caverns and Chams Tin (now renamed to titanium)
+- Increased Buried Meteorite worldgen count to 2, from 1.
+- Vicious Acid recipe now is 8 Acidic Mass 1 Water Bucket.
+- Reduced Gunner mob chance to 33%, from 50%.
+- Increased lead ore worldgen size to 12, from 8.
+- Lead ores now drop 2 to 5 raw lead + fortune bonus.
+
+# Recipes
+- Made Excitation Field Limiter use a Gold Ingot instead of Electrum
+- Made Slot Seals use an Iron Ingot instead of plate.
+- Disabled Quark's Stone Variant blocks, in favor of Caverns and Chasms's
+- Removed Bump Stock.
+- Tweaked Arboreal Extractor recipe.
+- Fixed Gale having a blueprint requirement
+- Changed Golden Apple recipe.
+- Aircraft hulls now use Titanium instead of Constantan
+
+# Fixes
+- Fixed missing texture when placing Purity smithing template in a Smithing Table.
+- Fixed not being able to set spawn point in a bed at night in the first 10 days.
+- Fixed aircraft Rotary Cannon not being craftable.
+- Fixed Netherite Upgrade Smithing Template description and Ancient Scrap not being properly renamed.
+- Fixed Purity Apples *only* applying Purity, instead of being an added bonus.
+- Fixed Magma Cubes not spawning with random sizes.
+
+# Mods
+- Updated mods:
+  - Attribute Setter
+  - Scorched Guns: Caverns & Chasms compat
+  - Sculk Horde
+  - Fragmentum
+  - Pillager Caravans
+  - Jade Addons
+  - Jade
+  - LexiConfig
+  - Tax Free Levels
+  - Custom Credits
+  - Guard Villagers
+  - Caverns & Chasms
+  - Particle Rain
+  - Explorify
+  - Every Compat
+  - Ixeris
+  - Packet Fixer
+  - Miners Delight+
+  - FTB Quests
+  - Supplementaries
+  - Balm
+  - Farmer's Delight
+  - Sawmill
+  - Corpse x Cosmetic Armor Reworked Compat
+  - Corpse x Curios API Compat
+  - Collective
+  - EntityJS
+  - Flerovium
+  - Entity Culling
+  - Chloride
+  - RIAutomobility
+  - Thermal Parallel
+  - Cupboard
+  - Immediately Fast
+  - Immersive Aircraft
+  - Structure Essentials
+  - Xaero's World Map
+  - Simple Voice Radio
+  - Blueprint
+  - KubeJS
+  - KubeJS Thermal
+  - Xaero's Minimap
+  - Better Advancements
+  - Simple Voice Chat
+  - FTB Quests
+  - FancyMenu
+  - MmmMmmMmmMmm
+  - Caverns and Chasms
+  - Not Enough Animations
+  - Moonlight Lib
+  - Geckolib
+  - Particle Rain
+  - JEI
+  - EMI
+  - EMI Ores
+  - EveryCompat
+  - ModernFix
+  - Hardcore Revival
+
+- Added mods:
+  - Caverns & Chasms: Ingot Compat
+  - Spark
+  - Structure Generation Improver (SGI: Foundations!)
+  - Particular Reforged
+  - Equipment Compare
+  - World Play Time
+  - Kerria
+  - Geophilic
+  - Tree Tap
+  - Better Mob Combat Fix
+  - FTB XMod Compat
+  - Iron's Simple Blood*
+  - Delightful Fixes
+  - EMIAccelerator
+  - Durability Overhaul
+- Removed mods:
+    - Ixeris
+    - Cascades/Hybrid Beta**
+
+*Only Sculk mobs bleed.
+**Replaced with Geophilic. THIS BREAKS OLD WORLDS!

@@ -1,0 +1,31 @@
+{
+  "type": "scguns:gun_bench",
+  "result": {
+    "item": "scguns:drill_conversion",
+    "count": 1
+  },
+  "ingredients": {
+    "gun_internal_1": {
+      "item": "kubejs:hardened_firing_unit"
+    },
+    "gun_internal_2": {
+      "item": "kubejs:reinforced_gun_parts"
+    },
+    "gun_top_internal_2": {
+      "item": "scguns:diamond_steel_gun_frame"
+    },
+
+    "gun_grip": {
+      "item": "scguns:gun_grip"
+    },
+    "gun_barrel_1": {
+      "item": "kubejs:steel_gun_barrel"
+    },
+    "gun_top_barrel_1": {
+      "item": "kubejs:steel_gun_barrel"
+    },
+    "gun_magazine": {
+      "tag": "minecraft:planks"
+    }
+  }
+}

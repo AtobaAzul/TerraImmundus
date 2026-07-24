@@ -1,0 +1,12 @@
+{
+    "tooltip.sculkhorde.blade_of_purity.functionality": "§7§oA weapon that upon striking a Sculk Horde mob, will give it the purity effect and purify the surrounding land.",
+    "tooltip.sculkhorde.blade_of_purity.lore": "§7§oA weapon imbued with the warm and embracing aura of purity. Holding it fills your body with the resolve to restore balance to a corrupted world. All anguished souls will know peace once they meet this weapon.",
+    "item.minecraft.smithing_template.netherite_upgrade.ingredients": "Meteorite or Necromium Ingot",
+    "info.thermal.hazmat_armor": "Protects from various hazards. Wearing the full set provides infinite Purity.",
+    "item.sculkhorde.calcite_clump": "Sculkspar Clump",
+    "tooltip.sculkhorde.calcite_clump.functionality": "§7§oObtained from mining §e§oSculkspar Ore§f§7§o from a §e§oLiving Rock structure§f§7§o.",
+    "tooltip.sculkhorde.calcite_clump.lore": "§7§oA sturdy and calcite-like material.",
+    "block.sculkhorde.calcite_ore": "Sculkspar Ore",
+    "tooltip.sculkhorde.calcite_ore.functionality": "§7§oCan be obtained from §e§oLiving Rock Structures§f§7§o surrounding §e§oSculk Nodes§f§7§o.",
+    "tooltip.sculkhorde.calcite_ore.lore": "§7§oA sturdy and calcite-like material."
+}

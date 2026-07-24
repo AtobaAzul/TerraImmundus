@@ -1,0 +1,30 @@
+{
+  "type": "scguns:gun_bench",
+  "result": {
+    "item": "scguns:killer_23",
+    "count": 1
+  },
+  "ingredients": {
+    "gun_internal_1": {
+      "item": "kubejs:hardened_firing_unit"
+    },
+    "gun_internal_2": {
+      "item": "kubejs:reinforced_gun_parts"
+    },
+    "gun_top_internal_1": {
+      "item": "thermal:steel_ingot"
+    },
+    "gun_top_internal_2": {
+      "item": "scguns:treated_iron_gun_frame"
+    },
+    "gun_grip": {
+      "item": "scguns:gun_grip"
+    },
+    "gun_barrel_1": {
+      "item": "kubejs:steel_heavy_gun_barrel"
+    },
+    "gun_magazine": {
+      "tag": "minecraft:planks"
+    }
+  }
+}

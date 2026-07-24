@@ -1,0 +1,39 @@
+{
+  "type": "scguns:gun_bench",
+  "result": {
+    "item": "scguns:shellurker",
+    "count": 1
+  },
+  "ingredients": {
+    "gun_internal_1": {
+      "item": "kubejs:hardened_firing_unit"
+    },
+    "gun_internal_2": {
+      "item": "kubejs:resonant_gun_parts"
+    },
+    "gun_top_internal_1": {
+      "item": "kubejs:enderium_gun_frame"
+    },
+    "gun_top_internal_2": {
+      "item": "kubejs:enderium_gun_frame"
+    },
+    "gun_barrel_2": {
+      "item": "kubejs:steel_gun_barrel"
+    },
+    "gun_grip": {
+      "item": "scguns:gun_grip"
+    },
+    "gun_barrel_1": {
+      "item": "kubejs:steel_heavy_gun_barrel"
+    },
+    "gun_top_barrel_1": {
+      "item": "minecraft:shulker_shell"
+    },
+    "gun_top_barrel_2": {
+      "item": "minecraft:shulker_shell"
+    },
+    "gun_magazine": {
+      "item": "minecraft:shulker_shell"
+    }
+  }
+}

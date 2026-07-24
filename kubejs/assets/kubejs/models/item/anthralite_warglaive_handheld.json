@@ -1,0 +1,8 @@
+{
+	"parent": "moonsweaponry:item/iron_warglaive_handheld",
+	"textures": {
+		"0": "kubejs:item/anthralite_warglaive_handheld",
+		"layer0": "kubejs:item/anthralite_warglaive_handheld",
+		"particle": "kubejs:item/anthralite_warglaive_handheld"
+	}
+}

@@ -1,0 +1,9 @@
+{
+    "priority": 90,
+    "layer": "encounter",
+    "sound_event": "terraimmundus:music.main_menu",
+    "condition": {
+        "type": "maestro:in_game",
+        "value": false
+    }
+}

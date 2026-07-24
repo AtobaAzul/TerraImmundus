@@ -1,0 +1,247 @@
+{
+    "item.callwell.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/callwell/fire",
+                "volume": 0.5
+            }
+        ]
+    },
+    "item.cogloader.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/cogloader/fire"
+            }
+        ]
+    },
+    "item.gale.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/gale/fire"
+            }
+        ]
+    },
+    "item.grandle.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/grandle/fire",
+                "volume": 0.5
+            }
+        ]
+    },
+    "item.jigsaw.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/jigsaw/fire"
+            }
+        ]
+    },
+    "item.m3.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/m3/fire",
+                "volume": 0.4
+            }
+        ]
+    },
+    "item.m22.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/m22/fire"
+            }
+        ]
+    },
+    "item.mas55.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/mas55/fire"
+            }
+        ]
+    },
+    "item.mk43.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/mk43/fire",
+                "volume": 0.7
+            }
+        ]
+    },
+    "item.millend.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/millend/fire",
+                "volume": 0.4
+            }
+        ]
+    },
+    "item.minksy.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/minksy/fire"
+            }
+        ]
+    },
+    "item.nailer.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/nailer/fire",
+                "volume": 0.8
+            }
+        ]
+    },
+    "item.osgood.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/osgood/fire"
+            }
+        ]
+    },
+    "item.umax.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/umax/fire",
+                "volume": 0.8
+            }
+        ]
+    },
+    "item.spirulida.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/spirulida/fire"
+            }
+        ]
+    },
+    "item.teslock.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/teslock/fire",
+                "volume": 0.6
+            }
+        ]
+    },
+    "item.turnpike.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/turnpike/fire"
+            }
+        ]
+    },
+    "item.uppercut.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/uppercut/fire0",
+                "name": "scguns:item/uppercut/fire1",
+                "name": "scguns:item/uppercut/fire2"
+            }
+        ]
+    },
+    "item.whistler.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/whistler/fire_2"
+            }
+        ]
+    },
+    "item.niami.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/niami/fire",
+                "volume": 0.7
+            }
+        ]
+    },
+    "item.tl.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/tl/fire"
+            }
+        ]
+    },
+    "item.javelin.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/javelin/fire"
+            }
+        ]
+    },
+    "item.prushgun.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/prushgun/fire"
+            }
+        ]
+    },
+    "item.gattaler.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/gattaler/fire"
+            }
+        ]
+    },
+    "item.killer.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/killer/fire"
+            }
+        ]
+    },
+    "item.valora.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/valora/fire"
+            }
+        ]
+    },
+    "item.longarm.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/longarm/fire"
+            }
+        ]
+    },
+    "item.earths_corpse.fire": {
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/earths_corpse/fire"
+            }
+        ]
+    },
+    "item.carabine.fire": {
+        "replace": true,
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/carabine/fire",
+                "volume": 0.5
+            }
+        ]
+    }
+}

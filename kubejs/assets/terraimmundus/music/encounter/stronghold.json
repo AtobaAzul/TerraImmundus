@@ -1,0 +1,11 @@
+{
+    "priority": 80,
+    "layer": "encounter",
+    "sound_event": "terraimmundus:music.encounter.sculk_tomb",
+    "condition": { 
+        "type": "maestro:structure",
+        "values": [
+            "betterstrongholds:stronghold"
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "priority": 40,
+    "layer": "encounter",
+    "sound_event": "terraimmundus:music.encounter.sculk_combat",
+    "condition": {
+        "type": "maestro:entity_tag",
+        "required_amount": 1,
+        "search_radius": 32,
+        "values": [
+            "sculkhorde:sculk_entity"
+        ]
+    }
+}

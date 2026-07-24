@@ -1,0 +1,13 @@
+{
+    "priority": 100,
+    "layer": "encounter",
+    "sound_event": "alexsmobs:music_wormboss",
+    "condition": {
+        "type": "maestro:entity",
+        "required_amount": 1,
+        "search_radius": 32,
+        "values": [
+            "sculkhorde:sculk_enderman"
+        ]
+    }
+}

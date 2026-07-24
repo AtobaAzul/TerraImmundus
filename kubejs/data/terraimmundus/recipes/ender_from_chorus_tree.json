@@ -1,0 +1,17 @@
+{
+    "type": "thermal:tree_extractor",
+    "trunk": {
+        "Name": "minecraft:chorus_plant"
+    },
+    "leaves": {
+        "Name": "minecraft:chorus_flower"
+    },
+    "min_height": 3,
+    "max_height": 16,
+    "min_leaves": 1,
+    "max_leaves": 24,
+    "result": {
+        "fluid": "thermal:ender",
+        "amount": 10
+    }
+}

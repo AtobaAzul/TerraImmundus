@@ -1,0 +1,18 @@
+{
+    "priority": 80,
+    "layer": "underscore",
+    "sound_event": "terraimmundus:music.underscore.underground",
+    "condition": {
+        "type": "maestro:all_of",
+        "terms": [
+            {
+                "type": "maestro:boss_event",
+                "value": false
+            },
+            {
+                "type": "maestro:height",
+                "below": 0
+            }
+        ]
+    }
+}

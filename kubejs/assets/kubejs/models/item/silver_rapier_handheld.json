@@ -1,0 +1,8 @@
+{
+	"parent": "moonsweaponry:item/iron_rapier_handheld",
+	"textures": {
+		"0": "kubejs:item/silver_rapier_handheld",
+		"layer0": "kubejs:item/silver_rapier_handheld",
+		"particle": "kubejs:item/silver_rapier_handheld"
+	}
+}

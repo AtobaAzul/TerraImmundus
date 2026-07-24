@@ -1,0 +1,30 @@
+{
+  "type": "scguns:gun_bench",
+  "result": {
+    "item": "scguns:pyroclastic_flow",
+    "count": 1
+  },
+  "ingredients": {
+    "gun_internal_1": {
+      "item": "scguns:vehement_coal"
+    },
+    "gun_internal_2": {
+      "item": "kubejs:reinforced_gun_parts"
+    },
+    "gun_top_internal_2": {
+      "item": "scguns:anthralite_ingot"
+    },
+    "gun_barrel_1": {
+      "item": "kubejs:steel_gun_barrel"
+    },
+    "gun_top_barrel_1": {
+      "item": "thermal:rose_gold_ingot"
+    },
+    "gun_grip": {
+      "item": "scguns:gun_grip"
+    },
+    "gun_magazine": {
+      "item": "scguns:gun_magazine"
+    }
+  }
+}

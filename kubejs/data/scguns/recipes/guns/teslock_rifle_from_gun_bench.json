@@ -1,0 +1,30 @@
+{
+  "type": "scguns:gun_bench",
+  "result": {
+    "item": "scguns:teslock_rifle",
+    "count": 1
+  },
+  "ingredients": {
+    "gun_internal_1": {
+      "item": "kubejs:firing_hammer"
+    },
+    "gun_internal_2": {
+      "item": "thermal:electrum_gear"
+    },
+    "gun_top_internal_2": {
+      "item": "minecraft:iron_ingot"
+    },
+    "gun_barrel_2": {
+      "item": "scguns:anthralite_ingot"
+    },
+    "gun_grip": {
+      "item": "scguns:gun_grip"
+    },
+    "gun_barrel_1": {
+      "item": "thermal:rf_coil"
+    },
+    "gun_magazine": {
+      "item": "minecraft:copper_ingot"
+    }
+  }
+}

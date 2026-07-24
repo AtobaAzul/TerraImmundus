@@ -1,0 +1,2476 @@
+{
+	autofocus_id: "178FC7958159A73B"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "temp"
+	group: ""
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_complete: true
+	hide_quest_until_deps_visible: true
+	id: "63CE31612052418B"
+	order_index: 0
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["178FC7958159A73B"]
+			description: [
+				"In the first days, you should focus on exploring and getting yourself equipped, as you'd normally do, and find somewhere nice to settle down."
+				""
+				"Once you settle down, you can begin making progress on making the tools needed to fight against the Horde."
+				""
+				"An important notice: Terra Immundus world's are much smaller than the average Minecraft world, being 6k by 6k blocks, later expanding to vanilla's size when defeating the horde."
+			]
+			icon: "minecraft:campfire"
+			id: "5865797006BBAAE2"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "33CD3F2535213A3D"
+				title: "I understand"
+				type: "checkmark"
+			}]
+			title: "Getting Started"
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: ["Nickel is needed to make &6Machine Frames&r, and requires a &bDiamond-level&r pickaxe to mine."]
+			id: "71D54C0037E17A4C"
+			tasks: [{
+				id: "20091D3A986D4C7E"
+				item: "thermal:nickel_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["71D54C0037E17A4C"]
+			description: ["Machine frames are the basis of nearly all machines."]
+			id: "0645022313432252"
+			tasks: [{
+				id: "2C9E5D6ED7DE34D8"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Rubber can be obtained by using a Tree Tap with a bucket on a Jungle or Rubber tree."
+				"{image:terraimmundus:textures/quests/tree_tap.png width:512 height:271 align:center fit:true}"
+				"When the bucket is full of liquid, you can &6Shift+RMB&r to collect it."
+			]
+			icon: "thermal:cured_rubber"
+			id: "00BAF70EA51427EC"
+			tasks: [
+				{
+					id: "6B2AA8A10FBA921F"
+					item: "thermal:cured_rubber"
+					type: "item"
+				}
+				{
+					id: "5030C171C2EC35F6"
+					item: "treetap:tap"
+					type: "item"
+				}
+				{
+					id: "436F15F35737628F"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+			]
+			title: "Rubber"
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"00BAF70EA51427EC"
+				"11503DB45CD2093F"
+			]
+			description: [
+				"Dynamos push energy to where they're facing, but to move power further and power multiple machines, you will need &6Energy Cables&r"
+				""
+				"Energy Cables move energy around. A &6Pipe Wrench&r is needed to configure the pipes, allowing to change the cable from the default mode (insert) to extract power, as well as toggling connections."
+				""
+				"&6Shift+RMB&r to change a connetion's type."
+			]
+			id: "65A19EDD1DB27234"
+			tasks: [
+				{
+					id: "29040F07C1855AA2"
+					item: "pipez:wrench"
+					type: "item"
+				}
+				{
+					id: "234EDB794ADD86AE"
+					item: "pipez:energy_pipe"
+					type: "item"
+				}
+			]
+			title: "Moving Energy"
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: ["Dynamos burn different fuels to generate &6power&r, needed to run machines."]
+			id: "11503DB45CD2093F"
+			tasks: [{
+				id: "214E706C3D50F98B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:basic_dynamos)"
+					}
+				}
+				title: "Any Basic Dynamo"
+				type: "item"
+			}]
+			title: "Basic Dynamos"
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"0645022313432252"
+				"11503DB45CD2093F"
+			]
+			dependency_requirement: "all_started"
+			description: [
+				"An important thing to note about Terra Immundus: It is &onot&r an automation modpack."
+				""
+				"Machines are the means of progression, and your goal is not automating everything, &obut&r automation (or semi-automation, as is for most things) will greatly save &6time&r, which is really important."
+			]
+			icon: "thermal:rf_coil"
+			id: "77DCAEC282F587D8"
+			min_required_dependencies: 2
+			shape: "rsquare"
+			tasks: [{
+				id: "1A18D581E544188D"
+				title: "I understand"
+				type: "checkmark"
+			}]
+			title: "Machines \\& Devices"
+			x: -1.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["77DCAEC282F587D8"]
+			description: [
+				"Machines and devices can be upgraded with Augments, and tools like the Fluxbore. These augments allow you to improve and tune the machines to your needs. "
+				""
+				"Make sure to look at JEI!"
+			]
+			hide_until_deps_visible: true
+			icon: "thermal:upgrade_augment_1"
+			id: "49DC3081B249E505"
+			shape: "rsquare"
+			subtitle: "Upgrades, people, upgrades."
+			tasks: [{
+				id: "37B0D9D3C93588E2"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_augment)"
+					}
+				}
+				title: "Any Augment"
+				type: "item"
+			}]
+			title: "Augments"
+			x: 0.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["77DCAEC282F587D8"]
+			description: ["The Pulverizer crushes things into dusts and powders. Use this to make alloy blends."]
+			hide_until_deps_visible: true
+			id: "37A920C24A5F734D"
+			size: 1.5d
+			tasks: [{
+				id: "4D4E4010FA33AC79"
+				item: "thermal:machine_pulverizer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -11.25d
+		}
+		{
+			dependencies: ["77DCAEC282F587D8"]
+			description: ["The Redstone Furnace is an electric furnace."]
+			hide_until_deps_visible: true
+			id: "0E032066601BE2E9"
+			tasks: [{
+				id: "748B5D99C2784E12"
+				item: "thermal:machine_furnace"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["77DCAEC282F587D8"]
+			description: ["The Sawmill cuts wood more efficiently."]
+			hide_until_deps_visible: true
+			id: "27BC2D5870035CBF"
+			tasks: [{
+				id: "11AD6F4E5838082A"
+				item: "thermal:machine_sawmill"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["77DCAEC282F587D8"]
+			description: ["The Fluid Encapsulator fills things with fluid."]
+			hide_dependent_lines: true
+			hide_until_deps_visible: true
+			id: "560398E1B9B2E686"
+			tasks: [{
+				id: "06B9E8ACC878B19A"
+				item: "thermal:machine_bottler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["77DCAEC282F587D8"]
+			description: [
+				"The Sequential Fabricator is an auto-crafter."
+				""
+				"Can replace fluid buckets in recipes with its built-in fluid tank."
+			]
+			hide_until_deps_visible: true
+			id: "0977F7D2416B4A0F"
+			tasks: [{
+				id: "293CD9179BC2CDDF"
+				item: "thermal:machine_crafter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["77DCAEC282F587D8"]
+			description: ["Devices are machines that don't necessarily craft items or use power to operate. Likewise, they are still upgradeable."]
+			hide_until_deps_visible: true
+			icon: "thermal:redstone_servo"
+			id: "63D7EA0B4D706D20"
+			shape: "rsquare"
+			tasks: [{
+				id: "5DB0238ABD333B7D"
+				title: "I understand"
+				type: "checkmark"
+			}]
+			title: "Devices"
+			x: -5.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["37A920C24A5F734D"]
+			description: ["These materials need a Pulverizer to be produced."]
+			icon: "thermal:bronze_gear"
+			id: "6ED2FB0EE2A1D5A7"
+			shape: "gear"
+			tasks: [
+				{
+					id: "392C3B5C8CD28B81"
+					item: "thermal:bronze_dust"
+					type: "item"
+				}
+				{
+					id: "5BDE658A5C797DCC"
+					item: "thermal:invar_dust"
+					type: "item"
+				}
+				{
+					id: "29E652855C06C304"
+					item: "thermal:constantan_dust"
+					type: "item"
+				}
+			]
+			title: "Tier 2 Materials"
+			x: -1.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["63D7EA0B4D706D20"]
+			description: [
+				"This device extracts fluids more efficiently than a Tree Tap from trees, and can be boosted with fertilizers as well as augments."
+				"The tree must be natural, have leaves and have dirt under it."
+			]
+			id: "5DBF7FFB8A65A00F"
+			tasks: [{
+				id: "1284ACA8B3FAEFBF"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["63D7EA0B4D706D20"]
+			description: ["This device catches fish."]
+			id: "4A64AE65819BAFBA"
+			tasks: [{
+				id: "7D93B1F9436DEDD6"
+				item: "thermal:device_fisher"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["63D7EA0B4D706D20"]
+			description: ["This device pulls water from its surroundings, for use with pipes and within machines."]
+			id: "58D64815EA42F57F"
+			tasks: [{
+				id: "1A05AFA7FE431922"
+				item: "thermal:device_water_gen"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["63D7EA0B4D706D20"]
+			description: ["This items vaccuums items nearby."]
+			id: "3CE52C96E5979B6E"
+			tasks: [{
+				id: "3FBD924786C72384"
+				item: "thermal:device_collector"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["63D7EA0B4D706D20"]
+			description: ["This device collects experience from its surroundings, including from machines with an &2Knowledge Concentrator&r augment"]
+			id: "33DBEB5D52E38044"
+			tasks: [{
+				id: "0A15676857E1E53C"
+				item: "thermal:device_xp_condenser"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["63D7EA0B4D706D20"]
+			description: ["This device deletes items."]
+			id: "22F2EAC35CAA244D"
+			tasks: [{
+				id: "4A0231520ABAA0F8"
+				item: "thermal:device_nullifier"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["323A9DDE0D56E2EB"]
+			description: ["This device produces rocks from adjacent blocks."]
+			id: "488B64DA4277DC72"
+			tasks: [{
+				id: "32F520A4BBA176E3"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["63D7EA0B4D706D20"]
+			description: ["This device composts large quantities of items at once"]
+			id: "77728449125880D2"
+			tasks: [{
+				id: "7D39AA67EA53BBFE"
+				item: "thermal:device_composter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["323A9DDE0D56E2EB"]
+			description: ["This device spreads potions across an area."]
+			id: "145C7BC47416F615"
+			tasks: [{
+				id: "542835B1B0E34F4B"
+				item: "thermal:device_potion_diffuser"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["42B799EC849CF1F8"]
+			description: ["This device stores large quantities of power for later use. Can be picked up and retains power."]
+			id: "6B6B96F2E724F255"
+			tasks: [{
+				id: "4359883313CBE139"
+				item: {
+					Count: 1
+					id: "thermal:energy_cell"
+					tag: {
+						BlockEntityTag: {
+							Energy: 0
+							EnergyMax: 1000000
+							EnergyRecv: 1000
+							EnergySend: 1000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -22.5d
+		}
+		{
+			dependencies: ["323A9DDE0D56E2EB"]
+			description: ["This device stores large quantities of fluids. Can be picked up and retains fluid."]
+			id: "13DF803820F6D2BB"
+			tasks: [{
+				id: "1807501B6748ADC3"
+				item: {
+					Count: 1
+					id: "thermal:fluid_cell"
+					tag: {
+						BlockEntityTag: {
+							TankInv: [{
+								Amount: 0
+								Capacity: 32000
+								FluidName: "minecraft:empty"
+								Tank: 0b
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["65A19EDD1DB27234"]
+			description: ["Fluid and Item pipes, as the name implies, move those 2 around."]
+			id: "0224025CB9DF18E1"
+			tasks: [
+				{
+					id: "38A8EB4AA202CEB4"
+					item: "pipez:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "0FE5D6182CCFC327"
+					item: "pipez:item_pipe"
+					type: "item"
+				}
+			]
+			title: "Moving Fluids \\& Items"
+			x: -5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6ED2FB0EE2A1D5A7"]
+			description: ["The Induction Furnace smelts ores and creates alloys."]
+			id: "1F380A26E21B724F"
+			size: 1.5d
+			tasks: [{
+				id: "69ACDF2F484506E1"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["6ED2FB0EE2A1D5A7"]
+			description: ["The Centrifugal Separator seperates things into their components."]
+			id: "1C8028268A2AD41F"
+			tasks: [{
+				id: "4296E55168BF2124"
+				item: "thermal:machine_centrifuge"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["6ED2FB0EE2A1D5A7"]
+			description: ["The Multiservo Press presses things into shaped shapes. Make use of Dies to make certain items."]
+			hide_dependent_lines: true
+			id: "0713D981D65DF155"
+			tasks: [{
+				id: "3ED92AF06A8868EA"
+				item: "thermal:machine_press"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["6ED2FB0EE2A1D5A7"]
+			description: ["The Magma Crucible melts things down into fluids."]
+			hide_dependent_lines: true
+			id: "39C30132E46ECD39"
+			tasks: [{
+				id: "0F21DC49C211F28A"
+				item: "thermal:machine_crucible"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["6ED2FB0EE2A1D5A7"]
+			description: ["The Blast Chiller cools down things."]
+			id: "47CFC248A8221E7D"
+			tasks: [{
+				id: "485798374C86F3CD"
+				item: "thermal:machine_chiller"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["6ED2FB0EE2A1D5A7"]
+			description: ["The Fractionating Still distills fluids."]
+			id: "5699F8E5F116A933"
+			tasks: [{
+				id: "611ED371F2A28FBD"
+				item: "thermal:machine_refinery"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["6ED2FB0EE2A1D5A7"]
+			description: ["The Pyrolyzer processes things using extreme heat."]
+			id: "0CF073A409DF45EA"
+			size: 1.5d
+			tasks: [{
+				id: "34AA791CC0E4B681"
+				item: "thermal:machine_pyrolyzer"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["6ED2FB0EE2A1D5A7"]
+			description: ["Alchemical Imbuer makes potions in large quantities."]
+			id: "40C03947CB19B0C4"
+			tasks: [{
+				id: "3B407300D6E9BE59"
+				item: "thermal:machine_brewer"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["1F380A26E21B724F"]
+			description: ["A critical resource needed for fighting against the Sculk."]
+			id: "5CF1BB9629E2308F"
+			size: 1.5d
+			tasks: [{
+				id: "1BFC9FA8C075D6B6"
+				item: "sculkhorde:essence_of_purity"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -16.5d
+		}
+		{
+			dependencies: [
+				"0CF073A409DF45EA"
+				"74487E0EF55041DE"
+			]
+			id: "0D99FF482E47D94F"
+			tasks: [{
+				id: "0611ABCE0D278B2F"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -18.0d
+		}
+		{
+			dependencies: ["1F380A26E21B724F"]
+			description: ["These materials need the Induction Smelter to be produced."]
+			icon: "thermal:sapphire_gear"
+			id: "74487E0EF55041DE"
+			shape: "gear"
+			tasks: [{
+				id: "342BDABEC21C5691"
+				title: "I understand"
+				type: "checkmark"
+			}]
+			title: "Tier 3 Materials"
+			x: -0.5d
+			y: -20.0d
+		}
+		{
+			dependencies: ["74487E0EF55041DE"]
+			id: "6DAD41761203CB40"
+			tasks: [{
+				id: "6333B335A8C2A520"
+				item: "thermal:lumium_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -20.5d
+		}
+		{
+			dependencies: ["74487E0EF55041DE"]
+			id: "42B799EC849CF1F8"
+			tasks: [{
+				id: "070A72432CD3D9CA"
+				item: "thermal:electrum_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -21.5d
+		}
+		{
+			dependencies: ["3D143DC0D0E3EAEA"]
+			id: "7D4EC034CE4F2D78"
+			tasks: [{
+				id: "7A3D65E92E37AA8F"
+				item: "thermal:enderium_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -23.5d
+		}
+		{
+			dependencies: ["3D143DC0D0E3EAEA"]
+			id: "14F82701CF80FF8A"
+			tasks: [{
+				id: "04AFDC67771208BC"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_diamond_steel)"
+					}
+				}
+				title: "Diamond Steel Ingot"
+				type: "item"
+			}]
+			title: "Diamond Steel"
+			x: 0.0d
+			y: -24.0d
+		}
+		{
+			dependencies: ["74487E0EF55041DE"]
+			id: "104FBB1C6037CD65"
+			tasks: [{
+				id: "11C01184FD1F1FB0"
+				item: "thermal:rose_gold_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -18.5d
+		}
+		{
+			dependencies: ["74487E0EF55041DE"]
+			id: "7FDF2C8698EFFEE9"
+			tasks: [{
+				id: "58705F25C5AA3FCB"
+				item: "thermal:obsidian_glass"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -20.0d
+		}
+		{
+			dependencies: ["74487E0EF55041DE"]
+			id: "577457934315E6DF"
+			tasks: [{
+				id: "5968B2021AB56E5D"
+				item: "savage_and_ravage:blast_proof_plating"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -19.5d
+		}
+		{
+			dependencies: ["3D143DC0D0E3EAEA"]
+			id: "3F498515E8FB78D3"
+			tasks: [{
+				id: "45C6B77F04F34077"
+				item: "scguns:treated_brass_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -24.0d
+		}
+		{
+			dependencies: ["74487E0EF55041DE"]
+			id: "0861B3BDAB8CF346"
+			tasks: [{
+				id: "4C4FC77FBF284A45"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -22.0d
+		}
+		{
+			dependencies: ["3D143DC0D0E3EAEA"]
+			id: "6608D777C19F5758"
+			tasks: [{
+				id: "5DFBC80D3277D933"
+				item: "caverns_and_chasms:necromium_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -23.5d
+		}
+		{
+			dependencies: ["74487E0EF55041DE"]
+			description: ["These materials need other tier 3 materials to be produced."]
+			icon: "thermal:netherite_gear"
+			id: "3D143DC0D0E3EAEA"
+			shape: "gear"
+			tasks: [{
+				id: "78BAF23E63ABCA4D"
+				title: "I understand"
+				type: "checkmark"
+			}]
+			title: "Tier 4 Materials"
+			x: -0.5d
+			y: -22.0d
+		}
+		{
+			dependencies: ["7FDF2C8698EFFEE9"]
+			description: ["Steam engines produce power from steam. Steam is produced from any boiler and can be heated several times, increasing its energy density."]
+			id: "06E1259A77A1AB79"
+			tasks: [
+				{
+					id: "06C238EC9B48C43A"
+					item: "systeams:boiler_pipe"
+					type: "item"
+				}
+				{
+					id: "759007D131FFD794"
+					item: "systeams:steam_dynamo"
+					type: "item"
+				}
+			]
+			title: "Steam Power"
+			x: -4.5d
+			y: -20.0d
+		}
+		{
+			dependencies: ["323A9DDE0D56E2EB"]
+			description: ["The Tinker's Workbench allows putting on Augments on equipment. Things like Radial Enhancement makes the tool work in a wider range or mine multiple blocks, and integral components increase the mining level."]
+			id: "6B55A4F4D7D8A1E5"
+			tasks: [{
+				id: "5C0284767F704FBD"
+				item: "thermal:tinker_bench"
+				type: "item"
+			}]
+			title: "Upgrading Equipment"
+			x: -6.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["6ED2FB0EE2A1D5A7"]
+			icon: "thermal:lightning_charge"
+			id: "7F963581F51D84B6"
+			shape: "rsquare"
+			tasks: [{
+				id: "275F34EF67779AE5"
+				title: "I understand"
+				type: "checkmark"
+			}]
+			title: "Tier 2 Dynamos"
+			x: 2.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["7F963581F51D84B6"]
+			description: ["Compression Dynamos burn specific fuels to generate energy."]
+			id: "2D05372FF6E08E2B"
+			tasks: [{
+				id: "021E7F8F48C32CDF"
+				item: "thermal:dynamo_compression"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["7F963581F51D84B6"]
+			description: ["Magmatic Dynamos burn lava to generate energy."]
+			id: "5E2C2FDE9C570AC6"
+			tasks: [{
+				id: "4A942B328433A9A8"
+				item: "thermal:dynamo_magmatic"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -12.5d
+		}
+		{
+			dependencies: [
+				"7F963581F51D84B6"
+				"0713D981D65DF155"
+			]
+			description: ["Numistatic Dynamos spends coins to generate energy."]
+			id: "6CB7D0EB71B6B66B"
+			tasks: [{
+				id: "31B91A94FFCBB3B4"
+				item: "thermal:dynamo_numismatic"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["7F963581F51D84B6"]
+			description: ["Disenchantment Dynamos burn enchanted items to generate energy."]
+			id: "3D2BAF180ED15CB1"
+			tasks: [{
+				id: "65D7AAD2D656E344"
+				item: "thermal:dynamo_disenchantment"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -14.0d
+		}
+		{
+			dependencies: [
+				"6ED2FB0EE2A1D5A7"
+				"63D7EA0B4D706D20"
+			]
+			icon: "thermal:laser_diode"
+			id: "323A9DDE0D56E2EB"
+			shape: "rsquare"
+			tasks: [{
+				id: "7E312894E78AA095"
+				title: "I understnad"
+				type: "checkmark"
+			}]
+			title: "Tier 2 Devices"
+			x: -5.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["63D7EA0B4D706D20"]
+			description: ["This device charges electrical items."]
+			id: "37C39E75C3EBC81D"
+			tasks: [{
+				id: "54F61A63CAC323D6"
+				item: "thermal:charge_bench"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["37C39E75C3EBC81D"]
+			description: ["The Fluxbore is an upgradeable energy drill."]
+			id: "322EB96B767663B9"
+			tasks: [{
+				id: "79481B5D242F6355"
+				item: {
+					Count: 1
+					id: "thermal:flux_drill"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["37C39E75C3EBC81D"]
+			description: ["The Fluxsaw is an upgradeable energy saw"]
+			id: "50F6E7919A19778E"
+			tasks: [{
+				id: "31F0384A1E1D8442"
+				item: {
+					Count: 1
+					id: "thermal:flux_saw"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["37C39E75C3EBC81D"]
+			description: ["The Fluxomagnet is an upgradeable... well. Magnet. It pulls items."]
+			id: "6F346FE687176224"
+			tasks: [{
+				id: "0B6965D49555AE14"
+				item: {
+					Count: 1
+					id: "thermal:flux_magnet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["37C39E75C3EBC81D"]
+			description: ["The capacitato is a portable energy storage item."]
+			hide_dependent_lines: true
+			id: "08C7CAEBE2CF55B7"
+			tasks: [{
+				id: "0FC18D6F66DFF081"
+				item: {
+					Count: 1
+					id: "thermal:rf_potato"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3F498515E8FB78D3"]
+			description: ["Automatically turns normal arrows into tipped arrows from its internal potion tank. Upgradeable."]
+			id: "45D457F08F901605"
+			tasks: [{
+				id: "0DB06E193BB49E63"
+				item: {
+					Count: 1
+					id: "thermal:potion_quiver"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -26.0d
+		}
+		{
+			dependencies: ["3F498515E8FB78D3"]
+			description: ["Stores and picks up fluids. Upgradeable."]
+			id: "064DB63A64275059"
+			tasks: [{
+				id: "1E6913140B4414AF"
+				item: {
+					Count: 1
+					id: "thermal:fluid_reservoir"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -26.0d
+		}
+		{
+			dependencies: ["3F498515E8FB78D3"]
+			description: ["Infuses the user or target entities with potions. Upgradeable."]
+			id: "21E9F04D550575B6"
+			tasks: [{
+				id: "326BA3F720C6F48E"
+				item: {
+					Count: 1
+					id: "thermal:potion_infuser"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -26.0d
+		}
+		{
+			dependencies: [
+				"0861B3BDAB8CF346"
+				"08C7CAEBE2CF55B7"
+			]
+			description: ["The Flux Capacitor is an upgraded portable storage that can also charge items in your inventory."]
+			id: "76318731752573B2"
+			tasks: [{
+				id: "1EAAFB01741A43B3"
+				item: {
+					Count: 1
+					id: "thermal:flux_capacitor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -22.0d
+		}
+		{
+			dependencies: ["74487E0EF55041DE"]
+			id: "2AC019C1EC3821B8"
+			tasks: [{
+				id: "71D065C5150870FF"
+				item: "thermal:signalum_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -21.0d
+		}
+		{
+			dependencies: ["74487E0EF55041DE"]
+			description: [""]
+			id: "5D813063849F7366"
+			tasks: [{
+				id: "74060BA514AD165D"
+				item: "refinedstorage:silicon"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -19.0d
+		}
+		{
+			dependencies: [
+				"2AC019C1EC3821B8"
+				"5D813063849F7366"
+				"0D99FF482E47D94F"
+				"7FDF2C8698EFFEE9"
+			]
+			description: ["Refined Storage system can store large amounts of items or fluids in Disks, using energy."]
+			id: "224E64A9A493FA03"
+			subtitle: "Mass Storage"
+			tasks: [
+				{
+					id: "4E1A68037893F30A"
+					item: "refinedstorage:controller"
+					type: "item"
+				}
+				{
+					id: "60D3E97B9402272B"
+					item: "refinedstorage:crafting_monitor"
+					type: "item"
+				}
+				{
+					id: "52E91BF6440462B6"
+					item: "refinedstorage:disk_drive"
+					type: "item"
+				}
+			]
+			title: "Refined Storage"
+			x: -4.5d
+			y: -19.0d
+		}
+		{
+			dependencies: [
+				"159F7789853FBC57"
+				"560398E1B9B2E686"
+				"39C30132E46ECD39"
+			]
+			description: ["Plasma Cells are ammunition for Plasma weapons."]
+			id: "36FA9A8FEA2FE6D5"
+			tasks: [{
+				id: "3064E24CB04EB8EA"
+				item: "scguns:energy_cell"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -21.0d
+		}
+		{
+			dependencies: ["159F7789853FBC57"]
+			id: "553C212C80BAFF64"
+			tasks: [{
+				id: "324C3477EE3F0544"
+				item: "scguns:energy_core"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -22.0d
+		}
+		{
+			description: [
+				"&lTerra Immundus&r is a &olow tech&r and &3Sculk Infection,&r modpack focused on being lightweight, concise and having extensive mod integration; All in one dimension."
+				""
+				"These will cover noteworthy pack features and changes and guide you through progression. All quests are optional. "
+				""
+				"&l&cQuests do not have rewards&r.&r"
+				""
+				"As per the standard of modded Minecraft, use &6JEI&r to see item recipes and uses."
+				"While mousing over an item, press &l&6R&r&r to view the recipe, and &l&6U&r&r to see its uses."
+			]
+			icon: "sculkhorde:infested_crafting_table_block"
+			id: "178FC7958159A73B"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Start here"
+			tasks: [{
+				id: "3BCD826E9022E1DC"
+				title: "I Understand"
+				type: "checkmark"
+			}]
+			title: "Read First"
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["178FC7958159A73B"]
+			description: ["Terra Immundus removes &4The Nether&r and &5The End&r. Most content of these dimensions are obtainable by either crafting, loot or worldgen."]
+			disable_toast: true
+			icon: "sob:portal_drink"
+			id: "0D1DC5177700C2E7"
+			optional: true
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "All in One"
+			tasks: [{
+				id: "02A2370AEC9D8BC0"
+				title: "I understand"
+				type: "checkmark"
+			}]
+			title: "Dimensions"
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0D1DC5177700C2E7"]
+			description: [
+				"Netherite has been renamed to Meteorite and generates below y=-32"
+				""
+				"Vehement coal generates below y=-32"
+				""
+				"Blackstone and Basalt generates like Tuff"
+				""
+				"Blaze Powder can be crafted, Blaze Rods in recipes replaced with Gold."
+				""
+				"Netherite Smithing templates can be traded from Smiths (Tool, armor and weapons) and can be found in their chests."
+				""
+				"Ruined Portals have Bastion loot."
+				""
+				"Soul Sand, Netherrack and Glowstone are craftable."
+				""
+				"Quartz generates in the overworld."
+				""
+				"Nether Wart and Coffee can be sniffed by Sniffers."
+				""
+				"Ghast Tears have been renamed to Ashen Rosin and can be obtained by processing Ashen Sap, extracted from Ashen Trees."
+			]
+			disable_toast: true
+			icon: "minecraft:nether_quartz_ore"
+			id: "47DE475A19084974"
+			optional: true
+			tasks: [{
+				id: "1E42AA5071519268"
+				title: "I understand"
+				type: "checkmark"
+			}]
+			title: "The Nether"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0D1DC5177700C2E7"]
+			description: [
+				"Elytras are craftable."
+				"Shulker Shells, End Stone, Myalite, Dusky Myalite, Myalite Crystal, End Blueprints and Chorus Flowers are craftable."
+			]
+			disable_toast: true
+			icon: "minecraft:end_portal_frame"
+			id: "48623F83032726CD"
+			optional: true
+			tasks: [{
+				id: "473EF2A1F9FDE794"
+				title: "I understand"
+				type: "checkmark"
+			}]
+			title: "The End"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["178FC7958159A73B"]
+			description: [
+				"The pack also has several other misc. changes, tweaks, and thingies that are worth mentioning:"
+				""
+				"- Clerics buy Sculk Tendrils and sell Purity Shards and Purification Flasks"
+				"- Wandering Traders sell Sniffer Eggs, Purity Shards and Purification Flasks"
+				"- Sniffer eggs can be found in Jungle Temples."
+				"- Reading a structure map gives you a waypoint to the structure."
+				"- Skeletons turn into Wither Skeletons when dying to lava."
+				"- Wither Skeletons and Magma Cubes spawn naturally deep underground."
+				"- Sculk Mushrooms can brew Awkward Potions."
+				"- Generators are removed, power for furnitures is obtainable by Transformers, that use FE to generate power."
+				""
+				"{@pagebreak}"
+				""
+				"- Quark normally makes it so netherite equipment is repairable with diamonds, this is also applied to necromium."
+				"- Items repairable with Treated Iron now use Steel"
+			]
+			disable_toast: true
+			icon: "thermal:lead_gear"
+			id: "3FA037854B984F4F"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "1219F9E75C77FD39"
+				title: "I understand"
+				type: "checkmark"
+			}]
+			title: "Misc. Changes"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["178FC7958159A73B"]
+			description: [
+				"After &e10 days&r, the Sculk Horde will awaken and begin corrupting the world, starting at the world's center, and begin accumulating mass from feeding off other living things."
+				""
+				"The horde is not a threat you should ignore, and you should be constantly fighting it. "
+				""
+				"You must prepare yourself against this spreading corruption with weapons and equipment to kill and purify the Sculked masses."
+				""
+				"The following quests will guide you through all the steps needed to kill the Horde, but be warned: It won't be quick, or easy."
+			]
+			disable_toast: true
+			hide_text_until_complete: false
+			icon: "minecraft:sculk"
+			id: "1BAB3EA6B4E23C8A"
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "How the horde works"
+			tasks: [{
+				id: "4E2E7A5A488D0EE8"
+				title: "I understand"
+				type: "checkmark"
+			}]
+			title: "The Sculk Horde"
+			x: 12.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["34D0F980772AC588"]
+			description: [""]
+			hide_details_until_startable: true
+			hide_text_until_complete: true
+			id: "3C02B44B3D3AC7BA"
+			size: 1.0d
+			tasks: [{
+				icon: "sob:sculk_tendril"
+				id: "485CD6FF8B0F6BA9"
+				observe_type: 1
+				timer: 0L
+				title: "Find the Sculk Horde"
+				to_observe: "sculkhorde:infested_block"
+				type: "observation"
+			}]
+			title: "Find the Sculk Horde"
+			x: 12.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["34D0F980772AC588"]
+			description: [
+				"The Sculk Horde has accumulated 5000 mass and has progressed into the &6Immature&r stage."
+				""
+				"At this stage, &4raids&r can begin happening, more and more types Sculk mobs can spawn and &3nodes&r can begin spawning."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "sculkhorde:dormant_heart_of_the_horde"
+			id: "2E65DD6560146216"
+			invisible: true
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				advancement: "sculkhorde:sculk_evolve_immature"
+				criterion: ""
+				id: "403D21E70207D393"
+				type: "advancement"
+			}]
+			title: "Immature Stage"
+			x: 15.0d
+			y: -16.5d
+		}
+		{
+			dependencies: ["2E65DD6560146216"]
+			description: [
+				"The Sculk Horde has accumulated 20000 mass and has developed into the &4Mature&r stage."
+				""
+				"At this stage, more nodes can spawn."
+			]
+			hide_text_until_complete: false
+			icon: "sculkhorde:heart_of_the_horde"
+			id: "459851BFCA5DBE34"
+			invisible: true
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				advancement: "sculkhorde:sculk_evolve_mature"
+				criterion: ""
+				id: "28C19D8F00073A86"
+				type: "advancement"
+			}]
+			title: "Mature Stage"
+			x: 19.0d
+			y: -16.5d
+		}
+		{
+			dependencies: ["2E65DD6560146216"]
+			description: ["Sculkspar is a resource you can obtain from Sculk Living Rock structures, found around &bnodes&r."]
+			id: "3F4A0EA3840EAF6F"
+			tasks: [{
+				id: "4EC29AA4E20EDA91"
+				item: "sculkhorde:calcite_clump"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -20.5d
+		}
+		{
+			dependencies: ["3C02B44B3D3AC7BA"]
+			description: ["Sculk Shrooms can be used to brew Awkward Potions"]
+			id: "60CDE4F974B62505"
+			tasks: [{
+				id: "14D09D03DA66C453"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:sculk_shrooms)"
+					}
+				}
+				title: "Any Sculk Shroom"
+				type: "item"
+			}]
+			title: "Sculk Shrooms"
+			x: 11.0d
+			y: -16.5d
+		}
+		{
+			dependencies: ["3C02B44B3D3AC7BA"]
+			description: ["Crying Obsidian, which is craftable with Dragon's Breath (which is also craftable) and Obsidian, can be infested, this can be turned into &bCrying Souls&r"]
+			id: "096ED3C1B547F1C2"
+			tasks: [{
+				id: "50D467B65B4C45C8"
+				item: "sculkhorde:infested_crying_obsidian"
+				type: "item"
+			}]
+			title: "Infested Crying Obsidian"
+			x: 12.5d
+			y: -18.0d
+		}
+		{
+			dependencies: ["096ED3C1B547F1C2"]
+			description: ["Crafted from &3Crying Souls,&r obtained from Infested Crying Obsidian, and &ePurity Shards&r."]
+			id: "2E4CCA642B5A8A76"
+			tasks: [{
+				id: "5027DB70170DB416"
+				item: "sculkhorde:pure_souls"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -19.5d
+		}
+		{
+			dependencies: [
+				"2E4CCA642B5A8A76"
+				"3F4A0EA3840EAF6F"
+				"1332B5B3C6A099E8"
+				"3619C13AB3AB1166"
+			]
+			description: [
+				"The Infestation Purifier is one of the main weapons against the Horde."
+				""
+				"Upon being placed down, it will clean a large area of sculk around it and weaken and harm the Sculked."
+				"It gets attacked by the Sculked."
+			]
+			id: "494DAC960FEC5542"
+			tasks: [{
+				id: "16E9974D450ED36A"
+				item: "sculkhorde:infestation_purifier"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -20.5d
+		}
+		{
+			dependencies: ["459851BFCA5DBE34"]
+			description: ["Rarely found growing as large crystals in infected areas."]
+			id: "696B6C09CBD13B91"
+			tasks: [{
+				id: "43F7D8C1F9E75987"
+				item: "sculkhorde:soulite_shard"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -20.5d
+		}
+		{
+			dependencies: [
+				"696B6C09CBD13B91"
+				"494DAC960FEC5542"
+			]
+			description: [
+				"This upgrade template can upgrade meteorite weapons, making them formidable weapons against the Sculk."
+				"Each hit weakens the Sculked and purifies the area."
+			]
+			id: "4E89F7B68BCA13DA"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "369F1D6E343F59E6"
+				item: "kubejs:purity_upgrade_template"
+				type: "item"
+			}]
+			title: "Purity Weapons"
+			x: 15.0d
+			y: -23.25d
+		}
+		{
+			dependencies: [
+				"459851BFCA5DBE34"
+				"27F77519858CEE7F"
+			]
+			description: [
+				"With resources you get from fighting against the Horde, you can eventually make then Heart of Purity."
+				""
+				"Using it against the Ancient Brain Node will defeat the horde."
+			]
+			hide_details_until_startable: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "sculkhorde:heart_of_purity"
+			id: "3D379BF4A8DEDB16"
+			rewards: [{
+				count: 5
+				id: "79F71F9F01DD526A"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 2.5d
+			tasks: [
+				{
+					id: "03946618C0529268"
+					item: "sculkhorde:heart_of_purity"
+					type: "item"
+				}
+				{
+					advancement: "sculkhorde:sculk_horde_defeat"
+					criterion: ""
+					id: "78709C8F08C8ADB9"
+					type: "advancement"
+				}
+			]
+			title: "Defeating the Horde"
+			x: 23.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["3C02B44B3D3AC7BA"]
+			description: [
+				"Obtainable by using shears on filled Sculk Bee Cells, underneath Sculk Beehives."
+				""
+				"Sculk Bees turn leaves and other biomatter into sculk mass."
+			]
+			id: "1332B5B3C6A099E8"
+			tasks: [{
+				id: "079D74DB3A644E40"
+				item: "sculkhorde:sculk_resin"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["2E65DD6560146216"]
+			description: ["The Sculk Enderman is a &cminiboss&r that appears during raids, killing it yields 1-3 &bEcho Shards&r and the &bSculk Enderman Cleaver&r"]
+			icon: "sculkhorde:sculk_enderman_cleaver"
+			id: "5A5AB046ADE04618"
+			tasks: [{
+				entity: "sculkhorde:sculk_enderman"
+				icon: "minecraft:ender_eye"
+				id: "0AE0AE489B884053"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Sculk Enderman"
+			x: 17.0d
+			y: -17.5d
+		}
+		{
+			dependencies: [
+				"2E65DD6560146216"
+				"68E32D7F6258206D"
+			]
+			description: ["The Soul Harvester is a crafting block that can make &bDiascite&r, &bFerriscite&r and most importantly, the &eHeart of the Horde&r."]
+			id: "27F77519858CEE7F"
+			tasks: [{
+				id: "02DA6E23877A6D1C"
+				item: "sculkhorde:soul_harvester"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["34D0F980772AC588"]
+			description: ["The Sporemeter measures Sculk mass and its current state. Great for keeping track of how fast the Sculk is growing - or how much damage your efforts have done."]
+			id: "64994C3363A6A83E"
+			tasks: [{
+				id: "2C297DFB281A03C6"
+				item: "kubejs:sporemeter"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["2E65DD6560146216"]
+			description: [
+				"You need a Nether Star to craft the Soul Harvester."
+				"The Wither is reworked and has a lot more health, prepare for a though fight."
+				""
+				"Wither Skeletons spawn deep underground, as well as spawning when a Skeleton dies to lava. The chance for a skull is increased to 10% + 5% per looting level."
+			]
+			icon: "minecraft:nether_star"
+			id: "68E32D7F6258206D"
+			tasks: [{
+				entity: "minecraft:wither"
+				icon: "minecraft:wither_skeleton_skull"
+				id: "42244FD54FCCAB8A"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Wither"
+			x: 15.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["5CF1BB9629E2308F"]
+			description: ["Purity flasks purify sculk and give entities the Purity effect, which prevents harmful effects from the Sculk, such as Burrowed, and harms the Sculked."]
+			id: "3619C13AB3AB1166"
+			tasks: [{
+				id: "01BB9393D5F613D3"
+				item: "sculkhorde:purification_flask"
+				type: "item"
+			}]
+			title: "Fighting the Sculk Horde"
+			x: 7.0d
+			y: -16.5d
+		}
+		{
+			dependencies: [
+				"1332B5B3C6A099E8"
+				"3619C13AB3AB1166"
+			]
+			description: [
+				"Blaze Powder is craftable with Sculk Resin, Purity Shards and Vehement Coal. It can be used to make Blaze Fuel, ammo for Flamethrowers."
+				""
+				"Flamethrowers purify sculk on hit, acting as rapid burst of purification."
+			]
+			id: "1365DEEED32723BF"
+			tasks: [
+				{
+					id: "6E588D07301F6692"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					id: "4935A56FB31B8D49"
+					item: "scguns:blaze_fuel"
+					type: "item"
+				}
+			]
+			title: "Flamethrowers"
+			x: 9.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["42B799EC849CF1F8"]
+			description: ["Lightning Battery can collect power from lightning, but also is used for charging recipes."]
+			id: "159F7789853FBC57"
+			tasks: [{
+				id: "1E1926F4318DCAEC"
+				item: "scguns:lightning_battery"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -21.5d
+		}
+		{
+			dependencies: ["0D99FF482E47D94F"]
+			description: ["The advanced composter can produce, as well as bone meal, Phosphorous as a product."]
+			id: "7958254F270C0F06"
+			tasks: [{
+				id: "34B54E1249314204"
+				item: "scguns:advanced_composter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -18.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Terra Immundus overhauls Scorched Guns' progression."
+				""
+				"Raids and blueprints are no longer a thing. Instead, gun progression focuses on materials you 'unlock' as you progress further, as well as the resource costs and types. As such, progression is a bit more loose. "
+				""
+				"As always, use JEI to see recipes and uses of items."
+			]
+			id: "56B4243C13CBA71D"
+			tasks: [{
+				id: "3DB5B15FEB2F296D"
+				item: "scguns:gun_bench"
+				type: "item"
+			}]
+			title: "Firearms"
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["56B4243C13CBA71D"]
+			description: ["Basic gun parts produce the most basic guns, although even simpler firearms like a Musket do not need gun parts."]
+			hide_dependency_lines: false
+			icon: "scguns:gun_parts"
+			id: "6A2AADE20AE8DA71"
+			shape: "square"
+			tasks: [{
+				id: "59442B616E0F6F3B"
+				item: "scguns:gun_parts"
+				type: "item"
+			}]
+			title: "Tier 1 Guns"
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6A2AADE20AE8DA71"
+				"6ED2FB0EE2A1D5A7"
+			]
+			description: ["Tier 2 guns are advanced guns and require machinery to produce them and their ammo."]
+			hide_dependency_lines: true
+			icon: "scguns:heavy_gun_parts"
+			id: "33A9283BAFE29B42"
+			shape: "square"
+			tasks: [{
+				id: "1B79E262AFCDDE2D"
+				item: "scguns:heavy_gun_parts"
+				type: "item"
+			}]
+			title: "Tier 2 Guns"
+			x: 10.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6DAD41761203CB40"]
+			description: ["The Phytogenic Insolator grows plants in an artificial enviroment."]
+			id: "1F4CF9B72CD866D3"
+			tasks: [{
+				id: "0CAC3AE8D3673ACB"
+				item: "thermal:machine_insolator"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -20.5d
+		}
+		{
+			dependencies: ["2AC019C1EC3821B8"]
+			description: ["The Crystallizer grows crystals from powders and fluids."]
+			id: "587153939A0E5FC1"
+			tasks: [{
+				id: "0F74FC45569D1797"
+				item: "thermal:machine_crystallizer"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -21.0d
+		}
+		{
+			dependencies: ["587153939A0E5FC1"]
+			description: ["Used for high-end explosives and munitions."]
+			id: "0AD21143CFD9BB8B"
+			tasks: [{
+				id: "5B901227A379F406"
+				item: "kubejs:smokeless_powder"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -21.0d
+		}
+		{
+			dependencies: [
+				"0D99FF482E47D94F"
+				"42B799EC849CF1F8"
+				"33A9283BAFE29B42"
+			]
+			description: ["T3 guns are highly advanced and require more machinery to produce."]
+			hide_dependency_lines: true
+			icon: "kubejs:reinforced_gun_parts"
+			id: "050A363B50F28B00"
+			shape: "square"
+			tasks: [{
+				id: "5A87A234B2B22ADD"
+				item: "kubejs:reinforced_gun_parts"
+				type: "item"
+			}]
+			title: "Tier 3 Guns"
+			x: 10.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"050A363B50F28B00"
+				"7D4EC034CE4F2D78"
+			]
+			description: ["T4 Guns are end-game guns, capable of devastating large enemies quickly."]
+			hide_dependency_lines: true
+			icon: "kubejs:resonant_gun_parts"
+			id: "50DB01F7E862D7F4"
+			shape: "square"
+			tasks: [{
+				id: "0767DF251357D9D5"
+				item: "kubejs:resonant_gun_parts"
+				type: "item"
+			}]
+			title: "Tier 4 Guns"
+			x: 10.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Enchanting is reworked. Each enchantment costs a gem as well as an experience cost."
+				"You can pick and upgrade your enchantments any time."
+				""
+				"Total experience per level is flattened, so you need the same amount of XP to level up from 0 to 1 as you do from 30 to 31."
+			]
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:protection"
+						lvl: 4s
+					}]
+				}
+			}
+			id: "02FE3FBE56A295D0"
+			tasks: [{
+				id: "169975D38D9AE541"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			title: "Enchanting"
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: [
+				"Apatite is used for mobility enchantments."
+				""
+				"Apatite is found as an ore, and is more commonly found in Lush Caves"
+			]
+			id: "4463D9B2E58767AA"
+			shape: "square"
+			tasks: [{
+				id: "331E14ADA3FAFF00"
+				item: "thermal:apatite"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: [
+				"Zirconia are used for special and treasure enchantments."
+				""
+				"They are found either in really high altitudes in any biome or deep below in Deep Dark biomes."
+				"Additionally, can be found in archeology, caravan and structure loot, as well as being a rare drop from Mimes."
+			]
+			id: "4B33178670C0BC0B"
+			shape: "square"
+			tasks: [{
+				id: "7182C120F8CD97CC"
+				item: "caverns_and_chasms:zirconia"
+				type: "item"
+			}]
+			title: "Zirconia"
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: ["Prismarine Shards are used for water-based enchantments."]
+			id: "070D2AA4D8E14D06"
+			shape: "square"
+			tasks: [{
+				id: "4D7CA9C658C677EC"
+				item: "minecraft:prismarine_shard"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: [
+				"Rubies are used for melee combat enchantments."
+				""
+				"Found as an ore underground, more commonly in Dripstone Caves."
+			]
+			id: "5DCFBF05E2636D18"
+			shape: "square"
+			tasks: [{
+				id: "6D380E993351A4F2"
+				item: "thermal:ruby"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: ["Used for ranged weapon enchantments."]
+			id: "6EA5BD59068F0168"
+			shape: "square"
+			tasks: [{
+				id: "3480E987E332401E"
+				item: "minecraft:amethyst_block"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: [
+				"Used for curses."
+				""
+				"Adding a curse to an item adds an enchantment slot, rather than remove one."
+			]
+			id: "7B896460E462EFEB"
+			shape: "square"
+			tasks: [{
+				id: "26A778DF6C460017"
+				item: "thermal:cinnabar"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: [
+				"Used for armor enchantments."
+				""
+				"Found underground as an ore."
+			]
+			id: "6ADE521B07B2CC2B"
+			shape: "square"
+			tasks: [{
+				id: "6DCCFC0A426DCEC0"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: ["Used for tool/generic (such as Unbreaking) enchantments."]
+			id: "15D84178887E7283"
+			shape: "square"
+			tasks: [{
+				id: "3B87DD84660E5E66"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: [
+				"Used for loot enchantments."
+				""
+				"Found underground as an ore."
+			]
+			id: "53A0376FB2BE3F54"
+			shape: "square"
+			tasks: [{
+				id: "565EE4CAAD8169B4"
+				item: "caverns_and_chasms:spinel"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Doubles inventory space by adding 3 more rows to your inventory."
+				""
+				"Can be dyed."
+			]
+			hide_dependency_lines: true
+			id: "68C63749FFFC8C08"
+			shape: "square"
+			tasks: [{
+				id: "6162202CE5FFB1E0"
+				item: {
+					Count: 1
+					id: "quark:backpack"
+					tag: {
+						Inventory: [
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Sacks work like weak Shulker Boxes, carrying 9 stacks of items."
+				"At most 3 filled sacks can be carried before getting overencumbered, which prevents running."
+				""
+				"Can be dyed."
+			]
+			hide_dependency_lines: true
+			id: "7027A7BF89301775"
+			shape: "square"
+			tasks: [{
+				id: "266527C7C7B85AA2"
+				item: "supplementaries:sack"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"00BAF70EA51427EC"
+				"1BAB3EA6B4E23C8A"
+			]
+			description: ["Wearing a full set of hazmat armor provides infinite Purity, as well as its usual effects."]
+			hide_dependency_lines: true
+			id: "47A00DF051E0542C"
+			shape: "square"
+			tasks: [
+				{
+					id: "65B91B798A326C51"
+					item: {
+						Count: 1
+						id: "thermal:hazmat_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0C891177D4A35693"
+					item: {
+						Count: 1
+						id: "thermal:hazmat_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "482B6E375B496672"
+					item: {
+						Count: 1
+						id: "thermal:hazmat_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "43AF0C14648E0F59"
+					item: {
+						Count: 1
+						id: "thermal:hazmat_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Hazmat suit"
+			x: 8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Each weapon type has different attributes:"
+				""
+				"- Swords have +33% random crit chance."
+				""
+				"- Greatswords have +5 armor when held."
+				""
+				"- Rapiers pierce 6 armor, Spears pierce 2."
+				""
+				"- Maces pierce 25% of armor, Halberds pierce  12.5% of armor."
+				"- Hammers deal +25% more crit damage."
+				""
+				"{@pagebreak}"
+				"- Glaives give +25% dodge chance when held in each hand, for a total of 50%."
+				""
+				"- Spears pierce 2 levels of Protection."
+				""
+				"- Scythes heals the user 5% of the dealt damage."
+				""
+				"- Katanas deal +2.5% of the enemy's current health as damage."
+				""
+				"- Knives give +100% more XP"
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "moonsweaponry:diamond_greatsword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2F0D83B6A15596A0"
+			shape: "square"
+			tasks: [{
+				id: "0A6D0A691A528DF3"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_weapon)"
+					}
+				}
+				title: "Any #terraimmundus:any_weapon"
+				type: "item"
+			}]
+			title: "Melee Weapons"
+			x: 5.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Cars are customizable and have several useful attachments."
+				"Parts must be made in the &eAuto Mechanic Table&r and assembled in &eAutomobile Assembler&r."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "automobility:automobile"
+				tag: {
+					Automobile: {
+						engine: "automobility:iron"
+						frame: "automobility:standard_light_blue"
+						isPrefab: 1b
+						wheels: "automobility:standard"
+					}
+					display: {
+						Name: "{\"translate\":\"prefab.automobility.standard_light_blue\",\"italic\":\"false\"}"
+					}
+				}
+			}
+			id: "7F2745A5E5D8E24F"
+			shape: "square"
+			tasks: [
+				{
+					id: "6DEEBD9A31FE1CEF"
+					item: "automobility:auto_mechanic_table"
+					type: "item"
+				}
+				{
+					id: "3062644CE9FFAFA8"
+					item: "automobility:automobile_assembler"
+					type: "item"
+				}
+			]
+			title: "Automobiles"
+			x: 6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2D05372FF6E08E2B"]
+			description: [
+				"Aircraft are very useful for covering large distances off-road, and can be upgraded and fitted with weapons."
+				""
+				"Aircraft use buckets of any Compression Dynamo fuels as fuel."
+			]
+			hide_dependency_lines: true
+			icon: "immersive_aircraft:biplane"
+			id: "46764FCE7841D659"
+			shape: "square"
+			tasks: [{
+				id: "1E952059375EAD73"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(immersive_aircraft:aircraft)"
+					}
+				}
+				title: "Any #immersive_aircraft:aircraft"
+				type: "item"
+			}]
+			title: "Aircraft"
+			x: 5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"&6Anthralite&r can be used to upgrade tools, weapons and armor."
+				"Anthralite has a lot more durability and deals more damage, but is worse armor."
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "scguns:anthralite_ingot"
+			id: "74551693A1900C3D"
+			shape: "square"
+			tasks: [
+				{
+					id: "08F40207E822D4BE"
+					item: "scguns:anthralite_ingot"
+					type: "item"
+				}
+				{
+					id: "22ADCF8FD9EBA22B"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					id: "22A93E5F8BA62EB6"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_anthralite_equipment)"
+						}
+					}
+					title: "Any Anthralite-upgraded item"
+					type: "item"
+				}
+			]
+			title: "Anthralite Upgrades"
+			x: 7.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Elytras are craftable, however, they are nerfed. &6You cannot use fireworks to boost yourself.&r"
+				""
+				"It has 2 new enchantments:"
+				"Cloudskipper, which improves flight above the clouds;"
+				"Smokestack, which lets you charge up a boost while sneaking over a campfire."
+			]
+			hide_dependency_lines: true
+			id: "620C81DC608E0C67"
+			shape: "square"
+			tasks: [{
+				id: "29ADCE0199E61047"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"1BAB3EA6B4E23C8A"
+				"5865797006BBAAE2"
+			]
+			description: ["Purity Apples (Formerly Golden Apples) provide the Purity effect when eaten. Yum!"]
+			hide_dependency_lines: true
+			id: "177740C89BD9B2D5"
+			shape: "square"
+			tasks: [{
+				id: "2DADDD162EC9B36E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_golden_apple)"
+					}
+				}
+				title: "Any Golden Apple"
+				type: "item"
+			}]
+			title: "Purity Apples"
+			x: 7.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Stores 64 individual items - not stacks! Insert/remove items with right click in the inventory, or dump the entire contents by using the bundle. You can select an item by using the scroll wheel."
+				"Extremely useful for compacting several small item stacks into 1."
+				""
+				"Can be dyed."
+			]
+			hide_dependency_lines: true
+			id: "49FC160D1021BC9D"
+			shape: "square"
+			tasks: [{
+				id: "5A068D5AD6606747"
+				item: "minecraft:bundle"
+				type: "item"
+			}]
+			title: "Bundles"
+			x: 10.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: ["Cooking pots let you cook more elaborate meals."]
+			hide_dependency_lines: true
+			id: "5CB4859B1820E257"
+			shape: "square"
+			tasks: [{
+				id: "538971DEE6A574D0"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: ["Copper pots lets you cook meals in smaller, divided batches."]
+			hide_dependency_lines: true
+			id: "05A51C766C85C5BA"
+			shape: "square"
+			tasks: [{
+				id: "1378F89858A74D60"
+				item: "miners_delight:copper_pot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: ["Kettles brew teas and other drinks with various effects."]
+			hide_dependency_lines: true
+			id: "21CB0C51AFEE5694"
+			shape: "square"
+			tasks: [{
+				id: "759A7426FC7C6E9D"
+				item: "farmersrespite:kettle"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0713D981D65DF155"]
+			description: ["Kegs let you brew a variety of drinks and beverages, as well as other miscelaneous foods."]
+			id: "68000FA405891DC6"
+			shape: "square"
+			tasks: [{
+				id: "1C21DAE624BC1798"
+				item: "brewinandchewin:keg"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: ["Drawers let you store massive quantities of a single (or a few) item(s)."]
+			hide_dependency_lines: true
+			icon: "storagedrawers:oak_full_drawers_1"
+			id: "4AB91BFAC41A4929"
+			shape: "square"
+			tasks: [{
+				id: "59EEEE3EEAC631BB"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(storagedrawers:drawers)"
+					}
+				}
+				title: "Any Drawer"
+				type: "item"
+			}]
+			title: "Drawers"
+			x: 9.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: ["The Copper Wrench lets you rotate any sort of block, and the Crescent Hammer is an excelent tool for helping with anything machine related."]
+			hide_dependency_lines: true
+			id: "7D2756DA56962FF9"
+			shape: "square"
+			tasks: [
+				{
+					id: "407A276ACF082881"
+					item: {
+						Count: 1
+						id: "supplementaries:wrench"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "50F90F566876557F"
+					item: {
+						Count: 1
+						id: "thermal:wrench"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Wrenches"
+			x: 8.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1BAB3EA6B4E23C8A"]
+			description: [
+				"The horde has awoken! It begins its spread at the center of the world  underground, quickly making its way to the surface."
+				""
+				"&4The fight now begins.&r"
+				""
+				"The infection begins at the &eUndeveloped&r stage."
+			]
+			hide_details_until_startable: true
+			id: "34D0F980772AC588"
+			invisible: true
+			size: 1.0d
+			tasks: [{
+				advancement: "sculkhorde:sculk_horde_start"
+				criterion: ""
+				id: "2CCF5A587789C228"
+				type: "advancement"
+			}]
+			title: "The Horde Awakens"
+			x: 12.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"In &6Terra Immundus&r, items do not break at 0% durability and instead become &4unusable&r. Items start losing efficiency when below 30% durability."
+				""
+				"Items, like in vanilla, can be repaired in an Anvil with their respective materials, or &6Zirconia&r, which acts as an universal repair ingredient."
+				"Guns can be repaired with a Repair Kit. "
+				""
+				"However, anvils cannot apply enchanted books. "
+				""
+				"&aRepairing does not cost Experience&r"
+			]
+			id: "3718DBBC5C60B324"
+			tasks: [{
+				id: "2B790DB92D295735"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:anvil)"
+					}
+				}
+				title: "Any #minecraft:anvil"
+				type: "item"
+			}]
+			title: "Repairing"
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: ["The Enchanter is used to apply Enchanted Books onto items, instead of Anvils."]
+			id: "28A5F4F2C9C441EE"
+			tasks: [{
+				id: "6CD1C7562A123A81"
+				item: "improved_damage:enchanter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3C02B44B3D3AC7BA"]
+			description: [
+				"Vicious Acid can be made with &aAcidic Mass&r."
+				""
+				"Items dropped into the acid will have their durability damaged and curses lifted."
+			]
+			id: "016E081895DD344D"
+			tasks: [{
+				id: "470A752911C963F9"
+				item: "scguns:vicious_acid_bucket"
+				type: "item"
+			}]
+			title: "Vicious Acid"
+			x: 14.0d
+			y: -18.0d
+		}
+	]
+	title: "Progression"
+}
