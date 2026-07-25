@@ -1,0 +1,23 @@
+{
+    "schema_version": "2",
+    "default_packs": [
+        "file/Icon Xaero's 1.22.zip",
+        "file/SmoothDrawers_1.20.1_v2.zip",
+        "file/sweety_items_20.zip"
+    ],
+    "default_overrides": {
+        "force_compatible": true
+    },
+    "pack_overrides": {
+        "file/Icon Xaero's 1.22.zip": {
+            "required": true,
+            "force_compatible": true
+        },
+        "file/SmoothDrawers_1.20.1_v2.zip": {
+            "force_compatible": true
+        },
+        "file/sweety_items_20.zip": {
+            "force_compatible": true
+        }
+    }
+}

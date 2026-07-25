@@ -132,6 +132,7 @@
   - EMIAccelerator
   - Durability Overhaul
   - LightStar
+  - Resource Pack Overrides
 - Removed mods:
     - Ixeris
     - Cascades/Hybrid Beta**
