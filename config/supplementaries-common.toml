@@ -240,7 +240,7 @@
 			glowing_duration = 200
 
 [building]
-	lapis_bricks = true
+	lapis_bricks = false
 	deepslate_lamp = true
 	end_stone_lamp = true
 	blackstone_lamp = true
