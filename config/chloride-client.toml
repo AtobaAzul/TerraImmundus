@@ -45,16 +45,16 @@ modpackMode = false
   blueBand = true
 
   # Overrides vanilla fog with the start/end/shape values below
-  custom = false
+  custom = true
 
   # Value must be less than '1000' and greater than '-1000'
-  start = 0
+  start = -30
 
   # Value must be less than '10000' and greater than '100'
-  end = 192
+  end = 300
 
   # Accepted values are: [SPHERE, CYLINDER]
-  shape = "CYLINDER"
+  shape = "SPHERE"
 
 [world]
   # World rendering tweaks
