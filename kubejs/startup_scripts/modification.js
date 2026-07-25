@@ -26,6 +26,9 @@ ItemEvents.modification((event) => {
         event.modify(`kubejs:anthralite_${type}`, (item) => {
             item.setAttackDamage(damage - 1 + 0.5); //-1 becuase for some reason the actual damage number in-game is 1 higher.
         });
+        event.modify(`kubejs:tin_${type}`, (item) => {
+            item.setAttackDamage(damage - 1 + 0.5); //-1 becuase for some reason the actual damage number in-game is 1 higher.
+        });
     }
 
     event.modify('wither_skeleton_skull', (item) => {
@@ -33,6 +36,11 @@ ItemEvents.modification((event) => {
     });
 
     event.modify('kubejs:purity_sap_bucket', (item) => {
-		item.setCraftingRemainder('minecraft:bucket');
-	});
+        item.setCraftingRemainder('minecraft:bucket');
+    });
+
+    event.modify(`kubejs:tin_sword`, (item) => {
+        item.setAttackDamage(6 - 1 + 0.5); //-1 becuase for some reason the actual damage number in-game is 1 higher.
+        item.setAttackSpeed(-2.2)
+    });
 });

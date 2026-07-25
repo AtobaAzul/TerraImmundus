@@ -592,7 +592,7 @@
 				item: "sculkhorde:essence_of_purity"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.75d
 			y: -16.5d
 		}
 		{
@@ -2048,8 +2048,8 @@
 				}
 			]
 			title: "Hazmat suit"
-			x: 8.0d
-			y: -8.0d
+			x: 5.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -2100,7 +2100,7 @@
 				type: "item"
 			}]
 			title: "Melee Weapons"
-			x: 5.0d
+			x: 4.5d
 			y: -7.0d
 		}
 		{
@@ -2140,8 +2140,8 @@
 				}
 			]
 			title: "Automobiles"
-			x: 6.0d
-			y: -8.0d
+			x: 8.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["2D05372FF6E08E2B"]
@@ -2167,47 +2167,34 @@
 				type: "item"
 			}]
 			title: "Aircraft"
-			x: 5.0d
+			x: 8.5d
 			y: -8.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
 			description: [
-				"&6Anthralite&r can be used to upgrade tools, weapons and armor."
-				"Anthralite has a lot more durability and deals more damage, but is worse armor."
+				"&6Anthralite&r can be used to upgrade Iron tools, weapons and armor."
+				"Anthralite tools and armor have a lot more durability and deals more damage, but have worse defense."
 			]
 			disable_toast: true
 			hide_dependency_lines: true
-			icon: "scguns:anthralite_ingot"
 			id: "74551693A1900C3D"
 			shape: "square"
-			tasks: [
-				{
-					id: "08F40207E822D4BE"
-					item: "scguns:anthralite_ingot"
-					type: "item"
-				}
-				{
-					id: "22ADCF8FD9EBA22B"
-					item: "minecraft:leather"
-					type: "item"
-				}
-				{
-					id: "22A93E5F8BA62EB6"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_anthralite_equipment)"
-						}
+			tasks: [{
+				id: "22A93E5F8BA62EB6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_anthralite_equipment)"
 					}
-					title: "Any Anthralite-upgraded item"
-					type: "item"
 				}
-			]
+				title: "Any Anthralite-upgraded item"
+				type: "item"
+			}]
 			title: "Anthralite Upgrades"
-			x: 7.0d
-			y: -7.0d
+			x: 5.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -2232,7 +2219,7 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
+			x: 7.5d
 			y: -7.0d
 		}
 		{
@@ -2257,7 +2244,7 @@
 				type: "item"
 			}]
 			title: "Purity Apples"
-			x: 7.0d
+			x: 4.5d
 			y: -8.0d
 		}
 		{
@@ -2387,7 +2374,7 @@
 				}
 			]
 			title: "Wrenches"
-			x: 8.0d
+			x: 6.5d
 			y: -7.0d
 		}
 		{
@@ -2470,6 +2457,60 @@
 			title: "Vicious Acid"
 			x: 14.0d
 			y: -18.0d
+		}
+		{
+			dependencies: ["6608D777C19F5758"]
+			description: ["Necromium i"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "2D233B5A870A0B7E"
+			shape: "square"
+			tasks: [{
+				id: "122E5EF3162EBA0F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_necromium_equipment)"
+					}
+				}
+				title: "Any Necromium-upgraded item"
+				type: "item"
+			}]
+			title: "Necromium Upgrades"
+			x: 6.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"&6Titanium&r acts as a side-grade to Diamond. "
+				""
+				"It has less durability overall, but tools and weapons are &afaster&r, and armor has built-in &bProjectile Protection II&r."
+				""
+				"Titanium ore is only found near and in the &3Titanium Monolith&r, a rare structure. Veins around the Monolith generate in an arrow shape, pointing towards it."
+				""
+				"Alternitively, it can also be dropped by Grazers and found in some structure loot."
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			id: "4C2644CC9B6891F7"
+			shape: "square"
+			tasks: [{
+				id: "3BF73A4CC31E5A9E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_titanium_equipment)"
+					}
+				}
+				title: "Any #terraimmundus:any_titanium_equipment"
+				type: "item"
+			}]
+			title: "Titanium Equipment"
+			x: 7.5d
+			y: -8.0d
 		}
 	]
 	title: "Progression"

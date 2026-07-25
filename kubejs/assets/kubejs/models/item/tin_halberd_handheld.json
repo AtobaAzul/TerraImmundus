@@ -1,0 +1,8 @@
+{
+	"parent": "moonsweaponry:item/iron_halberd_handheld",
+	"textures": {
+		"0": "kubejs:item/tin_halberd_handheld",
+		"layer0": "kubejs:item/tin_halberd_handheld",
+		"particle": "kubejs:item/tin_halberd_handheld"
+	}
+}

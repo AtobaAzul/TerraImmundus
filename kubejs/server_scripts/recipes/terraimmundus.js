@@ -324,6 +324,10 @@ ServerEvents.recipes((e) => {
         e.replaceInput({ output: item }, '#forge:storage_blocks/raw_tin', 'caverns_and_chasms:raw_tin_block')
     })
 
+    e.smelting('caverns_and_chasms:tin_ingot', 'caverns_and_chasms:raw_tin').xp(0.7)
+    e.blasting('caverns_and_chasms:tin_ingot', 'caverns_and_chasms:raw_tin').xp(0.7)
+    e.blasting('caverns_and_chasms:tin_block', 'caverns_and_chasms:raw_tin_block').xp(0.7 * 9)
+
     e.replaceOutput({}, 'thermal:sapphire', 'caverns_and_chasms:zirconia')
 
     e.recipes.thermal.pulverizer([Item.of('kubejs:titanium_dust').withChance(2), Item.of('gravel').withChance(0.2), Item.of('thermal:apatite').withChance(.5)], '#forge:ores/titanium')

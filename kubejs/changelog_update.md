@@ -22,6 +22,11 @@
 - Wither Tooth now drops from Wither Skeletons.
 - Potion of Clinging can now be brewed with Centipede legs.
 - Unimplemented Alex's Mobs mobs now inform that on their book entries.
+- Item Pipes now use Caverns and Chams Tin (now renamed to titanium)
+- Added Titanium tool, weapons and armor. Acts as a diamond sidegrade.
+  - Less durability than diamond.
+  - Tools & Weapons are mine/attack slightly faster
+  - Armor has innate Projectile Protection II but no toughness.
 
 # Balancing & Progression.
 - Default World Size is now 6000 by 6000. Defeating the Sculk Horde sets it back to the default.
@@ -37,7 +42,6 @@
 - Nerfed Reforming repair speed.
 - Arboreal Extractor is now faster.
 - Buffed Sculk Enderman HP.
-- Item Pipes now use Caverns and Chams Tin (now renamed to titanium)
 - Increased Buried Meteorite worldgen count to 2, from 1.
 - Vicious Acid recipe now is 8 Acidic Mass 1 Water Bucket.
 - Reduced Gunner mob chance to 33%, from 50%.
@@ -61,6 +65,7 @@
 - Fixed Netherite Upgrade Smithing Template description and Ancient Scrap not being properly renamed.
 - Fixed Purity Apples *only* applying Purity, instead of being an added bonus.
 - Fixed Magma Cubes not spawning with random sizes.
+- Fixed Anthralite Warglaive not having correct held item model.
 
 # Mods
 - Updated mods:

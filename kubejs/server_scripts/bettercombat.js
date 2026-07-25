@@ -1,5 +1,5 @@
 ServerEvents.highPriorityData((e) => {
-	let materials = ['anthralite', 'silver', 'necromium', 'purity'];
+	let materials = ['anthralite', 'silver', 'necromium', 'purity', 'tin'];
 
 	let types = [
 		'greatsword',

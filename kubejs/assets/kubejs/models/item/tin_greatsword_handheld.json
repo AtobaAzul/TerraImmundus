@@ -1,0 +1,8 @@
+{
+	"parent": "moonsweaponry:item/iron_greatsword_handheld",
+	"textures": {
+		"0": "kubejs:item/tin_greatsword_handheld",
+		"layer0": "kubejs:item/tin_greatsword_handheld",
+		"particle": "kubejs:item/tin_greatsword_handheld"
+	}
+}

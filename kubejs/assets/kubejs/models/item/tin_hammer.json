@@ -1,0 +1,30 @@
+{
+	"parent": "minecraft:item/handheld",
+	"loader": "forge:separate_transforms",
+	"textures": {
+		"layer0": "kubejs:item/tin_hammer"
+	},
+	"base": {
+		"parent": "kubejs:item/tin_hammer_handheld"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "minecraft:item/handheld",
+			"textures": {
+				"layer0": "kubejs:item/tin_hammer"
+			}
+		},
+		"fixed": {
+			"parent": "minecraft:item/handheld",
+			"textures": {
+				"layer0": "kubejs:item/tin_hammer"
+			}
+		},
+		"ground": {
+			"parent": "minecraft:item/handheld",
+			"textures": {
+				"layer0": "kubejs:item/tin_hammer"
+			}
+		}
+	}
+}

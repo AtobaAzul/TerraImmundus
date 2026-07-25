@@ -1,5 +1,5 @@
 {
-	"parent": "moonsweaponry:item/iron_spear_handheld",
+	"parent": "moonsweaponry:item/netherite_spear_handheld",
 	"textures": {
 		"0": "kubejs:item/anthralite_spear_handheld",
 		"layer0": "kubejs:item/anthralite_spear_handheld",

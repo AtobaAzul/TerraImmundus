@@ -1,0 +1,30 @@
+{
+	"parent": "minecraft:item/handheld",
+	"loader": "forge:separate_transforms",
+	"textures": {
+		"layer0": "kubejs:item/tin_katana"
+	},
+	"base": {
+		"parent": "kubejs:item/tin_katana_handheld"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "minecraft:item/handheld",
+			"textures": {
+				"layer0": "kubejs:item/tin_katana"
+			}
+		},
+		"fixed": {
+			"parent": "minecraft:item/handheld",
+			"textures": {
+				"layer0": "kubejs:item/tin_katana"
+			}
+		},
+		"ground": {
+			"parent": "minecraft:item/handheld",
+			"textures": {
+				"layer0": "kubejs:item/tin_katana"
+			}
+		}
+	}
+}

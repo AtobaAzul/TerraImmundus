@@ -157,6 +157,11 @@ ServerEvents.tags('item', (event) => {
     event.removeAllTagsFrom(/.*cc_compat.*/)
     event.removeAllTagsFrom(/.*ingot_placed.*/)
 
+    event.add('caverns_and_chasms:slowness_inflicting_items', /kubejs:necromium.*/)
+    event.remove('caverns_and_chasms:slowness_inflicting_items', 'kubejs:necromium_dust')
+
+    event.add('terraimmundus:any_titanium_equipment', /kubejs:tin_.*/)
+    event.remove('terraimmundus:any_titanium_equipment', 'kubejs:tin_dust')
 
     event.add('minecraft:soul_fire_base_blocks', ['thermal:sulfur', 'thermal:sulfur_dust'])
 
@@ -185,14 +190,8 @@ ServerEvents.tags('item', (event) => {
         'caverns_and_chasms:cassiterite_tin_ore',
     ])
 
+    event.add('terraimmundus:any_necromium_equipment', ['#caverns_and_chasms:slowness_inflicting_items', /caverns_and_chasms:necromium_(helmet|chestplate|leggings|boots)/])
 
-
-    event.add('caverns_and_chasms:weaker_deflect_velocity', [
-        'caverns_and_chasms:tin_ore',
-        'caverns_and_chasms:deepslate_tin_ore',
-        'caverns_and_chasms:cylindrite_tin_ore',
-        'caverns_and_chasms:cassiterite_tin_ore',
-    ])
 
     event.add('terraimmundus:any_golden_apple', ['minecraft:enchanted_golden_apple', 'minecraft:golden_apple'])
 

@@ -1,5 +1,5 @@
 {
-	"parent": "moonsweaponry:item/iron_scythe_handheld",
+	"parent": "moonsweaponry:item/netherite_scythe_handheld",
 	"textures": {
 		"0": "kubejs:item/anthralite_scythe_handheld",
 		"layer0": "kubejs:item/anthralite_scythe_handheld",

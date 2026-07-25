@@ -1,0 +1,30 @@
+{
+	"parent": "minecraft:item/handheld",
+	"loader": "forge:separate_transforms",
+	"textures": {
+		"layer0": "kubejs:item/tin_greatsword"
+	},
+	"base": {
+		"parent": "kubejs:item/tin_greatsword_handheld"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "minecraft:item/handheld",
+			"textures": {
+				"layer0": "kubejs:item/tin_greatsword"
+			}
+		},
+		"fixed": {
+			"parent": "minecraft:item/handheld",
+			"textures": {
+				"layer0": "kubejs:item/tin_greatsword"
+			}
+		},
+		"ground": {
+			"parent": "minecraft:item/handheld",
+			"textures": {
+				"layer0": "kubejs:item/tin_greatsword"
+			}
+		}
+	}
+}

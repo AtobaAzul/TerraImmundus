@@ -1,5 +1,5 @@
 {
-	"parent": "moonsweaponry:item/iron_mace_handheld",
+	"parent": "moonsweaponry:item/netherite_mace_handheld",
 	"textures": {
 		"0": "kubejs:item/anthralite_mace_handheld",
 		"layer0": "kubejs:item/anthralite_mace_handheld",

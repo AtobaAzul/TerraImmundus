@@ -114,8 +114,6 @@ ServerEvents.tags('block', (event) => {
 
     event.removeAll('caverns_and_chasms:tin_ores')
 
-
-
     event.remove('forge:ores/tin', [
         'caverns_and_chasms:tin_ore',
         'caverns_and_chasms:deepslate_tin_ore',
@@ -136,5 +134,28 @@ ServerEvents.tags('block', (event) => {
         'caverns_and_chasms:cylindrite_tin_ore',
         'caverns_and_chasms:cassiterite_tin_ore',
         'pipez:item_pipe'
+    ])
+
+    event.add('caverns_and_chasms:weaker_deflect_velocity', [
+        'caverns_and_chasms:tin_ore',
+        'caverns_and_chasms:deepslate_tin_ore',
+        'caverns_and_chasms:cylindrite_tin_ore',
+        'caverns_and_chasms:cassiterite_tin_ore',
+    ])
+
+
+    event.remove('minecraft:needs_diamond_tool', [
+        'caverns_and_chasms:tin_ore',
+        'caverns_and_chasms:deepslate_tin_ore',
+        'caverns_and_chasms:cylindrite_tin_ore',
+        'caverns_and_chasms:cassiterite_tin_ore'
+    ])
+
+
+    event.add('minecraft:needs_iron_tool', [
+        'caverns_and_chasms:tin_ore',
+        'caverns_and_chasms:deepslate_tin_ore',
+        'caverns_and_chasms:cylindrite_tin_ore',
+        'caverns_and_chasms:cassiterite_tin_ore'
     ])
 });
