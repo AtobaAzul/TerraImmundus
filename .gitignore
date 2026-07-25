@@ -30,3 +30,4 @@ config/embeddium-fingerprint.json
 /config/emi-accelerator
 config/oculus.properties
 config/packetfixer.properties
+config/packetfixer.properties
