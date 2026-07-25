@@ -2,5 +2,11 @@
     "item.minecraft.smithing_template.netherite_upgrade.additions_slot_description": "Add Meteorite or Necromium Ingot",
     "item.minecraft.smithing_template.netherite_upgrade.ingredients": "Meteorite & Necromium Ingots",
     "item.caverns_and_chasms.ancient_scrap": "Meteorite Scrap",
-    "upgrade.minecraft.netherite_upgrade": "Equipment Upgrade"
+    "upgrade.minecraft.netherite_upgrade": "Equipment Upgrade",
+    "advancements.caverns_and_chasms.adventure.find_monolith.description": "Travel thousands of blocks to locate a Titanium Monolith",
+    "advancements.caverns_and_chasms.adventure.find_monolith.title": "Heart of Titanium",
+    "subtitles.caverns_and_chasms.block.tin.deflect": "Titanium deflects",
+    "subtitles.caverns_and_chasms.block.tin_bulb.turn_off": "Titanium Bulb turns off",
+    "subtitles.caverns_and_chasms.block.tin_bulb.turn_on": "Titanium Bulb turns on",
+    "trim_material.caverns_and_chasms.tin": "Titanium Material"
 }

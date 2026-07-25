@@ -1,4 +1,10 @@
 {
-    "item.minecraft.smithing_template.netherite_upgrade.ingredients":"Meteorite or Necromium Ingot",
-    "item.minecraft.smithing_template.netherite_upgrade.additions_slot_description": "Add Meteorite or Necromium Ingot"
+    "item.minecraft.smithing_template.netherite_upgrade.ingredients": "Meteorite or Necromium Ingot",
+    "item.minecraft.smithing_template.netherite_upgrade.additions_slot_description": "Add Meteorite or Necromium Ingot",
+    "enchantment.minecraft.soul_fire_aspect": "Sulfuric Aspect",
+    "enchantment.minecraft.soul_flame": "Sulfuric Flame",
+    "enchantment.minecraft.soul_fire_aspect.desc": "Causes additional sulfuric fire damage when used to attack a mob.",
+    "enchantment.minecraft.soul_flame.desc": "Arrows fired from the bow will deal additional sulfuric fire damage.",
+    "upgrade.minecraft.netherite_upgrade": "Advanced Tool Upgrade",
+    "item.minecraft.netherite_scrap": "Meteorite Scrap"
 }
