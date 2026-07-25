@@ -1,5 +1,5 @@
 const REMOVED_ITEMS = [
-    'ftbfiltersystem:smart_filter',
+	'ftbfiltersystem:smart_filter',
 	'thermal:niter_dust',
 	'scguns:sulfur_dust',
 	'scguns:sulfur_chunk',
@@ -173,7 +173,27 @@ const REMOVED_ITEMS = [
 	'sculkhorde:chicken_of_purity',
 	'sculkhorde:pork_of_purity',
 	'sculkhorde:bread_of_purity',
-    'scguns:advanced_exo_suit_core'
+	'scguns:advanced_exo_suit_core',
+	'alexsmobs:dropbear_claw',
+	'alexsmobs:enderiophage_rocket',
+	'alexsmobs:straddlite_block',
+	'alexsmobs:void_worm_effigy',
+	'alexsmobs:void_worm_beak',
+	'alexsmobs:capsid',
+	'alexsmobs:ender_residue',
+	'alexsmobs:cosmic_cod_bucket',
+	'alexsmobs:cosmic_cod',
+	'alexsmobs:straddle_saddle',
+	'alexsmobs:straddle_helmet',
+	'alexsmobs:chorus_on_a_stick',
+	'alexsmobs:void_worm_mandible',
+	'alexsmobs:void_worm_eye',
+	'alexsmobs:dimensional_carver',
+	'alexsmobs:mysterious_worm',
+	'alexsmobs:stradpole_bucket',
+	'alexsmobs:straddleboard',
+	'alexsmobs:straddlite',
+	'alexsmobs:shattered_dimensional_carver',
 ];
 
 ServerEvents.tags('item', (event) => {

@@ -418,4 +418,8 @@ LootJS.modifiers((e) => {
             ctx.addLoot(LootEntry.of(Item.of(ammoItem), Math.floor(Math.random() * 5) + 2)); //with some randomization
         }
     });
+
+    e.addEntityLootModifier('sculkhorde:sculk_witch').randomChance(0.5).addLoot('alexsmobs:soul_heart')
+    e.addEntityLootModifier('minecraft:wither_skeleton').randomChance(0.1).addLoot('alexsmobs:bone_serpent_tooth')
+    e.addLootTableModifier('minecraft:chests/ancient_city').randomChance(0.5).addLoot('alexsmobs:soul_heart')
 });

@@ -1,0 +1,17 @@
+{
+  "parent": "root.json",
+  "text": "disabled.txt",
+  "title": "entity.alexsmobs.cosmic_cod",
+  "linked_page_buttons": [
+  ],
+  "images": [
+  ],
+  "item_renders": [
+  ],
+  "recipes": [
+  ],
+  "tabula_renders": [
+  ],
+  "entity_renders": [
+  ]
+}

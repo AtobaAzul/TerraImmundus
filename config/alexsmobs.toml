@@ -59,7 +59,7 @@
 	#List of extra(non mungus) mobs that will trigger a crimson mosquito to become a warped mosquito. Ex: "minecraft:mooshroom", "alexsmobs:warped_toad"
 	warpedMoscoMobTriggers = [""]
 	#True if straddleboard enchants are enabled.
-	straddleboardEnchants = true
+	straddleboardEnchants = false
 	#Whether emu should target skeletons.
 	emuTargetSkeletons = true
 	#Percent chance for emu leggings to dodge projectile attacks.

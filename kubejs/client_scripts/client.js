@@ -190,7 +190,8 @@ ClientEvents.lang("en_us", (event) => {
         "pipez:item_pipe": "Item Duct",
         "pipez:energy_pipe": "Energy Cable",
         "simpleradio:copper_wire": "Audio Cable",
-        "refinedstorage:cable": "Data Cable"
+        "refinedstorage:cable": "Data Cable",
+        "alexsmobs:bone_serpent_tooth": "Wither Tooth"
     };
 
     for (const [item, name] of Object.entries(rename)) {
@@ -200,11 +201,7 @@ ClientEvents.lang("en_us", (event) => {
 
 
 
-    let lang_rename = {
-        "upgrade.minecraft.netherite_upgrade": "Advanced Tool Upgrade",
-        "item.minecraft.smithing_template.netherite_upgrade.additions_slot_description": "Add Meteorite or Necromium Ingot",
-        "item.minecraft.smithing_template.netherite_upgrade.ingredients": "Meteorite or Necromium Ingot",
-        "item.minecraft.netherite_scrap": "Meteorite Scrap",
+    let add_lang = {
         "advantage.terraimmundus:sculk": "Sculk",
         "block.cfm_wap.dark_circuit_breaker": "Dark Household Transformer",
         "block.cfm_wap.light_circuit_breaker": "Light Household Transformer",
@@ -213,32 +210,16 @@ ClientEvents.lang("en_us", (event) => {
         "gui.cfm_wap.status.offline": "Offline",
         "gui.cfm_wap.status.energy": "No Energy",
         "gui.cfm_wap.node_count": "%s / %s",
-        "block.thermal.sapphire_ore": "Zirconia Ore",
-        "block.thermal.deepslate_sapphire_ore": "Deepslate Zirconia Ore",
 
         //tin rename
-        "advancements.caverns_and_chasms.adventure.find_monolith.description":
-            "Travel thousands of blocks to locate a Titanium Monolith",
-        "advancements.caverns_and_chasms.adventure.find_monolith.title":
-            "Heart of Titanium",
-        "subtitles.caverns_and_chasms.block.tin.deflect": "Titanium deflects",
-        "subtitles.caverns_and_chasms.block.tin_bulb.turn_off":
-            "Titanium Bulb turns off",
-        "subtitles.caverns_and_chasms.block.tin_bulb.turn_on":
-            "Titanium Bulb turns on",
-        "trim_material.caverns_and_chasms.tin": "Titanium Material",
 
         //soul fire rename
-        "enchantment.minecraft.soul_fire_aspect": "Sulfuric Aspect",
-        "enchantment.minecraft.soul_flame": "Sulfuric Flame",
-        "enchantment.minecraft.soul_fire_aspect.desc": "Causes additional sulfuric fire damage when used to attack a mob.",
-        "enchantment.minecraft.soul_flame.desc": "Arrows fired from the bow will deal additional sulfuric fire damage."
 
     };
 
     //JsonIO.write("kubejs/assets/terraimmundus/lang/en_us.json", lang_rename);
 
-    event.addAll(lang_rename);
+    event.addAll(add_lang);
 });
 
 global.spore_data = {};

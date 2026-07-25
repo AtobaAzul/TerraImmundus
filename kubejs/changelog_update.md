@@ -12,8 +12,16 @@
 - Several quest changes & improvements.
 - Gunner mobs now drop the ammo of their gun, and don't drop arrows.
 - Improved Dynamo placement. Sneaking while placing a dynamo will place it in the oposite way.
-- Changed Forge version
-- Removed Bejeweled Anvil
+- Changed Forge version.
+- Removed Bejeweled Anvil.
+- Catfish now spawn again.
+- Adjusted Alex's Mobs spawn weights (reduced across the board).
+- Soulsteal potion is now brewed with Vampirism potions instead of Awkward potion
+- Sculk Witches now drop Soul Hearts.
+- Renamed Bone Serpent Tooth to Wither Tooth
+- Wither Tooth now drops from Wither Skeletons.
+- Potion of Clinging can now be brewed with Centipede legs.
+- Unimplemented Alex's Mobs mobs now inform that on their book entries.
 
 # Balancing & Progression.
 - Default World Size is now 6000 by 6000. Defeating the Sculk Horde sets it back to the default.

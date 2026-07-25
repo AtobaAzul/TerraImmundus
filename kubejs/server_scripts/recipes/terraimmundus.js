@@ -387,4 +387,7 @@ ServerEvents.recipes((e) => {
         B: 'minecraft:book',
         C: '#minecraft:planks'
     })
+
+    e.remove({ id: 'alexsmobs:flint_n_steel_dropbear_claw' })
+    e.replaceInput({ id: 'alexsmobs:tendon_whip' }, 'alexsmobs:dropbear_claw', '#forge:nuggets/iron')
 });
