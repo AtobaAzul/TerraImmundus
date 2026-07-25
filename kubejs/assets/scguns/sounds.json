@@ -97,7 +97,18 @@
         "sounds": [
             {
                 "name": "scguns:item/nailer/fire",
-                "volume": 0.8
+                "volume": 0.8,
+                "pitch":1
+            },
+             {
+                "name": "scguns:item/nailer/fire",
+                "volume": 0.85,
+                "pitch":1.05
+            },
+             {
+                "name": "scguns:item/nailer/fire",
+                "volume": 0.75,
+                "pitch":0.95
             }
         ]
     },
@@ -122,7 +133,21 @@
         "subtitle": "subtitle.scguns.fire",
         "sounds": [
             {
-                "name": "scguns:item/spirulida/fire"
+                "name": "scguns:item/spirulida/fire",
+                "pitch": 0.95
+            },
+                {
+                "name": "scguns:item/spirulida/fire",
+                "pitch": 1
+            }
+            ,
+                {
+                "name": "scguns:item/spirulida/fire",
+                "pitch": 1.05
+            },
+                {
+                "name": "scguns:item/spirulida/fire",
+                "pitch": 1.1
             }
         ]
     },
