@@ -4,7 +4,7 @@
             "size": 0.8,
             "yOffset": 3.4,
             "zOffset": -4.5,
-            "textureLocation": "muzzle_flash_5",
+            "textureLocation": "muzzle_flash_f",
             "spawnParticles": true,
             "particleType": "minecraft:smoke",
             "particleCount": 1,

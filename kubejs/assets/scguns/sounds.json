@@ -243,5 +243,23 @@
                 "volume": 0.5
             }
         ]
+    },
+      "item.flame.fire": {
+        "replace": true,
+        "subtitle": "subtitle.scguns.fire",
+        "sounds": [
+            {
+                "name": "scguns:item/flame/fire",
+                "volume": 0.5
+            },
+             {
+                "name": "scguns:item/flame/fire",
+                "volume": 0.52
+            },
+             {
+                "name": "scguns:item/flame/fire",
+                "volume": 0.55
+            }
+        ]
     }
 }
