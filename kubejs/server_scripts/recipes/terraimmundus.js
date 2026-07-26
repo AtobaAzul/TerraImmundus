@@ -394,4 +394,79 @@ ServerEvents.recipes((e) => {
 
     e.remove({ id: 'alexsmobs:flint_n_steel_dropbear_claw' })
     e.replaceInput({ id: 'alexsmobs:tendon_whip' }, 'alexsmobs:dropbear_claw', '#forge:nuggets/iron')
+
+    e.shaped('kubejs:tin_pickaxe', [
+        'AAA',
+        ' B ',
+        ' B '
+    ], {
+        A: 'caverns_and_chasms:tin_ingot',
+        B: '#forge:rods/wooden'
+    })
+
+    e.shaped('kubejs:tin_shovel', [
+        ' A ',
+        ' B ',
+        ' B '
+    ], {
+        A: 'caverns_and_chasms:tin_ingot',
+        B: '#forge:rods/wooden'
+    })
+
+    e.shaped('kubejs:tin_axe', [
+        'AA',
+        'AB',
+        ' B'
+    ], {
+        A: 'caverns_and_chasms:tin_ingot',
+        B: '#forge:rods/wooden'
+    })
+
+    e.shaped('kubejs:tin_hoe', [
+        'AA',
+        ' B',
+        ' B'
+    ], {
+        A: 'caverns_and_chasms:tin_ingot',
+        B: '#forge:rods/wooden'
+    })
+
+    e.shaped('kubejs:tin_sword', [
+        'A',
+        'A',
+        'B'
+    ], {
+        A: 'caverns_and_chasms:tin_ingot',
+        B: '#forge:rods/wooden'
+    })
+
+    e.shaped('kubejs:tin_helmet', [
+        'AAA',
+        'A A'
+    ], {
+        A: 'caverns_and_chasms:tin_ingot',
+    })
+
+    e.shaped('kubejs:tin_chestplate', [
+        'A A',
+        'AAA',
+        'AAA'
+    ], {
+        A: 'caverns_and_chasms:tin_ingot',
+    })
+
+    e.shaped('kubejs:tin_leggings', [
+        'AAA',
+        'A A',
+        'A A'
+    ], {
+        A: 'caverns_and_chasms:tin_ingot',
+    })
+
+    e.shaped('kubejs:tin_boots', [
+        'A A',
+        'A A'
+    ], {
+        A: 'caverns_and_chasms:tin_ingot',
+    })
 });
