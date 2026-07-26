@@ -32,7 +32,6 @@ const repairAmount = 2;
 const xpCost = 1; // xp pont per repair.
 
 PlayerEvents.tick((event) => {
-    if (event.player.age % repairUpdateFrequency !== 0) return;
     //clever way to reduce frequency I saw from amerryelk's weight system script.
 
     const {
@@ -40,6 +39,24 @@ PlayerEvents.tick((event) => {
         player: { xpLevel, xp },
     } = event;
     let repair = true;
+
+    const armor_slots = [
+        'head',
+        'chest',
+        'legs',
+        'feet',
+    ]
+
+    armor_slots.forEach(slot => {
+        let armor = player.getEquipment(slot)
+        if (armor.getNbt().get('broken')) {
+            player.give(armor);
+            player.setEquipment(slot, Item.empty);
+        }
+
+    })
+
+    if (player.age % repairUpdateFrequency !== 0) return;
 
     player.inventory.allItems.forEach((item) => {
         //check if the item is not air, is enchanted with mending, is damaged, the player has enough xp, and is not mining a block.
@@ -101,7 +118,7 @@ EntityEvents.checkSpawn('minecraft:slime', (event) => {
         entity.getEntityData()
         newguy.setPosition(x, y, z);
         newguy.spawn();
-        newguy.mergeNbt({Size: Math.floor(Math.random()*3)})
+        newguy.mergeNbt({ Size: Math.floor(Math.random() * 3) })
         entity.discard();
         event.cancel();
     }

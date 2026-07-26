@@ -9,7 +9,7 @@
 - Renamed Simple Radio's Cable to Audio Cable
 - Renamed Energy Pipe to Energy Cable
 - Renamed Refined Storage's Cable to Data Cable
-- Several quest changes & improvements.
+- Quest reworks and improvements.
 - Gunner mobs now drop the ammo of their gun, and don't drop arrows.
 - Improved Dynamo placement. Sneaking while placing a dynamo will place it in the oposite way.
 - Changed Forge version.
