@@ -200,4 +200,6 @@ ServerEvents.tags('item', (event) => {
     event.add('terraimmundus:sculk_shrooms', ['sculkhorde:small_shroom', 'sculkhorde:sculk_shroom_culture'])
 
     event.add('terraimmundus:any_diamond_steel', ['scguns:diamond_steel_ingot', 'scguns:depleted_diamond_steel_ingot'])
+
+    event.add('terraimmundus:any_copper_equipment', /caverns_and_chasms:.*copper_(axe|sword|pickaxe|shovel|hoe|helmet|chestplate|leggings|boots)/)
 });

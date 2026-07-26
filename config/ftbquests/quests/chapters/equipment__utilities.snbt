@@ -1,0 +1,1098 @@
+{
+	autofocus_id: "620C81DC608E0C67"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "equipment__utilities"
+	group: ""
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_complete: true
+	hide_quest_until_deps_visible: true
+	id: "49E364CDE2F08EF2"
+	images: [{
+		height: 1.0d
+		image: "ftbquests:textures/gui/quest_locked.png"
+		rotation: 0.0d
+		width: 1.0d
+		x: -8.0d
+		y: -5.5d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Terra Immundus overhauls Scorched Guns' progression."
+				""
+				"Raids and blueprints are no longer a thing. Instead, gun progression focuses on materials you 'unlock' as you progress further, as well as the resource costs and types. As such, progression is a bit more loose. "
+				""
+				"As always, use JEI to see recipes and uses of items."
+			]
+			id: "56B4243C13CBA71D"
+			tasks: [{
+				id: "3DB5B15FEB2F296D"
+				item: "scguns:gun_bench"
+				type: "item"
+			}]
+			title: "Firearms"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2B5F649BB95BACF9"]
+			description: ["Basic gun parts produce basic guns."]
+			hide_dependency_lines: false
+			icon: "scguns:gun_parts"
+			id: "6A2AADE20AE8DA71"
+			shape: "square"
+			tasks: [{
+				id: "59442B616E0F6F3B"
+				item: "scguns:gun_parts"
+				type: "item"
+			}]
+			title: "Tier 1 Guns"
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"6A2AADE20AE8DA71"
+				"6ED2FB0EE2A1D5A7"
+			]
+			description: ["Tier 2 guns are advanced guns and require machinery to produce them and their ammo."]
+			icon: "scguns:heavy_gun_parts"
+			id: "33A9283BAFE29B42"
+			shape: "square"
+			tasks: [{
+				id: "1B79E262AFCDDE2D"
+				item: "scguns:heavy_gun_parts"
+				type: "item"
+			}]
+			title: "Tier 2 Guns"
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"0D99FF482E47D94F"
+				"42B799EC849CF1F8"
+				"33A9283BAFE29B42"
+			]
+			description: ["T3 guns are highly advanced and require more machinery to produce."]
+			icon: "kubejs:reinforced_gun_parts"
+			id: "050A363B50F28B00"
+			shape: "square"
+			tasks: [{
+				id: "5A87A234B2B22ADD"
+				item: "kubejs:reinforced_gun_parts"
+				type: "item"
+			}]
+			title: "Tier 3 Guns"
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"050A363B50F28B00"
+				"7D4EC034CE4F2D78"
+			]
+			description: ["T4 Guns are end-game guns, capable of devastating large enemies quickly."]
+			icon: "kubejs:resonant_gun_parts"
+			id: "50DB01F7E862D7F4"
+			shape: "square"
+			tasks: [{
+				id: "0767DF251357D9D5"
+				item: "kubejs:resonant_gun_parts"
+				type: "item"
+			}]
+			title: "Tier 4 Guns"
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Enchanting is reworked. Each enchantment costs a gem as well as an experience cost."
+				"You can pick and upgrade your enchantments any time."
+				""
+				"Total experience per level is flattened, so you need the same amount of XP to level up from 0 to 1 as you do from 30 to 31."
+			]
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:protection"
+						lvl: 4s
+					}]
+				}
+			}
+			id: "02FE3FBE56A295D0"
+			tasks: [{
+				id: "169975D38D9AE541"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			title: "Enchanting"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: [
+				"Apatite is used for mobility enchantments."
+				""
+				"Apatite is found as an ore, and is more commonly found in Lush Caves"
+			]
+			id: "4463D9B2E58767AA"
+			shape: "square"
+			tasks: [{
+				id: "331E14ADA3FAFF00"
+				item: "thermal:apatite"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: [
+				"Zirconia are used for special and treasure enchantments."
+				""
+				"They are found either in really high altitudes in any biome or deep below in Deep Dark biomes."
+				"Additionally, can be found in archeology, caravan and structure loot, as well as being a rare drop from Mimes."
+			]
+			id: "4B33178670C0BC0B"
+			shape: "square"
+			tasks: [{
+				id: "7182C120F8CD97CC"
+				item: "caverns_and_chasms:zirconia"
+				type: "item"
+			}]
+			title: "Zirconia"
+			x: -3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: ["Prismarine Shards are used for water-based enchantments."]
+			id: "070D2AA4D8E14D06"
+			shape: "square"
+			tasks: [{
+				id: "4D7CA9C658C677EC"
+				item: "minecraft:prismarine_shard"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: [
+				"Rubies are used for melee combat enchantments."
+				""
+				"Found as an ore underground, more commonly in Dripstone Caves."
+			]
+			id: "5DCFBF05E2636D18"
+			shape: "square"
+			tasks: [{
+				id: "6D380E993351A4F2"
+				item: "thermal:ruby"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: ["Used for ranged weapon enchantments."]
+			id: "6EA5BD59068F0168"
+			shape: "square"
+			tasks: [{
+				id: "3480E987E332401E"
+				item: "minecraft:amethyst_block"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: [
+				"Used for curses."
+				""
+				"Found underground as an ore."
+				""
+				"Adding a curse to an item adds an enchantment slot, rather than remove one."
+			]
+			id: "7B896460E462EFEB"
+			shape: "square"
+			tasks: [{
+				id: "26A778DF6C460017"
+				item: "thermal:cinnabar"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: [
+				"Used for armor enchantments."
+				""
+				"Found underground as an ore."
+			]
+			id: "6ADE521B07B2CC2B"
+			shape: "square"
+			tasks: [{
+				id: "6DCCFC0A426DCEC0"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: ["Used for tool/generic (such as Unbreaking) enchantments."]
+			id: "15D84178887E7283"
+			shape: "square"
+			tasks: [{
+				id: "3B87DD84660E5E66"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["02FE3FBE56A295D0"]
+			description: [
+				"Used for loot enchantments."
+				""
+				"Found underground as an ore."
+			]
+			id: "53A0376FB2BE3F54"
+			shape: "square"
+			tasks: [{
+				id: "565EE4CAAD8169B4"
+				item: "caverns_and_chasms:spinel"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Doubles inventory space by adding 3 more rows to your inventory."
+				""
+				"Can be dyed."
+			]
+			hide_dependency_lines: true
+			id: "68C63749FFFC8C08"
+			shape: "square"
+			tasks: [{
+				id: "6162202CE5FFB1E0"
+				item: {
+					Count: 1
+					id: "quark:backpack"
+					tag: {
+						Inventory: [
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Sacks work like weak Shulker Boxes, carrying 9 stacks of items."
+				"At most 3 filled sacks can be carried before getting overencumbered, which prevents running."
+				""
+				"Can be dyed."
+			]
+			hide_dependency_lines: true
+			id: "7027A7BF89301775"
+			shape: "square"
+			tasks: [{
+				id: "266527C7C7B85AA2"
+				item: "supplementaries:sack"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"00BAF70EA51427EC"
+				"1BAB3EA6B4E23C8A"
+			]
+			description: ["Wearing a full set of hazmat armor provides infinite Purity, as well as its usual effects."]
+			hide_dependency_lines: true
+			id: "47A00DF051E0542C"
+			shape: "square"
+			tasks: [
+				{
+					id: "65B91B798A326C51"
+					item: {
+						Count: 1
+						id: "thermal:hazmat_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0C891177D4A35693"
+					item: {
+						Count: 1
+						id: "thermal:hazmat_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "482B6E375B496672"
+					item: {
+						Count: 1
+						id: "thermal:hazmat_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "43AF0C14648E0F59"
+					item: {
+						Count: 1
+						id: "thermal:hazmat_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Hazmat suit"
+			x: -8.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Each weapon type has different attributes:"
+				""
+				"- Swords have +33% random crit chance."
+				""
+				"- Greatswords have +5 armor when held."
+				""
+				"- Rapiers pierce 6 armor, Spears pierce 2."
+				""
+				"- Maces pierce 25% of armor, Halberds pierce  12.5% of armor."
+				"- Hammers deal +25% more crit damage."
+				""
+				"{@pagebreak}"
+				"- Glaives give +25% dodge chance when held in each hand, for a total of 50%."
+				""
+				"- Spears pierce 2 levels of Protection."
+				""
+				"- Scythes heals the user 5% of the dealt damage."
+				""
+				"- Katanas deal +2.5% of the enemy's current health as damage."
+				""
+				"- Knives give +100% more XP"
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "moonsweaponry:diamond_greatsword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2F0D83B6A15596A0"
+			shape: "square"
+			tasks: [{
+				id: "0A6D0A691A528DF3"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_weapon)"
+					}
+				}
+				title: "Any #terraimmundus:any_weapon"
+				type: "item"
+			}]
+			title: "Melee Weapons"
+			x: -8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Cars are customizable and have several useful attachments."
+				"Parts must be made in the &eAuto Mechanic Table&r and assembled in &eAutomobile Assembler&r."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "automobility:automobile"
+				tag: {
+					Automobile: {
+						engine: "automobility:iron"
+						frame: "automobility:standard_light_blue"
+						isPrefab: 1b
+						wheels: "automobility:standard"
+					}
+					display: {
+						Name: "{\"translate\":\"prefab.automobility.standard_light_blue\",\"italic\":\"false\"}"
+					}
+				}
+			}
+			id: "7F2745A5E5D8E24F"
+			shape: "square"
+			tasks: [
+				{
+					id: "6DEEBD9A31FE1CEF"
+					item: "automobility:auto_mechanic_table"
+					type: "item"
+				}
+				{
+					id: "3062644CE9FFAFA8"
+					item: "automobility:automobile_assembler"
+					type: "item"
+				}
+			]
+			title: "Automobiles"
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2D05372FF6E08E2B"]
+			description: [
+				"Aircraft are very useful for covering large distances off-road, and can be upgraded and fitted with weapons."
+				""
+				"Aircraft use buckets of any Compression Dynamo fuels as fuel."
+			]
+			hide_dependency_lines: true
+			icon: "immersive_aircraft:biplane"
+			id: "46764FCE7841D659"
+			shape: "square"
+			tasks: [{
+				id: "1E952059375EAD73"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(immersive_aircraft:aircraft)"
+					}
+				}
+				title: "Any #immersive_aircraft:aircraft"
+				type: "item"
+			}]
+			title: "Aircraft"
+			x: -3.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"&6Anthralite&r can be used to upgrade Iron tools, weapons and armor."
+				"Anthralite tools and armor have a lot more durability and deals more damage, but have worse defense."
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			id: "74551693A1900C3D"
+			shape: "square"
+			tasks: [{
+				id: "22A93E5F8BA62EB6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_anthralite_equipment)"
+					}
+				}
+				title: "Any Anthralite-upgraded item"
+				type: "item"
+			}]
+			title: "Anthralite Upgrades"
+			x: -6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Elytras are craftable, however, they are nerfed. &6You cannot use fireworks to boost yourself.&r"
+				""
+				"It has 2 new enchantments:"
+				"Cloudskipper, which improves flight above the clouds;"
+				"Smokestack, which lets you charge up a boost while sneaking over a campfire."
+			]
+			hide_dependency_lines: true
+			id: "620C81DC608E0C67"
+			shape: "square"
+			tasks: [{
+				id: "29ADCE0199E61047"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"1BAB3EA6B4E23C8A"
+				"5865797006BBAAE2"
+			]
+			description: ["Purity Apples (Formerly Golden Apples) provide the Purity effect when eaten. Yum!"]
+			hide_dependency_lines: true
+			id: "177740C89BD9B2D5"
+			shape: "square"
+			tasks: [{
+				id: "2DADDD162EC9B36E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_golden_apple)"
+					}
+				}
+				title: "Any Golden Apple"
+				type: "item"
+			}]
+			title: "Purity Apples"
+			x: -7.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Stores 64 individual items - not stacks! Insert/remove items with right click in the inventory, or dump the entire contents by using the bundle. You can select an item by using the scroll wheel."
+				"Extremely useful for compacting several small item stacks into 1."
+				""
+				"Can be dyed."
+			]
+			hide_dependency_lines: true
+			id: "49FC160D1021BC9D"
+			shape: "square"
+			tasks: [{
+				id: "5A068D5AD6606747"
+				item: "minecraft:bundle"
+				type: "item"
+			}]
+			title: "Bundles"
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: ["Cooking pots let you cook more elaborate meals."]
+			hide_dependency_lines: true
+			id: "5CB4859B1820E257"
+			shape: "square"
+			tasks: [{
+				id: "538971DEE6A574D0"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: ["Copper pots lets you cook meals in smaller, divided batches."]
+			hide_dependency_lines: true
+			id: "05A51C766C85C5BA"
+			shape: "square"
+			tasks: [{
+				id: "1378F89858A74D60"
+				item: "miners_delight:copper_pot"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: ["Kettles brew teas and other drinks with various effects."]
+			hide_dependency_lines: true
+			id: "21CB0C51AFEE5694"
+			shape: "square"
+			tasks: [{
+				id: "759A7426FC7C6E9D"
+				item: "farmersrespite:kettle"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0713D981D65DF155"]
+			description: ["Kegs let you brew a variety of drinks and beverages, as well as other miscelaneous foods."]
+			id: "68000FA405891DC6"
+			shape: "square"
+			tasks: [{
+				id: "1C21DAE624BC1798"
+				item: "brewinandchewin:keg"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: ["Drawers let you store massive quantities of a single (or a few) item(s)."]
+			hide_dependency_lines: true
+			icon: "storagedrawers:oak_full_drawers_1"
+			id: "4AB91BFAC41A4929"
+			shape: "square"
+			tasks: [{
+				id: "59EEEE3EEAC631BB"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(storagedrawers:drawers)"
+					}
+				}
+				title: "Any Drawer"
+				type: "item"
+			}]
+			title: "Drawers"
+			x: 1.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: ["The Copper Wrench lets you rotate any sort of block, and the Crescent Hammer is an excelent tool for helping with anything machine related."]
+			hide_dependency_lines: true
+			id: "7D2756DA56962FF9"
+			shape: "square"
+			tasks: [
+				{
+					id: "407A276ACF082881"
+					item: {
+						Count: 1
+						id: "supplementaries:wrench"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "50F90F566876557F"
+					item: {
+						Count: 1
+						id: "thermal:wrench"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Wrenches"
+			x: -6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"In &6Terra Immundus&r, items do not break at 0% durability and instead become &4unusable&r. Items start losing efficiency when below 30% durability."
+				""
+				"Items, like in vanilla, can be repaired in an Anvil with their respective materials, or &6Zirconia&r, which acts as an universal repair ingredient."
+				"Guns can be repaired with a Repair Kit. "
+				""
+				"However, anvils cannot apply enchanted books. "
+				""
+				"&aRepairing does not cost Experience&r"
+			]
+			id: "3718DBBC5C60B324"
+			tasks: [{
+				id: "2B790DB92D295735"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:anvil)"
+					}
+				}
+				title: "Any #minecraft:anvil"
+				type: "item"
+			}]
+			title: "Repairing"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: ["The Enchanter is used to apply Enchanted Books onto items, instead of Anvils."]
+			id: "28A5F4F2C9C441EE"
+			tasks: [{
+				id: "6CD1C7562A123A81"
+				item: "improved_damage:enchanter"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6608D777C19F5758"]
+			description: [
+				"Necromium is a side-grade of Netherite."
+				""
+				"Tools \\& Weapons apply Slowness on hit, but deal less damage."
+				"Armor has less Toughness but apply Slowness to attackers."
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "2D233B5A870A0B7E"
+			shape: "square"
+			tasks: [{
+				id: "122E5EF3162EBA0F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_necromium_equipment)"
+					}
+				}
+				title: "Any Necromium-upgraded item"
+				type: "item"
+			}]
+			title: "Necromium Upgrades"
+			x: -7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"&6Titanium&r acts as a side-grade to Diamond. "
+				""
+				"It has less durability overall, but tools and weapons are &afaster&r, and armor has built-in &bProjectile Protection II&r."
+				""
+				"Titanium ore is only found near and in the &3Titanium Monolith&r, a rare structure. Veins around the Monolith generate in an arrow shape, pointing towards it."
+				""
+				"Alternitively, it can also be dropped by Grazers and found in some structure loot."
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			id: "4C2644CC9B6891F7"
+			shape: "square"
+			tasks: [{
+				id: "3BF73A4CC31E5A9E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_titanium_equipment)"
+					}
+				}
+				title: "Any titanium tool, armor or weapon"
+				type: "item"
+			}]
+			title: "Titanium Equipment"
+			x: -7.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["37C39E75C3EBC81D"]
+			description: ["The Fluxbore is an upgradeable energy drill."]
+			id: "322EB96B767663B9"
+			shape: "square"
+			tasks: [{
+				id: "79481B5D242F6355"
+				item: {
+					Count: 1
+					id: "thermal:flux_drill"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["37C39E75C3EBC81D"]
+			description: ["The Fluxsaw is an upgradeable energy saw"]
+			id: "50F6E7919A19778E"
+			shape: "square"
+			tasks: [{
+				id: "31F0384A1E1D8442"
+				item: {
+					Count: 1
+					id: "thermal:flux_saw"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["37C39E75C3EBC81D"]
+			description: ["The Fluxomagnet is an upgradeable... well. Magnet. It pulls items."]
+			id: "6F346FE687176224"
+			shape: "square"
+			tasks: [{
+				id: "0B6965D49555AE14"
+				item: {
+					Count: 1
+					id: "thermal:flux_magnet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["37C39E75C3EBC81D"]
+			description: ["The capacitato is a portable energy storage item."]
+			hide_dependent_lines: true
+			id: "08C7CAEBE2CF55B7"
+			shape: "square"
+			tasks: [{
+				id: "0FC18D6F66DFF081"
+				item: {
+					Count: 1
+					id: "thermal:rf_potato"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["587153939A0E5FC1"]
+			description: ["Used for high-end explosives and munitions."]
+			id: "0AD21143CFD9BB8B"
+			shape: "square"
+			tasks: [{
+				id: "5B901227A379F406"
+				item: "kubejs:smokeless_powder"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3F498515E8FB78D3"]
+			description: ["Automatically turns normal arrows into tipped arrows from its internal potion tank. Upgradeable."]
+			id: "45D457F08F901605"
+			shape: "square"
+			tasks: [{
+				id: "0DB06E193BB49E63"
+				item: {
+					Count: 1
+					id: "thermal:potion_quiver"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3F498515E8FB78D3"]
+			description: ["Stores and picks up fluids. Upgradeable."]
+			id: "064DB63A64275059"
+			shape: "square"
+			tasks: [{
+				id: "1E6913140B4414AF"
+				item: {
+					Count: 1
+					id: "thermal:fluid_reservoir"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3F498515E8FB78D3"]
+			description: ["Infuses the user or target entities with potions. Upgradeable."]
+			id: "21E9F04D550575B6"
+			shape: "square"
+			tasks: [{
+				id: "326BA3F720C6F48E"
+				item: {
+					Count: 1
+					id: "thermal:potion_infuser"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"159F7789853FBC57"
+				"560398E1B9B2E686"
+				"39C30132E46ECD39"
+			]
+			description: ["Plasma Cells are ammunition for Plasma weapons."]
+			id: "36FA9A8FEA2FE6D5"
+			shape: "square"
+			tasks: [{
+				id: "3064E24CB04EB8EA"
+				item: "scguns:energy_cell"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["159F7789853FBC57"]
+			id: "553C212C80BAFF64"
+			shape: "square"
+			tasks: [{
+				id: "324C3477EE3F0544"
+				item: "scguns:energy_core"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"1332B5B3C6A099E8"
+				"3619C13AB3AB1166"
+			]
+			description: [
+				"Blaze Powder is craftable with Sculk Resin, Purity Shards and Vehement Coal. It can be used to make Blaze Fuel, ammo for Flamethrowers."
+				""
+				"Flamethrowers purify sculk on hit, acting as rapid burst of purification."
+			]
+			id: "1365DEEED32723BF"
+			shape: "square"
+			size: 1.0d
+			tasks: [
+				{
+					id: "6E588D07301F6692"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					id: "4935A56FB31B8D49"
+					item: "scguns:blaze_fuel"
+					type: "item"
+				}
+			]
+			title: "Flamethrowers"
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"0861B3BDAB8CF346"
+				"08C7CAEBE2CF55B7"
+			]
+			description: ["The Flux Capacitor is an upgraded portable storage that can also charge items in your inventory."]
+			id: "76318731752573B2"
+			shape: "square"
+			tasks: [{
+				id: "1EAAFB01741A43B3"
+				item: {
+					Count: 1
+					id: "thermal:flux_capacitor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"&6Copper&r acts as a side-grade to Iron. "
+				""
+				"Tools have significantly more durability compared to Iron but are slower."
+				"Armor has higher protection but slows down the wearer."
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			id: "2AFAA0FD7186A2B5"
+			shape: "square"
+			tasks: [{
+				id: "480992951E724400"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_copper_equipment)"
+					}
+				}
+				title: "Any Copper Equipment"
+				type: "item"
+			}]
+			title: "Copper Equipment"
+			x: -7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["56B4243C13CBA71D"]
+			description: ["Firing Hammers produce the most basic guns, although even simpler firearms like a Musket do not need them."]
+			icon: "kubejs:firing_hammer"
+			id: "2B5F649BB95BACF9"
+			shape: "square"
+			tasks: [{
+				id: "5BB5C4B5966DDE8A"
+				item: "kubejs:firing_hammer"
+				type: "item"
+			}]
+			title: "Tier 0 Guns"
+			x: 2.0d
+			y: -3.5d
+		}
+	]
+	title: "Equipment \\& Utilities"
+}
