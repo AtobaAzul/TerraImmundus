@@ -12,8 +12,18 @@
         "subtitle": "subtitle.scguns.fire",
         "sounds": [
             {
-                "name": "scguns:item/cogloader/fire"
+                "name": "scguns:item/cogloader/fire",
+                "pitch": 0.95
+            },
+             {
+                "name": "scguns:item/cogloader/fire",
+                "pitch": 1
+            },
+             {
+                "name": "scguns:item/cogloader/fire",
+                "pitch": 1.15
             }
+        
         ]
     },
     "item.gale.fire": {
@@ -46,7 +56,18 @@
         "sounds": [
             {
                 "name": "scguns:item/m3/fire",
-                "volume": 0.4
+                "volume": 0.7,
+                "pitch": 0.95
+            },
+              {
+                "name": "scguns:item/m3/fire",
+                "volume": 0.8
+            }
+            ,
+              {
+                "name": "scguns:item/m3/fire",
+                "volume": 0.75,
+                  "pitch": 1.15
             }
         ]
     },
@@ -216,6 +237,16 @@
         "sounds": [
             {
                 "name": "scguns:item/prushgun/fire"
+            },
+               {
+                "name": "scguns:item/prushgun/fire",
+                 "volume": 0.95,
+                 "pitch": 0.95
+            },
+               {
+                "name": "scguns:item/prushgun/fire",
+                 "volume": 1.05,
+                 "pitch": 1.05
             }
         ]
     },
