@@ -61,6 +61,7 @@
     "advantage": "scguns:none",
     "damage": 22.5,
     "ejectsCasing": true,
+    "ejectDuringReload": true,
     "item": "scguns:shotgun_shell",
     "casingType": "scguns:small_copper_casing",
     "casingParticle": "scguns:shell",
