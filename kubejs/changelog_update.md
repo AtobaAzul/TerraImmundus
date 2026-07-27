@@ -146,6 +146,7 @@
   - Durability Overhaul
   - LightStar
   - Resource Pack Overrides
+  - Boids
 - Removed mods:
     - Ixeris
     - Cascades/Hybrid Beta**
