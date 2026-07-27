@@ -469,4 +469,31 @@ ServerEvents.recipes((e) => {
     ], {
         A: 'caverns_and_chasms:tin_ingot',
     })
+
+    const netherite_upgrades = {
+        'kubejs:tin_pickaxe': 'minecraft:netherite_pickaxe',
+        'kubejs:tin_shovel': 'minecraft:netherite_shovel',
+        'kubejs:tin_axe': 'minecraft:netherite_axe',
+        'kubejs:tin_hoe': 'minecraft:netherite_hoe',
+        'kubejs:tin_sword': 'minecraft:netherite_sword',
+        'kubejs:tin_helmet': 'minecraft:netherite_helmet',
+        'kubejs:tin_chestplate': 'minecraft:netherite_chestplate',
+        'kubejs:tin_leggings': 'minecraft:netherite_leggings',
+        'kubejs:tin_boots': 'minecraft:netherite_boots',
+        'kubejs:tin_greatsword': 'moonsweaponry:netherite_greatsword',
+        'kubejs:tin_halberd': 'moonsweaponry:netherite_halberd',
+        'kubejs:tin_hammer': 'moonsweaponry:netherite_hammer',
+        'kubejs:tin_katana': 'moonsweaponry:netherite_katana',
+        'kubejs:tin_rapier': 'moonsweaponry:netherite_rapier',
+        'kubejs:tin_scythe': 'moonsweaponry:netherite_scythe',
+        'kubejs:tin_warglaive': 'moonsweaponry:netherite_warglaive',
+        'kubejs:tin_mace': 'moonsweaponry:netherite_mace',
+        'kubejs:tin_spear': 'moonsweaponry:netherite_spear',
+    }
+
+    for (const [key, value] of Object.entries(netherite_upgrades)) {
+        e.smithing(value, 'minecraft:netherite_upgrade_smithing_template', key, '#forge:ingots/netherite');
+        e.smithing(value.replace("moonsweaponry", "kubejs").replace("netherite", "necromium").replace("minecraft", "caverns_and_chasms"), 'minecraft:netherite_upgrade_smithing_template', key.replace("moonsweaponry", "kubejs").replace("netherite", "necromium").replace("minecraft", "caverns_and_chasms"), '#forge:ingots/necromium');
+    }
+
 });
