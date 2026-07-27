@@ -287,7 +287,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: -0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3C02B44B3D3AC7BA"]
@@ -363,7 +363,7 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["459851BFCA5DBE34"]
+			dependencies: ["2E65DD6560146216"]
 			description: ["Rarely found growing as large crystals in infected areas."]
 			id: "696B6C09CBD13B91"
 			size: 1.0d
