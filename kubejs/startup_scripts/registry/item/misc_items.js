@@ -64,11 +64,9 @@ StartupEvents.registry('item', (event) => {
     ]
 
     tool_types.forEach(type => {
-        const tool = event.create('tin_' + type, type).maxDamage(800);
-        tool.tier('diamond')
+        const tool = event.create('tin_' + type, type)
+        tool.tier('tin')
         tool.displayName("Titanium " + type[0].toUpperCase() + type.slice(1));
-        tool.speed(9)
-        tool.maxDamage(800)
         tool.tag('forge:tools/tin')
         tool.tag('minecraft:' + type + 's')
     })
@@ -86,7 +84,7 @@ StartupEvents.registry('item', (event) => {
         if (type != 'leggings') {
             armor.tag('forge:armors/' + type + 's')
         } else {
-            armor.tag('forge:armors/leggings')
+            armor.tag('forge:armors/' + type)
         }
     })
 
@@ -97,6 +95,17 @@ ItemEvents.armorTierRegistry(event => {
         tier.durabilityMultiplier = 15
         tier.slotProtections = [3, 6, 8, 3]
         tier.equipSound = 'minecraft:item.armor.equip_chain'
-        tier.repairIngredient = 'caverns_and_chasms:tin_ingot'
+        tier.setRepairIngredient(Ingredient.of('caverns_and_chasms:tin_ingot'))
+    })
+})
+
+ItemEvents.toolTierRegistry(event => {
+    event.add('tin', tier => {
+        tier.level = 3
+        tier.uses = 800
+        tier.enchantmentValue = 10 //useless in the modpack but i'm keeping parity with diamond.
+        tier.speed = 9
+        tier.attackDamageBonus = 3
+        tier.setRepairIngredient(Ingredient.of('caverns_and_chasms:tin_ingot'))
     })
 })
