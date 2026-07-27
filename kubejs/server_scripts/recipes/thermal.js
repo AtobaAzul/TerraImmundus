@@ -63,6 +63,8 @@ ServerEvents.recipes((e) => {
 
     e.replaceInput({ id: 'thermal:machines/smelter/smelter_alloy_enderium' }, 'thermal:diamond_dust', '2x #terraimmundus:dust_or_ingot/netherite')
 
+    e.replaceOutput({ id: 'thermal:machines/smelter/smelter_tin_armor' }, '#forge:ingots/tin', 'caverns_and_chasms:tin_ingot')
+
     e.remove({ output: 'thermal:satchel' })
 
     e.replaceInput({ output: 'systeams:steam_dynamo' }, 'iron_ingot', 'scbrass:zinc_ingot')
