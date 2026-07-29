@@ -49,6 +49,7 @@
 - Increased lead ore worldgen size to 12, from 8.
 - Lead ores now drop 2 to 5 raw lead + fortune bonus.
 - Reduced needles from Flechette to 4, from 9.
+- Reduced Ancient Brass from Ancient Brass Blocks to 1 to 3, from 2 to 5.
 
 # Recipes
 - Made Excitation Field Limiter use a Gold Ingot instead of Electrum
@@ -58,7 +59,8 @@
 - Tweaked Arboreal Extractor recipe.
 - Fixed Gale having a blueprint requirement
 - Changed Golden Apple recipe.
-- Aircraft hulls now use Titanium instead of Constantan
+- Aircraft hulls now use Titanium instead of Constantan.
+- Disenchantment Dynamo now uses Constantan instead of Iron.
 
 # Fixes
 - Fixed missing texture when placing Purity smithing template in a Smithing Table.
@@ -68,6 +70,7 @@
 - Fixed Purity Apples *only* applying Purity, instead of being an added bonus.
 - Fixed Magma Cubes not spawning with random sizes.
 - Fixed Anthralite Warglaive not having correct held item model.
+- Fixed being able to use Enchanted Books to 'learn' enchantment recipes despite enchantment discovery being disabled.
 
 # Mods
 - Updated mods:
