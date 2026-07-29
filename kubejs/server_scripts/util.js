@@ -80,3 +80,9 @@ ServerEvents.tick(event => {
         event.server.persistentData.finalBorderSetup = true
     }
 })
+
+ItemEvents.rightClicked('minecraft:enchanted_book', (event) => {
+    if (event.target.block == null) {
+        event.cancel();
+    }
+})
