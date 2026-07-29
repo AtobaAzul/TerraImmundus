@@ -777,7 +777,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7F963581F51D84B6"]
@@ -788,8 +788,8 @@
 				item: "thermal:dynamo_magmatic"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -0.5d
+			x: 5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -803,7 +803,7 @@
 				item: "thermal:dynamo_numismatic"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 4.0d
 			y: -1.0d
 		}
 		{
@@ -815,8 +815,8 @@
 				item: "thermal:dynamo_disenchantment"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -2.0d
+			x: 4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
