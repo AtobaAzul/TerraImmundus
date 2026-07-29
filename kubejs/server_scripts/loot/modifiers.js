@@ -355,7 +355,7 @@ LootJS.modifiers((e) => {
 
     e.addBlockLootModifier('scguns:ancient_brass_block')
         .removeLoot(/.*/)
-        .addWeightedLoot([2, 5], true, [
+        .addWeightedLoot([1, 3], true, [
             'scguns:ancient_brass',
         ]);
 
