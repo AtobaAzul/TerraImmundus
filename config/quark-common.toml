@@ -1821,7 +1821,7 @@
 		"Reroll Even If Not Out Of Stock" = true
 
 [oddities]
-	Backpack = true
+	Backpack = false
 	Crate = true
 	Magnets = true
 	"Matrix Enchanting" = false
@@ -1832,7 +1832,7 @@
 	[oddities.backpack]
 		#Set this to true to allow the backpacks to be unequipped even with items in them
 		"Super Op Mode" = false
-		"Enable Ravager Hide" = true
+		"Enable Ravager Hide" = false
 		"Items In Backpack Tick" = true
 		"Base Ravager Hide Drop" = 1
 		"Extra Chance Per Looting" = 0.5
