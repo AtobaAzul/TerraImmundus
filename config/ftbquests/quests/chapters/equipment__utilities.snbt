@@ -8,15 +8,8 @@
 	hide_quest_until_deps_complete: true
 	hide_quest_until_deps_visible: true
 	id: "49E364CDE2F08EF2"
-	images: [{
-		height: 1.0d
-		image: "ftbquests:textures/gui/quest_locked.png"
-		rotation: 0.0d
-		width: 1.0d
-		x: -8.0d
-		y: -5.5d
-	}]
 	order_index: 2
+	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
 		{
@@ -29,85 +22,15 @@
 				"As always, use JEI to see recipes and uses of items."
 			]
 			id: "56B4243C13CBA71D"
+			shape: "hexagon"
 			tasks: [{
 				id: "3DB5B15FEB2F296D"
 				item: "scguns:gun_bench"
 				type: "item"
 			}]
 			title: "Firearms"
-			x: 2.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["2B5F649BB95BACF9"]
-			description: ["Basic gun parts produce basic guns."]
-			hide_dependency_lines: false
-			icon: "scguns:gun_parts"
-			id: "6A2AADE20AE8DA71"
-			shape: "square"
-			tasks: [{
-				id: "59442B616E0F6F3B"
-				item: "scguns:gun_parts"
-				type: "item"
-			}]
-			title: "Tier 1 Guns"
-			x: 1.0d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"6A2AADE20AE8DA71"
-				"6ED2FB0EE2A1D5A7"
-			]
-			description: ["Tier 2 guns are advanced guns and require machinery to produce them and their ammo."]
-			icon: "scguns:heavy_gun_parts"
-			id: "33A9283BAFE29B42"
-			shape: "square"
-			tasks: [{
-				id: "1B79E262AFCDDE2D"
-				item: "scguns:heavy_gun_parts"
-				type: "item"
-			}]
-			title: "Tier 2 Guns"
-			x: 1.0d
-			y: -4.5d
-		}
-		{
-			dependencies: [
-				"0D99FF482E47D94F"
-				"42B799EC849CF1F8"
-				"33A9283BAFE29B42"
-			]
-			description: ["T3 guns are highly advanced and require more machinery to produce."]
-			icon: "kubejs:reinforced_gun_parts"
-			id: "050A363B50F28B00"
-			shape: "square"
-			tasks: [{
-				id: "5A87A234B2B22ADD"
-				item: "kubejs:reinforced_gun_parts"
-				type: "item"
-			}]
-			title: "Tier 3 Guns"
-			x: 1.0d
-			y: -5.5d
-		}
-		{
-			dependencies: [
-				"050A363B50F28B00"
-				"7D4EC034CE4F2D78"
-			]
-			description: ["T4 Guns are end-game guns, capable of devastating large enemies quickly."]
-			icon: "kubejs:resonant_gun_parts"
-			id: "50DB01F7E862D7F4"
-			shape: "square"
-			tasks: [{
-				id: "0767DF251357D9D5"
-				item: "kubejs:resonant_gun_parts"
-				type: "item"
-			}]
-			title: "Tier 4 Guns"
-			x: 2.0d
-			y: -5.5d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -129,6 +52,7 @@
 				}
 			}
 			id: "02FE3FBE56A295D0"
+			shape: "hexagon"
 			tasks: [{
 				id: "169975D38D9AE541"
 				item: "minecraft:enchanting_table"
@@ -136,7 +60,7 @@
 			}]
 			title: "Enchanting"
 			x: -2.5d
-			y: -2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["02FE3FBE56A295D0"]
@@ -152,8 +76,8 @@
 				item: "thermal:apatite"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -4.5d
+			x: -1.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["02FE3FBE56A295D0"]
@@ -171,8 +95,8 @@
 				type: "item"
 			}]
 			title: "Zirconia"
-			x: -3.5d
-			y: -5.5d
+			x: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["02FE3FBE56A295D0"]
@@ -185,7 +109,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["02FE3FBE56A295D0"]
@@ -201,8 +125,8 @@
 				item: "thermal:ruby"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -3.5d
+			x: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["02FE3FBE56A295D0"]
@@ -214,8 +138,8 @@
 				item: "minecraft:amethyst_block"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -5.5d
+			x: -2.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["02FE3FBE56A295D0"]
@@ -233,8 +157,8 @@
 				item: "thermal:cinnabar"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -3.5d
+			x: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["02FE3FBE56A295D0"]
@@ -250,8 +174,8 @@
 				item: "minecraft:quartz"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -3.5d
+			x: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["02FE3FBE56A295D0"]
@@ -263,8 +187,8 @@
 				item: "minecraft:lapis_lazuli"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -4.5d
+			x: -3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["02FE3FBE56A295D0"]
@@ -280,8 +204,8 @@
 				item: "caverns_and_chasms:spinel"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -5.5d
+			x: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -332,8 +256,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: -8.0d
+			x: -8.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -351,8 +275,8 @@
 				item: "supplementaries:sack"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -7.0d
+			x: -10.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -410,8 +334,8 @@
 				}
 			]
 			title: "Hazmat suit"
-			x: -8.0d
-			y: -5.5d
+			x: 1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -462,8 +386,8 @@
 				type: "item"
 			}]
 			title: "Melee Weapons"
-			x: -8.0d
-			y: -4.5d
+			x: 2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -502,8 +426,8 @@
 				}
 			]
 			title: "Automobiles"
-			x: -1.5d
-			y: -7.5d
+			x: -9.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2D05372FF6E08E2B"]
@@ -529,8 +453,8 @@
 				type: "item"
 			}]
 			title: "Aircraft"
-			x: -3.5d
-			y: -7.5d
+			x: -8.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -555,8 +479,8 @@
 				type: "item"
 			}]
 			title: "Anthralite Upgrades"
-			x: -6.0d
-			y: -5.5d
+			x: 3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -581,8 +505,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: -7.5d
+			x: -7.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -606,8 +530,8 @@
 				type: "item"
 			}]
 			title: "Purity Apples"
-			x: -7.0d
-			y: -9.5d
+			x: -6.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -626,8 +550,8 @@
 				type: "item"
 			}]
 			title: "Bundles"
-			x: 2.0d
-			y: -7.0d
+			x: -7.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -640,8 +564,8 @@
 				item: "farmersdelight:cooking_pot"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -7.5d
+			x: -7.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -654,8 +578,8 @@
 				item: "miners_delight:copper_pot"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -8.5d
+			x: -6.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -668,8 +592,8 @@
 				item: "farmersrespite:kettle"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -7.5d
+			x: -5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0713D981D65DF155"]
@@ -681,8 +605,8 @@
 				item: "brewinandchewin:keg"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -8.5d
+			x: -6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -704,8 +628,8 @@
 				type: "item"
 			}]
 			title: "Drawers"
-			x: 1.0d
-			y: -8.0d
+			x: -9.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -736,8 +660,8 @@
 				}
 			]
 			title: "Wrenches"
-			x: -6.0d
-			y: -4.5d
+			x: 4.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -752,6 +676,7 @@
 				"&aRepairing does not cost Experience&r"
 			]
 			id: "3718DBBC5C60B324"
+			shape: "hexagon"
 			tasks: [{
 				id: "2B790DB92D295735"
 				item: {
@@ -765,20 +690,21 @@
 				type: "item"
 			}]
 			title: "Repairing"
-			x: -1.5d
-			y: -2.5d
+			x: -3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
 			description: ["The Enchanter is used to apply Enchanted Books onto items, instead of Anvils."]
 			id: "28A5F4F2C9C441EE"
+			shape: "hexagon"
 			tasks: [{
 				id: "6CD1C7562A123A81"
 				item: "improved_damage:enchanter"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -2.5d
+			x: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6608D777C19F5758"]
@@ -805,8 +731,8 @@
 				type: "item"
 			}]
 			title: "Necromium Upgrades"
-			x: -7.0d
-			y: -5.5d
+			x: 2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -836,8 +762,8 @@
 				type: "item"
 			}]
 			title: "Titanium Equipment"
-			x: -7.0d
-			y: -4.5d
+			x: 3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["37C39E75C3EBC81D"]
@@ -853,8 +779,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: -1.5d
+			x: 2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["37C39E75C3EBC81D"]
@@ -870,8 +796,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: -2.5d
+			x: 4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["37C39E75C3EBC81D"]
@@ -887,8 +813,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: -2.5d
+			x: 5.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["37C39E75C3EBC81D"]
@@ -905,7 +831,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
+			x: 1.0d
 			y: -1.5d
 		}
 		{
@@ -918,8 +844,8 @@
 				item: "kubejs:smokeless_powder"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -5.5d
+			x: -7.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3F498515E8FB78D3"]
@@ -935,8 +861,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: -3.5d
+			x: 2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3F498515E8FB78D3"]
@@ -952,8 +878,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: -2.5d
+			x: 3.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3F498515E8FB78D3"]
@@ -969,8 +895,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: -3.5d
+			x: 4.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -979,6 +905,7 @@
 				"39C30132E46ECD39"
 			]
 			description: ["Plasma Cells are ammunition for Plasma weapons."]
+			hide_dependent_lines: true
 			id: "36FA9A8FEA2FE6D5"
 			shape: "square"
 			tasks: [{
@@ -986,11 +913,12 @@
 				item: "scguns:energy_cell"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -4.5d
+			x: -8.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["159F7789853FBC57"]
+			description: ["Energy Cores are amunition for Laser weapons, which can be also be used to make Plasma Cores, needed for plasma guns."]
 			id: "553C212C80BAFF64"
 			shape: "square"
 			tasks: [{
@@ -998,8 +926,8 @@
 				item: "scguns:energy_core"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -4.5d
+			x: -8.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -1027,8 +955,8 @@
 				}
 			]
 			title: "Flamethrowers"
-			x: 3.0d
-			y: -3.5d
+			x: -9.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1047,8 +975,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: -1.5d
+			x: 1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -1075,23 +1003,350 @@
 				type: "item"
 			}]
 			title: "Copper Equipment"
-			x: -7.0d
-			y: -3.5d
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"36FA9A8FEA2FE6D5"
+				"3F498515E8FB78D3"
+				"0861B3BDAB8CF346"
+			]
+			description: ["The Exosuit is a modular, powered, armor set. Each part can have several modules installed, increasing armor, adding new abilities and more."]
+			hide_dependent_lines: true
+			id: "082C3E01A0089DDB"
+			shape: "square"
+			tasks: [
+				{
+					id: "1B297912572D9308"
+					item: {
+						Count: 1
+						id: "scguns:exo_suit_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "67C861B3F600ABB5"
+					item: {
+						Count: 1
+						id: "scguns:exo_suit_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5FE2D46AF1960EE2"
+					item: {
+						Count: 1
+						id: "scguns:exo_suit_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5A68F0263B4F01B2"
+					item: {
+						Count: 1
+						id: "scguns:exo_suit_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6FABF4340B968765"
+					item: {
+						Count: 1
+						id: "scguns:exo_suit_core"
+						tag: {
+							Energy: 100000
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["56B4243C13CBA71D"]
-			description: ["Firing Hammers produce the most basic guns, although even simpler firearms like a Musket do not need them."]
-			icon: "kubejs:firing_hammer"
-			id: "2B5F649BB95BACF9"
+			description: ["Antique Tier guns are the most basic firearms, typically firing Powder and Ball and Grapeshot, although some outliers like the Laser Musket and Plasmabuss are special."]
+			id: "10680BF86F7699B9"
 			shape: "square"
 			tasks: [{
-				id: "5BB5C4B5966DDE8A"
-				item: "kubejs:firing_hammer"
+				id: "5218A60BE3ABD8DD"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(scguns:antique_gun_tier)"
+					}
+				}
+				title: "Any Antique tier firearm"
 				type: "item"
 			}]
-			title: "Tier 0 Guns"
-			x: 2.0d
-			y: -3.5d
+			title: "Antique Tier"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["10680BF86F7699B9"]
+			description: ["Frontier tier firearms are basic guns that use Copper Rounds and Shotgun Shells, with the exception of the Big Bore Rifle."]
+			id: "7E884602C3C6482F"
+			shape: "square"
+			tasks: [{
+				id: "0CC8B07BD910F38A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(scguns:frontier_gun_tier)"
+					}
+				}
+				title: "Any Frontier tier firearm"
+				type: "item"
+			}]
+			title: "Frontier Tier"
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7E884602C3C6482F"]
+			description: ["Copper tier is the most advanced tier obtainable without machinery."]
+			id: "46E2795A7BADA0C6"
+			shape: "square"
+			tasks: [{
+				id: "6A0061FD571AC45C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(scguns:copper_gun_tier)"
+					}
+				}
+				title: "Any Copper tier firearm"
+				type: "item"
+			}]
+			title: "Copper Tier"
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["46E2795A7BADA0C6"]
+			description: ["The Invar tier guns are standard guns and the minimum recommended tier to fight against the Sculk Horde."]
+			id: "6D8DC5EFA9FD15F6"
+			shape: "square"
+			tasks: [{
+				id: "2864AC78B87377BD"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(scguns:iron_gun_tier)"
+					}
+				}
+				title: "Any Invar tier firearm"
+				type: "item"
+			}]
+			title: "Invar Tier"
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6D8DC5EFA9FD15F6"]
+			description: ["Ocean tier is a specialized tier with unique weapons."]
+			id: "6FA0DE2F22D30DB4"
+			shape: "square"
+			tasks: [{
+				id: "488D1A2950FF6AD8"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(scguns:ocean_gun)"
+					}
+				}
+				title: "Any Ocean tier firearm"
+				type: "item"
+			}]
+			title: "Ocean Tier"
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6D8DC5EFA9FD15F6"]
+			description: ["The Wrecker tier provides some guns utilizing different ammo types."]
+			id: "3EA561486B789B82"
+			shape: "square"
+			tasks: [{
+				id: "1638AD3D6B5370D2"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(scguns:wrecker_gun_tier)"
+					}
+				}
+				title: "Any Wrecker tier firearm"
+				type: "item"
+			}]
+			title: "Wrecker Tier"
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6D8DC5EFA9FD15F6"]
+			description: ["The Rose tier provides some unique guns using specialized ammo."]
+			id: "4D401937FACFEE9D"
+			shape: "square"
+			tasks: [{
+				id: "6D9C0B5388BFE8EE"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(scguns:piglin_gun_tier)"
+					}
+				}
+				title: "Any Rose tier gun"
+				type: "item"
+			}]
+			title: "Rose Tier"
+			x: -3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"4D401937FACFEE9D"
+				"3EA561486B789B82"
+				"6FA0DE2F22D30DB4"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Diamond Steel firearms are high-end firearms."]
+			id: "496C0FCF359A6DE3"
+			shape: "square"
+			tasks: [{
+				id: "4E7B814A3ED60E4D"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(scguns:diamond_steel_gun_tier)"
+					}
+				}
+				title: "Any Diamond Steel tier firearm"
+				type: "item"
+			}]
+			title: "Diamond Steel Tier"
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"4D401937FACFEE9D"
+				"3EA561486B789B82"
+				"6FA0DE2F22D30DB4"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Treated Brass firearms are high-end firearms."]
+			id: "0722244A44CBD61A"
+			shape: "square"
+			tasks: [{
+				id: "11CD76564A6D680F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(scguns:treated_brass_gun_tier)"
+					}
+				}
+				title: "Any Treated Brass tier firearm"
+				type: "item"
+			}]
+			title: "Treated Brass Tier"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"4D401937FACFEE9D"
+				"3EA561486B789B82"
+				"6FA0DE2F22D30DB4"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Gravekeeper firearms are high-end firearms specialized in armor-piercing magic damage."]
+			id: "48A99AF42653DA5E"
+			shape: "square"
+			tasks: [{
+				id: "5ABCB1104CA0EBFB"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(scguns:gravekeeper_gun_tier)"
+					}
+				}
+				title: "Any Gravekeeper tier gun"
+				type: "item"
+			}]
+			title: "Gravekeeper Tier"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"48A99AF42653DA5E"
+				"0722244A44CBD61A"
+				"496C0FCF359A6DE3"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Sculk Tier is a special end-game tier with powerful weapons but with limited variety."]
+			id: "6587F7F3E2890003"
+			shape: "square"
+			tasks: [{
+				id: "3729072FDA1841EB"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(scguns:deep_dark_gun_tier)"
+					}
+				}
+				title: "Any Sculk tier firearm"
+				type: "item"
+			}]
+			title: "Sculk Tier"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6587F7F3E2890003"]
+			description: ["Scorched tier is the ultimate gun tier with weapons capable of quickly putting down any threat."]
+			id: "0285D06E12460A21"
+			shape: "square"
+			tasks: [{
+				id: "614C5331246D9077"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(scguns:scorched_gun_tier)"
+					}
+				}
+				title: "Any Scorched tier firearm"
+				type: "item"
+			}]
+			title: "Scorched Tier"
+			x: 0.0d
+			y: 2.0d
 		}
 	]
 	title: "Equipment \\& Utilities"

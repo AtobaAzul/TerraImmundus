@@ -202,4 +202,6 @@ ServerEvents.tags('item', (event) => {
     event.add('terraimmundus:any_diamond_steel', ['scguns:diamond_steel_ingot', 'scguns:depleted_diamond_steel_ingot'])
 
     event.add('terraimmundus:any_copper_equipment', /caverns_and_chasms:.*copper_(axe|sword|pickaxe|shovel|hoe|helmet|chestplate|leggings|boots)/)
+
+    event.add('terraimmundus:any_item_disc', ['refinedstorage:1k_storage_disk', 'refinedstorage:4k_storage_disk', 'refinedstorage:16k_storage_disk'])
 });

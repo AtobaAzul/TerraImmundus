@@ -38,6 +38,7 @@
 			dependencies: ["1F380A26E21B724F"]
 			description: ["A critical resource needed for fighting against the Sculk."]
 			id: "5CF1BB9629E2308F"
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "1BFC9FA8C075D6B6"
@@ -79,7 +80,7 @@
 			icon: "sob:portal_drink"
 			id: "0D1DC5177700C2E7"
 			optional: true
-			shape: "octagon"
+			shape: "rsquare"
 			size: 1.0d
 			subtitle: "All in One"
 			tasks: [{
@@ -118,6 +119,7 @@
 			icon: "minecraft:nether_quartz_ore"
 			id: "47DE475A19084974"
 			optional: true
+			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
 				id: "1E42AA5071519268"
@@ -138,6 +140,7 @@
 			icon: "minecraft:end_portal_frame"
 			id: "48623F83032726CD"
 			optional: true
+			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
 				id: "473EF2A1F9FDE794"
@@ -171,7 +174,7 @@
 			icon: "thermal:lead_gear"
 			id: "3FA037854B984F4F"
 			optional: true
-			shape: "octagon"
+			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
 				id: "1219F9E75C77FD39"
@@ -197,7 +200,7 @@
 			hide_text_until_complete: false
 			icon: "minecraft:sculk"
 			id: "1BAB3EA6B4E23C8A"
-			shape: "hexagon"
+			shape: "rsquare"
 			size: 1.0d
 			subtitle: "How the horde works"
 			tasks: [{
@@ -364,7 +367,7 @@
 		}
 		{
 			dependencies: ["2E65DD6560146216"]
-			description: ["Rarely found growing as large crystals in infected areas."]
+			description: ["Rarely found growing as large crystals in infected areas. Requires a &6Meteorite level pickaxe&r to mine. "]
 			id: "696B6C09CBD13B91"
 			size: 1.0d
 			tasks: [{
@@ -385,7 +388,7 @@
 				"Each hit weakens the Sculked and purifies the area."
 			]
 			id: "4E89F7B68BCA13DA"
-			shape: "rsquare"
+			shape: "circle"
 			size: 1.5d
 			tasks: [{
 				id: "369F1D6E343F59E6"
@@ -503,7 +506,7 @@
 			dependencies: ["2E65DD6560146216"]
 			description: [
 				"You need a Nether Star to craft the Soul Harvester."
-				"The Wither is reworked and has a lot more health, prepare for a though fight."
+				"The Wither is reworked and has a lot more health, prepare for a tough fight."
 				""
 				"Wither Skeletons spawn deep underground, as well as spawning when a Skeleton dies to lava. The chance for a skull is increased to 10% + 5% per looting level."
 			]

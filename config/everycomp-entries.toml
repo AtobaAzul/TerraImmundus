@@ -436,6 +436,9 @@
 			half_drawers_2 = true
 			full_drawers_1 = true
 
+		[entries.wood_type.backpacked]
+			backpack_shelf = true
+
 	[entries.leaves_type]
 
 		[entries.leaves_type.quark]

@@ -9,12 +9,15 @@
 	hide_quest_until_deps_visible: true
 	id: "1BA7C5962118DA0A"
 	order_index: 1
+	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["5865797006BBAAE2"]
 			description: ["Nickel is needed to make &6Machine Frames&r, and requires a &bDiamond-level&r pickaxe to mine."]
 			id: "71D54C0037E17A4C"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "20091D3A986D4C7E"
 				item: "thermal:nickel_ingot"
@@ -44,6 +47,8 @@
 			]
 			icon: "thermal:cured_rubber"
 			id: "00BAF70EA51427EC"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [
 				{
 					id: "6B2AA8A10FBA921F"
@@ -98,6 +103,8 @@
 			dependencies: ["5865797006BBAAE2"]
 			description: ["Dynamos burn different fuels to generate &6power&r, needed to run machines."]
 			id: "11503DB45CD2093F"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "214E706C3D50F98B"
 				item: {
@@ -257,24 +264,12 @@
 			description: ["These materials need a Pulverizer to be produced."]
 			icon: "thermal:bronze_gear"
 			id: "6ED2FB0EE2A1D5A7"
-			shape: "gear"
-			tasks: [
-				{
-					id: "392C3B5C8CD28B81"
-					item: "thermal:bronze_dust"
-					type: "item"
-				}
-				{
-					id: "5BDE658A5C797DCC"
-					item: "thermal:invar_dust"
-					type: "item"
-				}
-				{
-					id: "29E652855C06C304"
-					item: "thermal:constantan_dust"
-					type: "item"
-				}
-			]
+			shape: "rsquare"
+			tasks: [{
+				id: "05A5433D542F7753"
+				title: "I understand"
+				type: "checkmark"
+			}]
 			title: "Tier 2 Materials"
 			x: 0.0d
 			y: -2.0d
@@ -291,8 +286,8 @@
 				item: "thermal:device_tree_extractor"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 3.5d
+			x: -5.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["63D7EA0B4D706D20"]
@@ -303,8 +298,8 @@
 				item: "thermal:device_fisher"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 0.5d
+			x: -4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["63D7EA0B4D706D20"]
@@ -315,8 +310,8 @@
 				item: "thermal:device_water_gen"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 1.5d
+			x: -4.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["63D7EA0B4D706D20"]
@@ -328,7 +323,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 3.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["63D7EA0B4D706D20"]
@@ -339,8 +334,8 @@
 				item: "thermal:device_xp_condenser"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 4.0d
+			x: -6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["63D7EA0B4D706D20"]
@@ -351,11 +346,14 @@
 				item: "thermal:device_nullifier"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 4.5d
+			x: -5.5d
+			y: 4.0d
 		}
 		{
-			dependencies: ["323A9DDE0D56E2EB"]
+			dependencies: [
+				"6DCF7A961B5BD3F8"
+				"7F827B2C0F0F5F50"
+			]
 			description: ["This device produces rocks from adjacent blocks."]
 			id: "488B64DA4277DC72"
 			tasks: [{
@@ -363,8 +361,8 @@
 				item: "thermal:device_rock_gen"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -2.0d
+			x: 2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["63D7EA0B4D706D20"]
@@ -375,11 +373,11 @@
 				item: "thermal:device_composter"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.0d
+			x: -5.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["323A9DDE0D56E2EB"]
+			dependencies: ["6DCF7A961B5BD3F8"]
 			description: ["This device spreads potions across an area."]
 			id: "145C7BC47416F615"
 			tasks: [{
@@ -387,8 +385,8 @@
 				item: "thermal:device_potion_diffuser"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -4.0d
+			x: 2.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["42B799EC849CF1F8"]
@@ -410,11 +408,11 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: -10.0d
+			x: 8.5d
+			y: -13.0d
 		}
 		{
-			dependencies: ["323A9DDE0D56E2EB"]
+			dependencies: ["7FDF2C8698EFFEE9"]
 			description: ["This device stores large quantities of fluids. Can be picked up and retains fluid."]
 			id: "13DF803820F6D2BB"
 			tasks: [{
@@ -435,8 +433,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: -3.0d
+			x: -0.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["65A19EDD1DB27234"]
@@ -455,11 +453,11 @@
 				}
 			]
 			title: "Moving Fluids \\& Items"
-			x: -4.0d
-			y: 6.0d
+			x: -1.5d
+			y: 4.0d
 		}
 		{
-			dependencies: ["6ED2FB0EE2A1D5A7"]
+			dependencies: ["7F827B2C0F0F5F50"]
 			description: ["The Induction Furnace smelts ores and creates alloys."]
 			id: "1F380A26E21B724F"
 			size: 1.5d
@@ -468,11 +466,11 @@
 				item: "thermal:machine_smelter"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.5d
+			x: 4.0d
+			y: -6.5d
 		}
 		{
-			dependencies: ["6ED2FB0EE2A1D5A7"]
+			dependencies: ["6DCF7A961B5BD3F8"]
 			description: ["The Centrifugal Separator seperates things into their components."]
 			id: "1C8028268A2AD41F"
 			tasks: [{
@@ -480,24 +478,26 @@
 				item: "thermal:machine_centrifuge"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -3.0d
+			x: 2.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["6ED2FB0EE2A1D5A7"]
+			dependencies: [
+				"5E9A093FD988923B"
+				"6DCF7A961B5BD3F8"
+			]
 			description: ["The Multiservo Press presses things into shaped shapes. Make use of Dies to make certain items."]
-			hide_dependent_lines: true
 			id: "0713D981D65DF155"
 			tasks: [{
 				id: "3ED92AF06A8868EA"
 				item: "thermal:machine_press"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -1.0d
+			x: -1.5d
+			y: -6.0d
 		}
 		{
-			dependencies: ["6ED2FB0EE2A1D5A7"]
+			dependencies: ["7F827B2C0F0F5F50"]
 			description: ["The Magma Crucible melts things down into fluids."]
 			hide_dependent_lines: true
 			id: "39C30132E46ECD39"
@@ -506,11 +506,11 @@
 				item: "thermal:machine_crucible"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -3.0d
+			x: 6.0d
+			y: -7.0d
 		}
 		{
-			dependencies: ["6ED2FB0EE2A1D5A7"]
+			dependencies: ["7F827B2C0F0F5F50"]
 			description: ["The Blast Chiller cools down things."]
 			id: "47CFC248A8221E7D"
 			tasks: [{
@@ -518,11 +518,11 @@
 				item: "thermal:machine_chiller"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.5d
+			x: 6.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["6ED2FB0EE2A1D5A7"]
+			dependencies: ["7F827B2C0F0F5F50"]
 			description: ["The Fractionating Still distills fluids."]
 			id: "5699F8E5F116A933"
 			tasks: [{
@@ -530,11 +530,11 @@
 				item: "thermal:machine_refinery"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -3.5d
+			x: 6.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["6ED2FB0EE2A1D5A7"]
+			dependencies: ["6DCF7A961B5BD3F8"]
 			description: ["The Pyrolyzer processes things using extreme heat."]
 			id: "0CF073A409DF45EA"
 			size: 1.5d
@@ -543,11 +543,11 @@
 				item: "thermal:machine_pyrolyzer"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -4.5d
+			x: 0.0d
+			y: -6.5d
 		}
 		{
-			dependencies: ["6ED2FB0EE2A1D5A7"]
+			dependencies: ["6DCF7A961B5BD3F8"]
 			description: ["Alchemical Imbuer makes potions in large quantities."]
 			id: "40C03947CB19B0C4"
 			tasks: [{
@@ -555,8 +555,8 @@
 				item: "thermal:machine_brewer"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -1.0d
+			x: 2.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -569,23 +569,23 @@
 				item: "thermal:steel_ingot"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -6.0d
+			x: 0.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["1F380A26E21B724F"]
 			description: ["These materials need the Induction Smelter to be produced."]
 			icon: "thermal:sapphire_gear"
 			id: "74487E0EF55041DE"
-			shape: "gear"
+			shape: "rsquare"
 			tasks: [{
 				id: "342BDABEC21C5691"
 				title: "I understand"
 				type: "checkmark"
 			}]
 			title: "Tier 3 Materials"
-			x: 1.0d
-			y: -8.0d
+			x: 4.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["74487E0EF55041DE"]
@@ -595,8 +595,8 @@
 				item: "thermal:lumium_ingot"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -8.0d
+			x: 2.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["74487E0EF55041DE"]
@@ -606,8 +606,8 @@
 				item: "thermal:electrum_ingot"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -9.0d
+			x: 6.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["3D143DC0D0E3EAEA"]
@@ -617,11 +617,12 @@
 				item: "thermal:enderium_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -11.5d
+			x: 5.5d
+			y: -17.5d
 		}
 		{
 			dependencies: ["3D143DC0D0E3EAEA"]
+			description: ["Used for several weapons, armor and more."]
 			id: "14F82701CF80FF8A"
 			tasks: [{
 				id: "04AFDC67771208BC"
@@ -636,19 +637,20 @@
 				type: "item"
 			}]
 			title: "Diamond Steel"
-			x: 1.5d
-			y: -12.0d
+			x: 4.5d
+			y: -18.0d
 		}
 		{
 			dependencies: ["74487E0EF55041DE"]
+			description: [""]
 			id: "104FBB1C6037CD65"
 			tasks: [{
 				id: "11C01184FD1F1FB0"
 				item: "thermal:rose_gold_ingot"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -6.0d
+			x: 7.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["74487E0EF55041DE"]
@@ -658,19 +660,20 @@
 				item: "thermal:obsidian_glass"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -8.0d
+			x: 1.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["74487E0EF55041DE"]
+			description: [""]
 			id: "577457934315E6DF"
 			tasks: [{
 				id: "5968B2021AB56E5D"
 				item: "savage_and_ravage:blast_proof_plating"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -7.0d
+			x: 7.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["3D143DC0D0E3EAEA"]
@@ -680,45 +683,47 @@
 				item: "scguns:treated_brass_ingot"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -12.0d
+			x: 3.5d
+			y: -18.0d
 		}
 		{
 			dependencies: ["74487E0EF55041DE"]
+			description: [""]
 			id: "0861B3BDAB8CF346"
 			tasks: [{
 				id: "4C4FC77FBF284A45"
 				item: "minecraft:netherite_ingot"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 8.0d
 			y: -10.0d
 		}
 		{
 			dependencies: ["3D143DC0D0E3EAEA"]
+			description: ["{ \"text\": \"Used for Necromium tool and armor upgrades.\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2D233B5A870A0B7E\" }}"]
 			id: "6608D777C19F5758"
 			tasks: [{
 				id: "5DFBC80D3277D933"
 				item: "caverns_and_chasms:necromium_ingot"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -11.5d
+			x: 2.5d
+			y: -17.5d
 		}
 		{
 			dependencies: ["74487E0EF55041DE"]
 			description: ["These materials need other tier 3 materials to be produced."]
 			icon: "thermal:netherite_gear"
 			id: "3D143DC0D0E3EAEA"
-			shape: "gear"
+			shape: "rsquare"
 			tasks: [{
 				id: "78BAF23E63ABCA4D"
 				title: "I understand"
 				type: "checkmark"
 			}]
 			title: "Tier 4 Materials"
-			x: 1.0d
-			y: -10.0d
+			x: 4.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["7FDF2C8698EFFEE9"]
@@ -737,11 +742,11 @@
 				}
 			]
 			title: "Steam Power"
-			x: -3.0d
-			y: -8.0d
+			x: 0.0d
+			y: -14.0d
 		}
 		{
-			dependencies: ["323A9DDE0D56E2EB"]
+			dependencies: ["7F827B2C0F0F5F50"]
 			description: ["The Tinker's Workbench allows putting on Augments on equipment. Things like Radial Enhancement makes the tool work in a wider range or mine multiple blocks, and integral components increase the mining level."]
 			id: "6B55A4F4D7D8A1E5"
 			tasks: [{
@@ -750,37 +755,23 @@
 				type: "item"
 			}]
 			title: "Upgrading Equipment"
-			x: -5.0d
-			y: -3.5d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["6ED2FB0EE2A1D5A7"]
-			icon: "thermal:lightning_charge"
-			id: "7F963581F51D84B6"
-			shape: "rsquare"
-			tasks: [{
-				id: "275F34EF67779AE5"
-				title: "I understand"
-				type: "checkmark"
-			}]
-			title: "Tier 2 Dynamos"
-			x: 4.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["7F963581F51D84B6"]
-			description: ["Compression Dynamos burn specific fuels to generate energy."]
+			dependencies: ["5E9A093FD988923B"]
+			description: ["Compression Dynamos burn specific liquid fuels to generate energy."]
 			id: "2D05372FF6E08E2B"
 			tasks: [{
 				id: "021E7F8F48C32CDF"
 				item: "thermal:dynamo_compression"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -2.5d
+			x: -3.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["7F963581F51D84B6"]
+			dependencies: ["7F827B2C0F0F5F50"]
 			description: ["Magmatic Dynamos burn lava to generate energy."]
 			id: "5E2C2FDE9C570AC6"
 			tasks: [{
@@ -788,14 +779,11 @@
 				item: "thermal:dynamo_magmatic"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -1.5d
+			x: 6.0d
+			y: -5.0d
 		}
 		{
-			dependencies: [
-				"7F963581F51D84B6"
-				"0713D981D65DF155"
-			]
+			dependencies: ["0713D981D65DF155"]
 			description: ["Numistatic Dynamos spends coins to generate energy."]
 			id: "6CB7D0EB71B6B66B"
 			tasks: [{
@@ -803,11 +791,11 @@
 				item: "thermal:dynamo_numismatic"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -1.0d
+			x: -3.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["7F963581F51D84B6"]
+			dependencies: ["6DCF7A961B5BD3F8"]
 			description: ["Disenchantment Dynamos burn enchanted items to generate energy."]
 			id: "3D2BAF180ED15CB1"
 			tasks: [{
@@ -815,25 +803,8 @@
 				item: "thermal:dynamo_disenchantment"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 2.0d
 			y: -3.0d
-		}
-		{
-			dependencies: [
-				"6ED2FB0EE2A1D5A7"
-				"63D7EA0B4D706D20"
-			]
-			icon: "thermal:laser_diode"
-			id: "323A9DDE0D56E2EB"
-			shape: "rsquare"
-			tasks: [{
-				id: "7E312894E78AA095"
-				title: "I understnad"
-				type: "checkmark"
-			}]
-			title: "Tier 2 Devices"
-			x: -4.0d
-			y: -2.0d
 		}
 		{
 			dependencies: ["63D7EA0B4D706D20"]
@@ -844,8 +815,8 @@
 				item: "thermal:charge_bench"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 2.5d
+			x: -5.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["74487E0EF55041DE"]
@@ -855,8 +826,8 @@
 				item: "thermal:signalum_ingot"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -9.0d
+			x: 0.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["74487E0EF55041DE"]
@@ -867,8 +838,8 @@
 				item: "refinedstorage:silicon"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -7.0d
+			x: 1.0d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -888,7 +859,7 @@
 				}
 				{
 					id: "60D3E97B9402272B"
-					item: "refinedstorage:crafting_monitor"
+					item: "refinedstorage:crafting_grid"
 					type: "item"
 				}
 				{
@@ -896,10 +867,22 @@
 					item: "refinedstorage:disk_drive"
 					type: "item"
 				}
+				{
+					id: "2A8FF70F7FDD0955"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_item_disc)"
+						}
+					}
+					title: "Any Item Disk"
+					type: "item"
+				}
 			]
 			title: "Refined Storage"
-			x: -3.0d
-			y: -7.0d
+			x: -1.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["42B799EC849CF1F8"]
@@ -910,8 +893,8 @@
 				item: "scguns:lightning_battery"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -9.0d
+			x: 8.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["0D99FF482E47D94F"]
@@ -922,8 +905,8 @@
 				item: "scguns:advanced_composter"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -6.0d
+			x: -2.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["6DAD41761203CB40"]
@@ -934,20 +917,92 @@
 				item: "thermal:machine_insolator"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -8.0d
+			x: -0.5d
+			y: -16.0d
 		}
 		{
 			dependencies: ["2AC019C1EC3821B8"]
-			description: ["The Crystallizer grows crystals from powders and fluids."]
+			description: ["The Crystallizer grows crystals from powders and fluids, as well as other unique recipes."]
 			id: "587153939A0E5FC1"
 			tasks: [{
 				id: "0F74FC45569D1797"
 				item: "thermal:machine_crystallizer"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -9.0d
+			x: -1.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["6ED2FB0EE2A1D5A7"]
+			id: "6DCF7A961B5BD3F8"
+			tasks: [{
+				id: "7EDBC02EFDA2BA98"
+				item: "thermal:constantan_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6ED2FB0EE2A1D5A7"]
+			description: ["A very versatile material used for several things, essential for progression."]
+			id: "7F827B2C0F0F5F50"
+			tasks: [{
+				id: "5946FA410A64EAC2"
+				item: "thermal:invar_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6ED2FB0EE2A1D5A7"]
+			id: "5E9A093FD988923B"
+			tasks: [{
+				id: "10732CF0545D82C4"
+				item: "thermal:bronze_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"224E64A9A493FA03"
+				"6DAD41761203CB40"
+			]
+			description: ["The Fluid Storage Disk allows a storage network to store fluids."]
+			id: "6A3347EC7FA66DDD"
+			tasks: [{
+				id: "496790BC138DDB93"
+				item: "refinedstorage:256k_fluid_storage_disk"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["74487E0EF55041DE"]
+			description: ["Used for COG Armor and bullet casings"]
+			id: "6E0A73EB220748B0"
+			tasks: [{
+				id: "6C2933CD8959A1A6"
+				item: "scbrass:brass_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["587153939A0E5FC1"]
+			id: "0891B8A40C278486"
+			tasks: [{
+				id: "069E9027CD91D4CD"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -11.0d
 		}
 	]
 	title: "Machinery"
