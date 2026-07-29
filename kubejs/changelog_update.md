@@ -48,6 +48,7 @@
 - Reduced Gunner mob chance to 33%, from 50%.
 - Increased lead ore worldgen size to 12, from 8.
 - Lead ores now drop 2 to 5 raw lead + fortune bonus.
+- Reduced needles from Flechette to 4, from 9.
 
 # Recipes
 - Made Excitation Field Limiter use a Gold Ingot instead of Electrum

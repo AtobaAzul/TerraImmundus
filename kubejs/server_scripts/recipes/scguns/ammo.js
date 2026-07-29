@@ -267,4 +267,11 @@ ServerEvents.recipes((e) => {
 	});
 
     e.shapeless('scguns:plasma', ['scguns:energy_cell']).replaceIngredient('scguns:energy_cell', 'scguns:empty_cell')
+
+    e.remove({id: 'scguns:needle_from_flechette'})
+    e.shapeless('4x scguns:needle', ['scguns:flechette'])
+
+    e.remove({id: 'scguns:flechette_from_crafting'})
+    e.shapeless('scguns:flechette', ['4x scguns:needle'])
+
 });
