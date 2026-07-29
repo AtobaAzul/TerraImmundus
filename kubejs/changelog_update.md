@@ -153,7 +153,6 @@
   - Resource Pack Overrides
   - Boids
   - Backpacked
-  - Backpacked: World of Color
   - Grappling Hook - Reforged
 - Removed mods:
     - Ixeris
