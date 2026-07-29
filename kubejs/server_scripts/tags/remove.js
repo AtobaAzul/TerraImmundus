@@ -194,6 +194,22 @@ const REMOVED_ITEMS = [
 	'alexsmobs:straddleboard',
 	'alexsmobs:straddlite',
 	'alexsmobs:shattered_dimensional_carver',
+	'grapplemod:launcheritem',
+	'grapplemod:repeller',
+	'grapplemod:baseupgradeitem',
+	'grapplemod:doubleupgradeitem',
+	'grapplemod:forcefieldupgradeitem',
+	'grapplemod:magnetupgradeitem',
+	'grapplemod:motorupgradeitem',
+	'grapplemod:ropeupgradeitem',
+	'grapplemod:staffupgradeitem',
+	'grapplemod:block_grapple_modifier',
+	'grapplemod:rocketupgradeitem',
+	'grapplemod:limitsupgradeitem',
+	'grapplemod:throwupgradeitem',
+	'grapplemod:swingupgradeitem',
+	'grapplemod:longfallboots',
+    'alexsmobs:squid_grapple'
 ];
 
 ServerEvents.tags('item', (event) => {

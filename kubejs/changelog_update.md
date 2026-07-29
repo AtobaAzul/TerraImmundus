@@ -27,7 +27,9 @@
   - Less durability than diamond.
   - Tools & Weapons are mine/attack slightly faster
   - Armor has innate Projectile Protection II but no toughness.
-- Removed Quark's Backpack and Ravager hide
+- Removed Quark's Backpack and Ravager hide.
+- Removed Grappling Squok in favor of Grappling Hook.
+- Added Upgrade recipe for upgrading Grappling Hooks with Lost Tentacles.
 
 # Balancing & Progression.
 - Default World Size is now 6000 by 6000. Defeating the Sculk Horde sets it back to the default.

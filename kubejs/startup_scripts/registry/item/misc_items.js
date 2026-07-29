@@ -42,7 +42,8 @@ StartupEvents.registry('item', (event) => {
         'resonant_gun_parts',
         'redstone_cell',
         'titanium_dust',
-        'laser_optics'
+        'laser_optics',
+        'backpack_expansion'
     ].forEach((item) => {
         event.create(item);
     });

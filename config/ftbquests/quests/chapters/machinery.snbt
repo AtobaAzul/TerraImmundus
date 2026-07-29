@@ -23,6 +23,7 @@
 				item: "thermal:nickel_ingot"
 				type: "item"
 			}]
+			title: "Nickel"
 			x: 1.5d
 			y: 8.5d
 		}
@@ -569,6 +570,7 @@
 				item: "thermal:steel_ingot"
 				type: "item"
 			}]
+			title: "Steel"
 			x: 0.0d
 			y: -10.0d
 		}
@@ -595,6 +597,7 @@
 				item: "thermal:lumium_ingot"
 				type: "item"
 			}]
+			title: "Lumium"
 			x: 2.0d
 			y: -15.0d
 		}
@@ -606,6 +609,7 @@
 				item: "thermal:electrum_ingot"
 				type: "item"
 			}]
+			title: "Electrum"
 			x: 6.5d
 			y: -13.0d
 		}
@@ -617,6 +621,7 @@
 				item: "thermal:enderium_ingot"
 				type: "item"
 			}]
+			title: "Enderium"
 			x: 5.5d
 			y: -17.5d
 		}
@@ -649,6 +654,7 @@
 				item: "thermal:rose_gold_ingot"
 				type: "item"
 			}]
+			title: "Rose Gold"
 			x: 7.5d
 			y: -11.0d
 		}
@@ -683,6 +689,7 @@
 				item: "scguns:treated_brass_ingot"
 				type: "item"
 			}]
+			title: "Treated Brass"
 			x: 3.5d
 			y: -18.0d
 		}
@@ -695,6 +702,7 @@
 				item: "minecraft:netherite_ingot"
 				type: "item"
 			}]
+			title: "Meteorite"
 			x: 8.0d
 			y: -10.0d
 		}
@@ -707,6 +715,7 @@
 				item: "caverns_and_chasms:necromium_ingot"
 				type: "item"
 			}]
+			title: "Necromium"
 			x: 2.5d
 			y: -17.5d
 		}
@@ -826,6 +835,7 @@
 				item: "thermal:signalum_ingot"
 				type: "item"
 			}]
+			title: "Signalum"
 			x: 0.5d
 			y: -11.0d
 		}
@@ -940,6 +950,7 @@
 				item: "thermal:constantan_ingot"
 				type: "item"
 			}]
+			title: "Constantan"
 			x: 0.0d
 			y: -4.5d
 		}
@@ -952,6 +963,7 @@
 				item: "thermal:invar_ingot"
 				type: "item"
 			}]
+			title: "Invar"
 			x: 4.0d
 			y: -2.0d
 		}
@@ -963,6 +975,7 @@
 				item: "thermal:bronze_ingot"
 				type: "item"
 			}]
+			title: "Bronze"
 			x: -1.5d
 			y: -4.5d
 		}
@@ -990,6 +1003,7 @@
 				item: "scbrass:brass_ingot"
 				type: "item"
 			}]
+			title: "Brass"
 			x: 6.0d
 			y: -14.0d
 		}

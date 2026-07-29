@@ -496,4 +496,41 @@ ServerEvents.recipes((e) => {
         e.smithing(value.replace("moonsweaponry", "kubejs").replace("netherite", "necromium").replace("minecraft", "caverns_and_chasms"), 'minecraft:netherite_upgrade_smithing_template', key.replace("moonsweaponry", "kubejs").replace("netherite", "necromium").replace("minecraft", "caverns_and_chasms"), '#forge:ingots/necromium');
     }
 
+    e.remove({ mod: 'grapplemod' })
+
+    e.shaped('grapplemod:grapplinghook', ['ABC', 'BCC', 'CCC'], {
+        A: '#forge:ingots/iron',
+        B: '#forge:nuggets/iron',
+        C: 'farmersdelight:rope'
+    })
+
+    e.remove({ id: 'alexsmobs:squid_grapple' })
+
+    e.shapeless(Item.of('grapplemod:grapplinghook', '{Damage:0,custom:{angle:20.0d,attract:0b,attractradius:3.0d,crc32:3711581742L,detachonkeyrelease:0b,doublehook:0b,enderstaff:0b,hookgravity:1.0d,maxlen:200.0d,motor:0b,motoracceleration:0.2d,motordampener:0b,motormaxspeed:4.0d,motorwhencrouching:0b,motorwhennotcrouching:1b,oneropepull:0b,phaserope:0b,playermovementmult:1.0d,pullbackwards:1b,reelin:1b,repel:0b,repelforce:1.0d,rocket:0b,rocket_active_time:0.5d,rocket_force:1.0d,rocket_refuel_ratio:15.0d,rocket_vertical_angle:0.0d,smartdoublemotor:1b,smartmotor:0b,sneakingangle:10.0d,sneakingverticalthrowangle:0.0d,sticky:0b,throwspeed:2.0d,verticalthrowangle:0.0d}}'),
+        [
+            'grapplemod:grapplinghook',
+            '3x alexsmobs:lost_tentacle'
+        ])
+
+    e.shaped('kubejs:backpack_expansion', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'minecraft:leather',
+        B: 'thermal:cured_rubber',
+        C: 'thermal:rose_gold_gear'
+    })
+
+    e.remove({ id: 'backpacked:backpack' })
+    e.shaped('backpacked:backpack', [
+        'ABA',
+        'CDC',
+        'ABA'
+    ], {
+        A: 'minecraft:leather',
+        B: 'supplementaries:flax',
+        C: 'thermal:invar_ingot',
+        D: 'farmersdelight:rope'
+    })
 });
