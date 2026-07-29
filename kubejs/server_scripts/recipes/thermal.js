@@ -130,4 +130,6 @@ ServerEvents.recipes((e) => {
 
     e.replaceInput({ id: 'thermal:augments/dynamo_throttle_augment' }, 'thermal:electrum_ingot', 'gold_ingot')
     e.replaceInput({ id: 'thermal:slot_seal' }, 'thermal:iron_plate', 'iron_ingot')
+
+    e.replaceInput({id: 'thermal:dynamo_disenchantment'}, 'iron_ingot', 'thermal:constantan_ingot')
 })
