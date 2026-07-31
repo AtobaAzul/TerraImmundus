@@ -13,3 +13,8 @@ ServerEvents.tags('entity_type', (event) => {
     ]);
     event.remove('terraimmundus:bleeds_sculk', 'sculkhorde:sculk_pufferfish')
 });
+
+
+ServerEvents.tags('worldgen/biome', event => {
+    event.add('scguns_cnc:gravekeeper_acolyte_spawns', "#forge:with_default_monster_spawns")
+})

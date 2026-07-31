@@ -1,183 +1,183 @@
 //GUNS
 
 ServerEvents.recipes((e) => {
-	function press(output, input, die, energy) {
-		e.recipes.thermal.press(output, [input, die], 0, energy);
-	}
+    function press(output, input, die, energy) {
+        e.recipes.thermal.press(output, [input, die], 0, energy);
+    }
 
-	function smelter(output, inputs, energy) {
-		e.recipes.thermal.smelter(output, inputs, 0.5, energy);
-	}
+    function smelter(output, inputs, energy) {
+        e.recipes.thermal.smelter(output, inputs, 0.5, energy);
+    }
 
-	function pulverize(output, input, xp, energy) {
-		e.recipes.thermal.pulverizer(output, input, xp, energy);
-	}
-
-
-	//sculk redo
-	e.remove({ id: 'scguns:guns/whispers_from_gun_bench' });
-	e.custom({
-		type: 'scguns:gun_bench',
-		result: {
-			item: 'scguns:whispers',
-			count: 1,
-		},
-		ingredients: {
-			gun_internal_1: {
-				item: 'kubejs:hardened_rapid_firing_unit',
-			},
-			gun_internal_2: {
-				item: 'minecraft:echo_shard',
-			},
-			gun_top_internal_2: {
-				item: 'sculkhorde:ferriscite',
-			},
-			gun_barrel_2: {
-				item: 'kubejs:steel_heavy_gun_barrel',
-			},
-			gun_top_barrel_2: {
-				item: 'sob:sculk_tendril',
-			},
-			gun_grip: {
-				item: 'scguns:gun_grip',
-			},
-			gun_barrel_1: {
-				item: 'kubejs:steel_gun_barrel',
-			},
-			gun_top_barrel_1: {
-				item: 'sob:sculk_tendril',
-			},
-			gun_magazine: {
-				item: 'scguns:gun_magazine',
-			},
-		},
-	});
-
-	e.shapeless('scguns:blasphemy', [
-		'sculkhorde:pure_souls',
-		'3x blaze_powder',
-		'scguns:empty_blasphemy',
-	]);
-
-	e.remove({ id: 'scguns:guns/echoes_2_from_gun_bench' });
-	e.custom({
-		type: 'scguns:gun_bench',
-		result: {
-			item: 'scguns:echoes_2',
-			count: 1,
-		},
-		ingredients: {
-			gun_internal_1: {
-				item: 'kubejs:hardened_firing_unit',
-			},
-			gun_internal_2: {
-				item: 'minecraft:echo_shard',
-			},
-			gun_top_internal_2: {
-				item: 'sculkhorde:ferriscite',
-			},
-			gun_barrel_2: {
-				item: 'kubejs:steel_gun_barrel',
-			},
-			gun_top_barrel_2: {
-				item: 'kubejs:steel_gun_barrel',
-			},
-			gun_grip: {
-				item: 'scguns:gun_grip',
-			},
-			gun_barrel_1: {
-				item: 'kubejs:steel_heavy_gun_barrel',
-			},
-			gun_top_barrel_1: {
-				item: 'kubejs:steel_heavy_gun_barrel',
-			},
-			gun_magazine: {
-				tag: 'minecraft:planks',
-			},
-		},
-	});
+    function pulverize(output, input, xp, energy) {
+        e.recipes.thermal.pulverizer(output, input, xp, energy);
+    }
 
 
-	e.remove({ id: 'scguns:guns/sculk_resonator_from_gun_bench' });
-	e.custom({
-		type: 'scguns:gun_bench',
-		result: {
-			item: 'scguns:sculk_resonator',
-			count: 1,
-		},
-		ingredients: {
-			gun_internal_1: {
-				item: 'kubejs:hardened_rapid_firing_unit',
-			},
-			gun_internal_2: {
-				item: 'minecraft:echo_shard',
-			},
-			gun_top_internal_2: {
-				item: 'sculkhorde:ferriscite',
-			},
-			gun_barrel_2: {
-				item: 'kubejs:steel_gun_barrel',
-			},
-			gun_top_barrel_2: {
-				item: 'sob:sculk_tendril',
-			},
-			gun_grip: {
-				item: 'scguns:gun_grip',
-			},
-			gun_barrel_1: {
-				item: 'kubejs:steel_heavy_gun_barrel',
-			},
-			gun_top_barrel_1: {
-				item: 'sob:sculk_tendril',
-			},
-			gun_magazine: {
-				tag: 'minecraft:planks',
-			},
-		},
-	});
+    //sculk redo
+    e.remove({ id: 'scguns:guns/whispers_from_gun_bench' });
+    e.custom({
+        type: 'scguns:gun_bench',
+        result: {
+            item: 'scguns:whispers',
+            count: 1,
+        },
+        ingredients: {
+            gun_internal_1: {
+                item: 'kubejs:hardened_rapid_firing_unit',
+            },
+            gun_internal_2: {
+                item: 'minecraft:echo_shard',
+            },
+            gun_top_internal_2: {
+                item: 'sculkhorde:ferriscite',
+            },
+            gun_barrel_2: {
+                item: 'kubejs:steel_heavy_gun_barrel',
+            },
+            gun_top_barrel_2: {
+                item: 'sob:sculk_tendril',
+            },
+            gun_grip: {
+                item: 'scguns:gun_grip',
+            },
+            gun_barrel_1: {
+                item: 'kubejs:steel_gun_barrel',
+            },
+            gun_top_barrel_1: {
+                item: 'sob:sculk_tendril',
+            },
+            gun_magazine: {
+                item: 'scguns:gun_magazine',
+            },
+        },
+    });
 
-	e.remove({ id: 'scguns:guns/forlorn_hope_from_gun_bench' });
-	e.custom({
-		type: 'scguns:gun_bench',
-		result: {
-			item: 'scguns:forlorn_hope',
-			count: 1,
-		},
-		ingredients: {
-			gun_internal_1: {
-				item: 'kubejs:hardened_firing_unit',
-			},
-			gun_internal_2: {
-				item: 'minecraft:echo_shard',
-			},
-			gun_top_internal_2: {
-				item: 'sculkhorde:diascite',
-			},
-			gun_top_internal_1: {
-				item: 'sculkhorde:ferriscite',
-			},
-			gun_barrel_2: {
-				item: 'kubejs:steel_heavy_gun_barrel',
-			},
-			gun_grip: {
-				item: 'scguns:gun_grip',
-			},
-			gun_barrel_1: {
-				item: 'kubejs:steel_heavy_gun_barrel',
-			},
-			gun_magazine: {
-				tag: 'minecraft:planks',
-			},
-		},
-	});
+    e.shapeless('scguns:blasphemy', [
+        'sculkhorde:pure_souls',
+        '3x blaze_powder',
+        'scguns:empty_blasphemy',
+    ]);
 
-    e.remove({id: 'scguns:guns/nervepinch_from_gun_bench'})
-    e.remove({id: /scguns:guns\/.*_turret_from_gun_bench/})
+    e.remove({ id: 'scguns:guns/echoes_2_from_gun_bench' });
+    e.custom({
+        type: 'scguns:gun_bench',
+        result: {
+            item: 'scguns:echoes_2',
+            count: 1,
+        },
+        ingredients: {
+            gun_internal_1: {
+                item: 'kubejs:hardened_firing_unit',
+            },
+            gun_internal_2: {
+                item: 'minecraft:echo_shard',
+            },
+            gun_top_internal_2: {
+                item: 'sculkhorde:ferriscite',
+            },
+            gun_barrel_2: {
+                item: 'kubejs:steel_gun_barrel',
+            },
+            gun_top_barrel_2: {
+                item: 'kubejs:steel_gun_barrel',
+            },
+            gun_grip: {
+                item: 'scguns:gun_grip',
+            },
+            gun_barrel_1: {
+                item: 'kubejs:steel_heavy_gun_barrel',
+            },
+            gun_top_barrel_1: {
+                item: 'kubejs:steel_heavy_gun_barrel',
+            },
+            gun_magazine: {
+                tag: 'minecraft:planks',
+            },
+        },
+    });
 
-    e.shaped('scguns:auto_turret', [' AB','CDB',' E '], {A: 'scguns:iron_gun_frame',B: 'scguns:gun_barrel',C: 'thermal:invar_gear',D: 'kubejs:hardened_rapid_firing_unit',E: 'scguns:turret_platform'})
-    e.shaped('scguns:shotgun_turret', ['AB ','CDE',' F '], {A: 'kubejs:hardened_firing_unit',B: 'scguns:iron_gun_frame',C: 'thermal:invar_gear',D: 'scguns:gun_barrel',E: 'scguns:heavy_gun_barrel',F: 'scguns:turret_platform'})
-    e.shaped('scguns:sniper_turret', ['AB ','CDD',' E '], {A: 'kubejs:hardened_firing_unit',B: 'scguns:iron_gun_frame',C: 'thermal:invar_gear',D: 'scguns:heavy_gun_barrel',E: 'scguns:turret_platform'})
-    e.shaped('scguns:basic_turret', ['AB ','CDD',' E '], {A: 'kubejs:hardened_firing_unit',B: 'scguns:iron_gun_frame',C: 'thermal:invar_gear',D: 'scguns:gun_barrel',E: 'scguns:turret_platform'})
+
+    e.remove({ id: 'scguns:guns/sculk_resonator_from_gun_bench' });
+    e.custom({
+        type: 'scguns:gun_bench',
+        result: {
+            item: 'scguns:sculk_resonator',
+            count: 1,
+        },
+        ingredients: {
+            gun_internal_1: {
+                item: 'kubejs:hardened_rapid_firing_unit',
+            },
+            gun_internal_2: {
+                item: 'minecraft:echo_shard',
+            },
+            gun_top_internal_2: {
+                item: 'sculkhorde:ferriscite',
+            },
+            gun_barrel_2: {
+                item: 'kubejs:steel_gun_barrel',
+            },
+            gun_top_barrel_2: {
+                item: 'sob:sculk_tendril',
+            },
+            gun_grip: {
+                item: 'scguns:gun_grip',
+            },
+            gun_barrel_1: {
+                item: 'kubejs:steel_heavy_gun_barrel',
+            },
+            gun_top_barrel_1: {
+                item: 'sob:sculk_tendril',
+            },
+            gun_magazine: {
+                tag: 'minecraft:planks',
+            },
+        },
+    });
+
+    e.remove({ id: 'scguns:guns/forlorn_hope_from_gun_bench' });
+    e.custom({
+        type: 'scguns:gun_bench',
+        result: {
+            item: 'scguns:forlorn_hope',
+            count: 1,
+        },
+        ingredients: {
+            gun_internal_1: {
+                item: 'kubejs:hardened_firing_unit',
+            },
+            gun_internal_2: {
+                item: 'minecraft:echo_shard',
+            },
+            gun_top_internal_2: {
+                item: 'sculkhorde:diascite',
+            },
+            gun_top_internal_1: {
+                item: 'sculkhorde:ferriscite',
+            },
+            gun_barrel_2: {
+                item: 'kubejs:steel_heavy_gun_barrel',
+            },
+            gun_grip: {
+                item: 'scguns:gun_grip',
+            },
+            gun_barrel_1: {
+                item: 'kubejs:steel_heavy_gun_barrel',
+            },
+            gun_magazine: {
+                tag: 'minecraft:planks',
+            },
+        },
+    });
+
+    e.remove({ id: 'scguns:guns/nervepinch_from_gun_bench' })
+    e.remove({ id: /scguns:guns\/.*_turret_from_gun_bench/ })
+
+    e.shaped('scguns:auto_turret', [' AB', 'CDB', ' E '], { A: 'scguns:iron_gun_frame', B: 'scguns:gun_barrel', C: 'thermal:invar_gear', D: 'kubejs:hardened_rapid_firing_unit', E: 'scguns:turret_platform' })
+    e.shaped('scguns:shotgun_turret', ['AB ', 'CDE', ' F '], { A: 'kubejs:hardened_firing_unit', B: 'scguns:iron_gun_frame', C: 'thermal:invar_gear', D: 'scguns:gun_barrel', E: 'scguns:heavy_gun_barrel', F: 'scguns:turret_platform' })
+    e.shaped('scguns:sniper_turret', ['AB ', 'CDD', ' E '], { A: 'kubejs:hardened_firing_unit', B: 'scguns:iron_gun_frame', C: 'thermal:invar_gear', D: 'scguns:heavy_gun_barrel', E: 'scguns:turret_platform' })
+    e.shaped('scguns:basic_turret', ['AB ', 'CDD', ' E '], { A: 'kubejs:hardened_firing_unit', B: 'scguns:iron_gun_frame', C: 'thermal:invar_gear', D: 'scguns:gun_barrel', E: 'scguns:turret_platform' })
 
 
     function gunBenchRecipe(result, pattern, key) {
@@ -186,7 +186,7 @@ ServerEvents.recipes((e) => {
 
 
     //todo: port all recipes? That'd be annoying.
-    e.remove({id: 'scguns_cnc:gun/mortician'})
+    e.remove({ id: 'scguns_cnc:gun/mortician' })
     gunBenchRecipe('scguns_cnc:mortician', [
         'A   ',
         'BCDE',
@@ -201,7 +201,7 @@ ServerEvents.recipes((e) => {
         G: 'scguns:gun_magazine',
     })
 
-    e.remove({id: 'scguns_cnc:gun/cacophony'})
+    e.remove({ id: 'scguns_cnc:gun/cacophony' })
     gunBenchRecipe('scguns_cnc:cacophony', [
         'AB  ',
         'CDEF',
@@ -217,7 +217,7 @@ ServerEvents.recipes((e) => {
         H: 'scguns:gun_magazine',
     })
 
-    e.remove({id: 'scguns_cnc:gun/charybdis'})
+    e.remove({ id: 'scguns_cnc:gun/charybdis' })
     gunBenchRecipe('scguns_cnc:charybdis', [
         ' A  ',
         'BCDE',
@@ -231,7 +231,7 @@ ServerEvents.recipes((e) => {
         F: 'scguns:gun_grip',
     })
 
-    e.remove({id: 'scguns_cnc:gun/rascal'})
+    e.remove({ id: 'scguns_cnc:gun/rascal' })
     gunBenchRecipe('scguns_cnc:rascal', [
         'AB  ',
         'CDE ',
@@ -246,7 +246,7 @@ ServerEvents.recipes((e) => {
         G: 'scguns:gun_magazine',
     })
 
-    e.remove({id: 'scguns_cnc:gun/recur'})
+    e.remove({ id: 'scguns_cnc:gun/recur' })
     gunBenchRecipe('scguns_cnc:recur', [
         'AB  ',
         'CDE ',
@@ -261,23 +261,23 @@ ServerEvents.recipes((e) => {
         G: 'scguns:gun_magazine',
     })
 
-    e.remove({id: 'scguns_cnc:gun/iron_partisan'})
+    e.remove({ id: 'scguns_cnc:gun/iron_partisan' })
     gunBenchRecipe('scguns_cnc:iron_partisan', [
         'ABC ',
         'DEF ',
         'G H '
     ], {
-      A: 'scguns:iron_gun_frame',
-      B: '#forge:ingots/invar',
-      C: '#minecraft:planks',
-      D: 'kubejs:hardened_firing_unit',
-      E: 'scguns:heavy_gun_parts',
-      F: 'scguns:gun_barrel',
-      G: 'scguns:gun_grip',
-      H: 'scguns:gun_magazine',
+        A: 'scguns:iron_gun_frame',
+        B: '#forge:ingots/invar',
+        C: '#minecraft:planks',
+        D: 'kubejs:hardened_firing_unit',
+        E: 'scguns:heavy_gun_parts',
+        F: 'scguns:gun_barrel',
+        G: 'scguns:gun_grip',
+        H: 'scguns:gun_magazine',
     })
 
-    e.remove({id: 'scguns_cnc:gun/scatterer'})
+    e.remove({ id: 'scguns_cnc:gun/scatterer' })
     gunBenchRecipe('scguns_cnc:scatterer', [
         'ABA ',
         'CDEF',
@@ -292,7 +292,7 @@ ServerEvents.recipes((e) => {
         G: 'scguns:gun_grip'
     })
 
-    e.remove({id: 'scguns_cnc:gun/electrothermal_autocannon'})
+    e.remove({ id: 'scguns_cnc:gun/electrothermal_autocannon' })
     gunBenchRecipe('scguns_cnc:electrothermal_autocannon', [
         'ABC ',
         'DEFG',
@@ -308,7 +308,7 @@ ServerEvents.recipes((e) => {
         H: 'scguns_cnc:electrothermal_part'
     })
 
-    e.remove({id: 'scguns_cnc:gun/lustre'})
+    e.remove({ id: 'scguns_cnc:gun/lustre' })
     gunBenchRecipe('scguns_cnc:lustre', [
         'ABA ',
         'CDEF',
@@ -321,5 +321,62 @@ ServerEvents.recipes((e) => {
         E: 'scguns_cnc:lustre_part',
         F: 'caverns_and_chasms:zirconia',
         G: 'scguns:gun_grip',
+    })
+
+    e.remove({ id: 'scguns_cnc:gun/hummer' })
+    gunBenchRecipe('scguns_cnc:hummer', [
+        'AB  ',
+        'CDEE',
+        'F G '
+    ], {
+        A: '#forge:ingots/copper',
+        B: 'scguns:copper_gun_frame',
+        C: 'scguns:firing_unit',
+        D: 'scguns:gun_parts',
+        E: 'scguns:gun_barrel',
+        F: 'scguns:gun_grip',
+        G: '#minecraft:planks'
+    })
+
+    e.remove({ id: 'scguns_cnc:gun/fusillade' })
+    gunBenchRecipe('scguns_cnc:fusillade', [
+        'ABCC',
+        'DBCC',
+        'E'
+    ], {
+        A: 'scguns:treated_iron_gun_frame',
+        B: 'kubejs:hardened_firing_unit',
+        C: 'kubejs:steel_gun_barrel',
+        D: 'kubejs:reinforced_gun_parts',
+        E: 'scguns:gun_grip'
+    })
+
+
+    e.remove({ id: 'scguns_cnc:gun/dead_draft' })
+    gunBenchRecipe('scguns_cnc:dead_draft', [
+        'ABBB',
+        'CDE ',
+        'F   '
+    ], {
+        A: 'scguns_cnc:necromium_gun_frame',
+        B: 'kubejs:steel_gun_barrel',
+        C: 'kubejs:hardened_firing_unit',
+        D: '#forge:ingots/silver',
+        E: 'scguns:empty_tank',
+        F: 'scguns:gun_grip'
+    })
+
+    e.remove({id: 'scguns_cnc:gun/exhumer'})
+    gunBenchRecipe('scguns_cnc:exhumer', [
+        'ABCC',
+        'ADEE',
+        'F F '
+    ], {
+        A: 'scguns_cnc:necromium_gun_frame',
+        B: 'kubejs:hardened_firing_unit',
+        C: 'kubejs:steel_heavy_gun_barrel',
+        D: 'kubejs:reinforced_gun_parts',
+        E: 'kubejs:steel_gun_barrel',
+        F: 'scguns:gun_grip'
     })
 });

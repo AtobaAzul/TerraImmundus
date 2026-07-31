@@ -156,6 +156,7 @@
   - Boids
   - Backpacked
   - Grappling Hook - Reforged
+  - Anvil API
 - Removed mods:
     - Ixeris
     - Cascades/Hybrid Beta**

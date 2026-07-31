@@ -1,0 +1,70 @@
+
+#Items & Guns
+[items]
+	#The percentage of magic damage dealt by Hex Rounds
+	#Range: 0.0 ~ 1.0
+	magic_damage_percent = 0.5
+	#Magic damage dealt by Keteriya/Hangman Acolyte melee
+	#Range: > 0
+	gun_melee_magic_damage = 4
+	#Amount of ammo restored by melee with the Anathema
+	#Range: > 1
+	anathema_reload_amount = 3
+	#The crit chance increase per RicoShot ricochet
+	#Range: 0.0 ~ 3.4028234663852886E38
+	ricoshot_crit_chance = 0.5
+	#The crit damage increase per RicoShot ricochet
+	#Range: 0.0 ~ 3.4028234663852886E38
+	ricoshot_crit_damage = 0.5
+	#The amount of extra knockpack bluntshot applies on hit
+	#Range: 0.0 ~ 3.4028234663852886E38
+	bluntshot_knockback = 4.400000095367432
+
+	[items."energy guns"]
+		#Lustre
+		#The amount of FE energy used to add 1 ammo to the magazine
+		#Range: > 1
+		lustre_energy_cost = 10000
+		#The amount of FE energy the gun can store
+		#Range: > 1
+		lustre_energy_max = 300000
+		#The amount of time, in ticks, for the gun to add 1 ammo to the magazine.
+		#Range: > 0
+		lustre_refill_cd = 40
+		#A multiplier of how much longer it takes to add 1 ammo to the gun's magazine after shooting.
+		#Range: 1.0 ~ 3.4028234663852886E38
+		lustre_recharge_mult = 2.0
+		#Electrothermal Autocannon
+		#The amount of FE energy used to add 1 ammo to the magazine
+		#Range: > 1
+		electrothermal_autocannon_energy_cost = 750
+		#The amount of FE energy the gun can store
+		#Range: > 1
+		electrothermal_autocannon_energy_max = 300000
+		#The amount of time, in ticks, for the gun to add 1 ammo to the magazine.
+		#Range: > 0
+		electrothermal_autocannon_refill_cd = 2
+		#A multiplier of how much longer it takes to add 1 ammo to the gun's magazine after shooting.
+		#Range: 1.0 ~ 3.4028234663852886E38
+		electrothermal_autocannon_recharge_mult = 50.0
+		#Scatterer
+		#The amount of FE energy used to add 1 ammo to the magazine
+		#Range: > 1
+		scatterer_energy_cost = 1000
+		#The amount of FE energy the gun can store
+		#Range: > 1
+		scatterer_energy_max = 144000
+		#The amount of time, in ticks, for the gun to add 1 ammo to the magazine.
+		#Range: > 0
+		scatterer_refill_cd = 10
+		#A multiplier of how much longer it takes to add 1 ammo to the gun's magazine after shooting.
+		#Range: 1.0 ~ 3.4028234663852886E38
+		scatterer_recharge_mult = 10.0
+
+	#Entities
+	[items.entities]
+		#The minimum required unlocked "raid tier" for Gravekeeper Schisms and Acolytes to spawn. If 0, ignores raid tier entirely.
+		#For reference, use the command /scguns progression check <playername>
+		#Range: > 0
+		required_raid_tier = 4
+

@@ -71,8 +71,6 @@ StartupEvents.init(() => {
 global.onTrySleep = (event) => {
     const player = event.getEntity();
 
-
-
     if ($ModSavedData.getSaveData().getHordeState().toString() == 'UNACTIVATED' && player.level.isNight()) {
         player.swing()
 
