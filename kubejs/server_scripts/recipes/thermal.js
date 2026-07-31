@@ -64,12 +64,51 @@ ServerEvents.recipes((e) => {
     e.replaceInput({ id: 'thermal:machines/smelter/smelter_alloy_enderium' }, 'thermal:diamond_dust', '2x #terraimmundus:dust_or_ingot/netherite')
 
     e.replaceOutput({ id: 'thermal:machines/smelter/smelter_tin_armor' }, '#forge:ingots/tin', 'caverns_and_chasms:tin_ingot')
+    e.replaceOutput({ id: 'thermal:machines/smelter/smelter_tin_tools' }, '#forge:ingots/tin', 'caverns_and_chasms:tin_ingot')
+
+
+    function addRecycleRecipe(input, output) {
+        if (Array.isArray(output)) {
+            output = output.map(item => Item.of(item))
+        } else {
+            output = [Item.of(output)]
+        }
+
+        return e.custom({
+            "type": "thermal:smelter_recycle",
+            "ingredient": Ingredient.of(input),
+            "result": output,
+            "experience": 0.2
+        }).id(`kubejs:recycling/${input.split(':')[1]}`)
+    }
+
+    const recycle = {
+        'caverns_and_chasms:aegis': '8x caverns_and_chasms:tin_ingot',
+        '#forge:tools/copper': '9x minecraft:copper_ingot',
+        '#forge:armor/copper': '27x minecraft:copper_ingot',
+        '#forge:tools/anthralite': ['minecraft:iron_ingot', 'scguns:anthralite_nugget'],
+        '#forge:armor/anthralite': ['3x minecraft:iron_ingot', 'scguns:anthralite_nugget'],
+        '#forge:armor/scrap': ['9x minecraft:copper_ingot', '2x scguns:anthralite_nugget', 'minecraft:iron_ingot'],
+        '#forge:armor/brass': ['4x scbrass:brass_ingot'],
+        '#forge:armor/diamond_steel': ['4x scguns:diamond_steel_ingot'],
+        '#forge:armor/treated_brass': ['4x scguns:treated_brass_ingot'],
+        'caverns_and_chasms:large_arrow': 'caverns_and_chasms:silver_nugget',
+        'caverns_and_chasms:kunai': 'caverns_and_chasms:silver_nugget',
+    }
+
+    for (const [input, output] of Object.entries(recycle)) {
+        addRecycleRecipe(input, output)
+    }
 
     e.remove({ output: 'thermal:satchel' })
 
     e.replaceInput({ output: 'systeams:steam_dynamo' }, 'iron_ingot', 'scbrass:zinc_ingot')
 
     e.replaceInput({ output: /(thermal:fluid_resevoir|thermal:potion_infuse|thermal:potion_quiver)/ }, 'copper_ingot', 'scguns:treated_brass_ingot')
+
+
+    e.remove({ id: 'thermal:machines/smelter/smelter_copper_tools' })
+    e.remove({ id: 'thermal:machines/smelter/smelter_copper_armor' })
 
     e.forEachRecipe({ type: "systeams:steam" }, recipe => {
         let _json = JsonIO.toObject(recipe.json)
@@ -131,5 +170,5 @@ ServerEvents.recipes((e) => {
     e.replaceInput({ id: 'thermal:augments/dynamo_throttle_augment' }, 'thermal:electrum_ingot', 'gold_ingot')
     e.replaceInput({ id: 'thermal:slot_seal' }, 'thermal:iron_plate', 'iron_ingot')
 
-    e.replaceInput({id: 'thermal:dynamo_disenchantment'}, 'iron_ingot', 'thermal:constantan_ingot')
+    e.replaceInput({ id: 'thermal:dynamo_disenchantment' }, 'iron_ingot', 'thermal:constantan_ingot')
 })

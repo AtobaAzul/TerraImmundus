@@ -204,4 +204,26 @@ ServerEvents.tags('item', (event) => {
     event.add('terraimmundus:any_copper_equipment', /caverns_and_chasms:.*copper_(axe|sword|pickaxe|shovel|hoe|helmet|chestplate|leggings|boots)/)
 
     event.add('terraimmundus:any_item_disc', ['refinedstorage:1k_storage_disk', 'refinedstorage:4k_storage_disk', 'refinedstorage:16k_storage_disk'])
+
+    event.add('caverns_and_chasms:magic_damage_items', /kubejs:.*silver_(katana|greatsword|scythe|rapier|rapier|halberd|warglaive|mace|hammer)/)
+
+    event.add('forge:tools/iron', [/moonsweaponry:iron_.*/, 'scguns:iron_bayonet', 'thermal:wrench', 'refurbished_furniture:wrench', 'quark:trowel', 'scguns:war_axe'])
+
+    event.add('forge:tools/gold', /moonsweaponry:golden_.*/)
+    event.add('forge:tools/diamond', ['scguns:diamond_bayonet', /moonsweaponry:diamond_.*/])
+
+    event.add('forge:tools/silver', ['#caverns_and_chasms:magic_damage_items', 'pipez:wrench'])
+    event.add('forge:armor/silver', /caverns_and_chasms:silver_(helmet|chestplate|leggings|boots)/)
+
+    event.add('forge:tools/copper', [/caverns_and_chasms:.*copper_(axe|sword|pickaxe|shovel|hoe)/, 'supplementaries:wrench'])
+    event.add('forge:armor/copper', /caverns_and_chasms:.*copper_(helmet|chestplate|leggings|boots)/)
+
+
+    event.add('forge:tools/anthralite', /(scguns|kubejs):anthralite_(axe|sword|pickaxe|shovel|hoe|katana|greatsword|scythe|rapier|rapier|halberd|warglaive|mace|hammer|bayonet)/)
+    event.add('forge:armor/anthralite', /scguns:anthralite_(helmet|chestplate|leggings|boots)/)
+
+    event.add('forge:armor/scrap', /scguns:scrap_(helmet|chestplate|leggings|boots)/)
+    event.add('forge:armor/brass', /scguns:cog_knight_(helmet|chestplate|leggings|boots)/)
+    event.add('forge:armor/diamond_steel', /scguns:diamond_steel_(helmet|chestplate|leggings|boots)/)
+    event.add('forge:armor/treated_brass', /scguns:treated_brass_(helmet|chestplate|leggings|boots)/)
 });
