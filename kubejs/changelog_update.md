@@ -52,6 +52,8 @@
 - Lead ores now drop 2 to 5 raw lead + fortune bonus.
 - Reduced needles from Flechette to 4, from 9.
 - Reduced Ancient Brass from Ancient Brass Blocks to 1 to 3, from 2 to 5.
+- Added more recycling recipes for items. Removed Whizzbanger. (Yes, these 2 *are* related.)
+- Blasmphemy costs Rose Gold Ingot instead of Iron
 
 # Recipes
 - Made Excitation Field Limiter use a Gold Ingot instead of Electrum

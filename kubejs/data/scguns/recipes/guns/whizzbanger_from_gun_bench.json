@@ -1,24 +1,29 @@
 {
-  "type": "scguns:gun_bench",
-  "result": {
-    "item": "scguns:whizzbanger",
-    "count": 1
-  },
-  "ingredients": {
-    "gun_internal_1": {
-      "item": "minecraft:stick"
+    "conditions": [
+        {
+            "type": "forge:false"
+        }
+    ],
+    "type": "scguns:gun_bench",
+    "result": {
+        "item": "scguns:whizzbanger",
+        "count": 1
     },
-    "gun_top_internal_1": {
-      "item": "thermal:steel_ingot"
-    },
-    "gun_internal_2": {
-      "item": "scguns:firing_unit"
-    },
-    "gun_barrel_1": {
-      "item": "scguns:large_iron_casing"
-    },
-    "gun_magazine": {
-      "item": "scguns:vertical_grip"
+    "ingredients": {
+        "gun_internal_1": {
+            "item": "minecraft:stick"
+        },
+        "gun_top_internal_1": {
+            "item": "thermal:steel_ingot"
+        },
+        "gun_internal_2": {
+            "item": "scguns:firing_unit"
+        },
+        "gun_barrel_1": {
+            "item": "scguns:large_iron_casing"
+        },
+        "gun_magazine": {
+            "item": "scguns:vertical_grip"
+        }
     }
-  }
 }

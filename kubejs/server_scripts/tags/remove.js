@@ -209,7 +209,8 @@ const REMOVED_ITEMS = [
 	'grapplemod:throwupgradeitem',
 	'grapplemod:swingupgradeitem',
 	'grapplemod:longfallboots',
-    'alexsmobs:squid_grapple'
+    'alexsmobs:squid_grapple',
+    'scguns:whizzbanger'
 ];
 
 ServerEvents.tags('item', (event) => {
