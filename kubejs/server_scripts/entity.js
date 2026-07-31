@@ -32,30 +32,13 @@ const repairAmount = 2;
 const xpCost = 1; // xp pont per repair.
 
 PlayerEvents.tick((event) => {
-    //clever way to reduce frequency I saw from amerryelk's weight system script.
-
     const {
         player,
         player: { xpLevel, xp },
     } = event;
     let repair = true;
 
-    const armor_slots = [
-        'head',
-        'chest',
-        'legs',
-        'feet',
-    ]
-
-    armor_slots.forEach(slot => {
-        let armor = player.getEquipment(slot)
-        if (armor.getNbt().get('broken')) {
-            player.give(armor);
-            player.setEquipment(slot, Item.empty);
-        }
-
-    })
-
+    //clever way to reduce frequency I saw from amerryelk's weight system script.
     if (player.age % repairUpdateFrequency !== 0) return;
 
     player.inventory.allItems.forEach((item) => {

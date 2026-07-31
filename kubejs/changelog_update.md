@@ -152,7 +152,6 @@
   - Iron's Simple Blood*
   - Delightful Fixes
   - EMIAccelerator
-  - Durability Overhaul
   - LightStar
   - Resource Pack Overrides
   - Boids

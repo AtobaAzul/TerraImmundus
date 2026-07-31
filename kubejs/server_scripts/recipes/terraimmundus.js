@@ -381,17 +381,6 @@ ServerEvents.recipes((e) => {
         B: 'caverns_and_chasms:tin_block'
     })
 
-    e.remove({ id: 'improved_damage:enchanter_recipe' })
-    e.shaped('improved_damage:enchanter', [
-        'AB',
-        'CC',
-        'CC'
-    ], {
-        A: '#minecraft:candles',
-        B: 'minecraft:book',
-        C: '#minecraft:planks'
-    })
-
     e.remove({ id: 'alexsmobs:flint_n_steel_dropbear_claw' })
     e.replaceInput({ id: 'alexsmobs:tendon_whip' }, 'alexsmobs:dropbear_claw', '#forge:nuggets/iron')
 

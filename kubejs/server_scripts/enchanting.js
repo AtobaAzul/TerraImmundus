@@ -124,7 +124,6 @@ AddBasicEnchant('minecraft:lure', 3, 'prismarine_shard', 8, 4);
 AddBasicEnchant('allurement:obedience', 1, 'lapis_lazuli', 32);
 AddBasicEnchant('cofh_core:holding', 4, 'lapis_lazuli', 16, 8);
 AddBasicEnchant('minecraft:unbreaking', 3, 'lapis_lazuli', 32, 16);
-AddBasicEnchant('improved_damage:durable', 3, 'lapis_lazuli', 32, 16);
 
 AddBasicEnchant('minecraft:loyalty', 3, 'lapis_lazuli', 32, 16);
 AddBasicEnchant('scguns:lightweight', 2, 'lapis_lazuli', 16, 16);
