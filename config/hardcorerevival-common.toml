@@ -34,4 +34,8 @@ instantDeathEntityTypes = []
 disableInNonHardcore = false
 #The penalty to apply to the player's food level when they were rescued, out of 20.
 rescueRespawnFoodLevelDecrease = 0
+#If true, ender pearls will vanish when their owner is knocked out.
+enderPearlsVanishOnKnockout = true
+#If true, knocked out players are still able to be teleported.
+allowTeleports = true
 

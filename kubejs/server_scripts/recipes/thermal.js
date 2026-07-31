@@ -106,7 +106,8 @@ ServerEvents.recipes((e) => {
         '#scguns:piglin_gun_tier': ['thermal:rose_gold_ingot', '15x scguns:anthralite_nugget'],
         '#scguns:deep_dark_gun_tier': ['2x thermal:steel_ingot', 'scguns:anthralite_nugget', 'sculkhorde:ferriscite'],
         '#scguns:end_gun_tier': ['3x thermal:enderium_ingot', '18x thermal:steel_nugget', 'thermal:lumium_nugget'],
-        '#scguns:scorched_gun_tier': ['2x scguns:scorched_ingot', '16x thermal:enderium_nugget', '2x thermal:steel_ingot']
+        '#scguns:scorched_gun_tier': ['2x scguns:scorched_ingot', '16x thermal:enderium_nugget', '2x thermal:steel_ingot'],
+        'scguns:brass_mask': '3x scbrass:brass_ingot',
     }
 
     for (const [input, output] of Object.entries(recycle)) {
