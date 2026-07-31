@@ -294,7 +294,11 @@
 		}
 		{
 			dependencies: ["3C02B44B3D3AC7BA"]
-			description: ["Sculk Shrooms can be used to brew Awkward Potions"]
+			description: [
+				"Sculk Shrooms can be used to brew Awkward Potions."
+				""
+				"Brewing Stands use Vehement Coal instead of Blaze Powder."
+			]
 			id: "60CDE4F974B62505"
 			size: 1.0d
 			tasks: [{

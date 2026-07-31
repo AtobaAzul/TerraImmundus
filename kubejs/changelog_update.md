@@ -53,7 +53,8 @@
 - Reduced needles from Flechette to 4, from 9.
 - Reduced Ancient Brass from Ancient Brass Blocks to 1 to 3, from 2 to 5.
 - Added more recycling recipes for items. Removed Whizzbanger. (Yes, these 2 *are* related.)
-- Blasmphemy costs Rose Gold Ingot instead of Iron
+- Blasmphemy costs Rose Gold Ingot instead of Iron.
+- Brewing Stands now use Vehement Coal instead of Blaze Powder
 
 # Recipes
 - Made Excitation Field Limiter use a Gold Ingot instead of Electrum
@@ -158,6 +159,7 @@
   - Backpacked
   - Grappling Hook - Reforged
   - Anvil API
+  - Better Brewing Stand Fuelds
 - Removed mods:
     - Ixeris
     - Cascades/Hybrid Beta**
