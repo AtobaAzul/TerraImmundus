@@ -494,6 +494,11 @@ ServerEvents.recipes((e) => {
     for (const [key, value] of Object.entries(netherite_upgrades)) {
         e.smithing(value, 'minecraft:netherite_upgrade_smithing_template', key, '#forge:ingots/netherite');
         e.smithing(value.replace("moonsweaponry", "kubejs").replace("netherite", "necromium").replace("minecraft", "caverns_and_chasms"), 'minecraft:netherite_upgrade_smithing_template', key.replace("moonsweaponry", "kubejs").replace("netherite", "necromium").replace("minecraft", "caverns_and_chasms"), '#forge:ingots/necromium');
+        e.custom({
+            type: 'minecraft:anvil_repair',
+            baseItem: key,
+            repairItem: 'caverns_and_chasms:tin_ingot',
+        })
     }
 
     e.remove({ mod: 'grapplemod' })
