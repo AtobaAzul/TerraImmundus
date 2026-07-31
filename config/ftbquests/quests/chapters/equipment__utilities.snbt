@@ -238,8 +238,8 @@
 					type: "item"
 				}
 			]
-			x: -9.0d
-			y: 0.5d
+			x: -8.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -257,8 +257,8 @@
 				item: "supplementaries:sack"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -0.5d
+			x: -6.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -316,8 +316,8 @@
 				}
 			]
 			title: "Hazmat suit"
-			x: 3.0d
-			y: -1.5d
+			x: 2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -368,8 +368,8 @@
 				type: "item"
 			}]
 			title: "Melee Weapons"
-			x: 1.5d
-			y: -2.5d
+			x: 0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -408,8 +408,8 @@
 				}
 			]
 			title: "Automobiles"
-			x: -8.5d
-			y: -0.5d
+			x: -7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2D05372FF6E08E2B"]
@@ -435,8 +435,8 @@
 				type: "item"
 			}]
 			title: "Aircraft"
-			x: -8.0d
-			y: -1.5d
+			x: -7.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -461,8 +461,8 @@
 				type: "item"
 			}]
 			title: "Anthralite Upgrades"
-			x: 0.5d
-			y: -2.5d
+			x: -0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -487,8 +487,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: -1.5d
+			x: -6.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -512,8 +512,8 @@
 				type: "item"
 			}]
 			title: "Purity Apples"
-			x: -6.5d
-			y: -0.5d
+			x: -5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -532,8 +532,8 @@
 				type: "item"
 			}]
 			title: "Bundles"
-			x: -8.0d
-			y: 0.5d
+			x: -7.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -546,8 +546,8 @@
 				item: "farmersdelight:cooking_pot"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -1.5d
+			x: -5.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -560,8 +560,8 @@
 				item: "miners_delight:copper_pot"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -2.5d
+			x: -5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -574,8 +574,8 @@
 				item: "farmersrespite:kettle"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -2.5d
+			x: -4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0713D981D65DF155"]
@@ -587,8 +587,8 @@
 				item: "brewinandchewin:keg"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -2.5d
+			x: -6.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -610,8 +610,8 @@
 				type: "item"
 			}]
 			title: "Drawers"
-			x: -7.0d
-			y: 0.5d
+			x: -6.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -642,50 +642,7 @@
 				}
 			]
 			title: "Wrenches"
-			x: 2.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["5865797006BBAAE2"]
-			description: [
-				"In &6Terra Immundus&r, items do not break at 0% durability and instead become &4unusable&r. Items start losing efficiency when below 30% durability."
-				""
-				"Items, like in vanilla, can be repaired in an Anvil with their respective materials, or &6Zirconia&r, which acts as an universal repair ingredient."
-				"Guns can be repaired with a Repair Kit. "
-				""
-				"However, anvils cannot apply enchanted books. "
-				""
-				"&aRepairing does not cost Experience&r"
-			]
-			id: "3718DBBC5C60B324"
-			shape: "hexagon"
-			tasks: [{
-				id: "2B790DB92D295735"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:anvil)"
-					}
-				}
-				title: "Any #minecraft:anvil"
-				type: "item"
-			}]
-			title: "Repairing"
-			x: -3.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["5865797006BBAAE2"]
-			description: ["The Enchanter is used to apply Enchanted Books onto items, instead of Anvils."]
-			id: "28A5F4F2C9C441EE"
-			shape: "hexagon"
-			tasks: [{
-				id: "6CD1C7562A123A81"
-				item: "improved_damage:enchanter"
-				type: "item"
-			}]
-			x: -1.5d
+			x: 1.5d
 			y: -2.0d
 		}
 		{
@@ -713,8 +670,8 @@
 				type: "item"
 			}]
 			title: "Necromium Upgrades"
-			x: 1.5d
-			y: -0.5d
+			x: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -744,8 +701,8 @@
 				type: "item"
 			}]
 			title: "Titanium Equipment"
-			x: 1.0d
-			y: -1.5d
+			x: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["37C39E75C3EBC81D"]
@@ -761,8 +718,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -0.5d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["37C39E75C3EBC81D"]
@@ -778,8 +735,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: 0.5d
+			x: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["37C39E75C3EBC81D"]
@@ -795,8 +752,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.5d
-			y: -0.5d
+			x: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["37C39E75C3EBC81D"]
@@ -813,8 +770,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.5d
+			x: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["587153939A0E5FC1"]
@@ -826,8 +783,8 @@
 				item: "kubejs:smokeless_powder"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -0.5d
+			x: -8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3F498515E8FB78D3"]
@@ -843,8 +800,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: -1.5d
+			x: 3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3F498515E8FB78D3"]
@@ -860,8 +817,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.5d
+			x: 4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3F498515E8FB78D3"]
@@ -877,8 +834,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: -0.5d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -895,8 +852,8 @@
 				item: "scguns:energy_cell"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 0.5d
+			x: -9.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["159F7789853FBC57"]
@@ -908,8 +865,8 @@
 				item: "scguns:energy_core"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -2.5d
+			x: -7.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -937,8 +894,8 @@
 				}
 			]
 			title: "Flamethrowers"
-			x: -9.0d
-			y: -1.5d
+			x: -8.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -957,8 +914,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: 0.5d
+			x: 1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -985,8 +942,8 @@
 				type: "item"
 			}]
 			title: "Copper Equipment"
-			x: 2.0d
-			y: -1.5d
+			x: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1055,8 +1012,8 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: -2.5d
+			x: 2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["56B4243C13CBA71D"]

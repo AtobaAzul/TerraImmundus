@@ -356,9 +356,9 @@ ServerEvents.recipes((e) => {
     e.remove({ id: 'caverns_and_chasms:tin_ingot_from_blasting_raw_tin' })
     e.shapeless('caverns_and_chasms:zirconia', ['thermal:sapphire'])
 
-    e.recipes.thermal.bottler('16x minecraft:torch', [
-        Fluid.of('thermal:creosote', 25),
-        '8x #forge:rods/wooden',
+    e.recipes.thermal.bottler('4x minecraft:torch', [
+        Fluid.of('thermal:creosote', 100),
+        '#forge:rods/wooden',
     ]);
     e.remove({ id: 'scguns:blaze_fuel' })
     e.shapeless('scguns:blaze_fuel', ['scguns:empty_tank', '3x blaze_powder'])
@@ -379,17 +379,6 @@ ServerEvents.recipes((e) => {
     ], {
         A: 'caverns_and_chasms:tin_ingot',
         B: 'caverns_and_chasms:tin_block'
-    })
-
-    e.remove({ id: 'improved_damage:enchanter_recipe' })
-    e.shaped('improved_damage:enchanter', [
-        'AB',
-        'CC',
-        'CC'
-    ], {
-        A: '#minecraft:candles',
-        B: 'minecraft:book',
-        C: '#minecraft:planks'
     })
 
     e.remove({ id: 'alexsmobs:flint_n_steel_dropbear_claw' })
@@ -522,7 +511,7 @@ ServerEvents.recipes((e) => {
         'BCB',
         'ABA'
     ], {
-        A: 'minecraft:leather',
+        A: ['minecraft:leather', 'farmersdelight:canvas'],
         B: 'thermal:cured_rubber',
         C: 'thermal:rose_gold_gear'
     })

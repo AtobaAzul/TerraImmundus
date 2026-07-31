@@ -108,7 +108,7 @@
 		#Base chance for progression-based gunner mobs to spawn (0.0 = never, 1.0 = always).
 		#This is the spawn chance on NORMAL difficulty. Thematic mobs use their own config.
 		#Range: 0.0 ~ 1.0
-		gunnerSpawnChance = 0.33
+		gunnerSpawnChance = 0.25
 		#If enabled, spawn chances scale with game difficulty.
 		#PEACEFUL: 50% of base chance, EASY: 75%, NORMAL: 100%, HARD: 150%
 		scaleToDifficulty = true
@@ -117,7 +117,7 @@
 		#Base chance for Elite Gunners to spawn (0.0 = never, 1.0 = always).
 		#This is the spawn chance on NORMAL difficulty.
 		#Range: 0.0 ~ 1.0
-		eliteChance = 0.5
+		eliteChance = 0.25
 
 	#Properties relating to mob aggression from gunfire
 	[common.aggro_mobs]

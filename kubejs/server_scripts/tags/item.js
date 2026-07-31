@@ -226,4 +226,7 @@ ServerEvents.tags('item', (event) => {
     event.add('forge:armor/brass', /scguns:cog_knight_(helmet|chestplate|leggings|boots)/)
     event.add('forge:armor/diamond_steel', /scguns:diamond_steel_(helmet|chestplate|leggings|boots)/)
     event.add('forge:armor/treated_brass', /scguns:treated_brass_(helmet|chestplate|leggings|boots)/)
+    
+    event.removeAll('minecraft:brewing_stand_fuel');
+    event.add("minecraft:brewing_stand_fuel", "scguns:vehement_coal");
 });
