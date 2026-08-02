@@ -599,7 +599,7 @@
 			}]
 			title: "Lumium"
 			x: 2.0d
-			y: -15.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["74487E0EF55041DE"]
@@ -666,8 +666,8 @@
 				item: "thermal:obsidian_glass"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -13.0d
+			x: 1.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["74487E0EF55041DE"]
@@ -751,8 +751,8 @@
 				}
 			]
 			title: "Steam Power"
-			x: 0.0d
-			y: -14.0d
+			x: -1.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["7F827B2C0F0F5F50"]
@@ -848,8 +848,8 @@
 				item: "refinedstorage:silicon"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -12.0d
+			x: 1.5d
+			y: -13.0d
 		}
 		{
 			dependencies: [
@@ -891,8 +891,8 @@
 				}
 			]
 			title: "Refined Storage"
-			x: -1.0d
-			y: -12.0d
+			x: 0.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["42B799EC849CF1F8"]
@@ -927,11 +927,14 @@
 				item: "thermal:machine_insolator"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.0d
 			y: -16.0d
 		}
 		{
-			dependencies: ["2AC019C1EC3821B8"]
+			dependencies: [
+				"2AC019C1EC3821B8"
+				"7FDF2C8698EFFEE9"
+			]
 			description: ["The Crystallizer grows crystals from powders and fluids, as well as other unique recipes."]
 			id: "587153939A0E5FC1"
 			tasks: [{
@@ -991,7 +994,7 @@
 				item: "refinedstorage:256k_fluid_storage_disk"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 0.5d
 			y: -15.0d
 		}
 		{
@@ -1006,17 +1009,6 @@
 			title: "Brass"
 			x: 6.0d
 			y: -14.0d
-		}
-		{
-			dependencies: ["587153939A0E5FC1"]
-			id: "0891B8A40C278486"
-			tasks: [{
-				id: "069E9027CD91D4CD"
-				item: "minecraft:glowstone_dust"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -11.0d
 		}
 	]
 	title: "Machinery"
