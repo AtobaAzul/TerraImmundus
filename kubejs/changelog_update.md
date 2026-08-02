@@ -57,6 +57,7 @@
 - Blasmphemy costs Rose Gold Ingot instead of Iron.
 - Brewing Stands now use Vehement Coal instead of Blaze Powder.
 - Changed Necromium Frame recipe to be like other gun frames.
+- Reduced Wither health 1800, from 2000.
 - Increased Smokeless Powder yield to 2, decreased H.Oil cost to 250, from 500.
 
 # Recipes
