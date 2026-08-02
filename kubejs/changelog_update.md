@@ -24,7 +24,7 @@
 - Item Pipes now use Caverns and Chams Tin (now renamed to titanium)
 - Added Titanium tool, weapons and armor. Acts as a diamond sidegrade.
   - Less durability than diamond.
-  - Tools & Weapons are mine/attack slightly faster
+  - Tools & Weapons mine/attack slightly faster.
   - Armor has innate Projectile Protection II but no toughness.
 - Removed Quark's Backpack and Ravager hide.
 - Removed Grappling Squok in favor of Grappling Hook.
@@ -62,6 +62,7 @@
 - Changed Necromium Frame recipe to be like other gun frames.
 - Reduced Wither health 1800, from 2000.
 - Increased Smokeless Powder yield to 2, decreased H.Oil cost to 250, from 500.
+- Soul Sand no longer spawns in structures.
 
 # Recipes
 - Made Excitation Field Limiter use a Gold Ingot instead of Electrum

@@ -507,8 +507,8 @@
 				item: "thermal:machine_crucible"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -7.0d
+			x: 5.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7F827B2C0F0F5F50"]
@@ -519,8 +519,8 @@
 				item: "thermal:machine_chiller"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -4.0d
+			x: 5.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7F827B2C0F0F5F50"]
@@ -531,8 +531,8 @@
 				item: "thermal:machine_refinery"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -6.0d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6DCF7A961B5BD3F8"]
@@ -765,7 +765,7 @@
 			}]
 			title: "Upgrading Equipment"
 			x: 6.0d
-			y: -3.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5E9A093FD988923B"]
@@ -788,8 +788,8 @@
 				item: "thermal:dynamo_magmatic"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -5.0d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0713D981D65DF155"]

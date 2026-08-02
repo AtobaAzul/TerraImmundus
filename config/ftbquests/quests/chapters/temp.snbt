@@ -39,14 +39,14 @@
 			description: ["A critical resource needed for fighting against the Sculk."]
 			id: "5CF1BB9629E2308F"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "1BFC9FA8C075D6B6"
 				item: "sculkhorde:essence_of_purity"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -6.0d
+			x: -3.0d
+			y: -5.5d
 		}
 		{
 			description: [
@@ -276,7 +276,7 @@
 				type: "advancement"
 			}]
 			title: "Mature Stage"
-			x: 7.5d
+			x: 8.0d
 			y: 3.0d
 		}
 		{
@@ -289,8 +289,8 @@
 				item: "sculkhorde:calcite_clump"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -3.0d
+			x: 8.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["3C02B44B3D3AC7BA"]
@@ -328,7 +328,7 @@
 				type: "item"
 			}]
 			title: "Infested Crying Obsidian"
-			x: 4.0d
+			x: 2.5d
 			y: -2.0d
 		}
 		{
@@ -341,8 +341,8 @@
 				item: "sculkhorde:pure_souls"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -4.0d
+			x: 2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -366,8 +366,8 @@
 				item: "sculkhorde:infestation_purifier"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -6.0d
+			x: 0.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["2E65DD6560146216"]
@@ -379,8 +379,8 @@
 				item: "sculkhorde:soulite_shard"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -2.0d
+			x: 4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -400,7 +400,7 @@
 				type: "item"
 			}]
 			title: "Purity Weapons"
-			x: 5.5d
+			x: 2.5d
 			y: -4.0d
 		}
 		{
@@ -457,8 +457,8 @@
 				item: "sculkhorde:sculk_resin"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.0d
+			x: 0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2E65DD6560146216"]
@@ -490,7 +490,7 @@
 				item: "sculkhorde:soul_harvester"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: 1.0d
 		}
 		{
@@ -525,7 +525,7 @@
 				value: 1L
 			}]
 			title: "The Wither"
-			x: 7.5d
+			x: 8.0d
 			y: -1.0d
 		}
 		{
@@ -539,8 +539,8 @@
 				type: "item"
 			}]
 			title: "Fighting the Sculk Horde"
-			x: 1.5d
-			y: -6.0d
+			x: -1.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["1BAB3EA6B4E23C8A"]
