@@ -18,3 +18,7 @@ ServerEvents.tags('entity_type', (event) => {
 ServerEvents.tags('worldgen/biome', event => {
     event.add('scguns_cnc:gravekeeper_acolyte_spawns', "#forge:with_default_monster_spawns")
 })
+
+ServerEvents.tags('worldgen/structure', event => {
+    event.add('terraimmundus:all_structures', /.*/)
+})
