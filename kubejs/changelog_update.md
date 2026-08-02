@@ -150,7 +150,6 @@
 - Added mods:
   - Caverns & Chasms: Ingot Compat
   - Spark
-  - Structure Generation Improver (SGI: Foundations!)
   - Particular Reforged
   - Equipment Compare
   - World Play Time
