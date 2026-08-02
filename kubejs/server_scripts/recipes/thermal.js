@@ -67,20 +67,7 @@ ServerEvents.recipes((e) => {
     e.replaceOutput({ id: 'thermal:machines/smelter/smelter_tin_tools' }, '#forge:ingots/tin', 'caverns_and_chasms:tin_ingot')
 
 
-    function addRecycleRecipe(input, output) {
-        if (Array.isArray(output)) {
-            output = output.map(item => Item.of(item))
-        } else {
-            output = [Item.of(output)]
-        }
 
-        return e.custom({
-            "type": "thermal:smelter_recycle",
-            "ingredient": Ingredient.of(input),
-            "result": output,
-            "experience": 0.2
-        }).id(`kubejs:recycling/${input.split(':')[1]}`)
-    }
 
     const recycle = {
         'caverns_and_chasms:aegis': '8x caverns_and_chasms:tin_ingot',
@@ -107,11 +94,12 @@ ServerEvents.recipes((e) => {
         '#scguns:deep_dark_gun_tier': ['2x thermal:steel_ingot', 'scguns:anthralite_nugget', 'sculkhorde:ferriscite'],
         '#scguns:end_gun_tier': ['3x thermal:enderium_ingot', '18x thermal:steel_nugget', 'thermal:lumium_nugget'],
         '#scguns:scorched_gun_tier': ['2x scguns:scorched_ingot', '16x thermal:enderium_nugget', '2x thermal:steel_ingot'],
-        'scguns:brass_mask': '3x scbrass:brass_ingot',
+        'scguns:brass_mask': ['2x scbrass:brass_ingot', 'minecraft:quartz'],
+        'scguns:cog_mace': ['scbrass:brass_ingot', 'scguns:anthralite_ingot'],
     }
 
     for (const [input, output] of Object.entries(recycle)) {
-        addRecycleRecipe(input, output)
+        e.recipes.thermal.smelter_recycle(output, input)
     }
 
     e.remove({ output: 'thermal:satchel' })
@@ -185,4 +173,7 @@ ServerEvents.recipes((e) => {
     e.replaceInput({ id: 'thermal:slot_seal' }, 'thermal:iron_plate', 'iron_ingot')
 
     e.replaceInput({ id: 'thermal:dynamo_disenchantment' }, 'iron_ingot', 'thermal:constantan_ingot')
+
+    e.recipes.thermal.smelter('kubejs:inert_ferriscite', ['4x netherite_ingot', '12x sculkhorde:calcite_clump'])
+    e.recipes.thermal.smelter('kubejs:inert_diascite', ['4x thermal:diamond_dust', '12x sculkhorde:calcite_clump'])
 })

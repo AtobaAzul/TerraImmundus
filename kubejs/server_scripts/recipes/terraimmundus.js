@@ -527,4 +527,33 @@ ServerEvents.recipes((e) => {
         C: 'thermal:invar_ingot',
         D: 'farmersdelight:rope'
     })
+
+    e.remove({ id: 'sculkhorde:ferriscite' })
+    e.remove({ id: 'sculkhorde:diascite' })
+
+    e.custom({
+        type: 'sculkhorde:soul_harvesting',
+        ingredients: [
+            {
+                item: 'kubejs:inert_diascite',
+            },
+        ],
+        output: {
+            count: 1,
+            item: 'sculkhorde:diascite',
+        },
+    });
+
+    e.custom({
+        type: 'sculkhorde:soul_harvesting',
+        ingredients: [
+            {
+                item: 'kubejs:inert_ferriscite',
+            },
+        ],
+        output: {
+            count: 1,
+            item: 'sculkhorde:ferriscite',
+        },
+    });
 });

@@ -148,7 +148,22 @@ ServerEvents.recipes((e) => {
 	);
 	e.recipes.thermal.pyrolyzer(
 		Fluid.of('thermal:crude_oil', 75),
-		'sob:sculk_tendril',
+		'sculkhorde:sculk_bee_nest',
+	);
+
+    e.recipes.thermal.pyrolyzer(
+		Fluid.of('thermal:crude_oil', 75),
+		'sculkhorde:sculk_bee_nest_cell',
+	);
+
+    e.recipes.thermal.pyrolyzer(
+		Fluid.of('thermal:crude_oil', 75),
+		'sculkhorde:sculk_arachnoid',
+	);
+
+    e.recipes.thermal.pyrolyzer(
+		Fluid.of('thermal:crude_oil', 75),
+		'sculkhorde:sculk_dura_matter',
 	);
 
 	//remove blends

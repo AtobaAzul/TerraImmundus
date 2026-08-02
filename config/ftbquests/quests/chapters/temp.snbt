@@ -277,7 +277,7 @@
 			}]
 			title: "Mature Stage"
 			x: 7.5d
-			y: -0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2E65DD6560146216"]
@@ -289,8 +289,8 @@
 				item: "sculkhorde:calcite_clump"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -2.5d
+			x: 7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3C02B44B3D3AC7BA"]
@@ -329,7 +329,7 @@
 			}]
 			title: "Infested Crying Obsidian"
 			x: 4.0d
-			y: -2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["096ED3C1B547F1C2"]
@@ -366,7 +366,7 @@
 				item: "sculkhorde:infestation_purifier"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 5.0d
 			y: -6.0d
 		}
 		{
@@ -379,8 +379,8 @@
 				item: "sculkhorde:soulite_shard"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.5d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -393,15 +393,15 @@
 			]
 			id: "4E89F7B68BCA13DA"
 			shape: "circle"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "369F1D6E343F59E6"
 				item: "kubejs:purity_upgrade_template"
 				type: "item"
 			}]
 			title: "Purity Weapons"
-			x: 7.5d
-			y: -6.0d
+			x: 5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -526,7 +526,7 @@
 			}]
 			title: "The Wither"
 			x: 7.5d
-			y: 3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5CF1BB9629E2308F"]
@@ -605,6 +605,31 @@
 			title: "Node"
 			x: 5.0d
 			y: 2.5d
+		}
+		{
+			dependencies: [
+				"3F4A0EA3840EAF6F"
+				"27F77519858CEE7F"
+			]
+			description: ["Ferriscite \\& Diascite are end-game materials used for some powerful tools and guns"]
+			id: "2A5A144D3DA2C2D3"
+			tasks: [
+				{
+					id: "6B35E90522761DF2"
+					item: "sculkhorde:ferriscite"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "65F7E78DFA346C76"
+					item: "sculkhorde:diascite"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Ferriscite \\& Diascite"
+			x: 10.0d
+			y: -1.0d
 		}
 	]
 	title: "Intro \\& The Sculk"

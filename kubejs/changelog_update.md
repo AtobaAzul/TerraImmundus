@@ -31,6 +31,9 @@
 - Removed Grappling Squok in favor of Grappling Hook.
 - Added Upgrade recipe for upgrading Grappling Hooks with Lost Tentacles.
 - Sculk no longer spreads to water.
+- Added Inert Ferriscite and Diascite. Intermediate items for Ferriscite and Diascite.
+- Sculk Bee Nest, Sculk Bee Nest Cell, Sculk Dura Matter, Sculk Arachnoid can now be turned into oil.
+- Added alternate recipe for Shock Cells
 
 # Balancing & Progression.
 - Default World Size is now 6000 by 6000. Defeating the Sculk Horde sets it back to the default.
@@ -52,6 +55,7 @@
 - Increased lead ore worldgen size to 12, from 8.
 - Lead ores now drop 2 to 5 raw lead + fortune bonus.
 - Reduced needles from Flechette to 4, from 9.
+- Reduced Flechette from stonecutting to 4, from 8.
 - Reduced Ancient Brass from Ancient Brass Blocks to 1 to 3, from 2 to 5.
 - Added more recycling recipes for items. Removed Whizzbanger. (Yes, these 2 *are* related.)
 - Blasmphemy costs Rose Gold Ingot instead of Iron.

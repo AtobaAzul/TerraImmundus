@@ -43,7 +43,9 @@ StartupEvents.registry('item', (event) => {
         'redstone_cell',
         'titanium_dust',
         'laser_optics',
-        'backpack_expansion'
+        'backpack_expansion',
+        'inert_ferriscite',
+        'inert_diascite'
     ].forEach((item) => {
         event.create(item);
     });
