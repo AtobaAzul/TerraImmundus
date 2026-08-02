@@ -13,7 +13,6 @@
 - Gunner mobs now drop the ammo of their gun, and don't drop arrows.
 - Improved Dynamo placement. Sneaking while placing a dynamo will place it in the oposite way.
 - Changed Forge version.
-- Removed Bejeweled Anvil.
 - Catfish now spawn again.
 - Adjusted Alex's Mobs spawn weights (reduced across the board).
 - Soulsteal potion is now brewed with Vampirism potions instead of Awkward potion
