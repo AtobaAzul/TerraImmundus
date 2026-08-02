@@ -30,6 +30,7 @@
 - Removed Quark's Backpack and Ravager hide.
 - Removed Grappling Squok in favor of Grappling Hook.
 - Added Upgrade recipe for upgrading Grappling Hooks with Lost Tentacles.
+- Sculk no longer spreads to water.
 
 # Balancing & Progression.
 - Default World Size is now 6000 by 6000. Defeating the Sculk Horde sets it back to the default.
@@ -54,7 +55,9 @@
 - Reduced Ancient Brass from Ancient Brass Blocks to 1 to 3, from 2 to 5.
 - Added more recycling recipes for items. Removed Whizzbanger. (Yes, these 2 *are* related.)
 - Blasmphemy costs Rose Gold Ingot instead of Iron.
-- Brewing Stands now use Vehement Coal instead of Blaze Powder
+- Brewing Stands now use Vehement Coal instead of Blaze Powder.
+- Changed Necromium Frame recipe to be like other gun frames.
+- Increased Smokeless Powder yield to 2, decreased H.Oil cost to 250, from 500.
 
 # Recipes
 - Made Excitation Field Limiter use a Gold Ingot instead of Electrum
@@ -76,6 +79,7 @@
 - Fixed Magma Cubes not spawning with random sizes.
 - Fixed Anthralite Warglaive not having correct held item model.
 - Fixed being able to use Enchanted Books to 'learn' enchantment recipes despite enchantment discovery being disabled.
+- You can no longer hit Infestation Purifiers with sweeping attacks unless directly facing it.
 
 # Mods
 - Updated mods:

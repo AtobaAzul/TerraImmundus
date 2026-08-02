@@ -166,7 +166,7 @@ ServerEvents.recipes((e) => {
 	smelter('#forge:ingots/anthralite', `#forge:dusts/anthralite`, 1600);
 
 
-    e.recipes.thermal.crystallizer('kubejs:smokeless_powder', ['thermal:apatite_dust', 'kubejs:spinel_dust', Fluid.of('thermal:heavy_oil', 500)])
+    e.recipes.thermal.crystallizer('2x kubejs:smokeless_powder', ['thermal:apatite_dust', 'kubejs:spinel_dust', Fluid.of('thermal:heavy_oil', 250)])
     e.shapeless('6x kubejs:smokeless_powder_dust', ['kubejs:smokeless_powder'])
 	e.shapeless('kubejs:smokeless_powder', ['6x kubejs:smokeless_powder_dust'])
     e.remove({output: 'scguns:gun_parts_mold'})
@@ -211,5 +211,10 @@ ServerEvents.recipes((e) => {
         A: 'thermal:ruby',
         B: 'thermal:constantan_gear',
         C: 'thermal:constantan_ingot'
+    })
+
+    e.remove({id: 'scguns_cnc:necromium_gun_frame'})
+    e.shaped('scguns_cnc:necromium_gun_frame', [' A ', 'A A', 'AAA'], {
+        A: 'caverns_and_chasms:necromium_ingot'
     })
 });
