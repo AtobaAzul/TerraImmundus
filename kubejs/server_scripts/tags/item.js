@@ -165,6 +165,8 @@ ServerEvents.tags('item', (event) => {
 
     event.add('minecraft:soul_fire_base_blocks', ['thermal:sulfur', 'thermal:sulfur_dust'])
 
+    event.add('scguns:wrecker_gun_tier', 'scguns:railworker')
+
     event.add("scguns:firearm", ['#scguns:antique_gun_tier', '#scguns:frontier_gun_tier', '#scguns:copper_gun_tier', '#scguns:iron_gun_tier', '#scguns:ocean_gun_tier', '#scguns:wrecker_gun_tier', '#scguns:diamond_steel_gun_tier', '#scguns:gravekeeper_gun_tier', '#scguns:treated_brass_gun_tier', '#scguns:vault_gun_tier', '#scguns:piglin_gun_tier', ' #scguns:deep_dark_gun_tier', '#scguns:end_gun_tier', '#scguns:scorched_gun_tier'])
 
     event.add('terraimmundus:any_weapon', /(minecraft.*|moonsweaponry.*|kubejs.*)(.*katana.*|.*sword.*|.*scythe.*|.*rapier.*|.*halberd.*|.*warglaive.*|.*mace.*|.*hammer.*)/)
@@ -229,4 +231,7 @@ ServerEvents.tags('item', (event) => {
     
     event.removeAll('minecraft:brewing_stand_fuel');
     event.add("minecraft:brewing_stand_fuel", "scguns:vehement_coal");
+
+    event.add('scguns:special_ammo', 'scguns:blaze_fuel')
+    event.remove('scguns:energy_ammo', 'scguns:blaze_fuel')
 });

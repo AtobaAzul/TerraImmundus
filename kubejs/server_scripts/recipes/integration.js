@@ -166,6 +166,11 @@ ServerEvents.recipes((e) => {
 		'sculkhorde:sculk_dura_matter',
 	);
 
+    e.recipes.thermal.pyrolyzer(
+		Fluid.of('thermal:crude_oil', 75),
+		'alexsmobs:soul_heart',
+	);
+
 	//remove blends
 	const BLENDS = [
 		'thermal:enderium_dust',

@@ -26,7 +26,7 @@ PlayerEvents.tick((event) => {
     }
 });
 
-const repairUpdateFrequency = 200; //in ticks.
+const repairUpdateFrequency = 150; //in ticks.
 const repairChance = 0; // 1-repairChance = % so this is 100%
 const repairAmount = 2;
 const xpCost = 1; // xp pont per repair.

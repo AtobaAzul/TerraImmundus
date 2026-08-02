@@ -63,6 +63,7 @@
 - Reduced Wither health 1800, from 2000.
 - Increased Smokeless Powder yield to 2, decreased H.Oil cost to 250, from 500.
 - Soul Sand no longer spawns in structures.
+- Made Reforming repair every 150 ticks, from 200.
 
 # Recipes
 - Made Excitation Field Limiter use a Gold Ingot instead of Electrum
@@ -85,6 +86,8 @@
 - Fixed Anthralite Warglaive not having correct held item model.
 - Fixed being able to use Enchanted Books to 'learn' enchantment recipes despite enchantment discovery being disabled.
 - You can no longer hit Infestation Purifiers with sweeping attacks unless directly facing it.
+- Blaze Fuel is now tagged as 'special' fuel, instead of energy.
+- Fixed Railworker not being tagged as a Wrecker tier gun.
 
 # Mods
 - Updated mods:
