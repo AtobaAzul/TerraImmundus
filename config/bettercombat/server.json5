@@ -78,7 +78,8 @@
 		"minecraft:player": "NEUTRAL",
 		"minecraft:villager": "NEUTRAL",
 		"minecraft:iron_golem": "NEUTRAL",
-		"guardvillagers:guard": "NEUTRAL"
+		"guardvillagers:guard": "NEUTRAL",
+		"sculkhorde:infestation_purifier": "FRIENDLY"
 	},
 	// Relation to unspecified entities those are instance of PassiveEntity(Yarn)
 	"player_relation_to_passives": "HOSTILE",
