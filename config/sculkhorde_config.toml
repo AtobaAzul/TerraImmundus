@@ -117,7 +117,7 @@
 	sculk_node_chunkload_radius = 15
 	#How many minutes should pass before another Sculk node can spawn? (Default 120)
 	#Range: > 0
-	sculk_node_spawn_cooldown_minutes = 120
+	sculk_node_spawn_cooldown_minutes = 60
 	#Can nodes relocate themselves to new areas? (Default true)
 	enable_node_relocation = true
 
@@ -147,7 +147,7 @@
 	sculk_raid_enderman_scouting_duration_minutes = 8
 	#How long should the global cooldown between raids be in minutes? (Default 300)
 	#Range: > 0
-	sculk_raid_global_cooldown_between_raids_minutes = 300
+	sculk_raid_global_cooldown_between_raids_minutes = 120
 	#How long should the no raid zone last at a location in minutes? This occurs when a raid succeeds or fails so that the same location is not raided for a while. (Default 480)
 	#Range: > 0
 	sculk_raid_no_raid_zone_duration_minutes = 480
