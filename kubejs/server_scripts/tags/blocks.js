@@ -13,7 +13,9 @@ ServerEvents.tags('block', (event) => {
         'atmospheric:crustose_path',
         'quark:blaze_lantern',
         'minecraft:fire',
-        'kubejs:purity_sap'
+        'kubejs:purity_sap',
+        'minecraft:water',
+        'minecraft:lava'
     ]);
     event.remove('scguns:sculk_blocks', /.*/);
 
