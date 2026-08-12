@@ -599,11 +599,15 @@
 							"lerp_mode": "catmullrom"
 						},
 						"0.2083": {
-							"post": [13.3077, -0.5624, 1.597],
+							"post": [19.3077, -0.5624, 1.597],
 							"lerp_mode": "catmullrom"
 						},
 						"0.375": {
 							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [-2.2067, 0.0352, -0.0998],
 							"lerp_mode": "catmullrom"
 						},
 						"0.625": {
