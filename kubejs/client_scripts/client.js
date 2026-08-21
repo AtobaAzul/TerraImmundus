@@ -191,7 +191,8 @@ ClientEvents.lang("en_us", (event) => {
         "pipez:energy_pipe": "Energy Cable",
         "simpleradio:copper_wire": "Audio Cable",
         "refinedstorage:cable": "Data Cable",
-        "alexsmobs:bone_serpent_tooth": "Wither Tooth"
+        "alexsmobs:bone_serpent_tooth": "Wither Tooth",
+        "sculkhorde:infested_crying_obsidian": "Weeping Obsidian",
     };
 
     for (const [item, name] of Object.entries(rename)) {
