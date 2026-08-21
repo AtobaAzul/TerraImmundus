@@ -183,10 +183,6 @@ ServerEvents.recipes((e) => {
 
     e.remove({ id: 'suppsquared:copper_lantern_2' });
     e.remove({ id: 'suppsquared:copper_lantern' });
-    e.shaped('suppsquared:copper_lantern', ['AAA', 'ABA', 'AAA'], {
-        A: '#forge:nuggets/copper',
-        B: 'torch',
-    });
 
     e.remove({ id: 'suppsquared:brass_lantern' });
     e.shaped('suppsquared:brass_lantern', ['B', 'A'], {
