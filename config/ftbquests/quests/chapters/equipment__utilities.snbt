@@ -10,6 +10,8 @@
 	id: "49E364CDE2F08EF2"
 	order_index: 2
 	progression_mode: "flexible"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{

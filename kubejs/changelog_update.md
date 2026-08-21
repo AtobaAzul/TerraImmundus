@@ -4,7 +4,10 @@
   - Increased Newborn Cyst damage (36 -> 42.5)
   - Newborn Cyst can now use copper slugs.
 - Purity weapons can now be made from Necromium.
-- Removed Supplementaries² copper lantern, in favor of Caverns & Chasms'  
+- Removed Supplementaries² copper lantern, in favor of Caverns & Chasms'
+- Renamed Infested Crying Obsidian to Weeping Obsidian
+- Projectile protection now protects against bullets  
+- Fixed Weaponworks Necromium tools having 2 slowness infliction.
 
 # Mods
 - Added mods:
@@ -12,8 +15,11 @@
    - Sculk Horde: Purity Template
    - Bathymetry
    - Better Combat Scorched Guns Compat
+   - Healight
+   - FTB Quests Enhance
 - Updated mods:
   - Simple Voice Chat
+  - Xaero's World Map
   - Cupboard
   - FancyMenuFragmentum
   - Hardcore Revival

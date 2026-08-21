@@ -10,6 +10,8 @@
 	id: "63CE31612052418B"
 	order_index: 0
 	progression_mode: "flexible"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
@@ -319,7 +321,7 @@
 		}
 		{
 			dependencies: ["3C02B44B3D3AC7BA"]
-			description: ["Crafted from &3Crying Souls,&r obtained from Infested Crying Obsidian, and &ePurity Shards&r."]
+			description: ["Crafted from &3Crying Souls,&r obtained from &3Weeping Obsidian&r, and &ePurity Shards&r."]
 			id: "2E4CCA642B5A8A76"
 			size: 1.0d
 			tasks: [{
@@ -343,7 +345,7 @@
 				"Upon being placed down, it will clean a large area of sculk around it and weaken and harm the Sculked."
 				"It is targetted by the Sculked."
 				""
-				"It can be obtained as an item again by right-clicking it."
+				"It can be retrieved as an item again by right-clicking it."
 			]
 			id: "494DAC960FEC5542"
 			size: 1.0d
@@ -382,7 +384,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "369F1D6E343F59E6"
-				item: "kubejs:purity_upgrade_template"
+				item: "puritytemplate:purity_upgrade_smithing_template"
 				type: "item"
 			}]
 			title: "Purity Weapons"

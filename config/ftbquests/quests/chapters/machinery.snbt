@@ -10,6 +10,8 @@
 	id: "1BA7C5962118DA0A"
 	order_index: 1
 	progression_mode: "flexible"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
@@ -459,7 +461,12 @@
 		}
 		{
 			dependencies: ["7F827B2C0F0F5F50"]
-			description: ["The Induction Furnace smelts ores and creates alloys."]
+			description: [
+				"The Induction Furnace smelts ores and creates alloys."
+				""
+				""
+				"{\"underlined\":true,\"color\":\"aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"5CF1BB9629E2308F/1\"},\"text\":\"It is required to produce Purity Shards\"}"
+			]
 			id: "1F380A26E21B724F"
 			size: 1.5d
 			tasks: [{
