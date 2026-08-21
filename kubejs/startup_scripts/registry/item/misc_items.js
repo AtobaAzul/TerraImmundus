@@ -13,18 +13,6 @@ StartupEvents.registry('item', (event) => {
         .finishUsing((ctx) => { }) //Dummy function to make the item usable. The actual function is in server_scripts/item.js
         .maxStackSize(1)
         .displayName('Sporemeter');
-    const template = event.create(
-        'purity_upgrade_template',
-        'smithing_template'
-    );
-    template.appliesTo('Meteorite Weapons');
-    template.ingredientsText = Text.blue('Soulite Shard');
-    template.ingredientsSlotDescription('Soulite Shard');
-    template.appliesToSlotDescription("Applies to Meteorite Weapons")
-    template.ingredientSlotDescriptionText = 'Soulite Shard';
-    template.swordIcon()
-    template.addIngredientsSlotIcon('terraimmundus:item/empty_slot_soulite_shard')
-    template.rarity('epic');
 
     const basic_items = [
         'iron_gun_barrel',

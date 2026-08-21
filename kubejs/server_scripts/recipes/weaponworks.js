@@ -1,4 +1,6 @@
 ServerEvents.recipes((e) => {
+    e.remove({id: 'puritytemplate:smithing/blade_of_purity'})
+
     let new_materials = [
         //'anthralite', its apparently smithing!!!
         'silver',
@@ -76,22 +78,17 @@ ServerEvents.recipes((e) => {
 
         e.smithing(
             `kubejs:purity_${type}`,
-            'kubejs:purity_upgrade_template',
-            `moonsweaponry:netherite_${type}`,
+            'puritytemplate:purity_upgrade_smithing_template',
+            [`moonsweaponry:netherite_${type}`, 'kubejs:necromium_' + type],
             'sculkhorde:soulite_shard'
         );
     });
 
     e.remove({ id: 'sculkhorde:blade_of_purity' });
-    e.shaped('kubejs:purity_upgrade_template', ['ABA', 'ACA', ' B '], {
-        A: 'sculkhorde:essence_of_purity',
-        B: 'sculkhorde:infestation_purifier',
-        C: 'sculkhorde:soulite_shard',
-    });
     e.smithing(
         `sculkhorde:blade_of_purity`,
-        'kubejs:purity_upgrade_template',
-        `netherite_sword`,
+        'puritytemplate:purity_upgrade_smithing_template',
+        [`netherite_sword`, 'caverns_and_chasms:necromium_sword'],
         'sculkhorde:soulite_shard'
     );
 
