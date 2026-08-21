@@ -22,3 +22,7 @@ ServerEvents.tags('worldgen/biome', event => {
 ServerEvents.tags('worldgen/structure', event => {
     event.add('terraimmundus:all_structures', /.*/)
 })
+
+ServerEvents.tags('damage_type', event => {
+    event.add('minecraft:is_projectile', 'scguns:bullet')
+})
