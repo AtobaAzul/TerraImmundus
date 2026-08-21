@@ -16,7 +16,7 @@
     "weaponType": "pistol",
     "fireMode": "scguns:automatic",
     "gripType": "scguns:one_handed",
-    "rate": 4,
+    "rate": 5,
     "meleeDamage": 2.5,
     "meleeCooldownTicks": 10,
     "meleeReach": 2.5,
