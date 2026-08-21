@@ -16,7 +16,7 @@
     "weaponType": "rifle",
     "fireMode": "scguns:burst",
     "burstAmount": 3,
-    "burstCooldown": 10,
+    "burstCooldown": 15,
     "gripType": "scguns:two_handed",
     "baseGripType": "scguns:two_handed",
     "rate": 2,
