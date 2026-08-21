@@ -55,22 +55,6 @@ function AddItemAttribute(item, attribute, _uuid) {
 }
 
 
-
-let types = [
-    'greatsword',
-    'halberd',
-    'hammer',
-    'katana',
-    'rapier',
-    'scythe',
-    'warglaive',    
-    'mace',
-    'spear',
-].forEach((type) => {
-    AddItemAttribute(`kubejs:necromium_${type}`, [['caverns_and_chasms:slowness_infliction', 1, 'addition', 'mainhand']])
-})
-
-
 let silver_magic_damage_map = {
     'greatsword': 3,
     'halberd': 2,
