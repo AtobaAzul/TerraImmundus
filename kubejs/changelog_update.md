@@ -1,179 +1,28 @@
-# Changes
-- Removed Sapphire, replaced with Zirconia
-- Sulfur ore and block now are soul fire base blocks
-- Sulfur and sulfur dust are now soul fire base blocks for recipes.
-- Renamed Soul fire and related things to Sulfuric Fire.
-- Renamed Golden Apples to Purity Apples
-- Retextured Energy, Item and Fluid Pipes
-- Renamed Item Pipes to Item Ducts
-- Renamed Simple Radio's Cable to Audio Cable
-- Renamed Energy Pipe to Energy Cable
-- Renamed Refined Storage's Cable to Data Cable
-- Quest reworks and improvements.
-- Gunner mobs now drop the ammo of their gun, and don't drop arrows.
-- Improved Dynamo placement. Sneaking while placing a dynamo will place it in the oposite way.
-- Changed Forge version.
-- Catfish now spawn again.
-- Adjusted Alex's Mobs spawn weights (reduced across the board).
-- Soulsteal potion is now brewed with Vampirism potions instead of Awkward potion
-- Sculk Witches now drop Soul Hearts.
-- Renamed Bone Serpent Tooth to Wither Tooth
-- Wither Tooth now drops from Wither Skeletons.
-- Potion of Clinging can now be brewed with Centipede legs.
-- Unimplemented Alex's Mobs mobs now inform that on their book entries.
-- Item Pipes now use Caverns and Chams Tin (now renamed to titanium)
-- Added Titanium tool, weapons and armor. Acts as a diamond sidegrade.
-  - Less durability than diamond.
-  - Tools & Weapons mine/attack slightly faster.
-  - Armor has innate Projectile Protection II but no toughness.
-- Removed Quark's Backpack and Ravager hide.
-- Removed Grappling Squok in favor of Grappling Hook.
-- Added Upgrade recipe for upgrading Grappling Hooks with Lost Tentacles.
-- Sculk no longer spreads to water.
-- Added Inert Ferriscite and Diascite. Intermediate items for Ferriscite and Diascite.
-- Sculk Bee Nest, Sculk Bee Nest Cell, Sculk Dura Matter, Sculk Arachnoid can now be turned into oil.
-- Added alternate recipe for Shock Cells
-
-# Balancing & Progression.
-- Default World Size is now 6000 by 6000. Defeating the Sculk Horde sets it back to the default.
-- Player now is given the quest book on first spawn, to make it more clear the modpack has quests.
-- Nerfed RG Jigsaw fire rate.
-- Removed Dandelion and Vine rubber recipes.
-- Increased steam power generation by 75%
-- Homemaker, Inertial and Jackhammer can now use Copper Slugs
-- Soulite now requires Netherite to mine.
-- Added Laser Optics, made with rubies, used for all laser guns.
-- Purity Weapons now require Netherite base tools.
-- Nerfed Defender Pistol.
-- Nerfed Reforming repair speed.
-- Arboreal Extractor is now faster.
-- Buffed Sculk Enderman HP.
-- Increased Buried Meteorite worldgen count to 2, from 1.
-- Vicious Acid recipe now is 8 Acidic Mass 1 Water Bucket.
-- Reduced Gunner mob chance to 33%, from 50%.
-- Increased lead ore worldgen size to 12, from 8.
-- Lead ores now drop 2 to 5 raw lead + fortune bonus.
-- Reduced needles from Flechette to 4, from 9.
-- Reduced Flechette from stonecutting to 4, from 8.
-- Reduced Ancient Brass from Ancient Brass Blocks to 1 to 3, from 2 to 5.
-- Added more recycling recipes for items. Removed Whizzbanger. (Yes, these 2 *are* related.)
-- Blasmphemy costs Rose Gold Ingot instead of Iron.
-- Brewing Stands now use Vehement Coal instead of Blaze Powder.
-- Changed Necromium Frame recipe to be like other gun frames.
-- Reduced Wither health 1800, from 2000.
-- Increased Smokeless Powder yield to 2, decreased H.Oil cost to 250, from 500.
-- Soul Sand no longer spawns in structures.
-- Made Reforming repair every 150 ticks, from 200.
-
-# Recipes
-- Made Excitation Field Limiter use a Gold Ingot instead of Electrum
-- Made Slot Seals use an Iron Ingot instead of plate.
-- Disabled Quark's Stone Variant blocks, in favor of Caverns and Chasms's
-- Removed Bump Stock.
-- Tweaked Arboreal Extractor recipe.
-- Fixed Gale having a blueprint requirement
-- Changed Golden Apple recipe.
-- Aircraft hulls now use Titanium instead of Constantan.
-- Disenchantment Dynamo now uses Constantan instead of Iron.
-
-# Fixes
-- Fixed missing texture when placing Purity smithing template in a Smithing Table.
-- Fixed not being able to set spawn point in a bed at night in the first 10 days.
-- Fixed aircraft Rotary Cannon not being craftable.
-- Fixed Netherite Upgrade Smithing Template description and Ancient Scrap not being properly renamed.
-- Fixed Purity Apples *only* applying Purity, instead of being an added bonus.
-- Fixed Magma Cubes not spawning with random sizes.
-- Fixed Anthralite Warglaive not having correct held item model.
-- Fixed being able to use Enchanted Books to 'learn' enchantment recipes despite enchantment discovery being disabled.
-- You can no longer hit Infestation Purifiers with sweeping attacks unless directly facing it.
-- Blaze Fuel is now tagged as 'special' fuel, instead of energy.
-- Fixed Railworker not being tagged as a Wrecker tier gun.
+- Gun balance changes:
+  - Reduced Prima Materia fire rate (4 -> 5)
+  - Increased Locust burst cooldown (10 -> 15)
+  - Increased Newborn Cyst damage (36 -> 42.5)
+  - Newborn Cyst can now use copper slugs.
+- Purity weapons can now be made from Necromium.
+- Removed Supplementaries² copper lantern, in favor of Caverns & Chasms'  
 
 # Mods
-- Updated mods:
-  - Attribute Setter
-  - Scorched Guns: Caverns & Chasms compat
-  - Sculk Horde
-  - Fragmentum
-  - Pillager Caravans
-  - Jade Addons
-  - Jade
-  - LexiConfig
-  - Tax Free Levels
-  - Custom Credits
-  - Guard Villagers
-  - Caverns & Chasms
-  - Particle Rain
-  - Explorify
-  - Every Compat
-  - Ixeris
-  - Packet Fixer
-  - Miners Delight+
-  - FTB Quests
-  - Supplementaries
-  - Balm
-  - Farmer's Delight
-  - Sawmill
-  - Corpse x Cosmetic Armor Reworked Compat
-  - Corpse x Curios API Compat
-  - Collective
-  - EntityJS
-  - Flerovium
-  - Entity Culling
-  - Chloride
-  - RIAutomobility
-  - Thermal Parallel
-  - Cupboard
-  - Immediately Fast
-  - Immersive Aircraft
-  - Structure Essentials
-  - Xaero's World Map
-  - Simple Voice Radio
-  - Blueprint
-  - KubeJS
-  - KubeJS Thermal
-  - Xaero's Minimap
-  - Better Advancements
-  - Simple Voice Chat
-  - FTB Quests
-  - FancyMenu
-  - MmmMmmMmmMmm
-  - Caverns and Chasms
-  - Not Enough Animations
-  - Moonlight Lib
-  - Geckolib
-  - Particle Rain
-  - JEI
-  - EMI
-  - EMI Ores
-  - EveryCompat
-  - ModernFix
-  - Hardcore Revival
-
 - Added mods:
-  - Caverns & Chasms: Ingot Compat
-  - Spark
-  - Particular Reforged
-  - Equipment Compare
-  - World Play Time
-  - Kerria
-  - Geophilic
-  - Tree Tap
-  - Better Mob Combat Fix
-  - FTB XMod Compat
-  - Iron's Simple Blood*
-  - Delightful Fixes
-  - EMIAccelerator
-  - LightStar
-  - Resource Pack Overrides
-  - Boids
-  - Backpacked
-  - Grappling Hook - Reforged
-  - Anvil API
-  - Better Brewing Stand Fuelds
+   - EMILoot integration for LootJS
+   - Sculk Horde: Purity Template
+   - Bathymetry
+   - Better Combat Scorched Guns Compat
+- Updated mods:
+  - Simple Voice Chat
+  - Cupboard
+  - FancyMenuFragmentum
+  - Hardcore Revival
+  - Particular
+  - ModernFix
+  - Farmer's Delight
+  - JEI
+  - Amendments
+  - Balm
+  - Better Advancements
 - Removed mods:
-    - Ixeris
-    - Cascades/Hybrid Beta**
-
-*Only Sculk mobs bleed.
-**Replaced with Geophilic. THIS BREAKS OLD WORLDS!
+  - EntityJS

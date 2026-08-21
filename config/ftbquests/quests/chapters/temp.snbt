@@ -39,7 +39,7 @@
 			description: ["A critical resource needed for fighting against the Sculk."]
 			id: "5CF1BB9629E2308F"
 			shape: "hexagon"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "1BFC9FA8C075D6B6"
 				item: "sculkhorde:essence_of_purity"
@@ -245,7 +245,7 @@
 			id: "2E65DD6560146216"
 			invisible: true
 			shape: "pentagon"
-			size: 1.5d
+			size: 1.25d
 			tasks: [{
 				advancement: "sculkhorde:sculk_evolve_immature"
 				criterion: ""
@@ -289,7 +289,7 @@
 				item: "sculkhorde:calcite_clump"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 10.0d
 			y: -5.5d
 		}
 		{
@@ -319,20 +319,6 @@
 		}
 		{
 			dependencies: ["3C02B44B3D3AC7BA"]
-			description: ["Crying Obsidian, which is craftable with Dragon's Breath (which is also craftable) and Obsidian, can be infested, this can be turned into &bCrying Souls&r"]
-			id: "096ED3C1B547F1C2"
-			size: 1.0d
-			tasks: [{
-				id: "50D467B65B4C45C8"
-				item: "sculkhorde:infested_crying_obsidian"
-				type: "item"
-			}]
-			title: "Infested Crying Obsidian"
-			x: 2.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["096ED3C1B547F1C2"]
 			description: ["Crafted from &3Crying Souls,&r obtained from Infested Crying Obsidian, and &ePurity Shards&r."]
 			id: "2E4CCA642B5A8A76"
 			size: 1.0d
@@ -342,7 +328,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -366,7 +352,7 @@
 				item: "sculkhorde:infestation_purifier"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 2.5d
 			y: -5.5d
 		}
 		{
@@ -380,7 +366,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -4.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -393,15 +379,15 @@
 			]
 			id: "4E89F7B68BCA13DA"
 			shape: "circle"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "369F1D6E343F59E6"
 				item: "kubejs:purity_upgrade_template"
 				type: "item"
 			}]
 			title: "Purity Weapons"
-			x: 2.5d
-			y: -4.0d
+			x: 4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -458,7 +444,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: -2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2E65DD6560146216"]
@@ -539,7 +525,7 @@
 				type: "item"
 			}]
 			title: "Fighting the Sculk Horde"
-			x: -1.5d
+			x: -0.5d
 			y: -5.5d
 		}
 		{
@@ -580,8 +566,8 @@
 				type: "item"
 			}]
 			title: "Vicious Acid"
-			x: 4.0d
-			y: -0.5d
+			x: 0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2E65DD6560146216"]
