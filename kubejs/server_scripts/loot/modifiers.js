@@ -1,3 +1,10 @@
+
+function randomColorNbt() {
+    let randomColor = Math.floor(Math.random() * 16777215).toString(16)
+    let decimal = parseInt(randomColor, 16)
+    return `display:{color:${decimal}}`
+}
+
 LootJS.modifiers((e) => {
     e.addLootTypeModifier(LootType.CHEST)
         .replaceLoot(
@@ -422,4 +429,87 @@ LootJS.modifiers((e) => {
     e.addEntityLootModifier('sculkhorde:sculk_witch').randomChance(0.5).addLoot('alexsmobs:soul_heart')
     e.addEntityLootModifier('minecraft:wither_skeleton').randomChance(0.1).addLoot('alexsmobs:bone_serpent_tooth')
     e.addLootTableModifier('minecraft:chests/ancient_city').randomChance(0.5).addLoot('alexsmobs:soul_heart')
-});
+
+    const randomWeapons = [
+        'moonsweaponry:stone_greatsword',
+        'moonsweaponry:stone_halberd',
+        'moonsweaponry:stone_hammer',
+        'moonsweaponry:stone_katana',
+        'moonsweaponry:stone_rapier',
+        'moonsweaponry:stone_scythe',
+        'moonsweaponry:stone_spear',
+        'minecraft:stone_sword',
+    ];
+
+    e.addLootTableModifier('minecraft:chests/spawn_bonus_chest')
+        .removeLoot(ItemFilter.ALWAYS_TRUE)
+        .addLoot([
+            'minecraft:stone_pickaxe',
+            'minecraft:stone_axe',
+            'farmersdelight:flint_knife',
+            'grapplemod:grapplinghook',
+        ])
+        .addWeightedLoot([12, 24], true, [
+            Item.of('minecraft:bread').withChance(60),
+            Item.of('minecraft:torch').withChance(40),
+        ])
+        .addWeightedLoot(1, false, [
+            Item.of('scguns:musket').withChance(60),
+            Item.of('scguns:longarm').withChance(60),
+        ])
+        .addWeightedLoot([24, 32], true, [
+            Item.of('scguns:powder_and_ball')
+        ])
+        .addLoot('minecraft:map')
+        .functions('minecraft:map', (f) => {
+            f.customFunction({
+                function: 'minecraft:exploration_map',
+                decoration: 'red_x',
+                destination: 'nova_structures:tavern',
+                zoom: 2,
+                skip_existing_chunks: false,
+            });
+            f.customFunction({
+                function: 'minecraft:set_name',
+                name: 'Tavern Map',
+            });
+        })
+        .apply((ctx) => {
+            let armorColor = randomColorNbt()
+
+            ctx.addLoot(
+                Item.of(
+                    'minecraft:leather_helmet',
+                    `{${armorColor}}`,
+                ),
+            );
+            ctx.addLoot(
+                Item.of(
+                    'minecraft:leather_chestplate',
+                    `{${armorColor}}`,
+                ),
+            );
+            ctx.addLoot(
+                Item.of(
+                    'minecraft:leather_leggings',
+                    `{${armorColor}}`,
+                ),
+            );
+            ctx.addLoot(
+                Item.of(
+                    'minecraft:leather_boots',
+                    `{${armorColor}}`,
+                ),
+            );
+
+            ctx.addLoot(randomWeapons[Math.floor(Math.random() * randomWeapons.length)]);
+
+            ctx.addLoot(
+                Item.of(
+                    'minecraft:bundle',
+                    `{${randomColorNbt()}}`,
+                ),
+            );
+        })
+})
+

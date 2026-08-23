@@ -264,3 +264,15 @@ EntityEvents.spawned(Object.keys(healthBuffMap), event => {
 
     entity.health = newMaxHealth
 })
+
+PlayerEvents.loggedIn((event) => {
+    if (
+        !event.player.persistentData.givenStartLoot &&
+        event.level.server.worldData.worldGenOptions().generateBonusChest()
+    ) {
+        event.player.persistentData.givenStartLoot = true;
+        event.server.runCommandSilent(
+            `loot give ${event.player.name.string} loot minecraft:chests/spawn_bonus_chest`
+        );
+    }
+});

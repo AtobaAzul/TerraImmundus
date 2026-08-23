@@ -1,59 +1,63 @@
 // priority: 256
 
 const rowCollumnMap = {
-	'00': 'gun_top_internal_1',
-	'01': 'gun_top_internal_2',
-	'02': 'gun_top_barrel_1',
-	'03': 'gun_top_barrel_2',
-	10: 'gun_internal_1',
-	11: 'gun_internal_2',
-	12: 'gun_barrel_1',
-	13: 'gun_barrel_2',
-	20: 'gun_grip',
-	21: 'IGNORED',
-	22: 'gun_magazine',
-	23: 'IGNORED',
+    '00': 'gun_top_internal_1',
+    '01': 'gun_top_internal_2',
+    '02': 'gun_top_barrel_1',
+    '03': 'gun_top_barrel_2',
+    10: 'gun_internal_1',
+    11: 'gun_internal_2',
+    12: 'gun_barrel_1',
+    13: 'gun_barrel_2',
+    20: 'gun_grip',
+    21: 'IGNORED',
+    22: 'gun_magazine',
+    23: 'IGNORED',
 };
 
 function _convertRowAndCollumnToKey(row, column) {
-	return rowCollumnMap[
-		row.toString() + column.toString()
-	];
+    return rowCollumnMap[
+        row.toString() + column.toString()
+    ];
 }
 
 function convertToGunBenchRecipe(result, pattern, key) {
-	const json = {
-		type: 'scguns:gun_bench',
-		result: {
-			item: result,
-			count: 1,
-		},
-		ingredients: {},
-	};
+    const json = {
+        type: 'scguns:gun_bench',
+        result: {
+            item: result,
+            count: 1,
+        },
+        ingredients: {},
+    };
 
-	for (let i = 0; i < pattern.length; i++) {
-		let row = pattern[i];
-		for (let _i = 0; _i < row.length; _i++) {
-			let char = row[_i];
-			if (key[char]) {
-				let ingredientKey =
-					_convertRowAndCollumnToKey(i, _i);
-				if (ingredientKey != 'IGNORED') {
-					json.ingredients[ingredientKey] =
-						Ingredient.of(key[char]).toJson();
-				}
-			}
-		}
-	}
+    for (let i = 0; i < pattern.length; i++) {
+        let row = pattern[i];
+        for (let _i = 0; _i < row.length; _i++) {
+            let char = row[_i];
+            if (key[char]) {
+                let ingredientKey =
+                    _convertRowAndCollumnToKey(i, _i);
+                if (ingredientKey != 'IGNORED') {
+                    json.ingredients[ingredientKey] =
+                        Ingredient.of(key[char]).toJson();
+                }
+            }
+        }
+    }
 
-	return json;
+    return json;
 }
 
 PlayerEvents.loggedIn((event) => {
-	if (!event.player.persistentData.givenStartLoot) {
-		event.player.persistentData.givenStartLoot = true;
-		event.player.give(Item.of('ftbquests:book'));
-	}
+    if (!event.player.persistentData.givenStartLoot) {
+        event.player.persistentData.givenStartLoot = true;
+        event.player.give(Item.of('ftbquests:book'));
+
+        if (event.level.server.worldData.worldGenOptions().generateBonusChest()) {
+            event.server.runCommandSilent(`loot give ${event.player.name.string} loot minecraft:chests/spawn_bonus_chest`);
+        }
+    }
 });
 
 

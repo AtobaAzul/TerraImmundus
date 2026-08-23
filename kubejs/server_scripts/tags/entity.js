@@ -21,6 +21,7 @@ ServerEvents.tags('worldgen/biome', event => {
 
 ServerEvents.tags('worldgen/structure', event => {
     event.add('terraimmundus:all_structures', /.*/)
+    event.add('nova_structures:tavern', /.*tavern.*/)
 })
 
 ServerEvents.tags('damage_type', event => {
