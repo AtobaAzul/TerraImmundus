@@ -21,6 +21,7 @@
     - 24x to 48x Powder and Ball
     - Tavern map
     - 12x to 24x torches (40%)/bread (60%)
+- Fixed duplicate food stat tooltips.
 
 # Mods
 - Added mods:
