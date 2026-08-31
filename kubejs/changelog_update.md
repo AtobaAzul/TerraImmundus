@@ -22,6 +22,7 @@
     - Tavern map
     - 12x to 24x torches (40%)/bread (60%)
 - Fixed duplicate food stat tooltips.
+- Added icons for more attributes.
 
 # Mods
 - Added mods:
@@ -33,6 +34,8 @@
    - FTB Quests Enhance
    - Just Enough Repair Materials
    - KubeJS Additions
+   - Clean Tooltips
+   - Obscure Tooltips
 - Updated mods:
   - Simple Voice Chat
   - Xaero's World Map
