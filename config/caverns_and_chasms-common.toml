@@ -6,7 +6,7 @@
 		"Creeper explosion nerf" = true
 		#How much weaker Creeper explosions are
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Creeper explosion nerf factor" = 0.5
+		"Creeper explosion nerf factor" = 0.75
 
 	[mobs.deeper]
 		#Range: -64 ~ 320
