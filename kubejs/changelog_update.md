@@ -23,6 +23,9 @@
     - 12x to 24x torches (40%)/bread (60%)
 - Fixed duplicate food stat tooltips.
 - Added icons for more attributes.
+- Fixed Hammer GL and Jackhammer having +25% crit damage.
+- All golden weapons now have +75% experience boost.
+- Knives now use the same expereince boost system as golden weapons.
 
 # Mods
 - Added mods:

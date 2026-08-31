@@ -87,5 +87,3 @@ AddItemAttribute('#terraimmundus:halberds', [['attributeslib:armor_shred', 0.125
 AddItemAttribute('#terraimmundus:greatswords', [['minecraft:generic.armor', 5, 'addition', 'mainhand']])
 AddItemAttribute('#terraimmundus:katanas', [['attributeslib:current_hp_damage', 0.025, 'addition', 'mainhand']])
 AddItemAttribute('#terraimmundus:scythes', [['attributeslib:life_steal', 0.05, 'addition', 'mainhand']])
-AddItemAttribute('#forge:tools/knives', [['attributeslib:experience_gained', 1, 'addition', 'mainhand'], ['attributeslib:experience_gained', 1, 'addition', 'offhand']])
-

@@ -344,7 +344,7 @@
 				""
 				"- Katanas deal +2.5% of the enemy's current health as damage."
 				""
-				"- Knives give +100% more XP"
+				"- Knives (and golden weapons) give +75% more XP"
 			]
 			disable_toast: true
 			hide_dependency_lines: true

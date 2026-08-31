@@ -211,11 +211,19 @@ ClientEvents.lang("en_us", (event) => {
         "gui.cfm_wap.status.offline": "Offline",
         "gui.cfm_wap.status.energy": "No Energy",
         "gui.cfm_wap.node_count": "%s / %s",
-
-        //tin rename
-
-        //soul fire rename
-
+        "rarity.scguns_cnc.exsanguinated": "Exsanguinated",
+        "rarity.caverns_and_chasms.fancy": "Fancy",
+        "rarity.scguns.diamond_steel": "Asgharian",
+        "rarity.scguns.treated_brass": "Standard Issue",
+        "rarity.scguns.scorched": "Scorched",
+        "rarity.scguns_cnc.vault_relic": "Vault Relic",
+        "rarity.scguns.deep_dark": "Sculked",
+        "rarity.scguns.piglish": "Infernal",
+        "rarity.scguns.endish": "Resonant",
+        "rarity.scguns.oceanic": "Naval",
+        "rarity.scguns.rusty": "Rusted",
+        "rarity.scguns.bizarre": "Bizarre",
+        "rarity.scguns.wrecker": "Wrecker"
     };
 
     //JsonIO.write("kubejs/assets/terraimmundus/lang/en_us.json", lang_rename);

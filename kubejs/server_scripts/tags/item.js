@@ -78,7 +78,7 @@ ServerEvents.tags('item', (event) => {
     event.add('terraimmundus:swords', ['#minecraft:swords']);
     event.add('terraimmundus:greatswords', /.*greatsword.*/);
     event.add('terraimmundus:halberds', /.*halberd.*/);
-    event.add('terraimmundus:hammers', /.*hammer.*/);
+    event.add('terraimmundus:hammers', /.*(kubejs|moonsweaponry).*hammer.*/);
     event.add('terraimmundus:rapiers', /.*rapier.*/);
     event.add('terraimmundus:scythes', /.*scythe.*/);
     event.add('terraimmundus:spears', /.*spear.*/);
@@ -234,4 +234,6 @@ ServerEvents.tags('item', (event) => {
 
     event.add('scguns:special_ammo', 'scguns:blaze_fuel')
     event.remove('scguns:energy_ammo', 'scguns:blaze_fuel')
+
+    event.add('caverns_and_chasms:experience_boost_items', /.*(knife|moonsweaponry:golden_).*/)
 });
