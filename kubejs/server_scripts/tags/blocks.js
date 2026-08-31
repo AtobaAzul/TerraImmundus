@@ -19,6 +19,8 @@ ServerEvents.tags('block', (event) => {
     ]);
     event.remove('scguns:sculk_blocks', /.*/);
 
+    event.add('scguns:fragile', 'supplementaries:urn')
+
     event.add('minecraft:needs_diamond_tool', [
         /.*sapphire.*/,
         /.*apatite.*/,

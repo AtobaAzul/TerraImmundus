@@ -27,6 +27,8 @@
 - All golden weapons now have +75% experience boost.
 - Knives now use the same expereince boost system as golden weapons.
 - Slightly un-nerfed creeper explosions.
+- Urns are now considered fragile
+- Spiders now always drop 1 spider leg
 
 # Mods
 - Added mods:

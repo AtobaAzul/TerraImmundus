@@ -236,4 +236,11 @@ ServerEvents.tags('item', (event) => {
     event.remove('scguns:energy_ammo', 'scguns:blaze_fuel')
 
     event.add('caverns_and_chasms:experience_boost_items', /.*(knife|moonsweaponry:golden_).*/)
+    event.add('sculkhorde:cursor_edible', [
+        '#origins:meat',
+        'string',
+        'stick',
+        '#scguns:weak_compost',
+        /.*cactus.*/,
+    ])
 });

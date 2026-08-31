@@ -213,7 +213,7 @@ ClientEvents.lang("en_us", (event) => {
         "gui.cfm_wap.node_count": "%s / %s",
         "rarity.scguns_cnc.exsanguinated": "Exsanguinated",
         "rarity.caverns_and_chasms.fancy": "Fancy",
-        "rarity.scguns.diamond_steel": "Asgharian",
+        "rarity.scguns.diamond_steel": "Sanctioned",
         "rarity.scguns.treated_brass": "Standard Issue",
         "rarity.scguns.scorched": "Scorched",
         "rarity.scguns_cnc.vault_relic": "Vault Relic",

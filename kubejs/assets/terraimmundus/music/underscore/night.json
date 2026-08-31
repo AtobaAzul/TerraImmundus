@@ -6,8 +6,18 @@
         "type": "maestro:all_of",
         "terms": [
             {
-                "type": "maestro:day_cycle",
-                "is_night": true
+                "type": "maestro:any_of",
+                "terms": [
+                    {
+                        "type": "maestro:height",
+                        "above": 0,
+                        "below": 60
+                    },
+                    {
+                        "type": "maestro:day_cycle",
+                        "is_night": true
+                    }
+                ]
             },
             {
                 "type": "maestro:boss_event",
