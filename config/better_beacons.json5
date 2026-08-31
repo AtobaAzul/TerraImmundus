@@ -1,0 +1,72 @@
+{
+	"beaconEffects": {
+		"isTertiaryEffectsEnabled": true,
+		"levelOneEffects": [
+			"minecraft:speed",
+			"minecraft:regeneration"
+		],
+		"levelTwoEffects": [
+			"minecraft:haste",
+			"better_beacons:long_reach"
+		],
+		"levelThreeEffects": [
+			"minecraft:strength",
+			"minecraft:resistance"
+		],
+		"secondaryEffects": [
+			"sculkhorde:purity",
+			"minecraft:night_vision",
+			"minecraft:fire_resistance"
+		],
+		"tertiaryEffects": [
+			"upgrade_aquatic:restfulness",
+			"cofh_core:panacea"
+		]
+	},
+	"beaconRangeAndAmplifier": {
+		"isPaymentItemRangeEnabled": false,
+		"isBaseBlockAmplifierEnabled": false
+	},
+	"beaconBeam": {
+		"allowRedirecting": true,
+		"allowTransparency": true,
+		"horizontalMoveLimit": 64
+	},
+	"beaconButtons": {
+		"cancelButtonRemoveEffects": true,
+		"isCancelButtonTooltipEnabled": true,
+		"isConfirmButtonTooltipEnabled": true
+	},
+	"beaconPaymentItemsUI": {
+		"first": {
+			"item": "sculkhorde:soulite_shard",
+			"tertiaryPosX": 65,
+			"posX": 14
+		},
+		"second": {
+			"item": "minecraft:air",
+			"tertiaryPosX": 33,
+			"posX": 35
+		},
+		"third": {
+			"item": "minecraft:air",
+			"tertiaryPosX": 53,
+			"posX": 55
+		},
+		"fourth": {
+			"item": "minecraft:air",
+			"tertiaryPosX": 75,
+			"posX": 77
+		},
+		"fifth": {
+			"item": "minecraft:air",
+			"tertiaryPosX": 97,
+			"posX": 100
+		},
+		"sixth": {
+			"item": "minecraft:air",
+			"tertiaryPosX": 119,
+			"posX": 122
+		}
+	}
+}

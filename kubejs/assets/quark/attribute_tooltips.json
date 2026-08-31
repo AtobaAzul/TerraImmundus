@@ -182,13 +182,13 @@
     },
     "attributeslib:crit_chance": {
         "display": {
-            "mainhand": "multiplier",
-            "offhand": "multiplier",
-            "feet": "multiplier",
-            "legs": "multiplier",
-            "chest": "multiplier",
-            "head": "multiplier",
-            "potion": "multiplier"
+            "mainhand": "percentage",
+            "offhand": "percentage",
+            "feet": "percentage",
+            "legs": "percentage",
+            "chest": "percentage",
+            "head": "percentage",
+            "potion": "percentage"
         },
         "texture": "quark:attribute/crit_chance",
         "compare": "higher_better"

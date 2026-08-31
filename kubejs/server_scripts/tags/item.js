@@ -243,4 +243,7 @@ ServerEvents.tags('item', (event) => {
         '#scguns:weak_compost',
         /.*cactus.*/,
     ])
+
+    event.removeAll('minecraft:beacon_payment_items')
+    event.add('minecraft:beacon_payment_items', 'sculkhorde:soulite_shard')
 });

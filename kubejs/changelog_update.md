@@ -29,6 +29,9 @@
 - Slightly un-nerfed creeper explosions.
 - Urns are now considered fragile
 - Spiders now always drop 1 spider leg
+- Beacons now only accept soulite as payment.
+- Beacons can now grant Purity (among some other new effects.)
+- Updated Purity effect icon
 
 # Mods
 - Added mods:
@@ -38,10 +41,12 @@
    - Better Combat Scorched Guns Compat
    - Healight
    - FTB Quests Enhance
+   - Screenshot to Clipboard
    - Just Enough Repair Materials
    - KubeJS Additions
    - Clean Tooltips
    - Obscure Tooltips
+   - CERBON's Better Beacons
 - Updated mods:
   - Simple Voice Chat
   - Xaero's World Map
