@@ -1,0 +1,41 @@
+
+[general]
+	#Disable Alloyium terrain path entirely (use Embeddium default).
+	forceDisable = false
+	#Per-region Indirect command cache (recommended ON).
+	regionCache = true
+	#Extra CPU frustum/cone cull when building Indirect commands (usually redundant).
+	cpuCull = false
+	#Meshlets above this use GPU Compute A+B'; below uses CPU Indirect.
+	#Range: 1 ~ 65536
+	cpuCmdThreshold = 768
+	#Extra logs, login chat, [Perf] lines, detailed F3. Default OFF (warnings only).
+	verboseLogging = false
+
+[hiz]
+	#Temporal Hi-Z occlusion (opt-in; historically hurt FPS on GTX 1060-class).
+	enabled = false
+	#When Hi-Z is ready, force GPU Indirect path even for small N.
+	forceGpu = false
+	#Hi-Z depth bias.
+	#Range: 0.0 ~ 1.0
+	bias = 0.002
+	#Hi-Z pyramid downsample factor (2 = half-res).
+	#Range: 1 ~ 8
+	downsample = 2
+	#Rebuild Hi-Z every N frames.
+	#Range: 1 ~ 60
+	buildEvery = 2
+
+[oculus]
+	#While a shader pack is active, do not intercept terrain (Embeddium/Iris native path).
+	irisFallback = false
+
+[debug]
+	#GPU cull counter readback + CPU mirror (stalls GPU). Log output also needs verboseLogging.
+	debugCull = false
+	#Enable frustum tests on debug/GPU cull paths.
+	cullFrustum = true
+	#Enable normal-cone tests on debug/GPU cull paths.
+	cullCone = true
+
