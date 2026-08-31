@@ -5,7 +5,7 @@
     "condition": {
         "type": "maestro:entity_tag",
         "required_amount": 1,
-        "search_radius": 32,
+        "search_radius": 24,
         "values": [
             "sculkhorde:sculk_entity"
         ]

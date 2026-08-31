@@ -1,7 +1,7 @@
 
 [PREFERENCE]
-	"Music Volume (default: 1.0)" = 1.0
-	"Music Obeys Music Volume Slider (default: false)" = false
+	"Music Volume (default: 1.0)" = 0.0
+	"Music Obeys Music Volume Slider (default: false)" = true
 	"Only Play One Music Track (default: false)" = false
 	"Camera Shake Intensity (default: 1.0)" = 1.0
 	"Distant Fire Opacity (default: 0.1)" = 0.1

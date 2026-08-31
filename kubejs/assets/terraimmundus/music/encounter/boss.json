@@ -1,0 +1,9 @@
+{
+    "priority": 100,
+    "layer": "encounter",
+    "sound_event": "witherreincarnated:music.wither",
+    "condition": {
+        "type": "maestro:boss_event",
+        "value": true
+    }
+}
