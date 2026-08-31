@@ -296,7 +296,7 @@
         },
         "texture": "quark:attribute/lifesteal",
         "compare": "higher_better"
-    }
+    },
     "caverns_and_chasms:magic_damage": {
         "display": {
             "mainhand": "flat",
