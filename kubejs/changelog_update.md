@@ -8,6 +8,19 @@
 - Renamed Infested Crying Obsidian to Weeping Obsidian
 - Projectile protection now protects against bullets  
 - Fixed Weaponworks Necromium tools having 2 slowness infliction.
+- Reworked Bonus Chest into Starting Items.
+- Bonus Chest loot reworked:
+    - Full leather armor set, randomized color
+    - Bundle, randomized color
+    - Random stone weapon (sword, spear, hammer, etc)
+    - Stone Pickaxe
+    - Stone Axe
+    - Flint Knife
+    - Grappling Hook
+    - Fencer Longarm (40% chance) or Musket (60%)
+    - 24x to 48x Powder and Ball
+    - Tavern map
+    - 12x to 24x torches (40%)/bread (60%)
 
 # Mods
 - Added mods:
@@ -17,18 +30,27 @@
    - Better Combat Scorched Guns Compat
    - Healight
    - FTB Quests Enhance
+   - Just Enough Repair Materials
+   - KubeJS Additions
 - Updated mods:
   - Simple Voice Chat
   - Xaero's World Map
   - Cupboard
-  - FancyMenuFragmentum
+  - FancyMenu
+  - Fragmentum
   - Hardcore Revival
   - Particular
+  - Particle Rain
   - ModernFix
   - Farmer's Delight
-  - JEI
   - Amendments
   - Balm
+  - JEI
+  - BaguetteLib
+  - Guard Villagers
+  - Sculk Horde
+  - Iron's Simple Blood
   - Better Advancements
+  - Tax Free Levels
 - Removed mods:
   - EntityJS
