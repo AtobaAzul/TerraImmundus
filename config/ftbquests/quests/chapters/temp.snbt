@@ -513,8 +513,8 @@
 				value: 1L
 			}]
 			title: "The Wither"
-			x: 8.0d
-			y: -1.0d
+			x: 6.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5CF1BB9629E2308F"]
@@ -618,6 +618,25 @@
 			title: "Ferriscite \\& Diascite"
 			x: 10.0d
 			y: -1.0d
+		}
+		{
+			dependencies: [
+				"68E32D7F6258206D"
+				"6DAD41761203CB40"
+			]
+			description: [
+				"Beacons are buffed and can have up to 3 effects at once and affect any non-hostile entity nearby. Beacon bases are constructed with &6Infestation Ward&r."
+				""
+				"Additionally, beacons with Purity as an effect harm Sculk enemies and purify the area around them."
+			]
+			id: "2AFB15D807466DB4"
+			tasks: [{
+				id: "77BAD753A844F285"
+				item: "minecraft:beacon"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
 		}
 	]
 	title: "Intro \\& The Sculk"

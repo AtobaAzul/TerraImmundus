@@ -1,0 +1,6 @@
+#Creature type that can be affected by beacons.
+#Allowed Values: NONE, TAMED, PASSIVE, ALL
+creatureType = "PASSIVE"
+#Additional creatures or creature tags that can be affected by beacons.
+additionalCreatures = []
+

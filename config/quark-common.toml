@@ -113,7 +113,7 @@
 	"Duskbound Blocks" = true
 	"Framed Glass" = true
 	"Glass Item Frame" = true
-	"Gold Bars" = true
+	"Gold Bars" = false
 	Grate = true
 	Hedges = true
 	"Hollow Logs" = true

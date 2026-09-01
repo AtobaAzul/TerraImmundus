@@ -552,4 +552,17 @@ ServerEvents.recipes((e) => {
             item: 'sculkhorde:ferriscite',
         },
     });
+
+    e.remove({id: 'minecraft:beacon'})
+    e.shaped('minecraft:beacon', [
+        'AAA',
+        'BCB',
+        'DED'
+    ], {
+        A: 'thermal:lumium_glass',
+        B: 'sculkhorde:soulite_shard',
+        C: 'minecraft:nether_star',
+        D: 'thermal:lumium_ingot',
+        E: 'thermal:lumium_block' 
+    })
 });

@@ -90,3 +90,38 @@ ItemEvents.rightClicked('minecraft:enchanted_book', (event) => {
         event.cancel();
     }
 })
+
+const $ISculkSmartEntity = Java.loadClass('com.github.sculkhorde.common.entity.ISculkSmartEntity')
+const $AABB = Java.loadClass('net.minecraft.world.phys.AABB')
+
+BlockEntityEvents.tick(event => {
+    const level = event.getBlockEntity().level
+    const { x, y, z } = event.getBlockEntity().blockPos
+
+    if (event.getBlockEntity().blockState.is("minecraft:beacon") && event.getBlockEntity()) {
+        let nbt = event.getBlockEntity().serializeNBT()
+        if (nbt.get("Secondary") == 103) {
+            let levels = nbt.get("Levels");
+            if (levels > 0) {
+                const entities = level.getEntitiesOfClass($ISculkSmartEntity, new $AABB(event.getBlockEntity().blockPos).inflate(levels * 10 + 10).expandTowards(0, level.getHeight(), 0))
+                for (const entity of entities) {
+                    entity.setSecondsOnFire(60)
+                    entity.addEffect(new $MobEffectInstance('minecraft:slowness', 60, 3))
+                    entity.addEffect(new $MobEffectInstance('minecraft:weakness', 60, 3))
+                    entity.addEffect(new $MobEffectInstance('minecraft:poison', 60, 3))
+
+                    if (entity.age % 20 === 0) {
+                        let cursor = new $CursorSurfacePurifierEntity(level);
+                        cursor.setPos(entity.x, entity.y, entity.z);
+                        cursor.setMaxTransformations(100);
+                        cursor.setMaxRange(100);
+                        cursor.setSearchIterationsPerTick(2);
+                        cursor.setMaxLifeTimeMillis(2000);
+                        cursor.setTickIntervalMilliseconds(20);
+                        level.addFreshEntity(cursor);
+                    }
+                }
+            }
+        }
+    }
+})

@@ -30,8 +30,22 @@
 - Urns are now considered fragile
 - Spiders now always drop 1 spider leg
 - Beacons now only accept soulite as payment.
-- Beacons can now grant Purity (among some other new effects.)
+- Beacon bases are now constructed with Infestation Ward blocks.
+- Beacons can now grant Purity (among some other new effects.).
+  - Beacons with Purity selected burn and weaken sculk mobs in its range.
+- Tweaked recipe and retextured beacons to match.
 - Updated Purity effect icon
+- Cleaned up advancements. It should now be doable to 100% them.
+- Repaletted several structures.
+- Fixed duplicate enchantment description.
+- Added new custom soundtrack:
+  - Night/Underground
+  - Sculk Combat
+  - Sculk Tomb
+  - Stronghold
+  - Deep Underground
+  - Boss
+- Disabled Quark's Golden Bars
 
 # Mods
 - Added mods:
@@ -46,6 +60,10 @@
    - KubeJS Additions
    - Clean Tooltips
    - Obscure Tooltips
+   - Maestro
+   - Beacons for All
+   - Reliable Advancements
+   - MoreEventsJS
    - CERBON's Better Beacons
 - Updated mods:
   - Simple Voice Chat
@@ -69,3 +87,4 @@
   - Tax Free Levels
 - Removed mods:
   - EntityJS
+  - Better Advancements

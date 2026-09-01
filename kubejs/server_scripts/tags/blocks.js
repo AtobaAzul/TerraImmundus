@@ -162,4 +162,13 @@ ServerEvents.tags('block', (event) => {
         'caverns_and_chasms:cylindrite_tin_ore',
         'caverns_and_chasms:cassiterite_tin_ore'
     ])
+
+    event.removeAll('minecraft:beacon_base_blocks')
+
+    event.add('minecraft:beacon_base_blocks', 'sculkhorde:infestation_ward_block')
+
+    event.add('minecraft:smooth_stone', ['minecraft:smooth_stone'])
+    event.add('minecraft:oxidized_cut_copper', ['minecraft:oxidized_cut_copper'])
+    event.add('minecraft:dark_prismarine', ['minecraft:dark_prismarine'])
+
 });
