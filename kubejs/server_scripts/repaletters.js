@@ -85,8 +85,21 @@ const structure_repaletter = {
     },
     'explorify:mausoleum': {
         'minecraft:oxidized_copper': 'caverns_and_chasms:tuff_bricks',
+    },
+    '#minecraft:ruined_portal': {
+        'minecraft:mossy_stone_bricks': 'quark:blackstone_bricks',
+        'minecraft:stone_bricks': 'minecraft:polished_blackstone_bricks',
+        'minecraft:stone': 'minecraft:blackstone',
+        'minecraft:cracked_stone_bricks': 'minecraft:cracked_polished_blackstone_bricks',
+        'minecraft:mossy_stone_brick_stairs': 'quark:blackstone_bricks_stairs',
+        'minecraft:stone_brick_stairs': 'minecraft:polished_blackstone_brick_stairs',
+        'minecraft:mossy_stone_brick_slab': 'quark:blackstone_bricks_slab',
+        'minecraft:stone_brick_slab': 'minecraft:polished_blackstone_brick_slab',
+        'minecraft:stone_slab': 'minecraft:blackstone_slab',
+        'minecraft:chiseled_stone_bricks': 'minecraft:chiseled_polished_blackstone'
     }
 };
+
 
 function createRepaletterData(structure, repaletters) {
     return {
