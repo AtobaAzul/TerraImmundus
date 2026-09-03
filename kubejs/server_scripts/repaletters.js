@@ -1,6 +1,5 @@
 
-/** @type { Object<string, Array[Object<Internal.Block_, Internal.Block_>>]} */
-const structure_repaletter = {
+const STRUCTURE_REPALETTER_DEFS = {
     //'structure': {'block_to_replace': 'replacement_block'}
     //or weighted
     //'structure': {
@@ -37,7 +36,10 @@ const structure_repaletter = {
         'minecraft:polished_deepslate': 'minecraft:polished_blackstone',
         'minecraft:polished_deepslate_stairs': 'minecraft:polished_blackstone_stairs',
         'minecraft:ladder': 'woodworks:spruce_ladder',
-        'minecraft:smooth_stone': [{ data: 'quark:iron_plate', weight: 1 }, { data: 'quark:rusty_iron_plate', weight: 3 }],
+        'minecraft:smooth_stone': {
+            'quark:iron_plate': 1,
+            'quark:rusty_iron_plate': 3
+        },
         'minecraft:stone_bricks': 'caverns_and_chasms:iron_bricks',
         'minecraft:stone_brick_wall': 'caverns_and_chasms:iron_brick_wall',
         'minecraft:stone': 'minecraft:polished_blackstone',
@@ -46,8 +48,8 @@ const structure_repaletter = {
     },
     'scguns:asgharian_tower': {
         'minecraft:prismarine_wall': 'scguns:ashgarian_brick_wall',
-        'minecraft:oxidized_cut_copper': [{ data: 'scguns:mossy_asgharian_tiles', weight: 1 }, { data: 'scguns:asgharian_tiles', weight: 1 }],
-        'minecraft:dark_prismarine': [{ data: 'scguns:mossy_asgharian_tiles', weight: 1 }, { data: 'scguns:asgharian_tiles', weight: 1 }],
+        'minecraft:oxidized_cut_copper': { 'scguns:mossy_asgharian_tiles': 1, 'scguns:asgharian_tiles': 1 },
+        'minecraft:dark_prismarine': { 'scguns:mossy_asgharian_tiles': 1, 'scguns:asgharian_tiles': 1 },
         'minecraft:dark_prismarine_stairs': 'scguns:asgharian_brick_stairs',
         'minecraft:dark_prismarine_slab': 'scguns:asgharian_brick_slab',
     },
@@ -101,6 +103,7 @@ const structure_repaletter = {
 };
 
 
+
 function createRepaletterData(structure, repaletters) {
     return {
         structures: structure,
@@ -108,6 +111,8 @@ function createRepaletterData(structure, repaletters) {
     }
 }
 
+//These are seperate functions because 1.21 allows putting several repaletters in a single file by putting them together in an array...
+//but I learned the hard way its 1.21 only
 function createSimpleRepaletter(block_to_replace, replacement_block) {
     return {
         type: 'blueprint:simple',
@@ -125,12 +130,17 @@ function createWeightedRepaletter(block_to_replace, replacement_blocks) {
 }
 
 ServerEvents.highPriorityData((event) => {
-    for (let [structure, swaps] of Object.entries(structure_repaletter)) {
+    for (let [structure, swaps] of Object.entries(STRUCTURE_REPALETTER_DEFS)) {
         let name = structure.split(':')[1];
 
         for (let [oldBlock, newBlock] of Object.entries(swaps)) {
-            if (Array.isArray(newBlock)) {
-                event.addJson(`terraimmundus:blueprint/structure_repaletters/${name}_replace_${oldBlock.split(':')[1]}_with_${newBlock[0].data.split(':')[1]}.json`, createRepaletterData(structure, createWeightedRepaletter(oldBlock, newBlock)))
+            if (typeof newBlock === 'object') {
+                let weighted_data = []
+                
+                for (let [block, weight] of Object.entries(newBlock)) {
+                    weighted_data.push({ data: block, weight: weight })
+                }
+                event.addJson(`terraimmundus:blueprint/structure_repaletters/${name}_replace_${oldBlock.split(':')[1]}_with_${weighted_data[0].data.split(':')[1]}.json`, createRepaletterData(structure, createWeightedRepaletter(oldBlock, weighted_data)))
             } else {
                 event.addJson(`terraimmundus:blueprint/structure_repaletters/${name}_replace_${oldBlock.split(':')[1]}_with_${newBlock.split(':')[1]}.json`, createRepaletterData(structure, createSimpleRepaletter(oldBlock, newBlock)))
             }

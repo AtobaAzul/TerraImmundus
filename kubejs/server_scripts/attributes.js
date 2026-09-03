@@ -54,22 +54,6 @@ function AddItemAttribute(item, attribute, _uuid) {
 	});
 }
 
-
-let silver_magic_damage_map = {
-    'greatsword': 3,
-    'halberd': 2,
-    'hammer': 2,
-    'katana': 2,
-    'rapier': 2,
-    'scythe': 2,
-    'warglaive': 2,    
-    'mace': 2,
-    'spear': 2,
-}
-
-for (const [type, damage] of Object.entries(silver_magic_damage_map)) {
-    AddItemAttribute(`kubejs:silver_${type}`, [['caverns_and_chasms:magic_damage', damage, 'addition', 'mainhand']])
-}
 //AddItemAttribute('tfccanes:walking_cane', [['forge:step_height_addition', 0.5, 'addition', 'offhand'], ['forge:step_height_addition', 0.15, 'addition', 'mainhand']]);
 
 AddItemAttribute('#terraimmundus:rapiers', [['attributeslib:armor_pierce', 6, 'addition', 'mainhand']])

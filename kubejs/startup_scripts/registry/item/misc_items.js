@@ -86,7 +86,7 @@ ItemEvents.armorTierRegistry(event => {
         tier.durabilityMultiplier = 15
         tier.slotProtections = [3, 6, 8, 3]
         tier.equipSound = 'minecraft:item.armor.equip_chain'
-        tier.setRepairIngredient(Ingredient.of('caverns_and_chasms:tin_ingot'))
+        tier.setRepairIngredient(Ingredient.of('#terraimmundus:tin_repair_material'))
     })
 })
 
@@ -97,6 +97,15 @@ ItemEvents.toolTierRegistry(event => {
         tier.enchantmentValue = 10 //useless in the modpack but i'm keeping parity with diamond.
         tier.speed = 9
         tier.attackDamageBonus = 3
-        tier.setRepairIngredient(Ingredient.of('caverns_and_chasms:tin_ingot'))
+        tier.setRepairIngredient(Ingredient.of('#terraimmundus:tin_repair_material'))
+    })
+
+    event.add('anthralite', tier => {
+        tier.level = 2
+        tier.uses = 600
+        tier.enchantmentValue = 10 //useless in the modpack but i'm keeping parity with diamond.
+        tier.speed = 7
+        tier.attackDamageBonus = 2.5
+        tier.setRepairIngredient(Ingredient.of('#kubejs:anthralite_repair_material'))
     })
 })

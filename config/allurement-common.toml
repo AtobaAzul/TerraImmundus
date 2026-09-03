@@ -151,7 +151,7 @@
 			#Range: > 0
 			"Ingot repair chance" = 5
 			#If anvil transaction costs should be capped at a certain level
-			"Cap anvil costs" = false
+			"Cap anvil costs" = true
 			#The max amount of levels an anvil transaction should be able to cost
 			#Range: > 1
 			"Anvil cost cap" = 30

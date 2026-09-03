@@ -22,10 +22,15 @@ ItemEvents.modification((event) => {
         spear: 5,
     };
 
-    for (let [type, damage] of Object.entries(anthralite_damage_map)) {
-        event.modify(`kubejs:anthralite_${type}`, (item) => {
-            item.setAttackDamage(damage - 1 + 0.5); //-1 becuase for some reason the actual damage number in-game is 1 higher.
-        });
+    for (let [type, damage] of Object.entries(
+        anthralite_damage_map,
+    )) {
+        event.modify(
+            `kubejs:anthralite_${type}`,
+            (item) => {
+                item.setAttackDamage(damage - 1 + 0.5); //-1 becuase for some reason the actual damage number in-game is 1 higher.
+            },
+        );
         event.modify(`kubejs:tin_${type}`, (item) => {
             item.setAttackDamage(damage - 1 + 0.5); //-1 becuase for some reason the actual damage number in-game is 1 higher.
         });
@@ -41,6 +46,38 @@ ItemEvents.modification((event) => {
 
     event.modify(`kubejs:tin_sword`, (item) => {
         item.setAttackDamage(6 - 1 + 0.5); //-1 becuase for some reason the actual damage number in-game is 1 higher.
-        item.setAttackSpeed(-2.2)
+        item.setAttackSpeed(-2.2);
     });
+
+    event.modify(`kubejs:tin_axe`, (item) => {
+        item.setAttackDamage(9 - 1); //-1 becuase for some reason the actual damage number in-game is 1 higher.
+    });
+
+
+    UNCOMMON_ITEMS.forEach((_item) => {
+        event.modify(_item, (item) => {
+            item.rarity = 'uncommon';
+        });
+    });
+
+    SCULK_ITEMS.forEach((_item) => {
+        event.modify(_item, (item) => {
+            item.rarity = 'scguns.deep_dark';
+        });
+    });
+
+    EPIC_ITEMS.forEach((_item) => {
+        event.modify(_item, (item) => {
+            item.rarity = 'epic';
+        });
+    });
+
+    SCORCHED_RARITY.forEach((_item) => {
+        event.modify(_item, (item) => {
+            item.rarity = 'scguns.scorched';
+        });
+    });
+
 });
+
+

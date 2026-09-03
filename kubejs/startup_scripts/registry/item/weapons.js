@@ -1,4 +1,7 @@
+// priority: -100
+
 StartupEvents.registry('item', (event) => {
+
     for (const [material, defs] of Object.entries(WEAPON_DEFS)) {
         for (const [type, stats] of Object.entries(defs)) {
             let item = event.create(`${material}_${type}`, 'sword');
@@ -13,21 +16,20 @@ StartupEvents.registry('item', (event) => {
                 case 'purity':
                     item.tier('netherite');
                     item.attackDamageBaseline(stats.damage - 5);
-
                     break;
-
                 case 'silver':
-                    item.tier('iron');
+                    item.tier(SILVER_TIER);
                     item.attackDamageBaseline(stats.damage - 3);
 
                     break;
                 case 'anthralite':
-                    item.tier('iron');
-                    item.attackDamageBaseline(stats.damage - 3);
-                case 'tin':
-                    item.tier('diamond');
-                    item.attackDamageBaseline(stats.damage - 3);
+                    item.tier('anthralite')
 
+                    item.attackDamageBaseline(stats.damage - 3);
+                    break;
+                case 'tin':
+                    item.tier('tin');
+                    item.attackDamageBaseline(stats.damage - 3);
                     break;
             }
 

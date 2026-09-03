@@ -35,7 +35,6 @@
   - Beacons with Purity selected burn and weaken sculk mobs in its range.
 - Tweaked recipe and retextured beacons to match.
 - Updated Purity effect icon
-- Cleaned up advancements. It should now be doable to 100% them.
 - Repaletted several structures.
 - Fixed duplicate enchantment description.
 - Added new custom soundtrack:
@@ -45,7 +44,14 @@
   - Stronghold
   - Deep Underground
   - Boss
-- Disabled Quark's Golden Bars
+- Disabled Quark's Golden Bars.
+- Overral reduced structure spawns, added minimum 500 blocks from world center and minimum spacing between structures.
+- Fixed Anthralite/Tin items not having correct repair ingredient.
+- Repairing now only costs 1 item.
+- Fixed Tin Axe damage being higher than intended.
+- Several items have recieved updated rarities.
+- Fixed Silver Greatsword damage being lower than intended.
+- Diamond no longer can repair Meteorite items.
 
 # Mods
 - Added mods:
@@ -61,8 +67,9 @@
    - Clean Tooltips
    - Obscure Tooltips
    - Maestro
+   - Fixed Anvil Repair Cost
    - Beacons for All
-   - Reliable Advancements
+   - Structurify
    - MoreEventsJS
    - CERBON's Better Beacons
 - Updated mods:
@@ -87,4 +94,4 @@
   - Tax Free Levels
 - Removed mods:
   - EntityJS
-  - Better Advancements
+  - Anvil API

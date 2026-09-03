@@ -1,0 +1,30 @@
+{
+  "config_version": "2.0.35",
+  "config_datetime": "2026-09-02_18-35-08",
+  "general": {
+    "prevent_structure_overlap": true,
+    "overlap_padding": 16
+  },
+  "structure_namespaces": [
+    {
+      "name": "global",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 500,
+      "enable_flatness_check": true
+    },
+    {
+      "name": "sculkhorde",
+      "override_global_distance_from_world_center": true
+    }
+  ],
+  "structures": [
+    {
+      "name": "nova_structures:illager_camp",
+      "blacklisted_biomes": [
+        "minecraft:river"
+      ]
+    }
+  ],
+  "structure_sets": [],
+  "structure_template_pools": []
+}
