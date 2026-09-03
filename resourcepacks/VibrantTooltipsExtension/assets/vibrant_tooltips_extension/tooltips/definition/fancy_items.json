@@ -1,0 +1,17 @@
+{
+  "priority": 100,
+  "style": "vibrant_tooltips_extension:rarity_fancy",
+  "filter": {
+    "type": "obscure_tooltips:all_of",
+    "terms": [
+      {
+        "type": "obscure_tooltips:config",
+        "config_value": "@RARE_STYLE_ENABLED"
+      },
+      {
+        "type": "obscure_tooltips:rarity",
+        "rarity": "caverns_and_chasms:fancy"
+      }
+    ]
+  }
+}

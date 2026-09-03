@@ -1,9 +1,15 @@
 {
     "schema_version": "2",
     "default_packs": [
+        "file/VibrantTooltipsExtension",
+        "obscure_tooltips/packs/vibrant_tooltips",
         "file/Icon Xaero's 1.22.zip",
         "file/SmoothDrawers_1.20.1_v2.zip",
-        "file/sweety_items_20.zip"
+        "file/sweety_items_20.zip",
+        "file/Authentic Shadows_1.20.zip",
+        "file/Farcr's Better Dirt V1.2.zip",
+        "file/Detail-Brush-1.6-1.20.zip",
+        "file/Brush and Juice.zip"
     ],
     "default_overrides": {
         "force_compatible": true

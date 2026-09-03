@@ -22,6 +22,10 @@
             {
                 "type": "maestro:boss_event",
                 "value": false
+            },
+            {
+                "type": "maestro:underwater",
+                "value": false
             }
         ]
     }

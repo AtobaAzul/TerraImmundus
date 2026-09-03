@@ -1,0 +1,13 @@
+{
+  "type": "obscure_tooltips:inward_particle",
+  "particle": {
+    "type": "obscure_tooltips:line",
+    "center_color": "#80ff8000",
+    "edge_color": "#55ff0000",
+    "transform": {
+      "offset": [ 0.0, 0.0, 0.0 ],
+      "scale": 1.0,
+      "rotation": 0.0
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "panel": "vibrant_tooltips:silver",
+    "frame": "vibrant_tooltips:silver",
+    "icon": "vibrant_tooltips_extension:fancy",
+    "effects": [
+        "vibrant_tooltips_extension:sculk_ray_glow"
+    ]
+}
