@@ -74,6 +74,8 @@
    - MoreEventsJS
    - CERBON's Better Beacons
    - Weaponworks: Caverns & Chasms
+   - EMI Tree Tabs
+   - Mining Speed Tooltips
 - Updated mods:
   - Simple Voice Chat
   - Xaero's World Map
