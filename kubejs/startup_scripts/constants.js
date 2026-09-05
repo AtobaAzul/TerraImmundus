@@ -77,30 +77,6 @@ const PURITY_WEAPON_DEFS = {
 };
 
 const WEAPON_DEFS = {
-    //slowness infliction
-    necromium: {
-        greatsword: { damage: 13, durability: 2032 },
-        halberd: { damage: 8, durability: 2032 },
-        hammer: { damage: 10, durability: 2032 },
-        katana: { damage: 6, durability: 2032 },
-        rapier: { damage: 5, durability: 2032 },
-        scythe: { damage: 9, durability: 2032 },
-        warglaive: { damage: 5, durability: 2032 },
-        mace: { damage: 9, durability: 2032 },
-        spear: { damage: 6, durability: 2032 },
-    },
-    // -1 base damage compared to wood, BUT deals equal to diamond wwith magic damage
-    silver: {
-        greatsword: { damage: 10, durability: 158 },
-        halberd: { damage: 5, durability: 158 },
-        hammer: { damage: 7, durability: 158 },
-        katana: { damage: 3, durability: 158 },
-        rapier: { damage: 2, durability: 158 },
-        scythe: { damage: 6, durability: 158 },
-        warglaive: { damage: 2, durability: 158 },
-        mace: { damage: 6, durability: 158 },
-        spear: { damage: 3, durability: 158 },
-    },
     //+0.5 damage - doesn't actually work at registry, see below on the modification event.
     anthralite: {
         greatsword: { damage: 11, durability: 600 },

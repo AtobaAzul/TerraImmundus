@@ -332,13 +332,12 @@
 				""
 				"- Rapiers pierce 6 armor, Spears pierce 2."
 				""
-				"- Maces pierce 25% of armor, Halberds pierce  12.5% of armor."
+				"- Maces pierce 25% of armor, Halberds pierce 12.5% of armor."
+				""
 				"- Hammers deal +25% more crit damage."
 				""
 				"{@pagebreak}"
-				"- Glaives give +25% dodge chance when held in each hand, for a total of 50%."
-				""
-				"- Spears pierce 2 levels of Protection."
+				"- Glaives give +25% dodge chance when held in each hand, for a total of 50%, and +1 dodge roll."
 				""
 				"- Scythes heals the user 5% of the dealt damage."
 				""
@@ -366,7 +365,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_weapon)"
 					}
 				}
-				title: "Any #terraimmundus:any_weapon"
+				title: "Any weapon"
 				type: "item"
 			}]
 			title: "Melee Weapons"

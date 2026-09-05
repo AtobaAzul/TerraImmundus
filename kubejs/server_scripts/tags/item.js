@@ -78,10 +78,10 @@ ServerEvents.tags('item', (event) => {
     event.add('terraimmundus:swords', ['#minecraft:swords']);
     event.add('terraimmundus:greatswords', /.*greatsword.*/);
     event.add('terraimmundus:halberds', /.*halberd.*/);
-    event.add('terraimmundus:hammers', /.*(kubejs|moonsweaponry).*hammer.*/);
+    event.add('terraimmundus:hammers', /.*(kubejs|moonsweaponry|ccww).*hammer.*/);
     event.add('terraimmundus:rapiers', /.*rapier.*/);
     event.add('terraimmundus:scythes', /.*scythe.*/);
-    event.add('terraimmundus:spears', /.*spear.*/);
+    event.add('terraimmundus:spears', /.*(kubejs|moonsweaponry|ccww).*spear.*/);
     event.add('terraimmundus:warglaives', /.*warglaive.*/);
     event.add('terraimmundus:katanas', /.*katana.*/);
     event.add('terraimmundus:maces', /.*mace.*/);
@@ -169,7 +169,7 @@ ServerEvents.tags('item', (event) => {
 
     event.add("scguns:firearm", ['#scguns:antique_gun_tier', '#scguns:frontier_gun_tier', '#scguns:copper_gun_tier', '#scguns:iron_gun_tier', '#scguns:ocean_gun_tier', '#scguns:wrecker_gun_tier', '#scguns:diamond_steel_gun_tier', '#scguns:gravekeeper_gun_tier', '#scguns:treated_brass_gun_tier', '#scguns:vault_gun_tier', '#scguns:piglin_gun_tier', ' #scguns:deep_dark_gun_tier', '#scguns:end_gun_tier', '#scguns:scorched_gun_tier'])
 
-    event.add('terraimmundus:any_weapon', /(minecraft.*|moonsweaponry.*|kubejs.*)(.*katana.*|.*sword.*|.*scythe.*|.*rapier.*|.*halberd.*|.*warglaive.*|.*mace.*|.*hammer.*)/)
+    event.add('terraimmundus:any_weapon', /(minecraft.*|moonsweaponry.*|kubejs.*|ccww.*)(.*katana.*|.*sword.*|.*scythe.*|.*rapier.*|.*halberd.*|.*warglaive.*|.*mace.*|.*hammer.*)/)
     event.remove('terraimmundus:any_weapon', 'kubejs:firing_hammer')
 
     event.add('terraimmundus:basic_dynamos', ['thermal:dynamo_gourmand', 'thermal:dynamo_stirling', 'thermal:dynamo_lapidary'])
@@ -203,7 +203,7 @@ ServerEvents.tags('item', (event) => {
 
     event.add('terraimmundus:any_diamond_steel', ['scguns:diamond_steel_ingot', 'scguns:depleted_diamond_steel_ingot'])
 
-    event.add('terraimmundus:any_copper_equipment', /caverns_and_chasms:.*copper_(axe|sword|pickaxe|shovel|hoe|helmet|chestplate|leggings|boots)/)
+    event.add('terraimmundus:any_copper_equipment', /(caverns_and_chasms:.*copper_(axe|sword|pickaxe|shovel|hoe|helmet|chestplate|leggings|boots)|ccww:.*copper.*)/)
 
     event.add('terraimmundus:any_item_disc', ['refinedstorage:1k_storage_disk', 'refinedstorage:4k_storage_disk', 'refinedstorage:16k_storage_disk'])
 

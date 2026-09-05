@@ -1,8 +1,0 @@
-{
-	"parent": "moonsweaponry:item/netherite_scythe_handheld",
-	"textures": {
-		"0": "kubejs:item/necromium_scythe_handheld",
-		"layer0": "kubejs:item/necromium_scythe_handheld",
-		"particle": "kubejs:item/necromium_scythe_handheld"
-	}
-}

@@ -1,56 +1,7 @@
 ServerEvents.recipes((e) => {
     e.remove({id: 'puritytemplate:smithing/blade_of_purity'})
 
-    let new_materials = [
-        //'anthralite', its apparently smithing!!!
-        'silver',
-        //'necromium', this is different!
-    ].forEach((material) => {
-        e.shaped(`kubejs:${material}_greatsword`, [' A ', ' A ', 'ABA'], {
-            A: `#forge:ingots/${material}`,
-            B: '#forge:rods/wooden',
-        });
-
-        e.shaped(`kubejs:${material}_halberd`, ['  A', ' BA', 'B  '], {
-            A: `#forge:ingots/${material}`,
-            B: '#forge:rods/wooden',
-        });
-
-        e.shaped(`kubejs:${material}_hammer`, [' AA', ' BA', 'B  '], {
-            A: `#forge:ingots/${material}`,
-            B: '#forge:rods/wooden',
-        });
-
-        e.shaped(`kubejs:${material}_katana`, ['  A', ' A ', 'B  '], {
-            A: `#forge:ingots/${material}`,
-            B: '#forge:rods/wooden',
-        });
-
-        e.shaped(`kubejs:${material}_rapier`, ['BAA'], {
-            A: `#forge:ingots/${material}`,
-            B: '#forge:rods/wooden',
-        });
-
-        e.shaped(`kubejs:${material}_scythe`, [' AA', ' BA', 'B A'], {
-            A: `#forge:ingots/${material}`,
-            B: '#forge:rods/wooden',
-        });
-
-        e.shaped(`kubejs:${material}_warglaive`, ['  A', ' BA', 'AA '], {
-            A: `#forge:ingots/${material}`,
-            B: '#forge:rods/wooden',
-        });
-
-        e.shaped(`kubejs:${material}_mace`, [' A ', 'ABA', ' B '], {
-            A: `#forge:ingots/${material}`,
-            B: '#forge:rods/wooden',
-        });
-
-        e.shaped(`kubejs:${material}_spear`, ['  A', ' B ', 'B  '], {
-            A: `#forge:ingots/${material}`,
-            B: '#forge:rods/wooden',
-        });
-    });
+    e.remove({id: /ccww:necromium_.*/})
 
     let weapon_types = [
         'greatsword',
@@ -64,9 +15,9 @@ ServerEvents.recipes((e) => {
         'spear',
     ].forEach((type) => {
         e.smithing(
-            `kubejs:necromium_${type}`,
+            `ccww:necromium_${type}`,
             'minecraft:netherite_upgrade_smithing_template',
-            'moonsweaponry:diamond_' + type,
+            ['moonsweaponry:diamond_' + type, 'kubejs:tin_' + type],
             '#forge:ingots/necromium'
         );
         e.smithing(

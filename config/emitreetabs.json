@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "openInNewTab": true,
+  "persistTabs": true,
+  "showProgress": true,
+  "barAtBottom": false,
+  "aggregateCraftingFavorites": true,
+  "maxTabs": 32,
+  "sharedCraftingInventory": true,
+  "progressIntervalMs": 500,
+  "closedTabHistory": 16,
+  "keyboardShortcuts": true,
+  "craftingPanelSide": "NONE",
+  "groupCraftingList": true,
+  "showGroupSeparators": true,
+  "collapsibleGroups": true,
+  "craftingInFavorites": true
+}

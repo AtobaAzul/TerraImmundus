@@ -52,6 +52,7 @@
 - Several items have recieved updated rarities.
 - Fixed Silver Greatsword damage being lower than intended.
 - Diamond no longer can repair Meteorite items.
+- Replaced Caverns & Chasms Weaponworks implementation with Weaponworks: Caverns & Chasms. Apologies for any lost items.
 
 # Mods
 - Added mods:
@@ -72,6 +73,7 @@
    - Structurify
    - MoreEventsJS
    - CERBON's Better Beacons
+   - Weaponworks: Caverns & Chasms
 - Updated mods:
   - Simple Voice Chat
   - Xaero's World Map

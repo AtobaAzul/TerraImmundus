@@ -1,8 +1,0 @@
-{
-	"parent": "moonsweaponry:item/iron_spear_handheld",
-	"textures": {
-		"0": "kubejs:item/silver_spear_handheld",
-		"layer0": "kubejs:item/silver_spear_handheld",
-		"particle": "kubejs:item/silver_spear_handheld"
-	}
-}

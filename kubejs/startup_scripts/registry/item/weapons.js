@@ -8,19 +8,9 @@ StartupEvents.registry('item', (event) => {
             item.attackDamageBonus(0);
 
             switch (material) {
-                case 'necromium':
-                    item.tier(NECROMIUM_TIER);
-                    item.attackDamageBaseline(stats.damage - 5);
-
-                    break;
                 case 'purity':
                     item.tier('netherite');
                     item.attackDamageBaseline(stats.damage - 5);
-                    break;
-                case 'silver':
-                    item.tier(SILVER_TIER);
-                    item.attackDamageBaseline(stats.damage - 3);
-
                     break;
                 case 'anthralite':
                     item.tier('anthralite')
@@ -80,7 +70,7 @@ StartupEvents.registry('item', (event) => {
                 GenerateModelData(
                     type,
                     material,
-                    material == 'necromium' || material == 'purity' || material == `anthralite`
+                    material == 'purity' || material == `anthralite`
                         ? true
                         : false
                 );
@@ -141,7 +131,7 @@ function GenerateModelData(type, material, use_netherite) {
         };
     }
 
-    //WINDOWS FUCKING DEFENDER IS DELETING THIS FILE BECAUSE OF THESE.
+    //WINDOWS FUCKING DEFENDER WAS DELETING THIS FILE BECAUSE OF THESE.
     JsonIO.write(
         `kubejs/assets/kubejs/models/item/${material}_${type}_handheld.json`,
         held_model
