@@ -32,3 +32,4 @@ config/oculus.properties
 config/packetfixer.properties
 config/packetfixer.properties
 config/embeddium-fingerprint.json
+config/emitreetabs-tabs.json
