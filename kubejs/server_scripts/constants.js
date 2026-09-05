@@ -220,6 +220,7 @@ const WEAPON_MATERIALS = [
 	'golden',
 	'diamond',
 	'netherite',
+    "copper",
 ];
 
 const RUNIC_ETCHING_COLORS = [

@@ -53,6 +53,13 @@
 - Fixed Silver Greatsword damage being lower than intended.
 - Diamond no longer can repair Meteorite items.
 - Replaced Caverns & Chasms Weaponworks implementation with Weaponworks: Caverns & Chasms. Apologies for any lost items.
+- Mosquitoes now have a 66% chance to replace a spider, instead of guaranteed.
+- Removed non-furniture content from Refurbished Furniture and duplicates
+   - Removed cutting boards
+   - Removed Toast, Toaster, Pizza, Jam, etc.
+   - Removed Knife
+   - Microwaves and Ovens now can do Smoking recipes.
+  
 
 # Mods
 - Added mods:

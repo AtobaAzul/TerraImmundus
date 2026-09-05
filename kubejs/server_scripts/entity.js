@@ -82,7 +82,7 @@ EntityEvents.checkSpawn('minecraft:spider', (event) => {
 
     if (
         mosquito_biomes.includes(biome) &&
-        event.level.canSeeSky(entity.blockPosition())
+        event.level.canSeeSky(entity.blockPosition()) && Math.random() > 0.33
     ) {
         let newguy = event.level.createEntity('alexsmobs:crimson_mosquito');
 
@@ -157,6 +157,155 @@ EntityEvents.spawned('minecraft:vindicator', (event) => {
     }
 });
 
+const SWAP_DEFS = {
+    "minecraft:wooden_sword": [
+        "moonsweaponry:wooden_greatsword",
+        "moonsweaponry:wooden_halberd",
+        "moonsweaponry:wooden_hammer",
+        "moonsweaponry:wooden_katana",
+        "moonsweaponry:wooden_rapier",
+        "moonsweaponry:wooden_scythe",
+        "moonsweaponry:wooden_warglaive",
+        "moonsweaponry:wooden_mace",
+        "moonsweaponry:wooden_spear",
+    ],
+
+    "minecraft:stone_sword": [
+        "moonsweaponry:stone_greatsword",
+        "moonsweaponry:stone_halberd",
+        "moonsweaponry:stone_hammer",
+        "moonsweaponry:stone_katana",
+        "moonsweaponry:stone_rapier",
+        "moonsweaponry:stone_scythe",
+        "moonsweaponry:stone_warglaive",
+        "moonsweaponry:stone_mace",
+        "moonsweaponry:stone_spear",
+        "farmersdelight:flint_knife",
+        "minecraft:stone_axe",
+        "minecrat:stone_sword",
+        "caverns_and_chasms:copper_sword",
+        "caverns_and_chasms:copper_axe",
+        "ccww:copper_greatsword",
+        "ccww:copper_halberd",
+        "ccww:copper_hammer",
+        "ccww:copper_katana",
+        "ccww:copper_rapier",
+        "ccww:copper_scythe",
+        "ccww:copper_warglaive",
+        "ccww:copper_mace",
+        "ccww:copper_spear",
+    ],
+
+    "minecraft:iron_sword": [
+        "moonsweaponry:iron_greatsword",
+        "moonsweaponry:iron_halberd",
+        "moonsweaponry:iron_hammer",
+        "moonsweaponry:iron_katana",
+        "moonsweaponry:iron_rapier",
+        "moonsweaponry:iron_scythe",
+        "moonsweaponry:iron_warglaive",
+        "moonsweaponry:iron_mace",
+        "moonsweaponry:iron_spear",
+        "farmersdelight:iron_knife",
+        "scguns:anthralite_sword",
+        "scguns:anthralite_axe",
+        "kubejs:anthralite_sword",
+        "minecraft:iron_sword",
+        "minecraft:iron_axe",
+        "kubejs:anthralite_axe",
+        "kubejs:anthralite_greatsword",
+        "kubejs:anthralite_halberd",
+        "kubejs:anthralite_hammer",
+        "kubejs:anthralite_katana",
+        "kubejs:anthralite_rapier",
+        "kubejs:anthralite_scythe",
+        "kubejs:anthralite_warglaive",
+        "kubejs:anthralite_mace",
+        "kubejs:anthralite_spear",
+        "ccww:copper_greatsword",
+        "ccww:copper_halberd",
+        "ccww:copper_hammer",
+        "ccww:copper_katana",
+        "ccww:copper_rapier",
+        "ccww:copper_scythe",
+        "ccww:copper_warglaive",
+        "ccww:copper_mace",
+        "ccww:copper_spear",
+        "caverns_and_chasms:copper_sword",
+        "caverns_and_chasms:copper_axe",
+    ],
+    "minecraft:golden_sword": [
+        "moonsweaponry:golden_greatsword",
+        "moonsweaponry:golden_halberd",
+        "moonsweaponry:golden_hammer",
+        "moonsweaponry:golden_katana",
+        "moonsweaponry:golden_rapier",
+        "moonsweaponry:golden_scythe",
+        "moonsweaponry:golden_warglaive",
+        "moonsweaponry:golden_mace",
+        "moonsweaponry:golden_spear",
+        "farmersdelight:golden_knife",
+        "minecraft:golden_sword",
+        "minecraft:golden_axe",
+    ],
+    "minecraft:diamond_sword": [
+        "moonsweaponry:diamond_greatsword",
+        "moonsweaponry:diamond_halberd",
+        "moonsweaponry:diamond_hammer",
+        "moonsweaponry:diamond_katana",
+        "moonsweaponry:diamond_rapier",
+        "moonsweaponry:diamond_scythe",
+        "moonsweaponry:diamond_warglaive",
+        "moonsweaponry:diamond_mace",
+        "moonsweaponry:diamond_spear",
+        "farmersdelight:diamond_knife",
+        "minecraft:diamond_sword",
+        "minecraft:diamond_axe",
+        "kubejs:tin_sword",
+        "kubejs:tin_axe",
+        "kubejs:tin_greatsword",
+        "kubejs:tin_halberd",
+        "kubejs:tin_hammer",
+        "kubejs:tin_katana",
+        "kubejs:tin_rapier",
+        "kubejs:tin_scythe",
+        "kubejs:tin_warglaive",
+        "kubejs:tin_mace",
+        "kubejs:tin_spear",
+    ],
+    "caverns_and_chasms:silver_sword": [
+        "caverns_and_chasms:silver_axe",
+        "ccww:silver_greatsword",
+        "ccww:silver_halberd",
+        "ccww:silver_hammer",
+        "ccww:silver_katana",
+        "ccww:silver_rapier",
+        "ccww:silver_scythe",
+        "ccww:silver_warglaive",
+        "ccww:silver_mace",
+        "ccww:silver_spear",
+    ],
+    "caverns_and_chasms:copper_sword": [
+        "caverns_and_chasms:copper_sword",
+        "caverns_and_chasms:copper_axe",
+        "ccww:copper_greatsword",
+        "ccww:copper_halberd",
+        "ccww:copper_hammer",
+        "ccww:copper_katana",
+        "ccww:copper_rapier",
+        "ccww:copper_scythe",
+        "ccww:copper_warglaive",
+        "ccww:copper_mace",
+        "ccww:copper_spear",
+    ]
+}
+
+const OXIDATION_STATES = [
+    "exposed",
+    "weathered",
+    "oxidized"
+]
+
 EntityEvents.spawned((event) => {
     const entity = event.entity;
     const handslots = entity.handSlots;
@@ -168,28 +317,25 @@ EntityEvents.spawned((event) => {
         return;
 
     handslots.forEach((item) => {
-        //Integration: Mobs can have a random weaponworks weapon of the same material instead of a sword.
-        WEAPON_MATERIALS.forEach((material) => {
-            if (
-                item != null &&
-                (item.id == 'minecraft:' + material + '_sword' ||
-                    item.id == 'minecraft:' + material + '_axe') &&
-                Math.random() > 0.5
-            ) {
-                entity.setItemSlot(
-                    'mainhand',
-                    Item.of(
-                        'moonsweaponry:' +
-                        material +
-                        '_' +
-                        WEAPON_TYPES[
-                        Math.floor(Math.random() * WEAPON_TYPES.length)
-                        ],
-                        item.nbt
-                    )
-                );
+        if (item == null) return;
+        let nbt = item.nbt
+        let new_item_id
+        for (let [base, swaps] of Object.entries(SWAP_DEFS)) {
+            if (item.id.match(new RegExp(base) || item.id.match(new RegExp(base.replace("sword", "axe"))))) {
+                new_item_id = swaps[Math.floor(Math.random() * swaps.length)]
+                if (new_item_id.match(/(caverns_and_chasms|ccww):.*copper/) && Math.random() < 0.66) {
+                    //randomly oxidize
+                    new_item_id = new_item_id.split(":")[0] + ":" + OXIDATION_STATES[Math.floor(Math.random() * OXIDATION_STATES.length)] + "_" + new_item_id.split(":")[1]
+                }
+                if (Item.of(new_item_id).is(Item.empty)) {
+                    console.warn(new_item_id + " not found")
+                }
             }
-        });
+        }
+
+        if (new_item_id && !Item.of(new_item_id).is(Item.empty)) {
+            entity.setItemSlot('mainhand', Item.of(new_item_id, nbt));
+        }
 
         if (
             entity.type != 'quark:forgotten' &&
