@@ -335,5 +335,18 @@
         },
         "texture": "quark:attribute/slowness_infliction",
         "compare": "higher_better"
+    },
+    "caverns_and_chasms:experience_boost": {
+        "display": {
+            "mainhand": "flat",
+            "offhand": "flat",
+            "feet": "flat",
+            "legs": "flat",
+            "chest": "flat",
+            "head": "flat",
+            "potion": "flat"
+        },
+        "texture": "quark:attribute/experience_boost",
+        "compare": "higher_better"
     }
 }
