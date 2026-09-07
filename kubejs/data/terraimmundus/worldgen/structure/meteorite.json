@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:jigsaw",
+    "start_pool": "terraimmundus:meteorite",
+    "biomes": "#forge:is_general",
+    "project_start_to_heightmap": "MOTION_BLOCKING_NO_LEAVES",
+    "start_height": {
+        "absolute": 1
+    },
+    "spawn_overrides": {},
+    "step": "surface_structures",
+    "use_expansion_hack": false,
+    "max_distance_from_center": 64,
+    "size": 6,
+    "terrain_adaptation": "beard_thin"
+}

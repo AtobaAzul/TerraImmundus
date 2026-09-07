@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 83422767,
+    "separation": 64,
+    "spacing": 50
+  },
+  "structures": [
+    {
+      "structure": "terraimmundus:meteorite",
+      "weight": 1
+    }
+  ]
+}

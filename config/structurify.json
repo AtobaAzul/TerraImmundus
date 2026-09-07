@@ -1,11 +1,28 @@
 {
   "config_version": "2.0.35",
-  "config_datetime": "2026-09-02_18-35-08",
+  "config_datetime": "2026-09-05_22-39-43",
   "general": {
     "prevent_structure_overlap": true,
-    "overlap_padding": 16
+    "overlap_padding": 8
   },
   "structure_namespaces": [
+    {
+      "name": "betterdungeons",
+      "override_global_distance_from_world_center": true,
+      "exclude_from_overlap_prevention": true
+    },
+    {
+      "name": "betterjungletemples",
+      "override_global_distance_from_world_center": true,
+      "exclude_from_overlap_prevention": true,
+      "override_global_flatness_check": true
+    },
+    {
+      "name": "caverns_and_chasms",
+      "override_global_distance_from_world_center": true,
+      "exclude_from_overlap_prevention": true,
+      "override_global_flatness_check": true
+    },
     {
       "name": "global",
       "enable_min_distance_from_world_center": true,
@@ -15,6 +32,13 @@
     {
       "name": "sculkhorde",
       "override_global_distance_from_world_center": true
+    },
+    {
+      "name": "terraimmundus",
+      "override_global_flatness_check": true,
+      "enable_flatness_check": true,
+      "flatness_check_mode": "MANUAL",
+      "flatness_check_max_height_difference": 2
     }
   ],
   "structures": [
