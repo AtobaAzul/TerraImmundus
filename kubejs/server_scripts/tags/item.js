@@ -248,4 +248,6 @@ ServerEvents.tags('item', (event) => {
     event.add('minecraft:beacon_payment_items', 'sculkhorde:soulite_shard')
 
     event.add('terraimmundus:tin_repair_material', ['caverns_and_chasms:tin_ingot'])
+
+    event.add('scguns:rocks', ['#forge:cobblestone', '#forge:stone'])
 });

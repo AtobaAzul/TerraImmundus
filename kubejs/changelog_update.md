@@ -59,7 +59,9 @@
    - Removed Toast, Toaster, Pizza, Jam, etc.
    - Removed Knife
    - Microwaves and Ovens now can do Smoking recipes.
-  
+- Renamed Sculk Block into Infested Soil
+- Infested Soil effective tool is now shovels.
+- Retextured Apatite and Nickel Ore  
 
 # Mods
 - Added mods:
@@ -84,6 +86,7 @@
    - EMI Tree Tabs
    - Mining Speed Tooltips
    - EMI Tree Tabs
+   - All The Leaks
 - Updated mods:
   - Simple Voice Chat
   - Xaero's World Map
