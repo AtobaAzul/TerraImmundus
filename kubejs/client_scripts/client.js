@@ -8,6 +8,7 @@ ClientEvents.lang("en_us", (event) => {
     //rename netherite to Titanium
 
     let rename = {
+        "minecraft:sculk": "Infested Soil",
         "minecraft:ancient_debris": "Buried Meteorite",
         "minecraft:netherite_scrap": "Raw Meteorite",
         "caverns_and_chasms:netherite_nugget": "Meteorite Nugget",

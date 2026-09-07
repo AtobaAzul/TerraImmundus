@@ -171,4 +171,6 @@ ServerEvents.tags('block', (event) => {
     event.add('minecraft:oxidized_cut_copper', ['minecraft:oxidized_cut_copper'])
     event.add('minecraft:dark_prismarine', ['minecraft:dark_prismarine'])
 
+    event.remove('minecraft:mineable/hoe', 'minecraft:sculk')
+    event.add('minecraft:mineable/shovel', 'minecraft:sculk')
 });
