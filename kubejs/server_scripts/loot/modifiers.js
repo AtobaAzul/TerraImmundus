@@ -383,11 +383,6 @@ LootJS.modifiers((e) => {
         'caverns_and_chasms:zirconia',
     );
 
-    e.addLootTableModifier(/.*/).replaceLoot(
-        'caverns_and_chasms:tin_ingot',
-        'caverns_and_chasms:raw_tin',
-    );
-
     const AMMO_DROP_BLACKLIST = [
         "scguns_cnc:hunger",
         "scguns_cnc:pulse_core"
