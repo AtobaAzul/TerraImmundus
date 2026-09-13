@@ -66,6 +66,7 @@
 - Added surface meteorite structure.
 - Increased Sack slots. (9 -> 12)
 - Blizzes and Blitzes no longer spawn underground.
+- Reduced Lead ore vein size (14 -> 5)
 
 # Mods
 - Added mods:
