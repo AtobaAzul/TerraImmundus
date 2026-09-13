@@ -124,7 +124,7 @@ ServerEvents.recipes((e) => {
 		'scguns_cnc:hexshot': [
 			'scguns_cnc:medium_necromium_casing',
 			'scguns_cnc:hex_buckshot',
-			'minecraft:paper',
+			['paper', '#minecraft:wool', 'farmersdelight:canvas'],
 		],
 		'2x scguns_cnc:bluntshot': [
 			'scguns:shotgun_shell',
@@ -148,13 +148,13 @@ ServerEvents.recipes((e) => {
 		'scguns:shotgun_shell': [
 			'scguns:small_copper_casing',
 			'scguns:buckshot',
-			'paper',
+			['paper', '#minecraft:wool', 'farmersdelight:canvas'],
 		],
 		'scguns:bearpack_shell': [
 			'scguns:medium_brass_casing',
 			'scguns:buckshot',
 			'kubejs:smokeless_powder',
-			'paper',
+			['paper', '#minecraft:wool', 'farmersdelight:canvas'],
 		],
 		'scguns:shock_cell': [
 			'scguns:empty_cell',
