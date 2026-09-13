@@ -107,6 +107,7 @@
   - Farmer's Delight
   - Immersive Aircraft
   - Man of Many Planes
+  - Storage Drawers
   - Amendments
   - Balm
   - BaguetteLib
