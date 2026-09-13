@@ -106,6 +106,7 @@
   - Blueprint
   - Farmer's Delight
   - Immersive Aircraft
+  - Man of Many Planes
   - Amendments
   - Balm
   - BaguetteLib
