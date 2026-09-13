@@ -105,6 +105,7 @@
   - Every Compat
   - Blueprint
   - Farmer's Delight
+  - Immersive Aircraft
   - Amendments
   - Balm
   - BaguetteLib
