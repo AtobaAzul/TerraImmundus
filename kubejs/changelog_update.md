@@ -64,6 +64,7 @@
 - Retextured Apatite and Nickel Ore.
 - Added large meteorite 'geode'.
 - Added surface meteorite structure.
+- Increased Sack slots. (9 -> 12)
 
 # Mods
 - Added mods:
