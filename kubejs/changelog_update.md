@@ -94,6 +94,7 @@
 - Updated mods:
   - Simple Voice Chat
   - Xaero's World Map
+  - Xaero's Minimap
   - Cupboard
   - FancyMenu
   - Fragmentum
