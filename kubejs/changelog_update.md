@@ -65,6 +65,7 @@
 - Added large meteorite 'geode'.
 - Added surface meteorite structure.
 - Increased Sack slots. (9 -> 12)
+- Blizzes and Blitzes no longer spawn underground.
 
 # Mods
 - Added mods:

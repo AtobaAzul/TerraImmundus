@@ -93,6 +93,19 @@ EntityEvents.checkSpawn('minecraft:spider', (event) => {
     }
 });
 
+EntityEvents.checkSpawn('thermal:blizz', (event) => {
+    if (!event.level.canSeeSky(entity.blockPosition())) {
+        event.cancel();
+    }
+})
+
+
+EntityEvents.checkSpawn('thermal:blitz', (event) => {
+    if (!event.level.canSeeSky(entity.blockPosition())) {
+        event.cancel();
+    }
+})
+
 EntityEvents.checkSpawn('minecraft:slime', (event) => {
     let { entity, x, y, z } = event;
 
