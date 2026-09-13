@@ -54,14 +54,16 @@
 - Diamond no longer can repair Meteorite items.
 - Replaced Caverns & Chasms Weaponworks implementation with Weaponworks: Caverns & Chasms. Apologies for any lost items.
 - Mosquitoes now have a 66% chance to replace a spider, instead of guaranteed.
-- Removed non-furniture content from Refurbished Furniture and duplicates
+- Removed non-furniture content from Refurbished Furniture and overlapping content
    - Removed cutting boards
    - Removed Toast, Toaster, Pizza, Jam, etc.
    - Removed Knife
    - Microwaves and Ovens now can do Smoking recipes.
 - Renamed Sculk Block into Infested Soil
 - Infested Soil effective tool is now shovels.
-- Retextured Apatite and Nickel Ore  
+- Retextured Apatite and Nickel Ore.
+- Added large meteorite 'geode'.
+- Added surface meteorite structure.
 
 # Mods
 - Added mods:
@@ -87,6 +89,7 @@
    - Mining Speed Tooltips
    - EMI Tree Tabs
    - All The Leaks
+   - Stackable Potions
 - Updated mods:
   - Simple Voice Chat
   - Xaero's World Map
@@ -97,10 +100,12 @@
   - Particular
   - Particle Rain
   - ModernFix
+  - Moonlight Lib
+  - Every Compat
+  - Blueprint
   - Farmer's Delight
   - Amendments
   - Balm
-  - JEI
   - BaguetteLib
   - Guard Villagers
   - Sculk Horde
