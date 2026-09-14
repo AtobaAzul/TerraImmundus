@@ -7,7 +7,7 @@
 		],
 		"levelTwoEffects": [
 			"minecraft:haste",
-			"better_beacons:long_reach"
+			"sob:reach"
 		],
 		"levelThreeEffects": [
 			"minecraft:strength",

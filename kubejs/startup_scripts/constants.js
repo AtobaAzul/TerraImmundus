@@ -280,3 +280,5 @@ const SCORCHED_RARITY = ['kubejs:scorched_dust'];
 global.REPAIR_DEFS = {
     //repair item/tag: 
 }
+
+const $HealingBandageItem = Java.loadClass('top.ribs.scguns.item.HealingBandageItem')

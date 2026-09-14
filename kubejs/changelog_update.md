@@ -68,6 +68,16 @@
 - Blizzes and Blitzes no longer spawn underground.
 - Reduced Lead ore vein size (14 -> 5)
 - Shotgun shells Paper can now be Wool or Canvas.
+- Healing changes:
+  - Natural healing has been signifincatly nerfed
+  - Renamed and retextured Basic Poultice to Crude Dressing
+  - Crude dressing can be made from String and Canvas
+  - Added Soothing Dressing, made from Crude Dressing and Rose Hip Tea.
+  - Changed Honey Sulfur Poultice recipe to Paper, Honey and Sulfur Dust.
+  - Removed Dragon Salve and Enchanted Bandage.
+  - Added a cooldown for self-infusing with the Potion Infuser.
+  - Campfires now grant the Relief effect, increasing healing.
+  - Developer note: This change was made to make food less about healing and more about buffs they can give, pushing players to invest in healing items and special foods, in an attempt to made combat more interesting. I often found myself simply eating beef stew for an entire run.
 
 # Mods
 - Added mods:
@@ -94,6 +104,7 @@
    - EMI Tree Tabs
    - All The Leaks
    - Stackable Potions
+   - Potion Sickness
 - Updated mods:
   - Simple Voice Chat
   - Xaero's World Map
@@ -120,6 +131,9 @@
   - Iron's Simple Blood
   - Better Advancements
   - Tax Free Levels
+  - EMI Trades
+  - Harder Natural Healing
+  - Confortable Campfires
 - Removed mods:
   - EntityJS
   - Anvil API

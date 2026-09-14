@@ -80,7 +80,7 @@
 	[Tools."Potion Infuser"]
 		#This sets the maximum base fluid capacity for the Potion Infuser.
 		#Range: 1000 ~ 10000000
-		"Base Capacity" = 4000
+		"Base Capacity" = 1000
 
 	[Tools."Potion Quiver"]
 		#This sets the maximum base fluid capacity for the Alchemical Quiver.

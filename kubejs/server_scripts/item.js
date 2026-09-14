@@ -62,3 +62,7 @@ ItemEvents.foodEaten('minecraft:enchanted_golden_apple', (event) => {
         );
     }
 })
+
+ItemEvents.rightClicked('thermal:potion_infuser', (event) => {
+    event.player.addItemCooldown('thermal:potion_infuser', 50)
+})

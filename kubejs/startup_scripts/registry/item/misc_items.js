@@ -79,6 +79,7 @@ StartupEvents.registry('item', (event) => {
         }
     })
 
+    event.createCustom('soothing_dressing', () => new $HealingBandageItem(new $ItemProperties().stacksTo(16), 4, new $MobEffectInstance('farmersdelight:comfort', 20*120, 0)))
 });
 
 ItemEvents.armorTierRegistry(event => {

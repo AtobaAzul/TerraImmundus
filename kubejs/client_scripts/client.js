@@ -194,6 +194,7 @@ ClientEvents.lang("en_us", (event) => {
         "refinedstorage:cable": "Data Cable",
         "alexsmobs:bone_serpent_tooth": "Wither Tooth",
         "sculkhorde:infested_crying_obsidian": "Weeping Obsidian",
+        "scguns:basic_poultice": "Crude Dressing"
     };
 
     for (const [item, name] of Object.entries(rename)) {
@@ -224,10 +225,9 @@ ClientEvents.lang("en_us", (event) => {
         "rarity.scguns.oceanic": "Naval",
         "rarity.scguns.rusty": "Rusted",
         "rarity.scguns.bizarre": "Bizarre",
-        "rarity.scguns.wrecker": "Wrecker"
+        "rarity.scguns.wrecker": "Wrecker",
     };
 
-    //JsonIO.write("kubejs/assets/terraimmundus/lang/en_us.json", lang_rename);
 
     event.addAll(add_lang);
 });

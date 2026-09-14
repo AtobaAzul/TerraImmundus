@@ -94,14 +94,14 @@ EntityEvents.checkSpawn('minecraft:spider', (event) => {
 });
 
 EntityEvents.checkSpawn('thermal:blizz', (event) => {
-    if (!event.level.canSeeSky(entity.blockPosition())) {
+    if (!event.level.canSeeSky(event.entity.blockPosition())) {
         event.cancel();
     }
 })
 
 
 EntityEvents.checkSpawn('thermal:blitz', (event) => {
-    if (!event.level.canSeeSky(entity.blockPosition())) {
+    if (!event.level.canSeeSky(event.entity.blockPosition())) {
         event.cancel();
     }
 })

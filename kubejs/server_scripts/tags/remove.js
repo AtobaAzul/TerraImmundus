@@ -233,7 +233,9 @@ const REMOVED_ITEMS = [
 	'refurbished_furniture:raw_meatlovers_pizza',
 	'refurbished_furniture:cooked_meatlovers_pizza',
 	'refurbished_furniture:meatlovers_pizza_slice',
-    'refurbished_furniture:knife'
+    'refurbished_furniture:knife',
+    'scguns:dragon_salve',
+    'scguns:enchanted_bandage'
 ];
 
 ServerEvents.tags('item', (event) => {
