@@ -13,7 +13,12 @@
 			"bones": [
 				{
 					"name": "gun_body",
-					"pivot": [0, -5, 0],
+					"pivot": [0, -5, 0]
+				},
+				{
+					"name": "gun_body2",
+					"parent": "gun_body",
+					"pivot": [0, -5, 5],
 					"cubes": [
 						{
 							"origin": [-0.75, -4.39608, 1.68358],
@@ -290,23 +295,8 @@
 				},
 				{
 					"name": "body",
-					"parent": "gun_body",
+					"parent": "gun_body2",
 					"pivot": [0, -5, 0]
-				},
-				{
-					"name": "hammer",
-					"parent": "body",
-					"pivot": [0, -2.72669, 4.78378]
-				},
-				{
-					"name": "lever",
-					"parent": "body",
-					"pivot": [0, -4.25833, 3.86741]
-				},
-				{
-					"name": "shell",
-					"parent": "body",
-					"pivot": [0, -3.8432, 3.25305]
 				},
 				{
 					"name": "sights",
@@ -392,13 +382,8 @@
 					]
 				},
 				{
-					"name": "bolt",
-					"parent": "body",
-					"pivot": [-0.62646, -3.30184, 3.38542]
-				},
-				{
 					"name": "stocks",
-					"parent": "gun_body",
+					"parent": "gun_body2",
 					"pivot": [0, -5, 0]
 				},
 				{
@@ -859,12 +844,12 @@
 				},
 				{
 					"name": "attachment_bone",
-					"parent": "gun_body",
+					"parent": "gun_body2",
 					"pivot": [-0.00188, -6.22875, 3.24059]
 				},
 				{
 					"name": "left_arm",
-					"parent": "gun_body",
+					"parent": "gun_body2",
 					"pivot": [6, -1.5932, 6.00305],
 					"cubes": [
 						{
