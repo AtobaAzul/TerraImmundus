@@ -1,5 +1,5 @@
 {
-	"format_version": "1.12.0",
+	"format_version": "1.21.110",
 	"minecraft:geometry": [
 		{
 			"description": {
@@ -12,8 +12,26 @@
 			},
 			"bones": [
 				{
+					"name": "gun_body3",
+					"pivot": [0, -4, 12]
+				},
+				{
 					"name": "gun_body",
-					"pivot": [-0.475, -5.025, 0],
+					"parent": "gun_body3",
+					"pivot": [-0.475, -5.025, 0]
+				},
+				{
+					"name": "right_arm",
+					"parent": "gun_body",
+					"pivot": [-7.25, -3.3, 7.6],
+					"cubes": [
+						{"origin": [-8, -6, 5.5], "size": [2.5, 10, 2.5], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "gun_body2",
+					"parent": "gun_body",
+					"pivot": [0.25, -5.3, 6.1],
 					"cubes": [
 						{
 							"origin": [-0.7057, -7.6, 6],
@@ -278,7 +296,7 @@
 				},
 				{
 					"name": "body",
-					"parent": "gun_body",
+					"parent": "gun_body2",
 					"pivot": [-0.475, -5.025, 0]
 				},
 				{
@@ -375,7 +393,7 @@
 				},
 				{
 					"name": "barrels",
-					"parent": "gun_body",
+					"parent": "gun_body2",
 					"pivot": [-0.475, -5.025, 0]
 				},
 				{
@@ -719,26 +737,15 @@
 				},
 				{
 					"name": "magazine",
-					"parent": "gun_body",
+					"parent": "gun_body2",
 					"pivot": [6, 1, 6]
 				},
 				{
 					"name": "left_arm",
 					"parent": "magazine",
-					"pivot": [5.525, -1.6182, 6.00305],
+					"pivot": [7.25, -3.3, 7.6],
 					"cubes": [
-						{
-							"origin": [4.275, -7.4182, 4.75305],
-							"size": [2.5, 10, 2.5],
-							"uv": {
-								"north": {"uv": [0, 0], "uv_size": [0.5, 0.5]},
-								"east": {"uv": [0, 0], "uv_size": [0.5, 0.5]},
-								"south": {"uv": [0, 0], "uv_size": [0.5, 0.5]},
-								"west": {"uv": [0, 0], "uv_size": [0.5, 0.5]},
-								"up": {"uv": [0.5, 0.5], "uv_size": [-0.5, -0.5]},
-								"down": {"uv": [0.5, 0.5], "uv_size": [-0.5, -0.5]}
-							}
-						}
+						{"origin": [5.5, -6, 5.5], "size": [2.5, 10, 2.5], "uv": [0, 0]}
 					]
 				},
 				{
@@ -762,7 +769,7 @@
 				},
 				{
 					"name": "magazine_2",
-					"parent": "gun_body",
+					"parent": "gun_body2",
 					"pivot": [0, -7.675, 7]
 				},
 				{
@@ -786,31 +793,12 @@
 				},
 				{
 					"name": "attachment_bone",
-					"parent": "gun_body",
+					"parent": "gun_body2",
 					"pivot": [-0.47688, -6.25375, 3.24059]
 				},
 				{
-					"name": "right_arm",
-					"parent": "gun_body",
-					"pivot": [-6.475, -3.6182, 6.00305],
-					"cubes": [
-						{
-							"origin": [-7.725, -7.4182, 4.75305],
-							"size": [2.5, 10, 2.5],
-							"uv": {
-								"north": {"uv": [0, 0], "uv_size": [0.5, 0.5]},
-								"east": {"uv": [0, 0], "uv_size": [0.5, 0.5]},
-								"south": {"uv": [0, 0], "uv_size": [0.5, 0.5]},
-								"west": {"uv": [0, 0], "uv_size": [0.5, 0.5]},
-								"up": {"uv": [0.5, 0.5], "uv_size": [-0.5, -0.5]},
-								"down": {"uv": [0.5, 0.5], "uv_size": [-0.5, -0.5]}
-							}
-						}
-					]
-				},
-				{
 					"name": "stocks",
-					"parent": "gun_body",
+					"parent": "gun_body2",
 					"pivot": [0, -5.75, 0]
 				},
 				{
