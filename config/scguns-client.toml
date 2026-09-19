@@ -35,14 +35,14 @@ buttonAlignment = "RIGHT"
 		swaySensitivity = 0.3
 		#The animation to use for sway. Directional follows the camera better while Drag is more immersive
 		#Allowed Values: DIRECTIONAL, DRAG
-		swayType = "DRAG"
+		swayType = "DIRECTIONAL"
 		#If enabled, the camera will roll when strafing while holding a gun. This creates a more immersive feeling.
 		cameraRollEffect = true
 		#When Camera Roll Effect is enabled, this is the absolute maximum angle the roll on the camera can approach.
 		#Range: 0.0 ~ 45.0
 		cameraRollAngle = 1.5
 		#When enabled, the Camera Roll Effect is only applied when holding a weapon.
-		restrictCameraRollToWeapons = true
+		restrictCameraRollToWeapons = false
 		#Enables the sprinting animation on weapons for better immersion. This only applies to weapons that support a sprinting animation.
 		sprintingAnimation = true
 		#If enabled, renders a HUD element displaying the gun's ammo count and ammo capacity, as well as pulse weapon charge.
@@ -69,7 +69,7 @@ buttonAlignment = "RIGHT"
 		dynamicCrosshairReactivity = 2.0
 		#The rendering mode used for the Dynamic Crosshair's center dot. At Min Spread will only render the dot when gun spread is stable.
 		#Allowed Values: NEVER, AT_MIN_SPREAD, THRESHOLD, ALWAYS
-		dynamicCrosshairDotMode = "AT_MIN_SPREAD"
+		dynamicCrosshairDotMode = "THRESHOLD"
 		#If true, the Dynamic Crosshair's center dot will only render while aiming. Obeys dynamicCrosshairDotMode, and has no effect when mode is set to Never.
 		onlyRenderDotWhileAiming = true
 		#The threshold of spread (including modifiers) below which the Dynamic Crosshair's center dot is rendered. Affects the At Min Spread and Threshold modes only.
@@ -97,7 +97,7 @@ buttonAlignment = "RIGHT"
 		#Range: 0.0 ~ 1.0
 		bulletHoleFadeThreshold = 0.98
 		#If true, blood will will spawn from entities that are hit from a projectile
-		enableBlood = false
+		enableBlood = true
 		#The maximum distance impact particles can be seen from the player
 		#Range: 0.0 ~ 64.0
 		impactParticleDistance = 32.0
