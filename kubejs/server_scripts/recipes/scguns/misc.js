@@ -191,12 +191,6 @@ ServerEvents.recipes((e) => {
         'minecraft:honey_bottle'
     ])
 
-    e.shapeless('2x kubejs:mending_paste', [
-        'sculkhorde:calcite_clump',
-        'sculkhorde:sculk_resin',
-        'thermal:syrup_bottle'
-    ])
-
     e.shapeless('2x kubejs:soothing_dressing', [
         '2x scguns:basic_poultice',
         'farmersrespite:rose_hip_tea',
