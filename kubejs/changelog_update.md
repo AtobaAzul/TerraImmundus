@@ -78,6 +78,8 @@
   - Added a cooldown for self-infusing with the Potion Infuser.
   - Campfires now grant the Relief effect, increasing healing.
   - Developer note: This change was made to make food less about healing and more about buffs they can give, pushing players to invest in healing items and special foods, in an attempt to made combat more interesting. I often found myself simply eating beef stew for an entire run.
+- Renamed Soul Speed to Sculk Speed
+- Soul Speed now increases movement speed on Sculk blocks.
 
 # Mods
 - Added mods:

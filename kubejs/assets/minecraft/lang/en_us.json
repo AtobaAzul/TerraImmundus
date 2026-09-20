@@ -9,5 +9,7 @@
     "item.minecraft.netherite_scrap": "Meteorite Scrap",
     "item.minecraft.smithing_template.netherite_upgrade.applies_to": "Diamond or Titanium Equipment",
     "item.minecraft.smithing_template.netherite_upgrade.base_slot_description": "Add diamond/titanium armor, weapon, or tool",
-    "selectWorld.bonusItems": "Starting Items"
+    "selectWorld.bonusItems": "Starting Items",
+    "enchantment.minecraft.soul_speed.desc": "Increases movement speed on Sculk blocks.",
+    "enchantment.minecraft.soul_speed": "Sculk Speed"
 }
