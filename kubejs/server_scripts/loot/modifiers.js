@@ -505,6 +505,12 @@ LootJS.modifiers((e) => {
                     `{${randomColorNbt()}}`,
                 ),
             );
+
+            ctx.addLoot(
+                Item.of(
+                    'scguns:basic_poultice', 16
+                ),
+            );
         })
 
     e.addEntityLootModifier('minecraft:cave_spider').addLoot('miners_delight:spider_leg')
