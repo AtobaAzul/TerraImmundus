@@ -173,4 +173,7 @@ ServerEvents.tags('block', (event) => {
 
     event.remove('minecraft:mineable/hoe', 'minecraft:sculk')
     event.add('minecraft:mineable/shovel', 'minecraft:sculk')
+
+    event.removeAll('minecraft:soul_speed_blocks')
+    event.add('minecraft:soul_speed_blocks', '#sculkhorde:infested_block')
 });

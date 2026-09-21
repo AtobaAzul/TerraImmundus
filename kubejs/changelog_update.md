@@ -78,6 +78,8 @@
   - Added a cooldown for self-infusing with the Potion Infuser.
   - Campfires now grant the Relief effect, increasing healing.
   - Developer note: This change was made to make food less about healing and more about buffs they can give, pushing players to invest in healing items and special foods, in an attempt to made combat more interesting. I often found myself simply eating beef stew for an entire run.
+- Renamed Soul Speed to Sculk Speed
+- Soul Speed now increases movement speed on Sculk blocks.
 
 # Mods
 - Added mods:
@@ -105,18 +107,25 @@
    - All The Leaks
    - Stackable Potions
    - Potion Sickness
+   - Concurrent Chunk Management Engine
+   - EMI Trades
+   - Harder Natural Healing
+   - Confortable Campfires
 - Updated mods:
   - Simple Voice Chat
   - Xaero's World Map
   - Xaero's Minimap
   - Cupboard
   - FancyMenu
+  - Quest Enhance
   - Fragmentum
   - Hardcore Revival
   - Particular
   - Particle Rain
   - ModernFix
   - Moonlight Lib
+  - Fzzy Config
+  - Not Enough Animations
   - Every Compat
   - Blueprint
   - Farmer's Delight
@@ -131,9 +140,8 @@
   - Iron's Simple Blood
   - Better Advancements
   - Tax Free Levels
-  - EMI Trades
-  - Harder Natural Healing
-  - Confortable Campfires
+  - Entity Culling
+  - Caravans
 - Removed mods:
   - EntityJS
   - Anvil API
