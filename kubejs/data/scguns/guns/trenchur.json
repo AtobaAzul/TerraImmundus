@@ -16,7 +16,8 @@
     "meleeCooldownTicks": 10,
     "meleeReach": 2.5,
     "hotBarrelRate": 24,
-    "isRevolver": true
+    "isRevolver": true,
+    "usesCustomMeleeAnimation": true
   },
   "modules": {
     "attachments": {
