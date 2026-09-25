@@ -538,25 +538,6 @@
 				}
 			}
 		},
-		"idle": {
-			"loop": true,
-			"bones": {
-				"right_arm": {
-					"rotation": [90, 0, -180],
-					"position": [7.75, -4.95, 4]
-				},
-				"left_arm": {
-					"scale": 0
-				},
-				"shell": {
-					"scale": 0
-				},
-				"gun_body": {
-					"rotation": [0, 0, 0],
-					"position": [0, 0, 0]
-				}
-			}
-		},
 		"reload_start": {
 			"animation_length": 0.4348,
 			"bones": {
