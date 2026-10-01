@@ -88,6 +88,7 @@
    - Bathymetry
    - Better Combat Scorched Guns Compat
    - Healight
+   - Geophilic
    - FTB Quests Enhance
    - Screenshot to Clipboard
    - Just Enough Repair Materials
@@ -103,6 +104,7 @@
    - Weaponworks: Caverns & Chasms
    - EMI Tree Tabs
    - Mining Speed Tooltips
+   - MossyLib
    - EMI Tree Tabs
    - All The Leaks
    - Stackable Potions
@@ -126,6 +128,7 @@
   - Moonlight Lib
   - Fzzy Config
   - Not Enough Animations
+  - Collective
   - Every Compat
   - Blueprint
   - Farmer's Delight
