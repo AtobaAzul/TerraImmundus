@@ -18,6 +18,7 @@
 			dependencies: ["5865797006BBAAE2"]
 			description: ["Nickel is needed to make &6Machine Frames&r, and requires a &bDiamond-level&r pickaxe to mine."]
 			id: "71D54C0037E17A4C"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -33,6 +34,7 @@
 			dependencies: ["71D54C0037E17A4C"]
 			description: ["Machine frames are the basis of nearly all machines."]
 			id: "0645022313432252"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2C9E5D6ED7DE34D8"
 				item: "thermal:machine_frame"
@@ -50,6 +52,7 @@
 			]
 			icon: "thermal:cured_rubber"
 			id: "00BAF70EA51427EC"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [
@@ -86,6 +89,7 @@
 				"&6Shift+RMB&r to change a connetion's type."
 			]
 			id: "65A19EDD1DB27234"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [
 				{
 					id: "29040F07C1855AA2"
@@ -106,6 +110,7 @@
 			dependencies: ["5865797006BBAAE2"]
 			description: ["Dynamos burn different fuels to generate &6power&r, needed to run machines."]
 			id: "11503DB45CD2093F"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -138,6 +143,7 @@
 			icon: "thermal:rf_coil"
 			id: "77DCAEC282F587D8"
 			min_required_dependencies: 2
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			tasks: [{
 				id: "1A18D581E544188D"
@@ -158,6 +164,7 @@
 			hide_until_deps_visible: true
 			icon: "thermal:upgrade_augment_1"
 			id: "49DC3081B249E505"
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Upgrades, people, upgrades."
 			tasks: [{
@@ -180,6 +187,7 @@
 			dependencies: ["77DCAEC282F587D8"]
 			description: ["The Pulverizer crushes things into dusts and powders. Use this to make alloy blends."]
 			id: "37A920C24A5F734D"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.5d
 			tasks: [{
 				id: "4D4E4010FA33AC79"
@@ -194,6 +202,7 @@
 			description: ["The Redstone Furnace is an electric furnace."]
 			hide_until_deps_visible: true
 			id: "0E032066601BE2E9"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "748B5D99C2784E12"
 				item: "thermal:machine_furnace"
@@ -207,6 +216,7 @@
 			description: ["The Sawmill cuts wood more efficiently."]
 			hide_until_deps_visible: true
 			id: "27BC2D5870035CBF"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "11AD6F4E5838082A"
 				item: "thermal:machine_sawmill"
@@ -221,6 +231,7 @@
 			hide_dependent_lines: true
 			hide_until_deps_visible: true
 			id: "560398E1B9B2E686"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "06B9E8ACC878B19A"
 				item: "thermal:machine_bottler"
@@ -238,6 +249,7 @@
 			]
 			hide_until_deps_visible: true
 			id: "0977F7D2416B4A0F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "293CD9179BC2CDDF"
 				item: "thermal:machine_crafter"
@@ -252,6 +264,7 @@
 			hide_until_deps_visible: true
 			icon: "thermal:redstone_servo"
 			id: "63D7EA0B4D706D20"
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			tasks: [{
 				id: "5DB0238ABD333B7D"
@@ -267,6 +280,7 @@
 			description: ["These materials need a Pulverizer to be produced."]
 			icon: "thermal:bronze_gear"
 			id: "6ED2FB0EE2A1D5A7"
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			tasks: [{
 				id: "05A5433D542F7753"
@@ -284,6 +298,7 @@
 				"The tree must be natural, have leaves and have dirt under it."
 			]
 			id: "5DBF7FFB8A65A00F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1284ACA8B3FAEFBF"
 				item: "thermal:device_tree_extractor"
@@ -296,6 +311,7 @@
 			dependencies: ["63D7EA0B4D706D20"]
 			description: ["This device catches fish."]
 			id: "4A64AE65819BAFBA"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7D93B1F9436DEDD6"
 				item: "thermal:device_fisher"
@@ -308,6 +324,7 @@
 			dependencies: ["63D7EA0B4D706D20"]
 			description: ["This device pulls water from its surroundings, for use with pipes and within machines."]
 			id: "58D64815EA42F57F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1A05AFA7FE431922"
 				item: "thermal:device_water_gen"
@@ -320,6 +337,7 @@
 			dependencies: ["63D7EA0B4D706D20"]
 			description: ["This device vaccuums items nearby into its inventory."]
 			id: "3CE52C96E5979B6E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3FBD924786C72384"
 				item: "thermal:device_collector"
@@ -332,6 +350,7 @@
 			dependencies: ["63D7EA0B4D706D20"]
 			description: ["This device collects experience from its surroundings, including from machines with an &2Knowledge Concentrator&r augment"]
 			id: "33DBEB5D52E38044"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0A15676857E1E53C"
 				item: "thermal:device_xp_condenser"
@@ -344,6 +363,7 @@
 			dependencies: ["63D7EA0B4D706D20"]
 			description: ["This device deletes items."]
 			id: "22F2EAC35CAA244D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4A0231520ABAA0F8"
 				item: "thermal:device_nullifier"
@@ -359,6 +379,7 @@
 			]
 			description: ["This device produces rocks from adjacent blocks."]
 			id: "488B64DA4277DC72"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "32F520A4BBA176E3"
 				item: "thermal:device_rock_gen"
@@ -371,6 +392,7 @@
 			dependencies: ["63D7EA0B4D706D20"]
 			description: ["This device composts large quantities of items at once"]
 			id: "77728449125880D2"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7D39AA67EA53BBFE"
 				item: "thermal:device_composter"
@@ -383,6 +405,7 @@
 			dependencies: ["6DCF7A961B5BD3F8"]
 			description: ["This device spreads potions across an area."]
 			id: "145C7BC47416F615"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "542835B1B0E34F4B"
 				item: "thermal:device_potion_diffuser"
@@ -395,6 +418,7 @@
 			dependencies: ["42B799EC849CF1F8"]
 			description: ["This device stores large quantities of power for later use. Can be picked up and retains power."]
 			id: "6B6B96F2E724F255"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4359883313CBE139"
 				item: {
@@ -418,6 +442,7 @@
 			dependencies: ["7FDF2C8698EFFEE9"]
 			description: ["This device stores large quantities of fluids. Can be picked up and retains fluid."]
 			id: "13DF803820F6D2BB"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1807501B6748ADC3"
 				item: {
@@ -443,6 +468,7 @@
 			dependencies: ["65A19EDD1DB27234"]
 			description: ["Fluid and Item pipes, as the name implies, move those 2 around."]
 			id: "0224025CB9DF18E1"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [
 				{
 					id: "38A8EB4AA202CEB4"
@@ -468,6 +494,7 @@
 				"{\"underlined\":true,\"color\":\"aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"5CF1BB9629E2308F/1\"},\"text\":\"It is required to produce Purity Shards\"}"
 			]
 			id: "1F380A26E21B724F"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.5d
 			tasks: [{
 				id: "69ACDF2F484506E1"
@@ -481,6 +508,7 @@
 			dependencies: ["6DCF7A961B5BD3F8"]
 			description: ["The Centrifugal Separator seperates things into their components."]
 			id: "1C8028268A2AD41F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4296E55168BF2124"
 				item: "thermal:machine_centrifuge"
@@ -496,6 +524,7 @@
 			]
 			description: ["The Multiservo Press presses things into shaped shapes. Make use of Dies to make certain items."]
 			id: "0713D981D65DF155"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3ED92AF06A8868EA"
 				item: "thermal:machine_press"
@@ -509,6 +538,7 @@
 			description: ["The Magma Crucible melts things down into fluids."]
 			hide_dependent_lines: true
 			id: "39C30132E46ECD39"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0F21DC49C211F28A"
 				item: "thermal:machine_crucible"
@@ -521,6 +551,7 @@
 			dependencies: ["7F827B2C0F0F5F50"]
 			description: ["The Blast Chiller cools down things."]
 			id: "47CFC248A8221E7D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "485798374C86F3CD"
 				item: "thermal:machine_chiller"
@@ -533,6 +564,7 @@
 			dependencies: ["7F827B2C0F0F5F50"]
 			description: ["The Fractionating Still distills fluids."]
 			id: "5699F8E5F116A933"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "611ED371F2A28FBD"
 				item: "thermal:machine_refinery"
@@ -542,9 +574,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6DCF7A961B5BD3F8"]
+			dependencies: [
+				"6DCF7A961B5BD3F8"
+				"3F4A0EA3840EAF6F"
+			]
 			description: ["The Pyrolyzer processes things using extreme heat."]
 			id: "0CF073A409DF45EA"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.5d
 			tasks: [{
 				id: "34AA791CC0E4B681"
@@ -558,6 +594,7 @@
 			dependencies: ["6DCF7A961B5BD3F8"]
 			description: ["Alchemical Imbuer makes potions in large quantities."]
 			id: "40C03947CB19B0C4"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3B407300D6E9BE59"
 				item: "thermal:machine_brewer"
@@ -572,6 +609,7 @@
 				"74487E0EF55041DE"
 			]
 			id: "0D99FF482E47D94F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0611ABCE0D278B2F"
 				item: "thermal:steel_ingot"
@@ -586,6 +624,7 @@
 			description: ["These materials need the Induction Smelter to be produced."]
 			icon: "thermal:sapphire_gear"
 			id: "74487E0EF55041DE"
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			tasks: [{
 				id: "342BDABEC21C5691"
@@ -599,6 +638,7 @@
 		{
 			dependencies: ["74487E0EF55041DE"]
 			id: "6DAD41761203CB40"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6333B335A8C2A520"
 				item: "thermal:lumium_ingot"
@@ -611,6 +651,7 @@
 		{
 			dependencies: ["74487E0EF55041DE"]
 			id: "42B799EC849CF1F8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "070A72432CD3D9CA"
 				item: "thermal:electrum_ingot"
@@ -623,6 +664,7 @@
 		{
 			dependencies: ["3D143DC0D0E3EAEA"]
 			id: "7D4EC034CE4F2D78"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7A3D65E92E37AA8F"
 				item: "thermal:enderium_ingot"
@@ -636,6 +678,7 @@
 			dependencies: ["3D143DC0D0E3EAEA"]
 			description: ["Used for several weapons, armor and more."]
 			id: "14F82701CF80FF8A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "04AFDC67771208BC"
 				item: {
@@ -656,6 +699,7 @@
 			dependencies: ["74487E0EF55041DE"]
 			description: [""]
 			id: "104FBB1C6037CD65"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "11C01184FD1F1FB0"
 				item: "thermal:rose_gold_ingot"
@@ -668,6 +712,7 @@
 		{
 			dependencies: ["74487E0EF55041DE"]
 			id: "7FDF2C8698EFFEE9"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "58705F25C5AA3FCB"
 				item: "thermal:obsidian_glass"
@@ -680,6 +725,7 @@
 			dependencies: ["74487E0EF55041DE"]
 			description: [""]
 			id: "577457934315E6DF"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5968B2021AB56E5D"
 				item: "savage_and_ravage:blast_proof_plating"
@@ -691,6 +737,7 @@
 		{
 			dependencies: ["3D143DC0D0E3EAEA"]
 			id: "3F498515E8FB78D3"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "45C6B77F04F34077"
 				item: "scguns:treated_brass_ingot"
@@ -704,6 +751,7 @@
 			dependencies: ["74487E0EF55041DE"]
 			description: [""]
 			id: "0861B3BDAB8CF346"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4C4FC77FBF284A45"
 				item: "minecraft:netherite_ingot"
@@ -717,6 +765,7 @@
 			dependencies: ["3D143DC0D0E3EAEA"]
 			description: ["{ \"text\": \"Used for Necromium tool and armor upgrades.\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2D233B5A870A0B7E\" }}"]
 			id: "6608D777C19F5758"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5DFBC80D3277D933"
 				item: "caverns_and_chasms:necromium_ingot"
@@ -731,6 +780,7 @@
 			description: ["These materials need other tier 3 materials to be produced."]
 			icon: "thermal:netherite_gear"
 			id: "3D143DC0D0E3EAEA"
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			tasks: [{
 				id: "78BAF23E63ABCA4D"
@@ -745,6 +795,7 @@
 			dependencies: ["7FDF2C8698EFFEE9"]
 			description: ["Steam engines produce power from steam. Steam is produced from any boiler and can be heated several times, increasing its energy density."]
 			id: "06E1259A77A1AB79"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [
 				{
 					id: "06C238EC9B48C43A"
@@ -765,6 +816,7 @@
 			dependencies: ["7F827B2C0F0F5F50"]
 			description: ["The Tinker's Workbench allows putting on Augments on equipment. Things like Radial Enhancement makes the tool work in a wider range or mine multiple blocks, and integral components increase the mining level."]
 			id: "6B55A4F4D7D8A1E5"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5C0284767F704FBD"
 				item: "thermal:tinker_bench"
@@ -778,6 +830,7 @@
 			dependencies: ["5E9A093FD988923B"]
 			description: ["Compression Dynamos burn specific liquid fuels to generate energy."]
 			id: "2D05372FF6E08E2B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "021E7F8F48C32CDF"
 				item: "thermal:dynamo_compression"
@@ -790,6 +843,7 @@
 			dependencies: ["7F827B2C0F0F5F50"]
 			description: ["Magmatic Dynamos burn lava to generate energy."]
 			id: "5E2C2FDE9C570AC6"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4A942B328433A9A8"
 				item: "thermal:dynamo_magmatic"
@@ -802,6 +856,7 @@
 			dependencies: ["0713D981D65DF155"]
 			description: ["Numistatic Dynamos spends coins to generate energy."]
 			id: "6CB7D0EB71B6B66B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "31B91A94FFCBB3B4"
 				item: "thermal:dynamo_numismatic"
@@ -814,6 +869,7 @@
 			dependencies: ["6DCF7A961B5BD3F8"]
 			description: ["Disenchantment Dynamos burn enchanted items to generate energy."]
 			id: "3D2BAF180ED15CB1"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "65D7AAD2D656E344"
 				item: "thermal:dynamo_disenchantment"
@@ -826,6 +882,7 @@
 			dependencies: ["63D7EA0B4D706D20"]
 			description: ["This device charges electrical items."]
 			id: "37C39E75C3EBC81D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "54F61A63CAC323D6"
 				item: "thermal:charge_bench"
@@ -837,6 +894,7 @@
 		{
 			dependencies: ["74487E0EF55041DE"]
 			id: "2AC019C1EC3821B8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "71D065C5150870FF"
 				item: "thermal:signalum_ingot"
@@ -850,6 +908,7 @@
 			dependencies: ["74487E0EF55041DE"]
 			description: [""]
 			id: "5D813063849F7366"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "74060BA514AD165D"
 				item: "refinedstorage:silicon"
@@ -867,6 +926,7 @@
 			]
 			description: ["Refined Storage system can store large amounts of items or fluids in Disks, using energy."]
 			id: "224E64A9A493FA03"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Mass Storage"
 			tasks: [
 				{
@@ -905,6 +965,7 @@
 			dependencies: ["42B799EC849CF1F8"]
 			description: ["Lightning Battery can collect power from lightning, but also is used for charging recipes."]
 			id: "159F7789853FBC57"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1E1926F4318DCAEC"
 				item: "scguns:lightning_battery"
@@ -917,6 +978,7 @@
 			dependencies: ["0D99FF482E47D94F"]
 			description: ["The advanced composter can produce, as well as bone meal, Phosphorous as a product."]
 			id: "7958254F270C0F06"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "34B54E1249314204"
 				item: "scguns:advanced_composter"
@@ -929,6 +991,7 @@
 			dependencies: ["6DAD41761203CB40"]
 			description: ["The Phytogenic Insolator grows plants in an artificial enviroment."]
 			id: "1F4CF9B72CD866D3"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0CAC3AE8D3673ACB"
 				item: "thermal:machine_insolator"
@@ -944,6 +1007,7 @@
 			]
 			description: ["The Crystallizer grows crystals from powders and fluids, as well as other unique recipes."]
 			id: "587153939A0E5FC1"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0F74FC45569D1797"
 				item: "thermal:machine_crystallizer"
@@ -955,6 +1019,7 @@
 		{
 			dependencies: ["6ED2FB0EE2A1D5A7"]
 			id: "6DCF7A961B5BD3F8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7EDBC02EFDA2BA98"
 				item: "thermal:constantan_ingot"
@@ -968,6 +1033,7 @@
 			dependencies: ["6ED2FB0EE2A1D5A7"]
 			description: ["A very versatile material used for several things, essential for progression."]
 			id: "7F827B2C0F0F5F50"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5946FA410A64EAC2"
 				item: "thermal:invar_ingot"
@@ -980,6 +1046,7 @@
 		{
 			dependencies: ["6ED2FB0EE2A1D5A7"]
 			id: "5E9A093FD988923B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "10732CF0545D82C4"
 				item: "thermal:bronze_ingot"
@@ -996,6 +1063,7 @@
 			]
 			description: ["The Fluid Storage Disk allows a storage network to store fluids."]
 			id: "6A3347EC7FA66DDD"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "496790BC138DDB93"
 				item: "refinedstorage:256k_fluid_storage_disk"
@@ -1008,6 +1076,7 @@
 			dependencies: ["74487E0EF55041DE"]
 			description: ["Used for COG Armor and bullet casings"]
 			id: "6E0A73EB220748B0"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6C2933CD8959A1A6"
 				item: "scbrass:brass_ingot"

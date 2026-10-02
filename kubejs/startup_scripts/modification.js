@@ -66,6 +66,12 @@ ItemEvents.modification((event) => {
         });
     });
 
+    RARE_ITEMS.forEach((_item) => {
+        event.modify(_item, (item) => {
+            item.rarity = 'rare';
+        });
+    });
+
     EPIC_ITEMS.forEach((_item) => {
         event.modify(_item, (item) => {
             item.rarity = 'epic';
@@ -78,6 +84,17 @@ ItemEvents.modification((event) => {
         });
     });
 
+    event.modify('minecraft:golden_apple', (item) => {
+        item.foodProperties = (food) => {
+            food.effect('minecraft:absorption', 20 * 60 * 2, 0, 1);
+        };
+    });
+
+    event.modify('minecraft:golden_carrot', (item) => {
+        item.foodProperties = (food) => {
+            food.effect('minecraft:night_vision', 20 * 60 * 2, 0, 1);
+        };
+    });
 });
 
 

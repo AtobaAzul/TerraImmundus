@@ -275,6 +275,8 @@ const EPIC_ITEMS = [
     'caverns_and_chasms:zirconia_block',
 ];
 
+const RARE_ITEMS = ['sob:golden_prickly_pear', 'miners_delight:golden_nutritional_bar', 'minecraft:golden_carrot']
+
 const SCORCHED_RARITY = ['kubejs:scorched_dust'];
 
 global.REPAIR_DEFS = {

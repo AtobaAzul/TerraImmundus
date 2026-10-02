@@ -24,6 +24,7 @@
 				"As always, use JEI to see recipes and uses of items."
 			]
 			id: "56B4243C13CBA71D"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			tasks: [{
 				id: "3DB5B15FEB2F296D"
@@ -54,6 +55,7 @@
 				}
 			}
 			id: "02FE3FBE56A295D0"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			tasks: [{
 				id: "169975D38D9AE541"
@@ -72,6 +74,8 @@
 				"Apatite is found as an ore, and is more commonly found in Lush Caves"
 			]
 			id: "4463D9B2E58767AA"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "upgrade_aquatic:block/prismarine_rod_bundle_top"
 			shape: "square"
 			tasks: [{
 				id: "331E14ADA3FAFF00"
@@ -90,6 +94,8 @@
 				"Additionally, can be found in archeology, caravan and structure loot, as well as being a rare drop from Mimes."
 			]
 			id: "4B33178670C0BC0B"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "upgrade_aquatic:block/prismarine_rod_bundle_top"
 			shape: "square"
 			tasks: [{
 				id: "7182C120F8CD97CC"
@@ -104,6 +110,8 @@
 			dependencies: ["02FE3FBE56A295D0"]
 			description: ["Prismarine Shards are used for water-based enchantments."]
 			id: "070D2AA4D8E14D06"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "upgrade_aquatic:block/prismarine_rod_bundle_top"
 			shape: "square"
 			tasks: [{
 				id: "4D7CA9C658C677EC"
@@ -121,6 +129,8 @@
 				"Found as an ore underground, more commonly in Dripstone Caves."
 			]
 			id: "5DCFBF05E2636D18"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "upgrade_aquatic:block/prismarine_rod_bundle_top"
 			shape: "square"
 			tasks: [{
 				id: "6D380E993351A4F2"
@@ -134,6 +144,8 @@
 			dependencies: ["02FE3FBE56A295D0"]
 			description: ["Used for ranged weapon enchantments."]
 			id: "6EA5BD59068F0168"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "upgrade_aquatic:block/prismarine_rod_bundle_top"
 			shape: "square"
 			tasks: [{
 				id: "3480E987E332401E"
@@ -153,6 +165,8 @@
 				"Adding a curse to an item adds an enchantment slot, rather than remove one."
 			]
 			id: "7B896460E462EFEB"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "upgrade_aquatic:block/prismarine_rod_bundle_top"
 			shape: "square"
 			tasks: [{
 				id: "26A778DF6C460017"
@@ -170,6 +184,8 @@
 				"Found underground as an ore."
 			]
 			id: "6ADE521B07B2CC2B"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "upgrade_aquatic:block/prismarine_rod_bundle_top"
 			shape: "square"
 			tasks: [{
 				id: "6DCCFC0A426DCEC0"
@@ -183,6 +199,8 @@
 			dependencies: ["02FE3FBE56A295D0"]
 			description: ["Used for tool/generic (such as Unbreaking) enchantments."]
 			id: "15D84178887E7283"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "upgrade_aquatic:block/prismarine_rod_bundle_top"
 			shape: "square"
 			tasks: [{
 				id: "3B87DD84660E5E66"
@@ -200,6 +218,8 @@
 				"Found underground as an ore."
 			]
 			id: "53A0376FB2BE3F54"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "upgrade_aquatic:block/prismarine_rod_bundle_top"
 			shape: "square"
 			tasks: [{
 				id: "565EE4CAAD8169B4"
@@ -222,6 +242,8 @@
 			]
 			hide_dependency_lines: true
 			id: "68C63749FFFC8C08"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "everycomp:block/abnww/quark/blossom_beehive_end"
 			shape: "square"
 			tasks: [
 				{
@@ -253,13 +275,15 @@
 			]
 			hide_dependency_lines: true
 			id: "7027A7BF89301775"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "everycomp:block/abnww/quark/blossom_beehive_end"
 			shape: "square"
 			tasks: [{
 				id: "266527C7C7B85AA2"
 				item: "supplementaries:sack"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -7.5d
 			y: 0.0d
 		}
 		{
@@ -270,6 +294,8 @@
 			description: ["Wearing a full set of hazmat armor provides infinite Purity, as well as its usual effects."]
 			hide_dependency_lines: true
 			id: "47A00DF051E0542C"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [
 				{
@@ -355,6 +381,8 @@
 				}
 			}
 			id: "2F0D83B6A15596A0"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [{
 				id: "0A6D0A691A528DF3"
@@ -395,6 +423,8 @@
 				}
 			}
 			id: "7F2745A5E5D8E24F"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "thermal:block/lumium_block"
 			shape: "square"
 			tasks: [
 				{
@@ -409,7 +439,7 @@
 				}
 			]
 			title: "Automobiles"
-			x: -7.5d
+			x: -6.5d
 			y: 0.0d
 		}
 		{
@@ -422,6 +452,8 @@
 			hide_dependency_lines: true
 			icon: "immersive_aircraft:biplane"
 			id: "46764FCE7841D659"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "thermal:block/lumium_block"
 			shape: "square"
 			tasks: [{
 				id: "1E952059375EAD73"
@@ -436,8 +468,8 @@
 				type: "item"
 			}]
 			title: "Aircraft"
-			x: -7.0d
-			y: -1.0d
+			x: -5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -448,6 +480,8 @@
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "74551693A1900C3D"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [{
 				id: "22A93E5F8BA62EB6"
@@ -476,6 +510,8 @@
 			]
 			hide_dependency_lines: true
 			id: "620C81DC608E0C67"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "thermal:block/lumium_block"
 			shape: "square"
 			tasks: [{
 				id: "29ADCE0199E61047"
@@ -496,9 +532,15 @@
 				"1BAB3EA6B4E23C8A"
 				"5865797006BBAAE2"
 			]
-			description: ["Purity Apples (Formerly Golden Apples) provide the Purity effect when eaten. Yum!"]
+			description: [
+				"Purity Apples and other Purity Foods (Formerly Golden Apples, Golden Carrots, etc) provide the Purity effect when eaten. Yum!"
+				""
+				"Additionally, Purity Apples no longer provide Regeneration, and Purity Apples now provide Night Vision"
+			]
 			hide_dependency_lines: true
 			id: "177740C89BD9B2D5"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "incubation:block/hay_nest"
 			shape: "square"
 			tasks: [{
 				id: "2DADDD162EC9B36E"
@@ -506,15 +548,15 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_golden_apple)"
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_purity_food)"
 					}
 				}
-				title: "Any Golden Apple"
+				title: "Any Purity Food"
 				type: "item"
 			}]
-			title: "Purity Apples"
-			x: -5.5d
-			y: 0.0d
+			title: "Purifying Foods"
+			x: -6.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -526,6 +568,8 @@
 			]
 			hide_dependency_lines: true
 			id: "49FC160D1021BC9D"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "everycomp:block/abnww/quark/blossom_beehive_end"
 			shape: "square"
 			tasks: [{
 				id: "5A068D5AD6606747"
@@ -541,13 +585,15 @@
 			description: ["Cooking pots let you cook more elaborate meals."]
 			hide_dependency_lines: true
 			id: "5CB4859B1820E257"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "incubation:block/hay_nest"
 			shape: "square"
 			tasks: [{
 				id: "538971DEE6A574D0"
 				item: "farmersdelight:cooking_pot"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -8.0d
 			y: -1.0d
 		}
 		{
@@ -555,41 +601,47 @@
 			description: ["Copper pots lets you cook meals in smaller, divided batches."]
 			hide_dependency_lines: true
 			id: "05A51C766C85C5BA"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "incubation:block/hay_nest"
 			shape: "square"
 			tasks: [{
 				id: "1378F89858A74D60"
 				item: "miners_delight:copper_pot"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -2.0d
+			x: -9.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
 			description: ["Kettles brew teas and other drinks with various effects."]
 			hide_dependency_lines: true
 			id: "21CB0C51AFEE5694"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "incubation:block/hay_nest"
 			shape: "square"
 			tasks: [{
 				id: "759A7426FC7C6E9D"
 				item: "farmersrespite:kettle"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -7.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["0713D981D65DF155"]
 			description: ["Kegs let you brew a variety of drinks and beverages, as well as other miscelaneous foods."]
 			id: "68000FA405891DC6"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "incubation:block/hay_nest"
 			shape: "square"
 			tasks: [{
 				id: "1C21DAE624BC1798"
 				item: "brewinandchewin:keg"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -2.0d
+			x: -8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -597,6 +649,8 @@
 			hide_dependency_lines: true
 			icon: "storagedrawers:oak_full_drawers_1"
 			id: "4AB91BFAC41A4929"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "everycomp:block/abnww/quark/blossom_beehive_end"
 			shape: "square"
 			tasks: [{
 				id: "59EEEE3EEAC631BB"
@@ -611,14 +665,16 @@
 				type: "item"
 			}]
 			title: "Drawers"
-			x: -6.0d
-			y: 1.0d
+			x: -7.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
 			description: ["The Copper Wrench lets you rotate any sort of block, and the Crescent Hammer is an excelent tool for helping with anything machine related."]
 			hide_dependency_lines: true
 			id: "7D2756DA56962FF9"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [
 				{
@@ -657,6 +713,8 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "2D233B5A870A0B7E"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [{
 				id: "122E5EF3162EBA0F"
@@ -688,6 +746,8 @@
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "4C2644CC9B6891F7"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [{
 				id: "3BF73A4CC31E5A9E"
@@ -709,6 +769,8 @@
 			dependencies: ["37C39E75C3EBC81D"]
 			description: ["The Fluxbore is an upgradeable energy drill."]
 			id: "322EB96B767663B9"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [{
 				id: "79481B5D242F6355"
@@ -726,6 +788,8 @@
 			dependencies: ["37C39E75C3EBC81D"]
 			description: ["The Fluxsaw is an upgradeable energy saw"]
 			id: "50F6E7919A19778E"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [{
 				id: "31F0384A1E1D8442"
@@ -743,6 +807,8 @@
 			dependencies: ["37C39E75C3EBC81D"]
 			description: ["The Fluxomagnet is an upgradeable... well. Magnet. It pulls items."]
 			id: "6F346FE687176224"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [{
 				id: "0B6965D49555AE14"
@@ -761,6 +827,8 @@
 			description: ["The capacitato is a portable energy storage item."]
 			hide_dependent_lines: true
 			id: "08C7CAEBE2CF55B7"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [{
 				id: "0FC18D6F66DFF081"
@@ -778,19 +846,23 @@
 			dependencies: ["587153939A0E5FC1"]
 			description: ["Used for high-end explosives and munitions."]
 			id: "0AD21143CFD9BB8B"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
 			shape: "square"
 			tasks: [{
 				id: "5B901227A379F406"
 				item: "kubejs:smokeless_powder"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 0.0d
+			x: -2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3F498515E8FB78D3"]
 			description: ["Automatically turns normal arrows into tipped arrows from its internal potion tank. Upgradeable."]
 			id: "45D457F08F901605"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [{
 				id: "0DB06E193BB49E63"
@@ -806,8 +878,10 @@
 		}
 		{
 			dependencies: ["3F498515E8FB78D3"]
-			description: ["Stores and picks up fluids. Upgradeable."]
+			description: ["Stores and picks up a large quantity of fluids. Upgradeable."]
 			id: "064DB63A64275059"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [{
 				id: "1E6913140B4414AF"
@@ -823,8 +897,10 @@
 		}
 		{
 			dependencies: ["3F498515E8FB78D3"]
-			description: ["Infuses the user or target entities with potions. Upgradeable."]
+			description: ["Holds and infuses the user or target entities with potions. Upgradeable."]
 			id: "21E9F04D550575B6"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [{
 				id: "326BA3F720C6F48E"
@@ -847,27 +923,31 @@
 			description: ["Plasma Cells are ammunition for Plasma weapons."]
 			hide_dependent_lines: true
 			id: "36FA9A8FEA2FE6D5"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
 			shape: "square"
 			tasks: [{
 				id: "3064E24CB04EB8EA"
 				item: "scguns:energy_cell"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 1.0d
+			x: -1.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["159F7789853FBC57"]
 			description: ["Energy Cores are amunition for Laser weapons, which can be also be used to make Plasma Cores, needed for plasma guns."]
 			id: "553C212C80BAFF64"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
 			shape: "square"
 			tasks: [{
 				id: "324C3477EE3F0544"
 				item: "scguns:energy_core"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -2.0d
+			x: -4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -880,6 +960,8 @@
 				"Flamethrowers purify sculk on hit, acting as rapid burst of purification."
 			]
 			id: "1365DEEED32723BF"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
 			shape: "square"
 			size: 1.0d
 			tasks: [
@@ -895,8 +977,8 @@
 				}
 			]
 			title: "Flamethrowers"
-			x: -8.0d
-			y: -1.0d
+			x: -3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -905,6 +987,8 @@
 			]
 			description: ["The Flux Capacitor is an upgraded portable storage that can also charge items in your inventory."]
 			id: "76318731752573B2"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [{
 				id: "1EAAFB01741A43B3"
@@ -929,6 +1013,8 @@
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "2AFAA0FD7186A2B5"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [{
 				id: "480992951E724400"
@@ -955,6 +1041,8 @@
 			description: ["The Exosuit is a modular, powered, armor set. Each part can have several modules installed, increasing armor, adding new abilities and more."]
 			hide_dependent_lines: true
 			id: "082C3E01A0089DDB"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [
 				{
@@ -1020,6 +1108,9 @@
 			dependencies: ["56B4243C13CBA71D"]
 			description: ["Antique Tier guns are the most basic firearms, typically firing Powder and Ball and Grapeshot, although some outliers like the Laser Musket and Plasmabuss are special."]
 			id: "10680BF86F7699B9"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
+			quest_enhance_quest_view_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [{
 				id: "5218A60BE3ABD8DD"
@@ -1041,6 +1132,9 @@
 			dependencies: ["10680BF86F7699B9"]
 			description: ["Frontier tier firearms are basic guns that use Copper Rounds and Shotgun Shells, with the exception of the Big Bore Rifle."]
 			id: "7E884602C3C6482F"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
+			quest_enhance_quest_view_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [{
 				id: "0CC8B07BD910F38A"
@@ -1062,6 +1156,8 @@
 			dependencies: ["7E884602C3C6482F"]
 			description: ["Copper tier is the most advanced tier obtainable without machinery."]
 			id: "46E2795A7BADA0C6"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
 			shape: "square"
 			tasks: [{
 				id: "6A0061FD571AC45C"
@@ -1083,6 +1179,8 @@
 			dependencies: ["46E2795A7BADA0C6"]
 			description: ["The Invar tier guns are standard guns and the minimum recommended tier to fight against the Sculk Horde."]
 			id: "6D8DC5EFA9FD15F6"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
 			shape: "square"
 			tasks: [{
 				id: "2864AC78B87377BD"
@@ -1104,6 +1202,8 @@
 			dependencies: ["6D8DC5EFA9FD15F6"]
 			description: ["Ocean tier is a specialized tier with unique weapons."]
 			id: "6FA0DE2F22D30DB4"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
 			shape: "square"
 			tasks: [{
 				id: "488D1A2950FF6AD8"
@@ -1125,6 +1225,8 @@
 			dependencies: ["6D8DC5EFA9FD15F6"]
 			description: ["The Wrecker tier provides some guns utilizing different ammo types."]
 			id: "3EA561486B789B82"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
 			shape: "square"
 			tasks: [{
 				id: "1638AD3D6B5370D2"
@@ -1146,6 +1248,8 @@
 			dependencies: ["6D8DC5EFA9FD15F6"]
 			description: ["The Rose tier provides some unique guns using specialized ammo."]
 			id: "4D401937FACFEE9D"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
 			shape: "square"
 			tasks: [{
 				id: "6D9C0B5388BFE8EE"
@@ -1172,6 +1276,8 @@
 			dependency_requirement: "one_completed"
 			description: ["Diamond Steel firearms are high-end firearms."]
 			id: "496C0FCF359A6DE3"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
 			shape: "square"
 			tasks: [{
 				id: "4E7B814A3ED60E4D"
@@ -1198,6 +1304,8 @@
 			dependency_requirement: "one_completed"
 			description: ["Treated Brass firearms are high-end firearms."]
 			id: "0722244A44CBD61A"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
 			shape: "square"
 			tasks: [{
 				id: "11CD76564A6D680F"
@@ -1224,6 +1332,8 @@
 			dependency_requirement: "one_completed"
 			description: ["Gravekeeper firearms are high-end firearms specialized in armor-piercing magic damage."]
 			id: "48A99AF42653DA5E"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
 			shape: "square"
 			tasks: [{
 				id: "5ABCB1104CA0EBFB"
@@ -1250,6 +1360,8 @@
 			dependency_requirement: "one_completed"
 			description: ["Sculk Tier is a special end-game tier with powerful weapons but with limited variety."]
 			id: "6587F7F3E2890003"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
 			shape: "square"
 			tasks: [{
 				id: "3729072FDA1841EB"
@@ -1271,6 +1383,8 @@
 			dependencies: ["6587F7F3E2890003"]
 			description: ["Scorched tier is the ultimate gun tier with weapons capable of quickly putting down any threat."]
 			id: "0285D06E12460A21"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
 			shape: "square"
 			tasks: [{
 				id: "614C5331246D9077"
@@ -1287,6 +1401,99 @@
 			title: "Scorched Tier"
 			x: 0.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Natural regeneration (The health gained from food) in &3Terra Immundus&r is much &5slower&r. "
+				""
+				"For faster healing,  use Healing Items, the most basic one being the &6Crude Dressing&r."
+				""
+				"But keep an eye out! There's several other alternative healing options, such as &aspecific drinks and foods&r."
+			]
+			hide_dependency_lines: true
+			icon: "scguns:basic_poultice"
+			id: "058FB67AF81FFDA5"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "caverns_and_chasms:block/atoning_table_bottom"
+			shape: "square"
+			tasks: [{
+				id: "2EB954F4FC17B0CE"
+				item: "scguns:basic_poultice"
+				type: "item"
+			}]
+			title: "Crude Dressing"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: [
+				"Foods and drinks made from &6Rose Hip&r provide a short &aRegeneration&r"
+				""
+				"Foods and drinks made from &6Strawberries&r and &6Melon Juice&r provide a weak &aInstant Healing&r"
+				""
+				"[ \"Rose Hip Teas can be used to make \", { \"text\": \"Soothing Dressings\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"35D2F1ACEF962386\" } }, \".\" ]"
+			]
+			hide_dependency_lines: true
+			id: "4D9CFA0F6AF893C8"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "caverns_and_chasms:block/atoning_table_bottom"
+			shape: "square"
+			tasks: [{
+				id: "0192E97CE21CEDE9"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:healing_foods_drinks)"
+					}
+				}
+				title: "Any healing food/drink"
+				type: "item"
+			}]
+			title: "Healing Foods \\& Drinks"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5865797006BBAAE2"
+				"21CB0C51AFEE5694"
+				"4D9CFA0F6AF893C8"
+			]
+			description: ["Soothing Dressings provide Comfort for a long duration, slowly healing you over a long time."]
+			hide_dependency_lines: true
+			icon: "kubejs:soothing_dressing"
+			id: "35D2F1ACEF962386"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "caverns_and_chasms:block/atoning_table_bottom"
+			shape: "square"
+			tasks: [{
+				id: "1E0491ACE64AFC7B"
+				item: "kubejs:soothing_dressing"
+				type: "item"
+			}]
+			title: "Soothing Dressing"
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5865797006BBAAE2"]
+			description: ["Honey Sulfur Poultice is an upgraded Healing Item that provides with regeneration, along side a large amount of healing."]
+			hide_dependency_lines: true
+			icon: "scguns:honey_sulfur_poultice"
+			id: "67447960E2986DD9"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "caverns_and_chasms:block/atoning_table_bottom"
+			shape: "square"
+			tasks: [{
+				id: "0868D9704B1396B4"
+				item: "scguns:honey_sulfur_poultice"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
 		}
 	]
 	title: "Equipment \\& Utilities"

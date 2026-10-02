@@ -25,6 +25,7 @@
 			]
 			icon: "minecraft:campfire"
 			id: "5865797006BBAAE2"
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
@@ -40,6 +41,7 @@
 			dependencies: ["1F380A26E21B724F"]
 			description: ["A critical resource needed for fighting against the Sculk."]
 			id: "5CF1BB9629E2308F"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -63,6 +65,7 @@
 			]
 			icon: "sculkhorde:infested_crafting_table_block"
 			id: "178FC7958159A73B"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "Start here"
@@ -82,6 +85,7 @@
 			icon: "sob:portal_drink"
 			id: "0D1DC5177700C2E7"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			size: 1.0d
 			subtitle: "All in One"
@@ -121,6 +125,7 @@
 			icon: "minecraft:nether_quartz_ore"
 			id: "47DE475A19084974"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
@@ -142,6 +147,7 @@
 			icon: "minecraft:end_portal_frame"
 			id: "48623F83032726CD"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
@@ -176,6 +182,7 @@
 			icon: "thermal:lead_gear"
 			id: "3FA037854B984F4F"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
@@ -202,6 +209,7 @@
 			hide_text_until_complete: false
 			icon: "minecraft:sculk"
 			id: "1BAB3EA6B4E23C8A"
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			size: 1.0d
 			subtitle: "How the horde works"
@@ -220,6 +228,7 @@
 			hide_details_until_startable: true
 			hide_text_until_complete: true
 			id: "3C02B44B3D3AC7BA"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			tasks: [{
 				icon: "sob:sculk_tendril"
@@ -246,6 +255,7 @@
 			icon: "sculkhorde:dormant_heart_of_the_horde"
 			id: "2E65DD6560146216"
 			invisible: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "pentagon"
 			size: 1.25d
 			tasks: [{
@@ -269,6 +279,7 @@
 			icon: "sculkhorde:heart_of_the_horde"
 			id: "459851BFCA5DBE34"
 			invisible: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 1.75d
 			tasks: [{
@@ -285,6 +296,7 @@
 			dependencies: ["2E65DD6560146216"]
 			description: ["Sculkspar is a resource you can obtain from Sculk Living Rock structures, found around &bnodes&r."]
 			id: "3F4A0EA3840EAF6F"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			tasks: [{
 				id: "4EC29AA4E20EDA91"
@@ -302,6 +314,7 @@
 				"Brewing Stands use Vehement Coal instead of Blaze Powder."
 			]
 			id: "60CDE4F974B62505"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			tasks: [{
 				id: "14D09D03DA66C453"
@@ -323,6 +336,7 @@
 			dependencies: ["3C02B44B3D3AC7BA"]
 			description: ["Crafted from &3Crying Souls,&r obtained from &3Weeping Obsidian&r, and &ePurity Shards&r."]
 			id: "2E4CCA642B5A8A76"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			tasks: [{
 				id: "5027DB70170DB416"
@@ -348,6 +362,7 @@
 				"It can be retrieved as an item again by right-clicking it."
 			]
 			id: "494DAC960FEC5542"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			tasks: [{
 				id: "16E9974D450ED36A"
@@ -361,6 +376,7 @@
 			dependencies: ["2E65DD6560146216"]
 			description: ["Rarely found growing as large crystals in infected areas. Requires a &6Meteorite level pickaxe&r to mine. "]
 			id: "696B6C09CBD13B91"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			tasks: [{
 				id: "43F7D8C1F9E75987"
@@ -380,6 +396,7 @@
 				"Each hit weakens the Sculked and purifies the area."
 			]
 			id: "4E89F7B68BCA13DA"
+			quest_enhance_disable_scroll_paging: false
 			shape: "circle"
 			size: 1.5d
 			tasks: [{
@@ -406,6 +423,7 @@
 			hide_until_deps_visible: true
 			icon: "sculkhorde:heart_of_purity"
 			id: "3D379BF4A8DEDB16"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 5
 				id: "79F71F9F01DD526A"
@@ -439,6 +457,7 @@
 				"Sculk Bees turn leaves and other biomatter into sculk mass."
 			]
 			id: "1332B5B3C6A099E8"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			tasks: [{
 				id: "079D74DB3A644E40"
@@ -453,6 +472,7 @@
 			description: ["The Sculk Enderman is a &cminiboss&r that appears during raids, killing it yields 1-3 &bEcho Shards&r and the &bSculk Enderman Cleaver&r"]
 			icon: "sculkhorde:sculk_enderman_cleaver"
 			id: "5A5AB046ADE04618"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			tasks: [{
 				entity: "sculkhorde:sculk_enderman"
@@ -472,6 +492,7 @@
 			]
 			description: ["The Soul Harvester is a crafting block that can make &bDiascite&r, &bFerriscite&r and most importantly, the &eHeart of the Horde&r."]
 			id: "27F77519858CEE7F"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			tasks: [{
 				id: "02DA6E23877A6D1C"
@@ -485,6 +506,7 @@
 			dependencies: ["34D0F980772AC588"]
 			description: ["The Sporemeter measures Sculk mass and its current state. Great for keeping track of how fast the Sculk is growing - or how much damage your efforts have done."]
 			id: "64994C3363A6A83E"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			tasks: [{
 				id: "2C297DFB281A03C6"
@@ -504,6 +526,7 @@
 			]
 			icon: "minecraft:nether_star"
 			id: "68E32D7F6258206D"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			tasks: [{
 				entity: "minecraft:wither"
@@ -520,6 +543,7 @@
 			dependencies: ["5CF1BB9629E2308F"]
 			description: ["Purity flasks purify sculk and give entities the Purity effect, which prevents harmful effects from the Sculk, such as Burrowed, and harms the Sculked."]
 			id: "3619C13AB3AB1166"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			tasks: [{
 				id: "01BB9393D5F613D3"
@@ -542,6 +566,7 @@
 			hide_details_until_startable: true
 			id: "34D0F980772AC588"
 			invisible: true
+			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			tasks: [{
 				advancement: "sculkhorde:sculk_horde_start"
@@ -561,6 +586,7 @@
 				"Items dropped into the acid will have their durability damaged and curses lifted."
 			]
 			id: "016E081895DD344D"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			tasks: [{
 				id: "470A752911C963F9"
@@ -582,6 +608,7 @@
 			icon: "sculkhorde:sculk_node"
 			id: "2697ED79FB45819C"
 			invisible: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "circle"
 			size: 1.0d
 			tasks: [{
@@ -601,6 +628,7 @@
 			]
 			description: ["Ferriscite \\& Diascite are end-game materials used for some powerful tools and guns"]
 			id: "2A5A144D3DA2C2D3"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [
 				{
 					id: "6B35E90522761DF2"
@@ -630,6 +658,7 @@
 				"Additionally, beacons with Purity as an effect harm Sculk enemies and purify the area around them."
 			]
 			id: "2AFB15D807466DB4"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "77BAD753A844F285"
 				item: "minecraft:beacon"
