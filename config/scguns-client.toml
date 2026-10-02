@@ -97,7 +97,7 @@ buttonAlignment = "RIGHT"
 		#Range: 0.0 ~ 1.0
 		bulletHoleFadeThreshold = 0.98
 		#If true, blood will will spawn from entities that are hit from a projectile
-		enableBlood = true
+		enableBlood = false
 		#The maximum distance impact particles can be seen from the player
 		#Range: 0.0 ~ 64.0
 		impactParticleDistance = 32.0

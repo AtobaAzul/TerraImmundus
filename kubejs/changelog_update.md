@@ -3,6 +3,9 @@
   - Increased Locust burst cooldown (10 -> 15)
   - Increased Newborn Cyst damage (36 -> 42.5)
   - Newborn Cyst can now use copper slugs.
+  - Decreased Newborn Cyst projectile amount (16 -> 10) (This is a buff btw)
+  - Increased Fencer Longarm projectile speed (4 -> 6)
+  - Increased Fencer Longarm damage (6.5 -> 7)
 - Purity weapons can now be made from Necromium.
 - Removed Supplementaries² copper lantern, in favor of Caverns & Chasms'
 - Renamed Infested Crying Obsidian to Weeping Obsidian
@@ -80,6 +83,10 @@
   - Developer note: This change was made to make food less about healing and more about buffs they can give, pushing players to invest in healing items and special foods, in an attempt to made combat more interesting. I often found myself simply eating beef stew for an entire run.
 - Renamed Soul Speed to Sculk Speed
 - Soul Speed now increases movement speed on Sculk blocks.
+- Tweaked Purity Apple recipe.
+- Renamed Golden Carrot, Golden Dragon Fruit, Golden Prickly Pear and Golden Nutritional Bar to Purity Carrot, Purity Dragon Fruit, Purity Prickly Pear and Purity Nutritional Bar.
+- Adjusted above item's recipes to match Purity Apple recipes
+- Golden Apples no longer give Regeneration.
 
 # Mods
 - Added mods:
@@ -88,6 +95,7 @@
    - Bathymetry
    - Better Combat Scorched Guns Compat
    - Healight
+   - Geophilic
    - FTB Quests Enhance
    - Screenshot to Clipboard
    - Just Enough Repair Materials
@@ -103,6 +111,7 @@
    - Weaponworks: Caverns & Chasms
    - EMI Tree Tabs
    - Mining Speed Tooltips
+   - MossyLib
    - EMI Tree Tabs
    - All The Leaks
    - Stackable Potions
@@ -126,6 +135,7 @@
   - Moonlight Lib
   - Fzzy Config
   - Not Enough Animations
+  - Collective
   - Every Compat
   - Blueprint
   - Farmer's Delight

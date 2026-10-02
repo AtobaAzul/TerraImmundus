@@ -228,7 +228,7 @@ ServerEvents.tags('item', (event) => {
     event.add('forge:armor/brass', /scguns:cog_knight_(helmet|chestplate|leggings|boots)/)
     event.add('forge:armor/diamond_steel', /scguns:diamond_steel_(helmet|chestplate|leggings|boots)/)
     event.add('forge:armor/treated_brass', /scguns:treated_brass_(helmet|chestplate|leggings|boots)/)
-    
+
     event.removeAll('minecraft:brewing_stand_fuel');
     event.add("minecraft:brewing_stand_fuel", "scguns:vehement_coal");
 
@@ -250,4 +250,8 @@ ServerEvents.tags('item', (event) => {
     event.add('terraimmundus:tin_repair_material', ['caverns_and_chasms:tin_ingot'])
 
     event.add('scguns:rocks', ['#forge:cobblestone', '#forge:stone'])
+
+    event.add('terraimmundus:any_purity_food', ['minecraft:golden_apple', 'minecraft:enchanted_golden_apple', 'minecraft:golden_carrot', 'sob:golden_prickly_pear', 'miners_delight:golden_nutritional_bar'])
+
+    event.add('terraimmundus:healing_foods_drinks', ['farmersrespite:rose_hip_pie_slice', 'farmersrespite:rose_hip_pie', 'farmersrespite:rose_hip_tea', 'farmersrespite:long_rose_hip_tea', 'farmersrespite:strong_rose_hip_tea', 'neapolitan:strawberry_ice_cream', 'abnormals_delight:strawberry_cake_slice', 'sob:strawberry_jam', 'neapolitan:strawberry_ice_cream', 'neapolitan:strawberry_milkshake', 'neapolitan:strawberry_bean_bonbons', 'neapolitan:strawberry_cake', 'neapolitan:strawberry_scones', 'neapolitan:white_strawberries', 'neapolitan:chocolate_strawberries', 'neapolitan:strawberries', 'neapolitan:strawberry_banana_smoothie', 'farmersdelight:melon_juice', 'farmersrespite:strong_melon_juice', 'neapolitan:strawberry_ice_cream'])
 });

@@ -361,9 +361,29 @@ ServerEvents.recipes((e) => {
 
     e.remove({ id: 'minecraft:golden_apple' })
     e.shaped('minecraft:golden_apple', ['AAA', 'ABA', 'AAA'], {
-        A: 'minecraft:apple',
-        B: 'sculkhorde:essence_of_purity'
+        A: 'sculkhorde:essence_of_purity',
+        B: 'minecraft:apple'
     })
+
+    e.remove({ id: 'minecraft:golden_carrot' })
+    e.shaped('minecraft:golden_carrot', ['AAA', 'ABA', 'AAA'], {
+        A: 'sculkhorde:essence_of_purity',
+        B: 'minecraft:carrot'
+    })
+
+
+    e.remove({ id: 'sob:crafting/golden_prickly_pear' })
+    e.shaped('sob:golden_prickly_pear', ['AAA', 'ABA', 'AAA'], {
+        A: 'sculkhorde:essence_of_purity',
+        B: 'sob:prickly_pear'
+    })
+
+    e.remove({ id: 'miners_delight:golden_nutritional_bar' })
+    e.shaped('miners_delight:golden_nutritional_bar', ['AAA', 'ABA', 'AAA'], {
+        A: 'sculkhorde:essence_of_purity',
+        B: 'miners_delight:nutritional_bar'
+    })
+
 
     e.remove({ id: 'ftbfiltersystem:smart_filter' })
 
@@ -548,7 +568,7 @@ ServerEvents.recipes((e) => {
         },
     });
 
-    e.remove({id: 'minecraft:beacon'})
+    e.remove({ id: 'minecraft:beacon' })
     e.shaped('minecraft:beacon', [
         'AAA',
         'BCB',
@@ -558,6 +578,14 @@ ServerEvents.recipes((e) => {
         B: 'sculkhorde:soulite_shard',
         C: 'minecraft:nether_star',
         D: 'thermal:lumium_ingot',
-        E: 'thermal:lumium_block' 
+        E: 'thermal:lumium_block'
     })
+
+    e.remove({id: 'minecraft:nether_brick'})
+    e.remove({id: 'clayworks:nether_brick_from_baking'})
+
+    e.recipes.thermal.smelter('2x minecraft:nether_brick', [
+        '4x minecraft:netherrack',
+        'sculkhorde:calcite_clump'
+    ])
 });

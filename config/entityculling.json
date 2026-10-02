@@ -1,5 +1,6 @@
 {
-  "configVersion": 8,
+  "configVersion": 9,
+  "safeMode": true,
   "renderNametagsThroughWalls": true,
   "blockEntityWhitelist": [
     "create:rope_pulley",
@@ -13,7 +14,8 @@
   "entityWhitelist": [
     "botania:mana_burst",
     "drg_flares:drg_flares",
-    "quark:soul_bead"
+    "quark:soul_bead",
+    "sculkhorde:sculk_ghast"
   ],
   "tracingDistance": 128,
   "debugMode": false,
