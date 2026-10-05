@@ -254,4 +254,6 @@ ServerEvents.tags('item', (event) => {
     event.add('terraimmundus:any_purity_food', ['minecraft:golden_apple', 'minecraft:enchanted_golden_apple', 'minecraft:golden_carrot', 'sob:golden_prickly_pear', 'miners_delight:golden_nutritional_bar'])
 
     event.add('terraimmundus:healing_foods_drinks', ['farmersrespite:rose_hip_pie_slice', 'farmersrespite:rose_hip_pie', 'farmersrespite:rose_hip_tea', 'farmersrespite:long_rose_hip_tea', 'farmersrespite:strong_rose_hip_tea', 'neapolitan:strawberry_ice_cream', 'abnormals_delight:strawberry_cake_slice', 'sob:strawberry_jam', 'neapolitan:strawberry_ice_cream', 'neapolitan:strawberry_milkshake', 'neapolitan:strawberry_bean_bonbons', 'neapolitan:strawberry_cake', 'neapolitan:strawberry_scones', 'neapolitan:white_strawberries', 'neapolitan:chocolate_strawberries', 'neapolitan:strawberries', 'neapolitan:strawberry_banana_smoothie', 'farmersdelight:melon_juice', 'farmersrespite:strong_melon_juice', 'neapolitan:strawberry_ice_cream'])
+
+    event.add('terraimmundus:ender_pearl_or_dust', ['minecraft:ender_pearl', 'thermal:ender_pearl_dust'])
 });

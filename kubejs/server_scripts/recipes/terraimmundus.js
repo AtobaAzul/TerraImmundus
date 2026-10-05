@@ -588,4 +588,17 @@ ServerEvents.recipes((e) => {
         '4x minecraft:netherrack',
         'sculkhorde:calcite_clump'
     ])
+
+    e.remove({id: 'quark:building/crafting/blue_nether_bricks'})
+    e.shaped('8x quark:blue_nether_bricks', ['AAA', 'ABA', 'AAA'], {
+        A: 'minecraft:nether_bricks',
+        B: '#forge:dusts/sulfur'
+    })
+
+    e.remove({id: 'quark:building/crafting/red_nether_bricks_util'})
+    e.remove({id: 'minecraft:red_nether_bricks'})
+    e.shaped('8x minecraft:red_nether_bricks', ['AAA', 'ABA', 'AAA'], {
+        A: 'minecraft:nether_bricks',
+        B: 'scguns:vehement_coal'
+    })
 });

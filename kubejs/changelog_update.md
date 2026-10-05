@@ -6,6 +6,17 @@
   - Decreased Newborn Cyst projectile amount (16 -> 10) (This is a buff btw)
   - Increased Fencer Longarm projectile speed (4 -> 6)
   - Increased Fencer Longarm damage (6.5 -> 7)
+  - Turnpike now shoots Ramrod Rounds
+  - Reduced Turnpike magazine size (6 -> 5)
+  - Reduced M3 Carabine magazine size (19 -> 15)
+  - Increased Kalaskah damage (7 -> 12.5)
+  - Changed Kalaskah's fire mode (burst -> semi)
+  - Changed Kalaskah's ammo type (Standard Copper -> Standard Advanced)
+  - Increased Kalaskah armor pen. (2.5 -> 3.5)
+  - Reduced Stigg damage (10 -> 8)
+  - Changed Stigg ammo type (Standard Advanced -> Standard Copper) 
+  - Reduced Stigg armor pen. (2 -> 1)
+  - Increased Mokova crit. damage mult. (1.5x -> 2x)
 - Purity weapons can now be made from Necromium.
 - Removed Supplementaries² copper lantern, in favor of Caverns & Chasms'
 - Renamed Infested Crying Obsidian to Weeping Obsidian
@@ -87,6 +98,12 @@
 - Renamed Golden Carrot, Golden Dragon Fruit, Golden Prickly Pear and Golden Nutritional Bar to Purity Carrot, Purity Dragon Fruit, Purity Prickly Pear and Purity Nutritional Bar.
 - Adjusted above item's recipes to match Purity Apple recipes
 - Golden Apples no longer give Regeneration.
+- Changed Enderium Ingot recipe to 2x Meteorite, 2x Ender Pearl, 1x Echo Shard
+- Renamed Nether Brick to Fire Brick
+- Renamed Red Nether Brick to Cinder Brick
+- Renamed Blue Nether Brick to Soulfire Brick
+- Adjusted Cinder and Soulfire Brick recipes.
+
 
 # Mods
 - Added mods:

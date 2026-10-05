@@ -201,7 +201,27 @@ ClientEvents.lang("en_us", (event) => {
         "refinedstorage:cable": "Data Cable",
         "alexsmobs:bone_serpent_tooth": "Wither Tooth",
         "sculkhorde:infested_crying_obsidian": "Weeping Obsidian",
-        "scguns:basic_poultice": "Crude Dressing"
+        "scguns:basic_poultice": "Crude Dressing",
+        'minecraft:nether_bricks': "Fire Bricks",
+        'minecraft:cracked_nether_bricks': "Cracked Fire Bricks",
+        'minecraft:nether_brick_stairs': "Fire Brick Stairs",
+        'minecraft:nether_brick_slab': "Fire Brick Slab", 
+        'quark:nether_brick_vertical_slab':"Vertical Fire Brick Slab", 
+        'minecraft:nether_brick_wall': "Fire Brick Wall", 
+        'minecraft:nether_brick_fence': "Fire Brick Fence", 
+        'quark:nether_brick_fence_gate': "Fire Brick Fence Gate", 
+        'minecraft:chiseled_nether_bricks': "Chiseled Fire Bricks",
+        'minecraft:nether_brick': "Fire Brick",
+        'minecraft:red_nether_bricks': "Cinder Bricks", 
+        'minecraft:red_nether_brick_stairs': "Cinder Brick Stairs", 
+        'minecraft:red_nether_brick_slab': "Cinder Brick Slab", 
+        'quark:red_nether_brick_vertical_slab': "Vertical Cinder Brick Slab", 
+        'minecraft:red_nether_brick_wall': "Cinder Brick Wall",
+        'quark:blue_nether_bricks': "Soulfire Bricks", 
+        'quark:blue_nether_bricks_slab': "Soulfire Brick Slab", 
+        'quark:blue_nether_bricks_vertical_slab': "Vertical Soulfire Brick Slab", 
+        'quark:blue_nether_bricks_wall': "Soulfire Brick Wall", 
+        'quark:blue_nether_bricks_stairs': "Soulfire Brick Stairs",
     };
 
     for (const [item, name] of Object.entries(rename)) {

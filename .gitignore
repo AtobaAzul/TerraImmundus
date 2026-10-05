@@ -34,3 +34,7 @@ config/packetfixer.properties
 config/embeddium-fingerprint.json
 config/emitreetabs-tabs.json
 /config/chunky/tasks
+data/servers_playtime.dat
+config/oculus.properties
+servers.dat
+config/fabric/indigo-renderer.properties

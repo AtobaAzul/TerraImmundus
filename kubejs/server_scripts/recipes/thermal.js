@@ -61,7 +61,12 @@ ServerEvents.recipes((e) => {
         '#forge:ingots/netherite'
     );
 
-    e.replaceInput({ id: 'thermal:machines/smelter/smelter_alloy_enderium' }, 'thermal:diamond_dust', '2x #terraimmundus:dust_or_ingot/netherite')
+    e.remove({id: 'thermal:machines/smelter/smelter_alloy_enderium'})
+    e.recipes.thermal.smelter('2x thermal:enderium_ingot', [
+        'echo_shard',
+        '2x #terraimmundus:ender_pearl_or_dust',
+        '2x #terraimmundus:dust_or_ingot/netherite'
+    ]).id('thermal:machines/smelter/smelter_alloy_enderium')
 
     e.replaceOutput({ id: 'thermal:machines/smelter/smelter_tin_armor' }, '#forge:ingots/tin', 'caverns_and_chasms:tin_ingot')
     e.replaceOutput({ id: 'thermal:machines/smelter/smelter_tin_tools' }, '#forge:ingots/tin', 'caverns_and_chasms:tin_ingot')
