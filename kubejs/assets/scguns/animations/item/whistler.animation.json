@@ -36,18 +36,18 @@
 				"gun_body": {
 					"rotation": {
 						"0.0": {
-							"post": [-2, 0.48708, 2],
+							"post": [-0.5, 0.48708, 2],
 							"lerp_mode": "catmullrom"
 						},
 						"0.0625": {
-							"post": [-3.97028, 0.48708, 3],
+							"post": [-1, 0.48708, 3],
 							"lerp_mode": "catmullrom"
 						},
-						"0.1875": {
-							"post": [-1.59963, 0.02094, -1.80036],
+						"0.125": {
+							"post": [-1.5, 0.02094, -1.80036],
 							"lerp_mode": "catmullrom"
 						},
-						"0.3125": {
+						"0.25": {
 							"post": [0, 0, 0],
 							"lerp_mode": "catmullrom"
 						},
@@ -58,11 +58,11 @@
 					},
 					"position": {
 						"0.0": {
-							"post": [0, 0, 1],
+							"post": [0, 0, 0],
 							"lerp_mode": "catmullrom"
 						},
 						"0.0625": {
-							"post": [0, 0.5, 1.6],
+							"post": [0, 0.5, 1],
 							"lerp_mode": "catmullrom"
 						},
 						"0.3125": {
