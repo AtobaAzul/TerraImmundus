@@ -183,7 +183,7 @@ ServerEvents.recipes((e) => {
     e.remove({ id: 'scguns:dragon_salve' })
     e.remove({ id: 'scguns:honey_sulfur_poultice' })
     e.remove({id: 'scguns:enchanted_bandage'})
-    e.shapeless('2x scguns:basic_poultice', ['farmersdelight:canvas', '#forge:string'])
+    e.shapeless('4x scguns:basic_poultice', ['farmersdelight:canvas', '#forge:string'])
 
     e.shapeless('2x scguns:honey_sulfur_poultice', [
         'paper',

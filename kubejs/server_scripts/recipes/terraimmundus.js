@@ -79,8 +79,8 @@ ServerEvents.recipes((e) => {
     e.remove({ id: 'thermal:chiller_rod_cast' });
     e.remove({ id: 'sculkhorde:essence_of_purity' });
     e.recipes.thermal.smelter(
-        Item.of('sculkhorde:essence_of_purity').withChance(2),
-        ['3x #terraimmundus:dust_or_ingot/gold', '2x amethyst_shard'],
+        Item.of('sculkhorde:essence_of_purity', 2),
+        ['2x #terraimmundus:dust_or_ingot/gold', '2x amethyst_shard'],
     );
 
     e.recipes.thermal.smelter_catalyst(
@@ -359,29 +359,43 @@ ServerEvents.recipes((e) => {
     e.remove({ id: 'scguns:blaze_fuel' })
     e.shapeless('scguns:blaze_fuel', ['scguns:empty_tank', '3x blaze_powder'])
 
+    const SURROUND = ['AAA', 'ABA', 'AAA']
+
     e.remove({ id: 'minecraft:golden_apple' })
-    e.shaped('minecraft:golden_apple', ['AAA', 'ABA', 'AAA'], {
+    e.shaped('minecraft:golden_apple', SURROUND, {
         A: 'sculkhorde:essence_of_purity',
         B: 'minecraft:apple'
     })
 
     e.remove({ id: 'minecraft:golden_carrot' })
-    e.shaped('minecraft:golden_carrot', ['AAA', 'ABA', 'AAA'], {
+    e.shaped('minecraft:golden_carrot', SURROUND, {
         A: 'sculkhorde:essence_of_purity',
         B: 'minecraft:carrot'
     })
 
 
     e.remove({ id: 'sob:crafting/golden_prickly_pear' })
-    e.shaped('sob:golden_prickly_pear', ['AAA', 'ABA', 'AAA'], {
+    e.shaped('sob:golden_prickly_pear', SURROUND, {
         A: 'sculkhorde:essence_of_purity',
         B: 'sob:prickly_pear'
     })
 
     e.remove({ id: 'miners_delight:golden_nutritional_bar' })
-    e.shaped('miners_delight:golden_nutritional_bar', ['AAA', 'ABA', 'AAA'], {
+    e.shaped('miners_delight:golden_nutritional_bar', SURROUND, {
         A: 'sculkhorde:essence_of_purity',
         B: 'miners_delight:nutritional_bar'
+    })
+
+    e.remove({ id: 'atmospheric:shimmering_passion_fruit' })
+    e.shaped('atmospheric:shimmering_passion_fruit', SURROUND, {
+        A: 'sculkhorde:essence_of_purity',
+        B: 'atmospheric:passion_fruit'
+    })
+
+    e.remove({ id: 'atmospheric:golden_dragon_fruit' })
+    e.shaped('atmospheric:golden_dragon_fruit', SURROUND, {
+        A: 'sculkhorde:essence_of_purity',
+        B: 'atmospheric:dragon_fruit'
     })
 
 
@@ -581,22 +595,22 @@ ServerEvents.recipes((e) => {
         E: 'thermal:lumium_block'
     })
 
-    e.remove({id: 'minecraft:nether_brick'})
-    e.remove({id: 'clayworks:nether_brick_from_baking'})
+    e.remove({ id: 'minecraft:nether_brick' })
+    e.remove({ id: 'clayworks:nether_brick_from_baking' })
 
     e.recipes.thermal.smelter('2x minecraft:nether_brick', [
         '4x minecraft:netherrack',
         'sculkhorde:calcite_clump'
     ])
 
-    e.remove({id: 'quark:building/crafting/blue_nether_bricks'})
+    e.remove({ id: 'quark:building/crafting/blue_nether_bricks' })
     e.shaped('8x quark:blue_nether_bricks', ['AAA', 'ABA', 'AAA'], {
         A: 'minecraft:nether_bricks',
         B: '#forge:dusts/sulfur'
     })
 
-    e.remove({id: 'quark:building/crafting/red_nether_bricks_util'})
-    e.remove({id: 'minecraft:red_nether_bricks'})
+    e.remove({ id: 'quark:building/crafting/red_nether_bricks_util' })
+    e.remove({ id: 'minecraft:red_nether_bricks' })
     e.shaped('8x minecraft:red_nether_bricks', ['AAA', 'ABA', 'AAA'], {
         A: 'minecraft:nether_bricks',
         B: 'scguns:vehement_coal'

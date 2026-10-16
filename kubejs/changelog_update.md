@@ -59,7 +59,7 @@
   - Deep Underground
   - Boss
 - Disabled Quark's Golden Bars.
-- Overral reduced structure spawns, added minimum 500 blocks from world center and minimum spacing between structures.
+- Overral reduced structure spawns, added minimum 100 blocks from world center and minimum spacing between structures.
 - Fixed Anthralite/Tin items not having correct repair ingredient.
 - Repairing now only costs 1 item.
 - Fixed Tin Axe damage being higher than intended.
@@ -103,7 +103,10 @@
 - Renamed Red Nether Brick to Cinder Brick
 - Renamed Blue Nether Brick to Soulfire Brick
 - Adjusted Cinder and Soulfire Brick recipes.
-
+- Reduced Raccoon spawn weight.
+- Eating healing foods, like Strawberries, now has a 2 second cooldown.
+- Purity Shard recipe no longer can be boosted.
+- Amethyst Blocks now drops 1-2(+ fortune) Amethyst Shards.
 
 # Mods
 - Added mods:
@@ -172,3 +175,4 @@
 - Removed mods:
   - EntityJS
   - Anvil API
+  - Kyrpton

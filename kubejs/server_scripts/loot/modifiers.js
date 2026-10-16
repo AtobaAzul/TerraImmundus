@@ -515,5 +515,7 @@ LootJS.modifiers((e) => {
 
     e.addEntityLootModifier('minecraft:cave_spider').addLoot('miners_delight:spider_leg')
     e.addEntityLootModifier('minecraft:spider').addLoot('miners_delight:spider_leg')
+
+   
 })
 

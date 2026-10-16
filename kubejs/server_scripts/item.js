@@ -77,7 +77,34 @@ PURITY_FOODS.forEach(food => {
             );
         }
     });
+})
 
+
+const COOLDOWN_FOODS = [
+    'farmersrespite:rose_hip_pie_slice',
+    'abnormals_delight:strawberry_cake_slice',
+    'neapolitan:strawberry_banana_smoothie',
+    'neapolitan:strawberry_ice_cream',
+    'neapolitan:strawberry_milkshake',
+    'neapolitan:strawberry_bean_bonbons',
+    'neapolitan:strawberry_scones',
+    'neapolitan:white_strawberries',
+    'neapolitan:strawberries',
+    'neapolitan:chocolate_strawberries',
+    'sob:strawberry_jam',
+    'farmersdelight:melon_juice',
+    'sob:big_soup',
+    'sob:truffle_pasta',
+    'sob:pale_daiquiri',
+    'farmersrespite:rose_hip_pie_slice',
+];
+
+COOLDOWN_FOODS.forEach(item => {
+    ItemEvents.foodEaten(item, (event) => {
+        COOLDOWN_FOODS.forEach(_item => {
+            event.player.addItemCooldown(_item, 40)
+        })
+    })
 })
 
 ItemEvents.rightClicked(

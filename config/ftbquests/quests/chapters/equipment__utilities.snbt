@@ -535,7 +535,7 @@
 			description: [
 				"Purity Apples and other Purity Foods (Formerly Golden Apples, Golden Carrots, etc) provide the Purity effect when eaten. Yum!"
 				""
-				"Additionally, Purity Apples no longer provide Regeneration, and Purity Apples now provide Night Vision"
+				"Additionally, Purity Apples no longer provide Regeneration, and Purity Carrots now provide Night Vision"
 			]
 			hide_dependency_lines: true
 			id: "177740C89BD9B2D5"
@@ -766,7 +766,11 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["37C39E75C3EBC81D"]
+			dependencies: [
+				"37C39E75C3EBC81D"
+				"5C0284767F704FBD"
+			]
+			dependency_requirement: "one_completed"
 			description: ["The Fluxbore is an upgradeable energy drill."]
 			id: "322EB96B767663B9"
 			quest_enhance_disable_scroll_paging: false
@@ -785,7 +789,11 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["37C39E75C3EBC81D"]
+			dependencies: [
+				"37C39E75C3EBC81D"
+				"5C0284767F704FBD"
+			]
+			dependency_requirement: "one_completed"
 			description: ["The Fluxsaw is an upgradeable energy saw"]
 			id: "50F6E7919A19778E"
 			quest_enhance_disable_scroll_paging: false
@@ -804,7 +812,11 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["37C39E75C3EBC81D"]
+			dependencies: [
+				"37C39E75C3EBC81D"
+				"5C0284767F704FBD"
+			]
+			dependency_requirement: "one_completed"
 			description: ["The Fluxomagnet is an upgradeable... well. Magnet. It pulls items."]
 			id: "6F346FE687176224"
 			quest_enhance_disable_scroll_paging: false

@@ -38,3 +38,4 @@ data/servers_playtime.dat
 config/oculus.properties
 servers.dat
 config/fabric/indigo-renderer.properties
+/config/structurify
