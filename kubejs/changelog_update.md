@@ -132,7 +132,6 @@
    - EMI Tree Tabs
    - Mining Speed Tooltips
    - MossyLib
-   - EMI Tree Tabs
    - All The Leaks
    - Stackable Potions
    - Potion Sickness
@@ -149,7 +148,10 @@
   - Quest Enhance
   - Fragmentum
   - Hardcore Revival
+  - Puzzles Lib
+  - Supplementaries
   - Particular
+  - Corpse Curio Compat
   - Particle Rain
   - ModernFix
   - Moonlight Lib
@@ -171,6 +173,7 @@
   - Better Advancements
   - Tax Free Levels
   - Entity Culling
+  - Custom Credits
   - Caravans
 - Removed mods:
   - EntityJS
