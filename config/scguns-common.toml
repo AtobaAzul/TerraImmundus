@@ -215,7 +215,7 @@
 		spreadThreshold = 300
 		#The amount of times a player has to shoot within the spread threshold before the maximum amount of spread is applied. Setting the value higher means it will take longer for the spread to be applied.
 		#Range: > 1
-		maxCount = 10
+		maxCount = 2
 
 	#Properties relating to ExoSuit Core capacities
 	[common.exosuit_cores]

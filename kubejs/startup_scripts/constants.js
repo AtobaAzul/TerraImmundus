@@ -332,6 +332,8 @@ const UNCOMMON_ITEMS = [
 	'scguns:cut_treated_iron',
 	'scguns:cut_treated_iron_stairs',
 	'scguns:cut_treated_iron_slab',
+	'sculkhorde:eye_of_purity',
+	'sculkhorde:purification_flask',
 ];
 
 const SCULK_ITEMS = [
@@ -356,12 +358,34 @@ const SCULK_ITEMS = [
 	'sculkhorde:blind_and_alone_music_disc',
 	'sculkhorde:diascite_hoe',
 	'sculkhorde:diascite_shovel',
+	'sculkhorde:dormant_heart_of_the_horde',
+	'sculkhorde:heart_of_the_horde',
+	'sculkhorde:calcite_clump',
+	'sculkhorde:calcite_ore',
+	'sculkhorde:infestation_purifier',
+	'sculkhorde:soul_harvester',
+    /.*:.*sculk.*/,
+    'scguns:peal',
+    /.*infested.*/,
+    'minecraft:echo_shard',
+	'sculkhorde:bee_colony_core_block',
+	'sculkhorde:fungal_shroom_core_block',
+	'sculkhorde:tendril_core_block',
+	'sculkhorde:tendrils',
+	'sculkhorde:grass',
+	'sculkhorde:grass_short',
+	'sculkhorde:small_shroom',
+	'sculkhorde:ancient_bookshelf_block',
+	'sculkhorde:diseased_kelp_block',
+	'sculkhorde:spike',
+    'sculkhorde:crying_souls'
 ];
 
 const EPIC_ITEMS = [
 	'caverns_and_chasms:zirconia',
 	'caverns_and_chasms:zirconia_lamp',
 	'caverns_and_chasms:zirconia_block',
+	'sculkhorde:heart_of_purity',
 ];
 
 const RARE_ITEMS = [

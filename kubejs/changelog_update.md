@@ -107,6 +107,9 @@
 - Eating healing foods, like Strawberries, now has a 2 second cooldown.
 - Purity Shard recipe no longer can be boosted.
 - Amethyst Blocks now drops 1-2(+ fortune) Amethyst Shards.
+- Cave Sprouts, Beach Grass drop Straw when harvested with a knife.
+- Arid Sprouts drop Straw when not harvested by shears. 
+- Fixed Zirconia ore not being renamed.
 
 # Mods
 - Added mods:

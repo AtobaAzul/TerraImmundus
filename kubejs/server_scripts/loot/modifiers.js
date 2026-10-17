@@ -516,6 +516,8 @@ LootJS.modifiers((e) => {
     e.addEntityLootModifier('minecraft:cave_spider').addLoot('miners_delight:spider_leg')
     e.addEntityLootModifier('minecraft:spider').addLoot('miners_delight:spider_leg')
 
-   
+    e.addBlockLootModifier('atmospheric:arid_sprouts').not(a => a.matchMainHand('minecraft:shears')).addLoot('farmersdelight:straw')
+    e.addLootTableModifier(/caverns_and_chasms:.*cave_growths/).matchMainHand('#forge:tools/knives').addLoot('farmersdelight:straw')
+    e.addLootTableModifier(/upgrade_aquatic:.*beach_grass/).matchMainHand('#forge:tools/knives').addLoot('farmersdelight:straw')
 })
 
