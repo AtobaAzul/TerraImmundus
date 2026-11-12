@@ -20,7 +20,14 @@
 	#Range: 0.0 ~ 3.4028234663852886E38
 	bluntshot_knockback = 4.400000095367432
 
-	[items."energy guns"]
+	#Entities
+	[items.entities]
+		#The minimum required unlocked "raid tier" for Gravekeeper Localites and Acolytes to spawn. If 0, ignores raid tier entirely.
+		#For reference, use the command /scguns progression check <playername>
+		#Range: > 0
+		required_raid_tier = 4
+
+	[items."energy items"]
 		#Lustre
 		#The amount of FE energy used to add 1 ammo to the magazine
 		#Range: > 1
@@ -60,11 +67,37 @@
 		#A multiplier of how much longer it takes to add 1 ammo to the gun's magazine after shooting.
 		#Range: 1.0 ~ 3.4028234663852886E38
 		scatterer_recharge_mult = 10.0
-
-	#Entities
-	[items.entities]
-		#The minimum required unlocked "raid tier" for Gravekeeper Schisms and Acolytes to spawn. If 0, ignores raid tier entirely.
-		#For reference, use the command /scguns progression check <playername>
-		#Range: > 0
-		required_raid_tier = 4
+		#Strix GRL
+		#The amount of FE energy used per tick while a rocket is being guided
+		#Range: > 1
+		strix_energy_cost = 1
+		#The amount of FE energy the gun can store
+		#Range: > 1
+		strix_energy_max = 144000
+		#Hardlight Projector
+		#The amount of FE energy used to regen 1 health
+		#Range: > 1
+		shield_projector_energy_cost = 250
+		#The amount of time, in ticks, to regen 1 health after the on-hit cooldown wears off
+		#Range: > 1
+		shield_projector_refill_cd = 1
+		#The amount of FE the item can hold
+		#Range: > 1
+		shield_projector_energy_max = 100000
+		#The amount of time, in ticks, to regen after taking damage
+		#Range: > 1
+		shield_projector_deplete_cd = 200
+		#The total amount of health the shield has (1 heart = 2 health)
+		#Range: 1.0 ~ 1.7976931348623157E308
+		shield_projector_max_health = 30.0
+		#Boost Pack
+		#The amount of FE energy used for each recharge
+		#Range: > 1
+		boost_pack_energy_cost = 1000
+		#The amount of time, in ticks, to recharge a boost
+		#Range: > 1
+		boost_pack_refill_cd = 100
+		#The amount of FE the item can hold
+		#Range: > 1
+		boost_pack_energy_max = 100000
 

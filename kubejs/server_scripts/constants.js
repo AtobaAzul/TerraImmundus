@@ -201,6 +201,9 @@ const $EntityAlgo = Java.loadClass(
 const $SculkHorde = Java.loadClass('com.github.sculkhorde.core.SculkHorde');
 const $ModSavedData = Java.loadClass('com.github.sculkhorde.core.ModSavedData');
 const $GunItem = Java.loadClass('top.ribs.scguns.item.GunItem');
+const $ISculkSmartEntity = Java.loadClass('com.github.sculkhorde.common.entity.ISculkSmartEntity')
+const $AABB = Java.loadClass('net.minecraft.world.phys.AABB')
+const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity')
 
 const WEAPON_TYPES = [
 	'greatsword',

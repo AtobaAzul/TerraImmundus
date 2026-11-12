@@ -2,6 +2,7 @@ LevelEvents.tick((event) => {
 	let mass = $ModSavedData.getSaveData().getSculkAccumulatedMass();
 	let gravemind = $SculkHorde.gravemind.getEvolutionState().toString();
 	let state = $ModSavedData.getSaveData().getHordeState().toString();
+    let nodes = $ModSavedData.getSaveData().getNodeEntries().size().toFixed(0)
 
 	if (!(event.level.time % 10 === 0)) return;
 
@@ -10,6 +11,7 @@ LevelEvents.tick((event) => {
 			mass: mass,
 			gravemind_state: gravemind,
 			state: state,
+            nodes: nodes
 		});
 	});
 });

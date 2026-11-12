@@ -518,6 +518,6 @@ LootJS.modifiers((e) => {
 
     e.addBlockLootModifier('atmospheric:arid_sprouts').not(a => a.matchMainHand('minecraft:shears')).addLoot('farmersdelight:straw')
     e.addLootTableModifier(/caverns_and_chasms:.*cave_growths/).matchMainHand('#forge:tools/knives').addLoot('farmersdelight:straw')
-    e.addLootTableModifier(/upgrade_aquatic:.*beach_grass/).matchMainHand('#forge:tools/knives').addLoot('farmersdelight:straw')
+    e.addLootTableModifier(/upgrade_aquatic:.*beachgrass/).matchMainHand('#forge:tools/knives').addLoot('farmersdelight:straw')
 })
 

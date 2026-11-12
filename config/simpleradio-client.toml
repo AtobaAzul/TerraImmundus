@@ -3,8 +3,8 @@
 [wire]
 	#This determines whether or not wire effects will be processed. Defaults to true.
 	effect = true
-	#This is the amount of time (in ticks) per block a wire effect lasts. Best if matching 'transmissionTime'. Defaults to 4.
-	effectTime = 4
+	#This is the amount of time (in seconds) per block a wire effect lasts. Best if matching 'transmissionTime'. Defaults to 0.1.
+	effectTime = 0.1
 	#This is how much wires drop from gravity. Defaults to 0.75.
 	baseSag = 0.75
 	#This is how much wires drop per block from gravity. Defaults to 0.075.

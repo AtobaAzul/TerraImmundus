@@ -31,7 +31,7 @@ PlayerEvents.inventoryChanged((event) => {
 				// Default name - in case something's off.
 				let name = 'Structure';
 
-				//Please excuse the mess here. I hate regex, so I did what I could to avoid it.
+				// Please excuse the mess here. I hate regex, so I did what I could to avoid it.
 				// Extract the name from nbtString if it exists...
 				if (nbtString.includes('"text"')) {
 					let temp = nbtString.split('"text":"')[1].split('"}')[0];
@@ -46,6 +46,10 @@ PlayerEvents.inventoryChanged((event) => {
 						.split('}]}')[0];
 					name = Text.translate(temp.slice(1, -1));
 				}
+
+                if (x >= 3000 || z >= 3000) {
+                    name = name+ "(Endgame)"
+                }
 
 				//Send the player the waypoint
 				let waypointText = Text.of('xaero-waypoint:')

@@ -33,7 +33,8 @@ StartupEvents.registry('item', (event) => {
         'laser_optics',
         'backpack_expansion',
         'inert_ferriscite',
-        'inert_diascite'
+        'inert_diascite',
+        'laser_rod'
     ].forEach((item) => {
         event.create(item);
     });

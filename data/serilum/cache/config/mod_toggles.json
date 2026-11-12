@@ -1,0 +1,10 @@
+{
+	"customcredits": {
+		"collective_list": true,
+		"mod_config": true
+	},
+	"fixedanvilrepaircost": {
+		"collective_list": true,
+		"mod_config": true
+	}
+}

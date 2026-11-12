@@ -386,6 +386,7 @@ const EPIC_ITEMS = [
 	'caverns_and_chasms:zirconia_lamp',
 	'caverns_and_chasms:zirconia_block',
 	'sculkhorde:heart_of_purity',
+    'kubejs:laser_rod'
 ];
 
 const RARE_ITEMS = [

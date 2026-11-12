@@ -99,102 +99,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["0D1DC5177700C2E7"]
-			description: [
-				"Netherite has been renamed to Meteorite and generates below y=-32"
-				""
-				"Vehement coal generates below y=-32"
-				""
-				"Blackstone and Basalt generates like Tuff"
-				""
-				"Blaze Powder can be crafted, Blaze Rods in recipes replaced with Gold."
-				""
-				"Netherite Smithing templates can be traded from Smiths (Tool, armor and weapons) and can be found in their chests."
-				""
-				"Ruined Portals have Bastion loot."
-				""
-				"Soul Sand, Netherrack and Glowstone are craftable."
-				""
-				"Quartz generates in the overworld."
-				""
-				"Nether Wart and Coffee can be sniffed by Sniffers."
-				""
-				"Ghast Tears have been renamed to Ashen Rosin and can be obtained by processing Ashen Sap, extracted from Ashen Trees."
-			]
-			disable_toast: true
-			icon: "minecraft:nether_quartz_ore"
-			id: "47DE475A19084974"
-			optional: true
-			quest_enhance_disable_scroll_paging: false
-			shape: "rsquare"
-			size: 1.0d
-			tasks: [{
-				id: "1E42AA5071519268"
-				title: "I understand"
-				type: "checkmark"
-			}]
-			title: "The Nether"
-			x: -3.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["0D1DC5177700C2E7"]
-			description: [
-				"Elytras are craftable."
-				"Shulker Shells, End Stone, Myalite, Dusky Myalite, Myalite Crystal, End Blueprints and Chorus Flowers are craftable."
-			]
-			disable_toast: true
-			icon: "minecraft:end_portal_frame"
-			id: "48623F83032726CD"
-			optional: true
-			quest_enhance_disable_scroll_paging: false
-			shape: "rsquare"
-			size: 1.0d
-			tasks: [{
-				id: "473EF2A1F9FDE794"
-				title: "I understand"
-				type: "checkmark"
-			}]
-			title: "The End"
-			x: -3.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["178FC7958159A73B"]
-			description: [
-				"The pack also has several other misc. changes, tweaks, and thingies that are worth mentioning:"
-				""
-				"- Clerics buy Sculk Tendrils and sell Purity Shards and Purification Flasks"
-				"- Wandering Traders sell Sniffer Eggs, Purity Shards and Purification Flasks"
-				"- Sniffer eggs can be found in Jungle Temples."
-				"- Reading a structure map gives you a waypoint to the structure."
-				"- Skeletons turn into Wither Skeletons when dying to lava."
-				"- Wither Skeletons and Magma Cubes spawn naturally deep underground."
-				"- Sculk Mushrooms can brew Awkward Potions."
-				"- Generators are removed, power for furnitures is obtainable by Transformers, that use FE to generate power."
-				""
-				"{@pagebreak}"
-				""
-				"- Quark normally makes it so netherite equipment is repairable with diamonds, this is also applied to necromium."
-				"- Items repairable with Treated Iron now use Steel"
-			]
-			disable_toast: true
-			icon: "thermal:lead_gear"
-			id: "3FA037854B984F4F"
-			optional: true
-			quest_enhance_disable_scroll_paging: false
-			shape: "rsquare"
-			size: 1.0d
-			tasks: [{
-				id: "1219F9E75C77FD39"
-				title: "I understand"
-				type: "checkmark"
-			}]
-			title: "Misc. Changes"
-			x: -1.5d
-			y: 3.0d
-		}
-		{
 			dependencies: ["178FC7958159A73B"]
 			description: [
 				"After &e10 days&r, the Sculk Horde will awaken and begin corrupting the world, starting at the world's center, and begin accumulating mass from feeding off other living things."
@@ -603,6 +507,8 @@
 				"Sculk Nodes act as major infection forward points."
 				""
 				"Nodes quickly spread sculk and are a source of &3Sculk Phantoms&r, as well as acting as a &6chunk loader&r."
+				""
+				"If there are 2 or more nodes, all players recieve the Lure effect, letting the Sculk Horde know where you are at all times, unless wearing a hazmat suit set."
 			]
 			hide_text_until_complete: false
 			icon: "sculkhorde:sculk_node"
@@ -655,7 +561,7 @@
 			description: [
 				"Beacons are buffed and can have up to 3 effects at once and affect any non-hostile entity nearby. Beacon bases are constructed with &6Infestation Ward&r."
 				""
-				"Additionally, beacons with Purity as an effect harm Sculk enemies and purify the area around them."
+				"As well as their standard effects, beacons apply Purity, regardless of effects selected, and harm Sculk enemies and purify the area around them."
 			]
 			id: "2AFB15D807466DB4"
 			quest_enhance_disable_scroll_paging: false

@@ -7,6 +7,7 @@ EntityEvents.death('skeleton', (event) => {
     }
 });
 
+
 PlayerEvents.tick((event) => {
     const {
         player,
@@ -14,6 +15,8 @@ PlayerEvents.tick((event) => {
     } = event;
     // Fires event once a second
     if (!(player.age % 20 === 0)) return;
+
+    let nodes = $ModSavedData.getSaveData().getNodeEntries().size()
 
     if (
         chestArmorItem.id === 'thermal:hazmat_chestplate' &&
@@ -24,10 +27,17 @@ PlayerEvents.tick((event) => {
         // Apply/remove potion effects
         player.potionEffects.add('sculkhorde:purity', 200, 0, false, false);
     }
+
+    if (nodes >= 2 && !(chestArmorItem.id === 'thermal:hazmat_chestplate' &&
+        legsArmorItem.id === 'thermal:hazmat_leggings' &&
+        headArmorItem.id === 'thermal:hazmat_helmet' &&
+        feetArmorItem.id === 'thermal:hazmat_boots')) {
+        player.potionEffects.add('sculkhorde:sculk_lure', 200, 0, false, false);
+    }
 });
 
 const repairUpdateFrequency = 150; //in ticks.
-const repairChance = 0; // 1-repairChance = % so this is 100%
+const repairChance = 0; // 1-repairChance = %   so this is 100%
 const repairAmount = 2;
 const xpCost = 1; // xp pont per repair.
 

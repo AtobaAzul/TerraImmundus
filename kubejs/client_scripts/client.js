@@ -277,6 +277,7 @@ ItemEvents.tooltip((e) => {
         let spore_data = global.spore_data;
         let mass = spore_data.mass;
         let gravemind = spore_data.gravemind_state;
+        let nodes = spore_data.nodes
 
         if (item.nbt != null && item.nbt.contains("enabled")) {
             if (mass > 0) {
@@ -298,6 +299,8 @@ ItemEvents.tooltip((e) => {
                     ),
                 );
 
+                text.add(Text.gray("Nodes: ").append(Text.of(nodes.toString()).color(Color.RED_DYE)));
+
                 if (gravemind == "Undeveloped") {
                     color = Color.YELLOW_DYE;
                 } else if (gravemind == "Immature") {
@@ -305,6 +308,7 @@ ItemEvents.tooltip((e) => {
                 } else if (gravemind == "Mature") {
                     color = Color.RED_DYE;
                 }
+
                 text.add(
                     Text.gray("Evolution State: ").append(
                         Text.of(gravemind).color(color),
@@ -314,7 +318,7 @@ ItemEvents.tooltip((e) => {
                 text.add(Text.green("No Data."));
             }
         } else {
-            text.add(Text.red("Use (right-click) to activate."));
+            text.add(Text.blue("Use (right-click) to activate."));
         }
     });
 });

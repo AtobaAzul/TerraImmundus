@@ -61,27 +61,61 @@ PlayerEvents.loggedIn((event) => {
 });
 
 
-ServerEvents.loaded((event) => {
-    if (event.server.persistentData.borderSetup) return
+LevelEvents.loaded((event) => {
+    if (event.level.persistentData.borderSetup) return
 
-    event.server.persistentData.borderSetup = true
+    event.level.persistentData.borderSetup = true
 
-    event.server.allLevels.forEach((level) => {
-        level.persistentData.oldBorderSize = level.worldBorder.size
+    event.level.persistentData.oldBorderSize = event.level.worldBorder.size
 
-        level.worldBorder.setSize(6000)
-    })
+    event.level.worldBorder.setSize(6000)
 })
 
-ServerEvents.tick(event => {
+const $FluidState = Java.loadClass('net.minecraft.world.level.material.FluidState')
+const $Mth = Java.loadClass('net.minecraft.util.Mth')
+LevelEvents.tick(event => {
+    const level = event.level
     const SCULK_DEFEATED = $ModSavedData.getSaveData().getHordeState().toString() == 'DEFEATED'
+    const SCULK_STARTED = $ModSavedData.getSaveData().getHordeState().toString() == 'ACTIVE'
 
-    if (SCULK_DEFEATED && !event.server.persistentData.finalBorderSetup) {
-        event.server.allLevels.forEach((level) => {
-            level.worldBorder.setSize(level.persistentData.oldBorderSize)
-        })
+    if (SCULK_STARTED && !level.persistentData.sculkSpawnSet) {
+        let dist = 1500
 
-        event.server.persistentData.finalBorderSetup = true
+        for (let tries = 0; tries < 20; tries++) {
+            let x = $Mth.randomBetween(level.random, -1000, 1000)
+            let z = $Mth.randomBetween(level.random, -1000, 1000)
+            let rad = Math.atan2(x, z)
+
+            let pX = x + dist * Math.sin(rad);
+            let pZ = z - dist * Math.cos(rad);
+
+            let bPos = new BlockPos(pX, 100, pZ)
+
+            bPos = level.getHeightmapPos("world_surface", bPos)
+
+            let fluidPos = level.getHeightmapPos("ocean_floor", bPos)
+
+
+            let hasChunk = event.level.chunkSource.hasChunk(Math.floor(bPos.x) / 16, Math.floor(bPos.z) / 16)
+
+            if (hasChunk && event.level.getBlock(bPos.below()).getBlockState().getFluidState().isEmpty() && dist < 3000) {
+                if (event.server != null) {
+                    console.info(`Moving world spawn point to ${bPos}`)
+
+                    event.server.allLevels.forEach(_level => {
+                        _level.setDefaultSpawnPos(bPos, 0.0)
+                        _level.persistentData.sculkSpawnSet = true
+                    })
+                    break;
+                }
+            }
+
+        }
+    }
+
+    if (SCULK_DEFEATED && !level.persistentData.finalBorderSetup) {
+        level.worldBorder.setSize(level.persistentData.oldBorderSize)
+        level.persistentData.finalBorderSetup = true
     }
 })
 
@@ -91,8 +125,6 @@ ItemEvents.rightClicked('minecraft:enchanted_book', (event) => {
     }
 })
 
-const $ISculkSmartEntity = Java.loadClass('com.github.sculkhorde.common.entity.ISculkSmartEntity')
-const $AABB = Java.loadClass('net.minecraft.world.phys.AABB')
 
 BlockEntityEvents.tick(event => {
     const level = event.getBlockEntity().level
@@ -100,11 +132,15 @@ BlockEntityEvents.tick(event => {
 
     if (event.getBlockEntity().blockState.is("minecraft:beacon") && event.getBlockEntity()) {
         let nbt = event.getBlockEntity().serializeNBT()
-        if (nbt.get("Secondary") == 103) {
-            let levels = nbt.get("Levels");
-            if (levels > 0) {
-                const entities = level.getEntitiesOfClass($ISculkSmartEntity, new $AABB(event.getBlockEntity().blockPos).inflate(levels * 10 + 10).expandTowards(0, level.getHeight(), 0))
-                for (const entity of entities) {
+        let levels = nbt.get("Levels");
+        if (levels > 0) {
+            let entities = level.getEntitiesOfClass($LivingEntity, new $AABB(event.getBlockEntity().blockPos).inflate(levels * 10 + 10).expandTowards(0, level.getHeight(), 0))
+            for (const entity of entities) {
+                let hasTag = entity.entityType.tags.anyMatch(
+                    (tag) => tag.location() == "terraimmundus:sculk_mobs"
+                )
+
+                if (hasTag) {
                     entity.setSecondsOnFire(60)
                     entity.addEffect(new $MobEffectInstance('minecraft:slowness', 60, 3))
                     entity.addEffect(new $MobEffectInstance('minecraft:weakness', 60, 3))
@@ -121,6 +157,8 @@ BlockEntityEvents.tick(event => {
                         level.addFreshEntity(cursor);
                     }
                 }
+
+                entity.addEffect(new $MobEffectInstance('sculkhorde:purity', 62, 0))
             }
         }
     }

@@ -12,6 +12,9 @@ ItemEvents.rightClicked('kubejs:sporemeter', (event) => {
         .getHordeState()
         .toString();
 
+    let nodes = $ModSavedData.getSaveData().getNodeEntries().size().toFixed(0)
+
+
     if (mass > 0) {
         let color = Color.LIME_DYE;
         let state_color = Color.YELLOW_DYE;
@@ -44,7 +47,13 @@ ItemEvents.rightClicked('kubejs:sporemeter', (event) => {
                             state_color,
                         ),
                     ),
-                ),
+                ).append('   ')
+                .append(Text.gray('Nodes: ').append(
+                    Text.of(nodes).color(
+                        Color.RED_DYE,
+                    ),
+                ),)
+
         );
     } else {
         event.player.setStatusMessage(

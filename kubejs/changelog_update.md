@@ -22,7 +22,7 @@
 - Renamed Infested Crying Obsidian to Weeping Obsidian
 - Projectile protection now protects against bullets  
 - Fixed Weaponworks Necromium tools having 2 slowness infliction.
-- Reworked Bonus Chest into Starting Items.
+- Reworked Bonus Chest into Starting Items: Items are directly given to players on first join when enabled.
 - Bonus Chest loot reworked:
     - Full leather armor set, randomized color
     - Bundle, randomized color
@@ -44,9 +44,9 @@
 - Urns are now considered fragile
 - Spiders now always drop 1 spider leg
 - Beacons now only accept soulite as payment.
-- Beacon bases are now constructed with Infestation Ward blocks.
-- Beacons can now grant Purity (among some other new effects.).
-  - Beacons with Purity selected burn and weaken sculk mobs in its range.
+- Beacon bases are now constructed with Infestation Ward blocks and activated with Soulite.
+- Beacons now grant Purity regardless of effect, and now have different effects to choose from.
+- Beacons burn and weaken sculk mobs in its range.
 - Tweaked recipe and retextured beacons to match.
 - Updated Purity effect icon
 - Repaletted several structures.
@@ -59,7 +59,7 @@
   - Deep Underground
   - Boss
 - Disabled Quark's Golden Bars.
-- Overral reduced structure spawns, added minimum 100 blocks from world center and minimum spacing between structures.
+- Added minimum 100 blocks from world center and minimum spacing between structures.
 - Fixed Anthralite/Tin items not having correct repair ingredient.
 - Repairing now only costs 1 item.
 - Fixed Tin Axe damage being higher than intended.
@@ -110,6 +110,8 @@
 - Cave Sprouts, Beach Grass drop Straw when harvested with a knife.
 - Arid Sprouts drop Straw when not harvested by shears. 
 - Fixed Zirconia ore not being renamed.
+- World Spawn now moves away from world center once the Sculk Horde starts.
+- Players now always have Lure effect if there's 2 or more Sculk Nodes
 
 # Mods
 - Added mods:
@@ -144,6 +146,7 @@
    - Confortable Campfires
 - Updated mods:
   - Simple Voice Chat
+  - Simple Voice Radio
   - Xaero's World Map
   - Xaero's Minimap
   - Cupboard
@@ -161,6 +164,7 @@
   - Fzzy Config
   - Not Enough Animations
   - Collective
+  - Structure Essentials
   - Every Compat
   - Blueprint
   - Farmer's Delight
@@ -171,6 +175,7 @@
   - Balm
   - BaguetteLib
   - Guard Villagers
+  - Lexiconfig
   - Sculk Horde
   - Iron's Simple Blood
   - Better Advancements

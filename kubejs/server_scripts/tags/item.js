@@ -217,7 +217,7 @@ ServerEvents.tags('item', (event) => {
     event.add('forge:tools/silver', ['#caverns_and_chasms:magic_damage_items', 'pipez:wrench'])
     event.add('forge:armor/silver', /caverns_and_chasms:silver_(helmet|chestplate|leggings|boots)/)
 
-    event.add('forge:tools/copper', [/caverns_and_chasms:.*copper_(axe|sword|pickaxe|shovel|hoe)/, 'supplementaries:wrench'])
+    event.add('forge:tools/copper', [/caverns_and_chasms:.*copper_(axe|sword|pickaxe|shovel|hoe)/, 'supplementaries:wrench', /ccww.*copper.*/])
     event.add('forge:armor/copper', /caverns_and_chasms:.*copper_(helmet|chestplate|leggings|boots)/)
 
 

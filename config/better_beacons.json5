@@ -14,7 +14,6 @@
 			"minecraft:resistance"
 		],
 		"secondaryEffects": [
-			"sculkhorde:purity",
 			"minecraft:night_vision",
 			"minecraft:fire_resistance"
 		],
