@@ -208,24 +208,24 @@ ClientEvents.lang("en_us", (event) => {
         'minecraft:nether_bricks': "Fire Bricks",
         'minecraft:cracked_nether_bricks': "Cracked Fire Bricks",
         'minecraft:nether_brick_stairs': "Fire Brick Stairs",
-        'minecraft:nether_brick_slab': "Fire Brick Slab", 
-        'quark:nether_brick_vertical_slab':"Vertical Fire Brick Slab", 
-        'minecraft:nether_brick_wall': "Fire Brick Wall", 
-        'minecraft:nether_brick_fence': "Fire Brick Fence", 
-        'quark:nether_brick_fence_gate': "Fire Brick Fence Gate", 
+        'minecraft:nether_brick_slab': "Fire Brick Slab",
+        'quark:nether_brick_vertical_slab': "Vertical Fire Brick Slab",
+        'minecraft:nether_brick_wall': "Fire Brick Wall",
+        'minecraft:nether_brick_fence': "Fire Brick Fence",
+        'quark:nether_brick_fence_gate': "Fire Brick Fence Gate",
         'minecraft:chiseled_nether_bricks': "Chiseled Fire Bricks",
         'minecraft:nether_brick': "Fire Brick",
-        'minecraft:red_nether_bricks': "Cinder Bricks", 
-        'minecraft:red_nether_brick_stairs': "Cinder Brick Stairs", 
-        'minecraft:red_nether_brick_slab': "Cinder Brick Slab", 
-        'quark:red_nether_brick_vertical_slab': "Vertical Cinder Brick Slab", 
+        'minecraft:red_nether_bricks': "Cinder Bricks",
+        'minecraft:red_nether_brick_stairs': "Cinder Brick Stairs",
+        'minecraft:red_nether_brick_slab': "Cinder Brick Slab",
+        'quark:red_nether_brick_vertical_slab': "Vertical Cinder Brick Slab",
         'minecraft:red_nether_brick_wall': "Cinder Brick Wall",
-        'quark:blue_nether_bricks': "Soulfire Bricks", 
-        'quark:blue_nether_bricks_slab': "Soulfire Brick Slab", 
-        'quark:blue_nether_bricks_vertical_slab': "Vertical Soulfire Brick Slab", 
-        'quark:blue_nether_bricks_wall': "Soulfire Brick Wall", 
+        'quark:blue_nether_bricks': "Soulfire Bricks",
+        'quark:blue_nether_bricks_slab': "Soulfire Brick Slab",
+        'quark:blue_nether_bricks_vertical_slab': "Vertical Soulfire Brick Slab",
+        'quark:blue_nether_bricks_wall': "Soulfire Brick Wall",
         'quark:blue_nether_bricks_stairs': "Soulfire Brick Stairs",
-        'thermal:sapphire_ore': "Zirconia Ore", 
+        'thermal:sapphire_ore': "Zirconia Ore",
         'thermal:deepslate_sapphire_ore': "Deepslate Zirconia Ore"
     };
 
@@ -270,7 +270,22 @@ NetworkEvents.dataReceived("spore_data", (event) => {
     global.spore_data = event.getData();
 });
 
+let $GunItem = null;
+let $GunModifierHelper = null;
+let $GunEnchantmentHelper = null;
+let $FireMode = null
+
+
 ItemEvents.tooltip((e) => {
+    //load these in the tooltip event. Sometimes GunEnchHelper is not able to be loaded while the client isn't fully initilized it seems
+    if ($GunItem == null) {
+        $GunItem = Java.loadClass("top.ribs.scguns.item.GunItem")
+        $GunModifierHelper = Java.loadClass("top.ribs.scguns.util.GunModifierHelper")
+        $GunEnchantmentHelper = Java.loadClass("top.ribs.scguns.util.GunEnchantmentHelper")
+        $FireMode = Java.loadClass("top.ribs.scguns.common.FireMode")
+    }
+
+
     e.add("thermal:sapphire", Text.of("Deprecated, craft this into Zirconia!").color(Color.DARK_RED))
 
     e.addAdvanced("kubejs:sporemeter", (item, advanced, text) => {
@@ -321,10 +336,64 @@ ItemEvents.tooltip((e) => {
             text.add(Text.blue("Use (right-click) to activate."));
         }
     });
+
+    e.addAdvancedToAll((stack, advanced, text) => {
+        if (stack.item instanceof $GunItem) {
+            let modifiedGun = stack.item.getModifiedGun(stack)
+
+            let idx = stack.hasTag('scguns_cnc:lore_guns') ? 2 : 1;
+            console.info(idx)
+
+            let damage = modifiedGun.getProjectile().getDamage()
+            damage = $GunModifierHelper.getModifiedProjectileDamage(stack, damage);
+            damage = $GunEnchantmentHelper.getAcceleratorDamage(stack, damage)
+            damage = $GunEnchantmentHelper.getHeavyShotDamage(stack, damage);
+
+            let projCount = modifiedGun.getProjectile().getProjectileAmount();
+            let minChargeDamageMult = 0.85
+            let charge = modifiedGun.getGeneral().fireMode == $FireMode.PULSE;
+
+            let damagePrefix = Text.translatable("info.scguns.damage").append(": ").gray();
+            text.set(idx, damagePrefix)
+
+
+            //I'm not doing the additional damage from nbt. Not used here.
+            //special edge-case handling for the scatterer...
+            if (stack.is("scguns_cnc:scatterer")) {
+                let endDamage = damage * 0.8
+
+                let dmgText = Text.of(damage.toFixed(2) + "•" + endDamage.toFixed(2) + "×1•" + projCount).yellow();
+
+                text.set(idx, text.get(idx).append(dmgText))
+            } else if (projCount > 1) {
+                let perPelletDamage = damage / projCount;
+
+                if (!charge) {
+                    let dmgText = Text.of(perPelletDamage.toFixed(2) + "×" + projCount).yellow();
+
+                    text.set(idx, text.get(idx).append(dmgText))
+                } else {
+                    let perPelletDamage = damage / projCount;
+                    let minPelletDamage = perPelletDamage * minChargeDamageMult;
+                    let chargeText = Text.of(minPelletDamage.toFixed(2) + "•" + perPelletDamage.toFixed(2) + "×" + projCount).yellow()
+
+                    text.set(idx, text.get(idx).append(chargeText))
+                }
+            } else {
+                if (charge) {
+                    let minDamage = damage * minChargeDamageMult
+                    let chargeText = Text.of(minDamage.toFixed(2) + "•" + damage).yellow()
+
+                    text.set(idx, text.get(idx).append(chargeText))
+                } else {
+                    text.set(idx, text.get(idx).append(Text.of(damage.toFixed(2)).yellow()))
+                }
+            }
+        }
+    })
 });
 
 const $Winscreen = Java.loadClass("net.minecraft.client.gui.screens.WinScreen");
-
 NetworkEvents.dataReceived("horde_defeated", (event) => {
     Client.setCurrentScreen(
         new $Winscreen(true, () => {

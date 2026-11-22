@@ -32,7 +32,7 @@
   },
   "projectile": {
     "alwaysSpread": true,
-    "projectileAmount": 17,
+    "projectileAmount": 12,
     "recoilAngle": 18.0,
     "recoilKick": 4.0,
     "spread": 9.0,

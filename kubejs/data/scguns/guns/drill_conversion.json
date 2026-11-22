@@ -46,7 +46,7 @@
     "criticalChance": 0.1,
     "playerKnockBack": true,
     "playerKnockBackStrength": 0.1,
-    "projectileAmount": 18,
+    "projectileAmount": 8,
     "knockbackStrength": 0.65,
     "advantage": "scguns:none",
     "damage": 23.5,

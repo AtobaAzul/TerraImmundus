@@ -46,7 +46,7 @@
         "recoilAngle": 11.5,
         "recoilKick": 2.5,
         "spread": 8.5,
-        "projectileAmount": 22,
+        "projectileAmount": 8,
         "criticalChance": 0.05,
         "playerKnockBack": true,
         "playerKnockBackStrength": 0.1,

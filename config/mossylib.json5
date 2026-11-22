@@ -1,0 +1,10 @@
+{
+  "mossy": false,
+  "developer_mode": false,
+  "seen_announcements": [],
+  "dev": {
+    "announcements_mode": "always",
+    "unlock_instantly": false,
+    "announcements": {}
+  }
+}

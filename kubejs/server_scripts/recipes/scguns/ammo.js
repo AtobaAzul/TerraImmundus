@@ -93,8 +93,8 @@ ServerEvents.recipes((e) => {
 		],
 		'scguns:ramrod_round': [
 			'scguns:small_iron_casing',
-			'kubejs:smokeless_powder_dust',
-			'#scguns:stan_bullet_tips',
+			'2x #scguns:gunpowder_dust',
+			'scbrass:zinc_nugget',
 		],
 		'scguns:hog_round': [
 			'scguns:small_iron_casing',

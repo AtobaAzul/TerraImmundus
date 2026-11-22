@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "active": 0,
+  "tabs": [
+    {
+      "goal": "thermal:machine_pyrolyzer",
+      "batches": 2,
+      "offX": 2.5,
+      "offY": -168.16519174041295,
+      "zoom": 0
+    },
+    {
+      "goal": "minecraft:kjs/pipez_advanced_upgrade",
+      "batches": 1,
+      "offX": 0.0,
+      "offY": -170.16715830875123,
+      "zoom": 0
+    },
+    {
+      "goal": "thermal:fluid_cell",
+      "batches": 1,
+      "offX": 0.5,
+      "offY": -169.1661750245821,
+      "zoom": 0
+    },
+    {
+      "goal": "thermal:machine_refinery",
+      "batches": 2,
+      "offX": 2.5,
+      "offY": -170.6676499508358,
+      "zoom": 0
+    }
+  ]
+}

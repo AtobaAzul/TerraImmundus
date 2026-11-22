@@ -256,4 +256,6 @@ ServerEvents.tags('item', (event) => {
     event.add('terraimmundus:healing_foods_drinks', ['sob:pale_daiquiri', 'farmersrespite:rose_hip_pie_slice', 'farmersrespite:rose_hip_pie', 'farmersrespite:rose_hip_tea', 'farmersrespite:long_rose_hip_tea', 'farmersrespite:strong_rose_hip_tea', 'neapolitan:strawberry_ice_cream', 'abnormals_delight:strawberry_cake_slice', 'sob:strawberry_jam', 'neapolitan:strawberry_ice_cream', 'neapolitan:strawberry_milkshake', 'neapolitan:strawberry_bean_bonbons', 'neapolitan:strawberry_cake', 'neapolitan:strawberry_scones', 'neapolitan:white_strawberries', 'neapolitan:chocolate_strawberries', 'neapolitan:strawberries', 'neapolitan:strawberry_banana_smoothie', 'farmersdelight:melon_juice', 'farmersrespite:strong_melon_juice', 'neapolitan:strawberry_ice_cream'])
 
     event.add('terraimmundus:ender_pearl_or_dust', ['minecraft:ender_pearl', 'thermal:ender_pearl_dust'])
+
+    event.add('scguns_cnc:lore_guns', /.*schismatic_.*|.*n_acolyte.*/)
 });

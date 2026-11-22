@@ -41,7 +41,7 @@
     "recoilKick": 1.0,
     "spread": 2.0,
     "criticalChance": 0.05,
-    "advantage": "scguns:fire",
+    "advantage": "scguns:water",
     "damage": 11.5,
     "damageFalloffStart": 28.0,
     "damageFalloffEnd": 65.0,

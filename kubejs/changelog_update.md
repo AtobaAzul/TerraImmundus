@@ -3,7 +3,7 @@
   - Increased Locust burst cooldown (10 -> 15)
   - Increased Newborn Cyst damage (36 -> 42.5)
   - Newborn Cyst can now use copper slugs.
-  - Decreased Newborn Cyst projectile amount (16 -> 10) (This is a buff btw)
+  - Decreased Newborn Cyst projectile amount (16 -> 12) 
   - Increased Fencer Longarm projectile speed (4 -> 6)
   - Increased Fencer Longarm damage (6.5 -> 7)
   - Turnpike now shoots Ramrod Rounds
@@ -17,6 +17,30 @@
   - Changed Stigg ammo type (Standard Advanced -> Standard Copper) 
   - Reduced Stigg armor pen. (2 -> 1)
   - Increased Mokova crit. damage mult. (1.5x -> 2x)
+  - Decreased Blunderbuss projectile amount (25 -> 15)
+  - Decreased Boomstick projectile amount (26 -> 8)
+  - Decreased Brawler projectile amount (16 -> 12)
+  - Decreased Callwell projectile amount (18 -> 8)
+  - Decreased Callwell Conversion projectile amount (20 -> 8)
+  - Decreased Callwell Terminal projectile amount (20 -> 8)
+  - Decreased Combat Shotgun projectile amount (15 -> 8)
+  - Decreased Doublet projectile amount (18 -> 15)
+  - Decreased Drill Conversion projectile amount (18 -> 8)
+  - Decreased Fencer Thumper projectile amount (20 -> 15)
+  - Decreased Floundergat projectile amount (22 -> 15)
+  - Decreased Handcannon projectile amount (18 -> 15)
+  - Decreased Inertial projectile amount (16 -> 12)
+  - Decreased Jackhammer projectile amount (22 -> 8)
+  - Decreased JR Wristbreaker projectile amount (22 -> 8)
+  - Decreased Kiln Gun projectile amount (17 -> 12)
+  - Decreased Mangalitsa projecitle amount (12 -> 8)
+  - Changed Whistler ammo type (Gibbs -> Standard Advanced)
+  - Reduced Whistler damage (18 -> 14)
+  - Bomb Lance Microjet no longer has an advantage.
+  - Reworked Wither gun advantage into "Subterraneous" advantage.
+    - Includes withers, cave spiders, centipedes, deepers, etc.
+  - Added more mobs to the Heavy and Oceanic advantages.
+  - Removed Netherborn advantage, replaced with Oceanic in all guns that used it.
 - Purity weapons can now be made from Necromium.
 - Removed Supplementaries² copper lantern, in favor of Caverns & Chasms'
 - Renamed Infested Crying Obsidian to Weeping Obsidian
@@ -112,6 +136,10 @@
 - Fixed Zirconia ore not being renamed.
 - World Spawn now moves away from world center once the Sculk Horde starts.
 - Players now always have Lure effect if there's 2 or more Sculk Nodes
+- Changed Ramrod recipe:
+  - Iron Casing
+  - 2x Gunpowder Dust
+  - Zinc Nugget
 
 # Mods
 - Added mods:
@@ -150,6 +178,7 @@
   - Xaero's World Map
   - Xaero's Minimap
   - Cupboard
+  - Explorify
   - FancyMenu
   - Quest Enhance
   - Fragmentum
@@ -160,6 +189,7 @@
   - Corpse Curio Compat
   - Particle Rain
   - ModernFix
+  - Cloudflared
   - Moonlight Lib
   - Fzzy Config
   - Not Enough Animations
@@ -187,3 +217,4 @@
   - EntityJS
   - Anvil API
   - Kyrpton
+  - EMI Accelarator

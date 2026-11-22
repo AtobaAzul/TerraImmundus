@@ -34,7 +34,7 @@
     }
   },
   "projectile": {
-    "projectileAmount": 22,
+    "projectileAmount": 15,
     "alwaysSpread": true,
     "recoilAngle": 10.0,
     "recoilKick": 0.5,
@@ -46,7 +46,7 @@
     "damageFalloffStart": 8.0,
     "damageFalloffEnd": 20.0,
     "damageFalloffMinMultiplier": 0.4,
-    "advantage": "scguns:fire",
+    "advantage": "scguns:water",
     "damage": 17.5,
     "item": "scguns:grapeshot",
     "life": 38,

@@ -366,6 +366,7 @@ const SCULK_ITEMS = [
 	'sculkhorde:soul_harvester',
     /.*:.*sculk.*/,
     'scguns:peal',
+    'scguns:peal_dust',
     /.*infested.*/,
     'minecraft:echo_shard',
 	'sculkhorde:bee_colony_core_block',
