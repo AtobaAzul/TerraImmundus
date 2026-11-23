@@ -53,6 +53,24 @@ const STRUCTURE_REPALETTER_DEFS = {
         'minecraft:dark_prismarine_stairs': 'scguns:asgharian_brick_stairs',
         'minecraft:dark_prismarine_slab': 'scguns:asgharian_brick_slab',
     },
+    'betterjungletemples:jungle_temple': {
+        'minecraft:cobblestone': { 'minecraft:cobblestone': 1, 'caverns_and_chasms:cobblestone_bricks': 1 },
+        'minecraft:cobblestone_stairs': { 'minecraft:cobblestone_stairs': 1, 'caverns_and_chasms:cobblestone_brick_stairs': 1 },
+        'minecraft:cobblestone_slab': { 'minecraft:cobblestone_slab': 1, 'caverns_and_chasms:cobblestone_brick_slab': 1 },
+        'minecraft:cobblestone_wall': { 'minecraft:cobblestone_wall': 1, 'caverns_and_chasms:cobblestone_brick_wall': 1 },
+        'minecraft:mossy_cobblestone': { 'minecraft:mossy_cobblestone': 1, 'caverns_and_chasms:mossy_cobblestone_bricks': 1 },
+        'minecraft:mossy_cobblestone_stairs': { 'minecraft:mossy_cobblestone_stairs': 1, 'caverns_and_chasms:mossy_cobblestone_brick_stairs': 1 },
+        'minecraft:mossy_cobblestone_slab': { 'minecraft:mossy_cobblestone_slab': 1, 'caverns_and_chasms:mossy_cobblestone_brick_slab': 1 },
+        'minecraft:mossy_cobblestone_wall': { 'minecraft:mossy_cobblestone_wall': 1, 'caverns_and_chasms:mossy_cobblestone_brick_wall': 1 }
+    },
+    'nova_structures:desert_ruins': {
+        'minecraft:sandstone': { 'quark:sandstone_bricks': 1, 'minecraft:sandstone': 1 },
+        'minecraft:sandstone_stairs': { 'quark:sandstone_bricks_stairs': 1, 'minecraft:sandstone_stairs': 1 },
+        'minecraft:sandstone_slab': { 'quark:sandstone_bricks_slab': 1, 'minecraft:sandstone_slab': 1 },
+        'minecraft:red_sandstone': { 'quark:red_sandstone_bricks': 1, 'minecraft:red_sandstone': 1 },
+        'minecraft:red_sandstone_stairs': { 'quark:red_sandstone_bricks_stairs': 1, 'minecraft:red_sandstone_stairs': 1 },
+        'minecraft:red_sandstone_slab': { 'quark:red_sandstone_bricks_slab': 1, 'minecraft:red_sandstone_slab': 1 },
+    },
     'nova_structures:witch_villa': {
         'minecraft:cobblestone': 'caverns_and_chasms:cobblestone_bricks',
         'minecraft:cobblestone_slab': 'caverns_and_chasms:cobblestone_brick_slab',
@@ -88,6 +106,11 @@ const STRUCTURE_REPALETTER_DEFS = {
     'explorify:mausoleum': {
         'minecraft:oxidized_copper': 'caverns_and_chasms:tuff_bricks',
     },
+    'minecraft:village_desert': {
+        'minecraft:smooth_sandstone': { 'minecraft:smooth_sandstone': 1, 'quark:sandstone_bricks': 1 },
+        'minecraft:smooth_sandstone_slab': { 'minecraft:smooth_sandstone_slab': 1, 'quark:sandstone_bricks_slab': 1 },
+        'minecraft:smooth_sandstone_stairs': { 'minecraft:smooth_sandstone_stairs': 1, 'quark:sandstone_bricks_stairs': 1 }
+    },
     '#minecraft:ruined_portal': {
         'minecraft:mossy_stone_bricks': 'quark:blackstone_bricks',
         'minecraft:stone_bricks': 'minecraft:polished_blackstone_bricks',
@@ -99,6 +122,27 @@ const STRUCTURE_REPALETTER_DEFS = {
         'minecraft:stone_brick_slab': 'minecraft:polished_blackstone_brick_slab',
         'minecraft:stone_slab': 'minecraft:blackstone_slab',
         'minecraft:chiseled_stone_bricks': 'minecraft:chiseled_polished_blackstone'
+    },
+    'minecraft:desert_pyramid': {
+        'minecraft:sandstone': { 'quark:sandstone_bricks': 1, 'minecraft:sandstone': 1 },
+        'minecraft:sandstone_stairs': { 'quark:sandstone_bricks_stairs': 1, 'minecraft:sandstone_stairs': 1 },
+        'minecraft:sandstone_slab': { 'quark:sandstone_bricks_slab': 1, 'minecraft:sandstone_slab': 1 },
+    },
+    'explorify:badlands_pyramid': {
+        'minecraft:red_sandstone': { 'quark:red_sandstone_bricks': 1, 'minecraft:red_sandstone': 1 },
+        'minecraft:red_sandstone_stairs': { 'quark:red_sandstone_bricks_stairs': 1, 'minecraft:red_sandstone_stairs': 1 },
+        'minecraft:red_sandstone_slab': { 'quark:red_sandstone_bricks_slab': 1, 'minecraft:red_sandstone_slab': 1 },
+    },
+    'explorify:desert_shrine': {
+        'minecraft:sandstone': { 'quark:sandstone_bricks': 1, 'minecraft:sandstone': 1 },
+        'minecraft:sandstone_stairs': { 'quark:sandstone_bricks_stairs': 1, 'minecraft:sandstone_stairs': 1 },
+        'minecraft:sandstone_slab': { 'quark:sandstone_bricks_slab': 1, 'minecraft:sandstone_slab': 1 },
+        'minecraft:sandstone_wall': { 'quark:sandstone_bricks_wall': 1, 'minecraft:sandstone_wall': 1 },
+    },
+    'minecraft:village_savanna': {
+        'minecraft:yellow_terracotta': 'clayworks:yellow_terracotta_bricks',
+        'minecraft:orange_terracotta': 'clayworks:orange_terracotta_bricks',
+        'minecraft:red_terracotta': 'clayworks:red_terracotta_bricks',
     }
 };
 
@@ -129,6 +173,19 @@ function createWeightedRepaletter(block_to_replace, replacement_blocks) {
     }
 }
 
+//Automatically add tags for weighted blocks swap because it works off tags only.......
+ServerEvents.tags('block', (event) => {
+    for (let [structure, swaps] of Object.entries(STRUCTURE_REPALETTER_DEFS)) {
+        for (let [oldBlock, newBlock] of Object.entries(swaps)) {
+            if (typeof newBlock === 'object') {
+                for (let [block, weight] of Object.entries(newBlock)) {
+                    event.add(block, block)
+                }
+            }
+        }
+    }
+})
+
 ServerEvents.highPriorityData((event) => {
     for (let [structure, swaps] of Object.entries(STRUCTURE_REPALETTER_DEFS)) {
         let name = structure.split(':')[1];
@@ -136,7 +193,7 @@ ServerEvents.highPriorityData((event) => {
         for (let [oldBlock, newBlock] of Object.entries(swaps)) {
             if (typeof newBlock === 'object') {
                 let weighted_data = []
-                
+
                 for (let [block, weight] of Object.entries(newBlock)) {
                     weighted_data.push({ data: block, weight: weight })
                 }

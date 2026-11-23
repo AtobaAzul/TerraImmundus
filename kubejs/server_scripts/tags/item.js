@@ -129,6 +129,8 @@ ServerEvents.tags('item', (event) => {
         event.add('terraimmundus:purity_weapon', `kubejs:purity_${type}`);
     });
 
+    event.add(`terraimmundus:purity_weapon`, 'sculkhorde:blade_of_purity')
+
     event.add('scguns:geothermal_vent_output', 'thermal:sulfur_dust');
 
     event.add('guardvillagers:convertible_guard_items', [
@@ -242,6 +244,7 @@ ServerEvents.tags('item', (event) => {
         'stick',
         '#scguns:weak_compost',
         /.*cactus.*/,
+        'farmersdelight:straw'
     ])
 
     event.removeAll('minecraft:beacon_payment_items')
@@ -258,4 +261,36 @@ ServerEvents.tags('item', (event) => {
     event.add('terraimmundus:ender_pearl_or_dust', ['minecraft:ender_pearl', 'thermal:ender_pearl_dust'])
 
     event.add('scguns_cnc:lore_guns', /.*schismatic_.*|.*n_acolyte.*/)
+
+    event.add('ccww:copper_halberd', /ccww:.*copper.*halberd/)
+    event.add('ccww:copper_warglaive', /ccww:.*copper.*warglaive/)
+    event.add('ccww:copper_scythe', /ccww:.*copper.*scythe/)
+    event.add('ccww:copper_greatsword', /ccww:.*copper.*greatsword/)
+    event.add('ccww:copper_hammer', /ccww:.*copper.*hammer/)
+    event.add('ccww:copper_rapier', /ccww:.*copper.*rapier/)
+    event.add('ccww:copper_katana', /ccww:.*copper.*katana/)
+    event.add('ccww:copper_mace', /ccww:.*copper.*mace/)
+    event.add('ccww:copper_spear', /ccww:.*copper.*spear/)
+
+    event.add('terraimmundus:diamond_steel_armor', /scguns:diamond_steel_(helmet|chestplate|leggings|boots)/)
+    event.add('terraimmundus:treated_brass_armor', /scguns:treated_brass_(helmet|chestplate|leggings|boots)/)
+
+    event.add('forge:tools/gold', 'farmersdelight:golden_knife')
+
+    event.add('terraimmundus:any_golden_equipment', ['#forge:tools/gold', '#forge:armor/gold'])
+    event.add('terraimmundus:any_silver_equipment', ['#forge:tools/silver', '#forge:armor/silver'])
+
+
+    event.add('terraimmundus:iron_or_copper', ['#forge:tools/copper', '#forge:tools/iron', '#forge:armor/iron', '#forge:armor/copper'])
+    event.add('terraimmundus:anthralite_or_diamond', /(minecraft|scguns|kubejs):(diamond|anthralite)_(axe|sword|pickaxe|shovel|hoe|katana|greatsword|scythe|rapier|rapier|halberd|warglaive|mace|hammer|bayonet|helmet|chestplate|leggings|boots)/)
+
+    event.remove('terraimmundus:iron_or_copper', ['thermal:wrench', 'refurbished_furniture:wrench', 'supplementaries:wrench', 'shears', 'quark:trowel'])
+    event.remove('terraimmundus:any_silver_equipment', 'pipez:wrench')
+
+    event.add('terraimmundus:meteorite_or_necromium', ['#forge:tools/netherite', '#forge:tools/necromium', '#forge:armor/netherite', '#forge:armor/necromium'])
+
+    event.add('terraimmundus:diascite_or_ferriscite', /.*(diascite|ferriscite)_.*/)
+
+    event.add('terraimmundus:dust_or_ingot/titanium', ['caverns_and_chasms:tin_ingot', 'kubejs:titanium_dust']);
+
 });

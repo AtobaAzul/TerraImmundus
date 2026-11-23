@@ -26,7 +26,7 @@ StartupEvents.registry('item', (event) => {
         'steel_gun_barrel',
         'steel_heavy_gun_barrel',
         'reinforced_gun_parts',
-        'enderium_gun_frame',
+        //'enderium_gun_frame',
         'resonant_gun_parts',
         'redstone_cell',
         'titanium_dust',
@@ -47,6 +47,8 @@ StartupEvents.registry('item', (event) => {
         'hoe',
         'sword'
     ]
+
+    event.create('enderium_gun_frame').displayName("Resonant Gun Frame")
 
     const armor_types = [
         'helmet',
@@ -80,7 +82,7 @@ StartupEvents.registry('item', (event) => {
         }
     })
 
-    event.createCustom('soothing_dressing', () => new $HealingBandageItem(new $ItemProperties().stacksTo(16), 4, new $MobEffectInstance('farmersdelight:comfort', 20*120, 0)))
+    event.createCustom('soothing_dressing', () => new $HealingBandageItem(new $ItemProperties().stacksTo(16), 4, new $MobEffectInstance('farmersdelight:comfort', 20 * 120, 0)))
 });
 
 ItemEvents.armorTierRegistry(event => {
@@ -97,17 +99,17 @@ ItemEvents.toolTierRegistry(event => {
         tier.level = 3
         tier.uses = 800
         tier.enchantmentValue = 10 //useless in the modpack but i'm keeping parity with diamond.
-        tier.speed = 9
+        tier.speed = 11
         tier.attackDamageBonus = 3
         tier.setRepairIngredient(Ingredient.of('#terraimmundus:tin_repair_material'))
     })
 
     event.add('anthralite', tier => {
-        tier.level = 2
-        tier.uses = 600
+        tier.level = 3
+        tier.uses = 1200
         tier.enchantmentValue = 10 //useless in the modpack but i'm keeping parity with diamond.
-        tier.speed = 7
-        tier.attackDamageBonus = 2.5
+        tier.speed = 9
+        tier.attackDamageBonus = 3.5
         tier.setRepairIngredient(Ingredient.of('#kubejs:anthralite_repair_material'))
     })
 })

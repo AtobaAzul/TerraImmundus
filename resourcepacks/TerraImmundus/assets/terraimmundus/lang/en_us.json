@@ -11,8 +11,6 @@
     "gui.cfm_wap.status.offline": "Offline",
     "gui.cfm_wap.status.energy": "No Energy",
     "gui.cfm_wap.node_count": "%s / %s",
-    "block.thermal.sapphire_ore": "Zirconia Ore",
-    "block.thermal.deepslate_sapphire_ore": "Deepslate Zirconia Ore",
     "advancements.caverns_and_chasms.adventure.find_monolith.description": "Travel thousands of blocks to locate a Titanium Monolith",
     "advancements.caverns_and_chasms.adventure.find_monolith.title": "Heart of Titanium",
     "subtitles.caverns_and_chasms.block.tin.deflect": "Titanium deflects",
@@ -25,4 +23,5 @@
     "enchantment.minecraft.soul_flame.desc": "Arrows fired from the bow will deal additional sulfuric fire damage.",
     "quark.jei.hint.preamble": "",
     "quark.jei.hint_preamble": ""
+    
 }

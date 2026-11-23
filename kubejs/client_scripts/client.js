@@ -65,7 +65,7 @@ ClientEvents.lang("en_us", (event) => {
         "caverns_and_chasms:mossy_cobblestone_bricks":
             "Mossy Small Cobblestone Bricks",
         "caverns_and_chasms:mossy_cobblestone_brick_stairs":
-            "MossySmall Cobblestone Brick Stairs",
+            "Mossy Small Cobblestone Brick Stairs",
         "caverns_and_chasms:mossy_cobblestone_brick_slab":
             "Mossy Small Cobblestone Brick Slab",
         "caverns_and_chasms:mossy_cobblestone_brick_wall":
@@ -225,8 +225,6 @@ ClientEvents.lang("en_us", (event) => {
         'quark:blue_nether_bricks_vertical_slab': "Vertical Soulfire Brick Slab",
         'quark:blue_nether_bricks_wall': "Soulfire Brick Wall",
         'quark:blue_nether_bricks_stairs': "Soulfire Brick Stairs",
-        'thermal:sapphire_ore': "Zirconia Ore",
-        'thermal:deepslate_sapphire_ore': "Deepslate Zirconia Ore"
     };
 
     for (const [item, name] of Object.entries(rename)) {

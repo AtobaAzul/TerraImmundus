@@ -1,10 +1,24 @@
 ServerEvents.recipes((e) => {
-    e.recipes.thermal.crystallizer('shulker_shell', [Fluid.of('thermal:ender', 250), 'nautilus_shell'], 10, 20000)
-    e.recipes.thermal.crystallizer('end_stone', [Fluid.of('thermal:ender', 250), '#forge:stone'], 0.5, 2000)
-    e.recipes.thermal.crystallizer('quark:myalite', [Fluid.of('thermal:ender', 250), 'basalt'], 0.5, 2000)
-    e.recipes.thermal.crystallizer('quark:dusky_myalite', [Fluid.of('thermal:ender', 250), 'blackstone'], 0.5, 2000)
-    e.recipes.thermal.crystallizer('quark:myalite_crystal', [Fluid.of('thermal:ender', 250), 'amethyst_block'], 0.5, 2000)
-    e.recipes.thermal.crystallizer('chorus_flower', [Fluid.of('thermal:ender', 250), 'torchflower'], 0.5, 2000)
+    const warping_recipes = {
+        'shulker_shell': 'nautilus_shell',
+        'end_stone': '#forge:stone',
+        'quark:myalite': 'basalt',
+        'quark:dusky_myalite': 'blackstone',
+        'quark:myalite_crustal': 'amethyst_block',
+        'chorus_flower': 'torchflower',
+    }
+
+    //crimson stuff
+    Ingredient.all.getItemIds().forEach(item => {
+        if (item.includes("crimson") && Ingredient.all.getItemIds().contains(item.replace("crimson", "warped"))) {
+            warping_recipes[item.replace("crimson", "warped")] = item
+        }
+    })
+
+
+    for (let [result, ingredient] of Object.entries(warping_recipes)) {
+        e.recipes.thermal.crystallizer(result, [Fluid.of('thermal:ender', 250), ingredient], 10, 20000)
+    }
 
     /** @type {Record<Internal.InputFluid_, number>} */
     const drinks = {
@@ -61,11 +75,11 @@ ServerEvents.recipes((e) => {
         '#forge:ingots/netherite'
     );
 
-    e.remove({id: 'thermal:machines/smelter/smelter_alloy_enderium'})
+    e.remove({ id: 'thermal:machines/smelter/smelter_alloy_enderium' })
     e.recipes.thermal.smelter('2x thermal:enderium_ingot', [
         'echo_shard',
         '2x #terraimmundus:ender_pearl_or_dust',
-        '2x #terraimmundus:dust_or_ingot/netherite'
+        '10x refinedstorage:silicon'
     ]).id('thermal:machines/smelter/smelter_alloy_enderium')
 
     e.replaceOutput({ id: 'thermal:machines/smelter/smelter_tin_armor' }, '#forge:ingots/tin', 'caverns_and_chasms:tin_ingot')

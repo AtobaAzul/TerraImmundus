@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "Terra Immundus's custom modpack assets.",
+    "pack_format": 15,
+    "supported_formats": {
+      "min_inclusive": 15,
+      "max_inclusive": 999
+    }
+  }
+}

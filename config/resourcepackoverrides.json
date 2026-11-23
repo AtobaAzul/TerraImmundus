@@ -1,6 +1,7 @@
 {
     "schema_version": "2",
     "default_packs": [
+        "file/TerraImmundus",
         "file/VibrantTooltipsExtension",
         "obscure_tooltips/packs/vibrant_tooltips",
         "file/Icon Xaero's 1.22.zip",
@@ -18,6 +19,11 @@
         "file/Icon Xaero's 1.22.zip": {
             "required": true,
             "force_compatible": true
+        },
+        "file/TerraImmundus": {
+            "required": true,
+            "force_compatible": true,
+            "fixed_position": true
         },
         "file/SmoothDrawers_1.20.1_v2.zip": {
             "force_compatible": true

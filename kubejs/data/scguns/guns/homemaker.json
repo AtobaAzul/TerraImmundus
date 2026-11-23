@@ -57,7 +57,7 @@
         "ejectsCasing": true,
         "item": "scguns:shatter_round",
         "casingType": "scguns:medium_brass_casing",
-        "casingParticle": "scguns:shell",
+        "casingParticle": "scguns:brass_casing",
         "life": 40,
         "size": 0.05,
         "speed": 5.0,

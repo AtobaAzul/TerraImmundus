@@ -61,14 +61,13 @@ PlayerEvents.loggedIn((event) => {
 });
 
 
-LevelEvents.loaded((event) => {
+LevelEvents.tick((event) => {
     if (event.level.persistentData.borderSetup) return
 
     event.level.persistentData.borderSetup = true
-
     event.level.persistentData.oldBorderSize = event.level.worldBorder.size
-
-    event.level.worldBorder.setSize(6000)
+    
+    event.server.runCommandSilent('worldborder set 6000')
 })
 
 const $FluidState = Java.loadClass('net.minecraft.world.level.material.FluidState')
@@ -93,9 +92,6 @@ LevelEvents.tick(event => {
 
             bPos = level.getHeightmapPos("world_surface", bPos)
 
-            let fluidPos = level.getHeightmapPos("ocean_floor", bPos)
-
-
             let hasChunk = event.level.chunkSource.hasChunk(Math.floor(bPos.x) / 16, Math.floor(bPos.z) / 16)
 
             if (hasChunk && event.level.getBlock(bPos.below()).getBlockState().getFluidState().isEmpty() && dist < 3000) {
@@ -114,7 +110,7 @@ LevelEvents.tick(event => {
     }
 
     if (SCULK_DEFEATED && !level.persistentData.finalBorderSetup) {
-        level.worldBorder.setSize(level.persistentData.oldBorderSize)
+        event.server.runCommandSilent(`worldborder set ${level.persistentData.oldBorderSize}`)
         level.persistentData.finalBorderSetup = true
     }
 })

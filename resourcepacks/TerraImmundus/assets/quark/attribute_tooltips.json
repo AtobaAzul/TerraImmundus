@@ -348,5 +348,31 @@
         },
         "texture": "quark:attribute/experience_boost",
         "compare": "higher_better"
+    },
+    "scguns:reload_speed": {
+        "display": {
+            "mainhand": "percentage",
+            "offhand": "percentage",
+            "feet": "percentage",
+            "legs": "percentage",
+            "chest": "percentage",
+            "head": "percentage",
+            "potion": "percentage"
+        },
+        "texture": "quark:attribute/reload_speed",
+        "compare": "higher_better"
+    },
+    "attributeslib:healing_received": {
+        "display": {
+            "mainhand": "percentage",
+            "offhand": "percentage",
+            "feet": "percentage",
+            "legs": "percentage",
+            "chest": "percentage",
+            "head": "percentage",
+            "potion": "percentage"
+        },
+        "texture": "quark:attribute/healing_received",
+        "compare": "higher_better"
     }
 }

@@ -1,3 +1,140 @@
+# New
+- Reworked Bonus Chest into Starting Items: Items are directly given to players on first join when enabled.
+- Bonus Chest loot reworked:
+    - Full leather armor set, randomized color
+    - Bundle, randomized color
+    - Random stone weapon (sword, spear, hammer, etc)
+    - Stone Pickaxe
+    - Stone Axe
+    - Flint Knife
+    - Grappling Hook
+    - Fencer Longarm (40% chance) or Musket (60%)
+    - 24x to 48x Powder and Ball
+    - Tavern map
+    - 12x to 24x torches (40%)/bread (60%)
+- Added icons for more attributes.
+- Spiders now always drop 1 spider leg
+- Beacon Rework:
+    - Beacons now only accept soulite as payment.
+    - Beacon bases are now constructed with Infestation Ward blocks and activated with Soulite.
+    - Beacons now grant Purity regardless of effect, and now have different effects to choose from.
+    - Beacons burn and weaken sculk mobs in its range.
+    - Tweaked recipe and retextured beacons to match.
+- Added new custom soundtrack:
+  - Night/Underground
+  - Sculk Combat
+  - Sculk Tomb
+  - Stronghold
+  - Deep Underground
+  - Boss
+- Repaletted several structures.
+- Several items have recieved updated rarities.
+- World Spawn now tries to move away from world center once the Sculk Horde starts.
+- Players now always have Lure effect if there's 2 or more Sculk Nodes
+- Added large meteorite/titanium burried meteor 'geode'.
+- Added surface meteorite/titanium meteor structure.
+
+
+# Misc. Changes
+- Renamed Enderium to Resonant Alloy
+- Renamed Enderman to Interloper
+- Renamed Ender Pearl to Warp Pearl
+- Renamed Eye of Ender to Seeking Eye
+- Renamed Infested Crying Obsidian to Weeping Obsidian
+- Renamed Nether Brick to Fire Brick
+- Renamed Red Nether Brick to Cinder Brick
+- Renamed Blue Nether Brick to Soulfire Brick
+- Renamed Soul Speed to Sculk Speed
+- Renamed Sculk Block into Infested Soil
+
+- Projectile protection now better protects against bullets  
+- Several more enchantments can be overlevelled with Tomes.
+- Slightly un-nerfed creeper explosions.
+- Updated Purity effect icon
+- Mosquitoes now have a 66% chance to replace a spider, instead of guaranteed.
+- Added minimum 100 blocks from world center and minimum spacing between structures.
+- Replaced Caverns & Chasms Weaponworks implementation with Weaponworks: Caverns & Chasms. Apologies for any lost items.
+- Removed non-furniture content from Refurbished Furniture and overlapping content
+   - Removed cutting boards
+   - Removed Toast, Toaster, Pizza, Jam, etc.
+   - Removed Knife
+   - Microwaves and Ovens now can do Smoking recipes.
+- Infested Soil effective tool is now shovels.
+- Retextured Apatite and Nickel Ore.
+- Soul Speed now increases movement speed on Sculk blocks.
+- Blizzes and Blitzes no longer spawn underground.
+- Cave Sprouts, Beach Grass drop Straw when harvested with a knife.
+- Arid Sprouts drop Straw when not harvested by shears. 
+
+# Recipes
+- Purity weapons can now be made from Necromium.
+- Removed Supplementaries² copper lantern, in favor of Caverns & Chasms'
+- Crimson wood blocks can be turned into their respective warped variants with a Crystalyzer and Resonant Warp
+- Resonant Alloy now requires 10x Silicon instead of 2x Meteorite   
+- Blast-proof Plating now recipe is 1 Vehement Coal, 4 Gold and 2 Creeper Spores.
+- Shotgun shells Paper can now be Wool or Canvas.
+
+# Progression
+- Anthralite ore now spawns less often and deeper.
+- Reworked several items to be upgrades of other items, and stats/perks have been adjusted:
+    (Base) -> (Upgrades)
+  - Meteorite Armor -> Treated Brass/Diamond Steel
+  - Meteorite Tools -> Diascite/Ferriscite
+  - Iron/Copper -> Gold/Silver
+  - Chainmail/Scrap -> Adrien/Blastproof
+  - Diamond/Anthralite -> Titanium
+- Diamond Steel armor set now gives +5% Healing Recieved and +2.5% Firearm Reload Speed per piece.
+- Increased Titanium mining speed. (9 -> 11)
+- Necromium recipe is now 2 Titanium, 3 Silver, 4 Bone Meal; to better act as a counterpart to Meteorite instead of upgrade.
+- Ferriscite and Diascite tools now have Meteorite mining level.
+- Increased Chainmail armor durability.
+- Rebalanced Anthralite equipment to be on-par with Diamond, now has diamond mining level. 
+    - Changed recipes to be like normal equipment instead of upgrading.
+- Rebalanced Adrien armor to be a Chainmail Upgrade. Now has 1+ Attack Damage per piece.
+- Diamond no longer can repair Meteorite items.
+- Repairing now only costs 1 item.
+- Reduced Lead ore vein size (14 -> 5)
+- Healing changes:
+  - Natural healing has been signifincatly nerfed
+  - Renamed and retextured Basic Poultice to Crude Dressing
+  - Crude dressing can be made from String and Canvas
+  - Added Soothing Dressing, made from Crude Dressing and Rose Hip Tea.
+  - Changed Honey Sulfur Poultice recipe to Paper, Honey and Sulfur Dust.
+  - Removed Dragon Salve and Enchanted Bandage.
+  - Added a cooldown for self-infusing with the Potion Infuser.
+  - Campfires now grant the Relief effect, increasing healing.
+  - Developer note: This change was made to make food less about healing and more about buffs they can give, pushing players to invest in healing items and special foods, in an attempt to made combat more interesting. I often found myself simply eating beef stew for an entire run.
+- Eating healing foods, like Strawberries, now has a 2 second cooldown.
+- Tweaked Purity Apple recipe.
+- Renamed Golden Carrot, Golden Dragon Fruit, Golden Prickly Pear and Golden Nutritional Bar to Purity Carrot, Purity Dragon Fruit, Purity Prickly Pear and Purity Nutritional Bar.
+- Adjusted above item's recipes to match Purity Apple recipes
+- Golden Apples no longer give Regeneration.
+- Amethyst Blocks now drops 1-2(+ fortune) Amethyst Shards.
+- Changed Resonant Alloy Ingot recipe to 10x Silicon, 2x Ender Pearl, 1x Echo Shard
+- Changed Ramrod Round recipe:
+  - Iron Casing
+  - 2x Gunpowder Dust
+  - Zinc Nugget
+- Adjusted Cinder and Soulfire Brick recipes.
+- Purity Shard recipe no longer can be boosted.
+
+# Fixes
+- All golden weapons now have +75% experience boost.
+- Fixed Weaponworks Necromium tools having 2 slowness infliction.
+- Urns are now considered fragile
+- Fixed Hammer GL and Jackhammer having +25% crit damage.
+- Fixed duplicate food stat tooltips.
+- Knives now use the same experience boost system as golden weapons.
+- Fixed Homemaker ejecting wrong casing particle.
+- Disabled Quark's Golden Bars.
+- Fixed duplicate enchantment description.
+- Fixed Silver Greatsword damage being lower than intended.
+- Fixed Titanium Axe damage being higher than intended.
+- Fixed Anthralite/Titanium items not having correct repair ingredient.
+- Fixed Zirconia ore not being renamed.
+
+
+# Balance
 - Gun balance changes:
   - Reduced Prima Materia fire rate (4 -> 5)
   - Increased Locust burst cooldown (10 -> 15)
@@ -41,105 +178,9 @@
     - Includes withers, cave spiders, centipedes, deepers, etc.
   - Added more mobs to the Heavy and Oceanic advantages.
   - Removed Netherborn advantage, replaced with Oceanic in all guns that used it.
-- Purity weapons can now be made from Necromium.
-- Removed Supplementaries² copper lantern, in favor of Caverns & Chasms'
-- Renamed Infested Crying Obsidian to Weeping Obsidian
-- Projectile protection now protects against bullets  
-- Fixed Weaponworks Necromium tools having 2 slowness infliction.
-- Reworked Bonus Chest into Starting Items: Items are directly given to players on first join when enabled.
-- Bonus Chest loot reworked:
-    - Full leather armor set, randomized color
-    - Bundle, randomized color
-    - Random stone weapon (sword, spear, hammer, etc)
-    - Stone Pickaxe
-    - Stone Axe
-    - Flint Knife
-    - Grappling Hook
-    - Fencer Longarm (40% chance) or Musket (60%)
-    - 24x to 48x Powder and Ball
-    - Tavern map
-    - 12x to 24x torches (40%)/bread (60%)
-- Fixed duplicate food stat tooltips.
-- Added icons for more attributes.
-- Fixed Hammer GL and Jackhammer having +25% crit damage.
-- All golden weapons now have +75% experience boost.
-- Knives now use the same expereince boost system as golden weapons.
-- Slightly un-nerfed creeper explosions.
-- Urns are now considered fragile
-- Spiders now always drop 1 spider leg
-- Beacons now only accept soulite as payment.
-- Beacon bases are now constructed with Infestation Ward blocks and activated with Soulite.
-- Beacons now grant Purity regardless of effect, and now have different effects to choose from.
-- Beacons burn and weaken sculk mobs in its range.
-- Tweaked recipe and retextured beacons to match.
-- Updated Purity effect icon
-- Repaletted several structures.
-- Fixed duplicate enchantment description.
-- Added new custom soundtrack:
-  - Night/Underground
-  - Sculk Combat
-  - Sculk Tomb
-  - Stronghold
-  - Deep Underground
-  - Boss
-- Disabled Quark's Golden Bars.
-- Added minimum 100 blocks from world center and minimum spacing between structures.
-- Fixed Anthralite/Tin items not having correct repair ingredient.
-- Repairing now only costs 1 item.
-- Fixed Tin Axe damage being higher than intended.
-- Several items have recieved updated rarities.
-- Fixed Silver Greatsword damage being lower than intended.
-- Diamond no longer can repair Meteorite items.
-- Replaced Caverns & Chasms Weaponworks implementation with Weaponworks: Caverns & Chasms. Apologies for any lost items.
-- Mosquitoes now have a 66% chance to replace a spider, instead of guaranteed.
-- Removed non-furniture content from Refurbished Furniture and overlapping content
-   - Removed cutting boards
-   - Removed Toast, Toaster, Pizza, Jam, etc.
-   - Removed Knife
-   - Microwaves and Ovens now can do Smoking recipes.
-- Renamed Sculk Block into Infested Soil
-- Infested Soil effective tool is now shovels.
-- Retextured Apatite and Nickel Ore.
-- Added large meteorite 'geode'.
-- Added surface meteorite structure.
 - Increased Sack slots. (9 -> 12)
-- Blizzes and Blitzes no longer spawn underground.
-- Reduced Lead ore vein size (14 -> 5)
-- Shotgun shells Paper can now be Wool or Canvas.
-- Healing changes:
-  - Natural healing has been signifincatly nerfed
-  - Renamed and retextured Basic Poultice to Crude Dressing
-  - Crude dressing can be made from String and Canvas
-  - Added Soothing Dressing, made from Crude Dressing and Rose Hip Tea.
-  - Changed Honey Sulfur Poultice recipe to Paper, Honey and Sulfur Dust.
-  - Removed Dragon Salve and Enchanted Bandage.
-  - Added a cooldown for self-infusing with the Potion Infuser.
-  - Campfires now grant the Relief effect, increasing healing.
-  - Developer note: This change was made to make food less about healing and more about buffs they can give, pushing players to invest in healing items and special foods, in an attempt to made combat more interesting. I often found myself simply eating beef stew for an entire run.
-- Renamed Soul Speed to Sculk Speed
-- Soul Speed now increases movement speed on Sculk blocks.
-- Tweaked Purity Apple recipe.
-- Renamed Golden Carrot, Golden Dragon Fruit, Golden Prickly Pear and Golden Nutritional Bar to Purity Carrot, Purity Dragon Fruit, Purity Prickly Pear and Purity Nutritional Bar.
-- Adjusted above item's recipes to match Purity Apple recipes
-- Golden Apples no longer give Regeneration.
-- Changed Enderium Ingot recipe to 2x Meteorite, 2x Ender Pearl, 1x Echo Shard
-- Renamed Nether Brick to Fire Brick
-- Renamed Red Nether Brick to Cinder Brick
-- Renamed Blue Nether Brick to Soulfire Brick
-- Adjusted Cinder and Soulfire Brick recipes.
 - Reduced Raccoon spawn weight.
-- Eating healing foods, like Strawberries, now has a 2 second cooldown.
-- Purity Shard recipe no longer can be boosted.
-- Amethyst Blocks now drops 1-2(+ fortune) Amethyst Shards.
-- Cave Sprouts, Beach Grass drop Straw when harvested with a knife.
-- Arid Sprouts drop Straw when not harvested by shears. 
-- Fixed Zirconia ore not being renamed.
-- World Spawn now moves away from world center once the Sculk Horde starts.
-- Players now always have Lure effect if there's 2 or more Sculk Nodes
-- Changed Ramrod recipe:
-  - Iron Casing
-  - 2x Gunpowder Dust
-  - Zinc Nugget
+
 
 # Mods
 - Added mods:
@@ -169,6 +210,8 @@
    - Stackable Potions
    - Potion Sickness
    - Concurrent Chunk Management Engine
+   - Fast Leaf Decay
+   - Nudge
    - EMI Trades
    - Harder Natural Healing
    - Confortable Campfires

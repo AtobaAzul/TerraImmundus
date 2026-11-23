@@ -250,20 +250,7 @@ ServerEvents.recipes((e) => {
         'nether_star',
     );
 
-    const griefer_armor_parts = [
-        'helmet',
-        'chestplate',
-        'leggings',
-        'boots',
-    ].forEach((part) => {
-        e.remove({ id: 'savage_and_ravage:griefer_' + part });
-        e.smithing(
-            'savage_and_ravage:griefer_' + part,
-            'thermal:cured_rubber',
-            'iron_' + part,
-            'savage_and_ravage:blast_proof_plating',
-        );
-    });
+  
 
     e.shapeless('farmersdelight:wheat_dough', [
         'water_bucket',
@@ -413,107 +400,6 @@ ServerEvents.recipes((e) => {
 
     e.remove({ id: 'alexsmobs:flint_n_steel_dropbear_claw' })
     e.replaceInput({ id: 'alexsmobs:tendon_whip' }, 'alexsmobs:dropbear_claw', '#forge:nuggets/iron')
-
-    e.shaped('kubejs:tin_pickaxe', [
-        'AAA',
-        ' B ',
-        ' B '
-    ], {
-        A: 'caverns_and_chasms:tin_ingot',
-        B: '#forge:rods/wooden'
-    })
-
-    e.shaped('kubejs:tin_shovel', [
-        ' A ',
-        ' B ',
-        ' B '
-    ], {
-        A: 'caverns_and_chasms:tin_ingot',
-        B: '#forge:rods/wooden'
-    })
-
-    e.shaped('kubejs:tin_axe', [
-        'AA',
-        'AB',
-        ' B'
-    ], {
-        A: 'caverns_and_chasms:tin_ingot',
-        B: '#forge:rods/wooden'
-    })
-
-    e.shaped('kubejs:tin_hoe', [
-        'AA',
-        ' B',
-        ' B'
-    ], {
-        A: 'caverns_and_chasms:tin_ingot',
-        B: '#forge:rods/wooden'
-    })
-
-    e.shaped('kubejs:tin_sword', [
-        'A',
-        'A',
-        'B'
-    ], {
-        A: 'caverns_and_chasms:tin_ingot',
-        B: '#forge:rods/wooden'
-    })
-
-    e.shaped('kubejs:tin_helmet', [
-        'AAA',
-        'A A'
-    ], {
-        A: 'caverns_and_chasms:tin_ingot',
-    })
-
-    e.shaped('kubejs:tin_chestplate', [
-        'A A',
-        'AAA',
-        'AAA'
-    ], {
-        A: 'caverns_and_chasms:tin_ingot',
-    })
-
-    e.shaped('kubejs:tin_leggings', [
-        'AAA',
-        'A A',
-        'A A'
-    ], {
-        A: 'caverns_and_chasms:tin_ingot',
-    })
-
-    e.shaped('kubejs:tin_boots', [
-        'A A',
-        'A A'
-    ], {
-        A: 'caverns_and_chasms:tin_ingot',
-    })
-
-    const netherite_upgrades = {
-        'kubejs:tin_pickaxe': 'minecraft:netherite_pickaxe',
-        'kubejs:tin_shovel': 'minecraft:netherite_shovel',
-        'kubejs:tin_axe': 'minecraft:netherite_axe',
-        'kubejs:tin_hoe': 'minecraft:netherite_hoe',
-        'kubejs:tin_sword': 'minecraft:netherite_sword',
-        'kubejs:tin_helmet': 'minecraft:netherite_helmet',
-        'kubejs:tin_chestplate': 'minecraft:netherite_chestplate',
-        'kubejs:tin_leggings': 'minecraft:netherite_leggings',
-        'kubejs:tin_boots': 'minecraft:netherite_boots',
-        'kubejs:tin_greatsword': 'moonsweaponry:netherite_greatsword',
-        'kubejs:tin_halberd': 'moonsweaponry:netherite_halberd',
-        'kubejs:tin_hammer': 'moonsweaponry:netherite_hammer',
-        'kubejs:tin_katana': 'moonsweaponry:netherite_katana',
-        'kubejs:tin_rapier': 'moonsweaponry:netherite_rapier',
-        'kubejs:tin_scythe': 'moonsweaponry:netherite_scythe',
-        'kubejs:tin_warglaive': 'moonsweaponry:netherite_warglaive',
-        'kubejs:tin_mace': 'moonsweaponry:netherite_mace',
-        'kubejs:tin_spear': 'moonsweaponry:netherite_spear',
-    }
-
-    for (const [key, value] of Object.entries(netherite_upgrades)) {
-        e.smithing(value, 'minecraft:netherite_upgrade_smithing_template', key, '#forge:ingots/netherite');
-        e.smithing(value.replace("moonsweaponry", "ccww").replace("netherite", "necromium").replace("minecraft", "caverns_and_chasms"), 'minecraft:netherite_upgrade_smithing_template', key.replace("moonsweaponry", "kubejs").replace("netherite", "necromium").replace("minecraft", "caverns_and_chasms"), '#forge:ingots/necromium');
-    }
 
     e.remove({ mod: 'grapplemod' })
 

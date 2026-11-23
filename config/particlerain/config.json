@@ -23,7 +23,7 @@
     "doDefaultSplashing": false,
     "waterTint": true,
     "tintMix": 0.6,
-    "shaderpackTint": true,
+    "dontTintWithShaders": true,
     "syncRegistries": true,
     "crossBiomeBorder": false,
     "useHeightmapTemp": true,

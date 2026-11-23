@@ -1,0 +1,12 @@
+{
+  "note": "Tabs EMI Tree Tabs could not restore, usually because their recipe was not loaded. Not read back automatically.",
+  "tabs": [
+    {
+      "goal": "minecraft:kjs/pipez_advanced_upgrade",
+      "batches": 1,
+      "offX": 0.0,
+      "offY": -170.16715830875123,
+      "zoom": 0
+    }
+  ]
+}

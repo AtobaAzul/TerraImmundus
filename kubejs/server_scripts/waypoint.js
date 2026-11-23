@@ -48,7 +48,7 @@ PlayerEvents.inventoryChanged((event) => {
 				}
 
                 if (x >= 3000 || z >= 3000) {
-                    name = name+ "(Endgame)"
+                    name = name+ "\(Endgame\)"
                 }
 
 				//Send the player the waypoint

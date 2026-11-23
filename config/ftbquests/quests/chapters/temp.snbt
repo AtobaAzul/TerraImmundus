@@ -34,8 +34,8 @@
 				type: "checkmark"
 			}]
 			title: "Getting Started"
-			x: -1.5d
-			y: -1.0d
+			x: -3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1F380A26E21B724F"]
@@ -49,7 +49,7 @@
 				item: "sculkhorde:essence_of_purity"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -1.5d
 			y: -5.5d
 		}
 		{
@@ -95,8 +95,8 @@
 				type: "checkmark"
 			}]
 			title: "Dimensions"
-			x: -3.0d
-			y: 1.0d
+			x: -1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["178FC7958159A73B"]
@@ -123,7 +123,7 @@
 				type: "checkmark"
 			}]
 			title: "The Sculk Horde"
-			x: 0.5d
+			x: 0.0d
 			y: 1.0d
 		}
 		{
@@ -193,8 +193,8 @@
 				type: "advancement"
 			}]
 			title: "Mature Stage"
-			x: 8.0d
-			y: 3.0d
+			x: 7.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2E65DD6560146216"]
@@ -207,7 +207,7 @@
 				item: "sculkhorde:calcite_clump"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 4.5d
 			y: -5.5d
 		}
 		{
@@ -277,7 +277,7 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["2E65DD6560146216"]
+			dependencies: ["3C02B44B3D3AC7BA"]
 			description: ["Rarely found growing as large crystals in infected areas. Requires a &6Meteorite level pickaxe&r to mine. "]
 			id: "696B6C09CBD13B91"
 			quest_enhance_disable_scroll_paging: false
@@ -287,29 +287,7 @@
 				item: "sculkhorde:soulite_shard"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -0.5d
-		}
-		{
-			dependencies: [
-				"696B6C09CBD13B91"
-				"494DAC960FEC5542"
-			]
-			description: [
-				"This upgrade template can upgrade meteorite weapons, making them formidable weapons against the Sculk."
-				"Each hit weakens the Sculked and purifies the area."
-			]
-			id: "4E89F7B68BCA13DA"
-			quest_enhance_disable_scroll_paging: false
-			shape: "circle"
-			size: 1.5d
-			tasks: [{
-				id: "369F1D6E343F59E6"
-				item: "puritytemplate:purity_upgrade_smithing_template"
-				type: "item"
-			}]
-			title: "Purity Weapons"
-			x: 4.5d
+			x: 0.5d
 			y: -3.5d
 		}
 		{
@@ -368,7 +346,7 @@
 				item: "sculkhorde:sculk_resin"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 3.5d
 			y: -3.5d
 		}
 		{
@@ -403,7 +381,7 @@
 				item: "sculkhorde:soul_harvester"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 7.5d
 			y: 1.0d
 		}
 		{
@@ -440,7 +418,7 @@
 				value: 1L
 			}]
 			title: "The Wither"
-			x: 6.5d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -455,7 +433,7 @@
 				type: "item"
 			}]
 			title: "Fighting the Sculk Horde"
-			x: -0.5d
+			x: 0.5d
 			y: -5.5d
 		}
 		{
@@ -550,8 +528,8 @@
 				}
 			]
 			title: "Ferriscite \\& Diascite"
-			x: 10.0d
-			y: -1.0d
+			x: 7.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -570,8 +548,36 @@
 				item: "minecraft:beacon"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 0.0d
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["178FC7958159A73B"]
+			description: [
+				"In Terra Immundus, equipment tiers have &6variants&r - equipment at roughly the same progression point. For example, &bCopper&r equipment acts as a variant of &bIron.&r"
+				""
+				"There's also &6side-grades,&r each tier has 1 to 2 sidegrades, made from upgrading their respective base variants."
+				""
+				"The following quests will cover both the vanilla progression and the Terra Immundus enhancements."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:stone_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0A3FCEE59DF0F5D4"
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			tasks: [{
+				id: "723425E622063118"
+				title: "I understand"
+				type: "checkmark"
+			}]
+			title: "Variants \\& Sidegrades"
+			x: -1.5d
+			y: -0.5d
 		}
 	]
 	title: "Intro \\& The Sculk"

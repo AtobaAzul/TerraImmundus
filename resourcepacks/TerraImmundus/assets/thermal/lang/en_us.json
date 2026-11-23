@@ -1,0 +1,17 @@
+{
+    "block.thermal.sapphire_ore": "Zirconia Ore",
+    "block.thermal.deepslate_sapphire_ore": "Deepslate Zirconia Ore",
+    "block.thermal.enderium_block": "Block of Resonant Alloy",
+    "block.thermal.enderium_glass": "Resonant Alloy Glass",
+    "fluid_type.thermal.ender": "Resonant Warp",
+    "item.thermal.ender_bucket": "Resonant Warp Bucket",
+    "item.thermal.enderium_coin": "Resonant Alloy Coin",
+    "item.thermal.enderium_dust": "Resonant Alloy Blend",
+    "item.thermal.enderium_gear": "Resonant Alloy Gear",
+    "item.thermal.enderium_ingot": "Resonant Alloy Ingot",
+    "item.thermal.enderium_nugget": "Resonant Alloy Nugget",
+    "item.thermal.enderium_plate": "Resonant Alloy Plate",
+    "item.thermal.ender_pearl_dust": "Warping Pearl Dust",
+    "entity.thermal.ender_tnt_minecart": "Minecart with Disruption Explosive",
+    "item.thermal.ender_tnt_minecart": "Minecart with Disruption Explosive"
+}

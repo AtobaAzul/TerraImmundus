@@ -6,8 +6,9 @@ ServerEvents.recipes((e) => {
 	smelter(
 		'2x caverns_and_chasms:necromium_ingot',
 		[
-			'2x #terraimmundus:dust_or_ingot/netherite',
-			'2x #terraimmundus:dust_or_ingot/silver',
+			'2x #terraimmundus:dust_or_ingot/titanium',
+			'3x #terraimmundus:dust_or_ingot/silver',
+            '4x minecraft:bone_meal'
 		],
 		12000,
 	);
@@ -16,8 +17,9 @@ ServerEvents.recipes((e) => {
 	smelter(
 		'4x savage_and_ravage:blast_proof_plating',
 		[
-			'3x #terraimmundus:dust_or_ingot/electrum',
+			'1x scguns:vehement_coal',
 			'2x savage_and_ravage:creeper_spores',
+            '4x #terraimmundus:dust_or_ingot/gold'
 		],
 		4000,
 	);

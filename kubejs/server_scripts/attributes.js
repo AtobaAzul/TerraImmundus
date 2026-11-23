@@ -39,13 +39,22 @@ function AddItemAttribute(item, attribute, _uuid) {
 
 
 	attribute.forEach((attribute) => {
-		data[item].push({
+        let entry = {
 			attribute: attribute[0],
 			uuid: _uuid || uuid(),
 			value: attribute[1],
 			operation: attribute[2],
-			slot: attribute[3],
-		});
+		}
+
+        
+
+        if 	(attribute[3] != null) {
+            let slot = name.includes("chestplate") ? "chest" : name.includes("helmet") ? "head" : name.includes("leggings") ? "legs" : name.includes("boots") ? "feet" : attribute[3]
+
+            entry.slot = slot
+        }
+
+		data[item].push(entry);
 	});
 
 
@@ -71,3 +80,7 @@ AddItemAttribute('#terraimmundus:halberds', [['attributeslib:armor_shred', 0.125
 AddItemAttribute('#terraimmundus:greatswords', [['minecraft:generic.armor', 5, 'addition', 'mainhand']])
 AddItemAttribute('#terraimmundus:katanas', [['attributeslib:current_hp_damage', 0.025, 'addition', 'mainhand']])
 AddItemAttribute('#terraimmundus:scythes', [['attributeslib:life_steal', 0.05, 'addition', 'mainhand']])
+AddItemAttribute('scguns:diamond_steel_helmet', [['attributeslib:healing_received', 0.05, 'multiply_base'], ['scguns:reload_speed', 0.025, 'multiply_base'] ])
+AddItemAttribute('scguns:diamond_steel_chestplate', [['attributeslib:healing_received', 0.05, 'multiply_base'], ['scguns:reload_speed', 0.025, 'multiply_base'] ])
+AddItemAttribute('scguns:diamond_steel_leggings', [['attributeslib:healing_received', 0.05, 'multiply_base'], ['scguns:reload_speed', 0.025, 'multiply_base'] ])
+AddItemAttribute('scguns:diamond_steel_boots', [['attributeslib:healing_received', 0.05, 'multiply_base'], ['scguns:reload_speed', 0.025, 'multiply_base'] ])

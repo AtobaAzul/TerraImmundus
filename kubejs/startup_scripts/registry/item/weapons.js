@@ -131,13 +131,12 @@ function GenerateModelData(type, material, use_netherite) {
         };
     }
 
-    //WINDOWS FUCKING DEFENDER WAS DELETING THIS FILE BECAUSE OF THESE.
     JsonIO.write(
-        `kubejs/assets/kubejs/models/item/${material}_${type}_handheld.json`,
+        `resourcepacks/TerraImmundus/assets/kubejs/models/item/${material}_${type}_handheld.json`,
         held_model
     );
     JsonIO.write(
-        `kubejs/assets/kubejs/models/item/${material}_${type}.json`,
+        `resourcepacks/TerraImmundus/assets/kubejs/models/item/${material}_${type}.json`,
         item_model
     );
 }

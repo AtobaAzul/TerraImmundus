@@ -397,7 +397,7 @@
 				type: "item"
 			}]
 			title: "Melee Weapons"
-			x: 0.5d
+			x: -0.5d
 			y: -2.0d
 		}
 		{
@@ -469,34 +469,6 @@
 			}]
 			title: "Aircraft"
 			x: -5.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["5865797006BBAAE2"]
-			description: [
-				"&6Anthralite&r can be used to upgrade Iron tools, weapons and armor."
-				"Anthralite tools and armor have a lot more durability and deals more damage, but have worse defense."
-			]
-			disable_toast: true
-			hide_dependency_lines: true
-			id: "74551693A1900C3D"
-			quest_enhance_disable_scroll_paging: false
-			quest_enhance_quest_background: "quark:block/iron_plate"
-			shape: "square"
-			tasks: [{
-				id: "22A93E5F8BA62EB6"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_anthralite_equipment)"
-					}
-				}
-				title: "Any Anthralite-upgraded item"
-				type: "item"
-			}]
-			title: "Anthralite Upgrades"
-			x: -0.5d
 			y: -2.0d
 		}
 		{
@@ -699,71 +671,8 @@
 				}
 			]
 			title: "Wrenches"
-			x: 1.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["6608D777C19F5758"]
-			description: [
-				"Necromium is a side-grade of Netherite."
-				""
-				"Tools \\& Weapons apply Slowness on hit, but deal less damage."
-				"Armor has less Toughness but apply Slowness to attackers."
-			]
-			hide_dependency_lines: true
-			hide_dependent_lines: true
-			id: "2D233B5A870A0B7E"
-			quest_enhance_disable_scroll_paging: false
-			quest_enhance_quest_background: "quark:block/iron_plate"
-			shape: "square"
-			tasks: [{
-				id: "122E5EF3162EBA0F"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_necromium_equipment)"
-					}
-				}
-				title: "Any Necromium-upgraded item"
-				type: "item"
-			}]
-			title: "Necromium Upgrades"
 			x: 0.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5865797006BBAAE2"]
-			description: [
-				"&6Titanium&r acts as a side-grade to Diamond. "
-				""
-				"It has less durability overall, but tools and weapons are &afaster&r, and armor has built-in &bProjectile Protection II&r."
-				""
-				"Titanium ore is only found near and in the &3Titanium Monolith&r, a rare structure. Veins around the Monolith generate in an arrow shape, pointing towards it."
-				""
-				"Alternitively, it can also be dropped by Grazers and found in some structure loot."
-			]
-			disable_toast: true
-			hide_dependency_lines: true
-			id: "4C2644CC9B6891F7"
-			quest_enhance_disable_scroll_paging: false
-			quest_enhance_quest_background: "quark:block/iron_plate"
-			shape: "square"
-			tasks: [{
-				id: "3BF73A4CC31E5A9E"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_titanium_equipment)"
-					}
-				}
-				title: "Any titanium tool, armor or weapon"
-				type: "item"
-			}]
-			title: "Titanium Equipment"
-			x: 0.0d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -785,7 +694,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.5d
 			y: 0.0d
 		}
 		{
@@ -808,8 +717,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 1.0d
+			x: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -831,7 +740,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
+			x: 1.5d
 			y: 0.0d
 		}
 		{
@@ -851,8 +760,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: 1.0d
+			x: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["587153939A0E5FC1"]
@@ -885,8 +794,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.0d
+			x: 1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3F498515E8FB78D3"]
@@ -904,7 +813,7 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
+			x: 2.0d
 			y: 1.0d
 		}
 		{
@@ -923,8 +832,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.5d
-			y: 0.0d
+			x: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1011,37 +920,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["5865797006BBAAE2"]
-			description: [
-				"&6Copper&r acts as a side-grade to Iron. "
-				""
-				"Tools have significantly more durability compared to Iron but are slower."
-				"Armor has higher protection but slows down the wearer."
-			]
-			disable_toast: true
-			hide_dependency_lines: true
-			id: "2AFAA0FD7186A2B5"
-			quest_enhance_disable_scroll_paging: false
-			quest_enhance_quest_background: "quark:block/iron_plate"
-			shape: "square"
-			tasks: [{
-				id: "480992951E724400"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_copper_equipment)"
-					}
-				}
-				title: "Any Copper Equipment"
-				type: "item"
-			}]
-			title: "Copper Equipment"
-			x: 1.0d
+			x: 0.0d
 			y: -1.0d
 		}
 		{
@@ -1113,7 +992,7 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
+			x: 1.5d
 			y: -2.0d
 		}
 		{
@@ -1506,6 +1385,303 @@
 			}]
 			x: -4.5d
 			y: -2.0d
+		}
+		{
+			dependencies: ["0A3FCEE59DF0F5D4"]
+			description: [
+				"Iron is the ever-reliable early-game material."
+				""
+				"Copper equipment sacrifices Iron's speed and damage for massively more durability, and armor."
+			]
+			id: "5B0F6F233E9D4132"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "caverns_and_chasms:block/storage_duct_hatch_back"
+			shape: "square"
+			tasks: [{
+				id: "2AA4BFF45F8D73EF"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:iron_or_copper)"
+					}
+				}
+				title: "Any Iron or Copper equipment"
+				type: "item"
+			}]
+			title: "Copper \\& Iron"
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5B0F6F233E9D4132"]
+			description: [
+				"&bGold&r equipment have very little durability, but tools/weapons have innate &6Fortune&r/&6Looting II&r."
+				""
+				"Golden armor increases movement speed by 10% per piece when worn."
+			]
+			id: "42474911FD18441E"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "caverns_and_chasms:block/storage_duct_hatch_back"
+			shape: "square"
+			tasks: [{
+				id: "2EBEBD7DA2141763"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_golden_equipment)"
+					}
+				}
+				title: "Any #terraimmundus:any_golden_equipment"
+				type: "item"
+			}]
+			title: "Gold"
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5B0F6F233E9D4132"]
+			description: [
+				"&bDiamond&r equipment is a massive upgrade from Iron, specially the massive durability increase."
+				""
+				"&6Anthralite&r has increased damage and mining speed, as well as the armor having knockback resistance, but has significantly less durability than Diamond."
+			]
+			id: "463D4147BABB26EA"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "caverns_and_chasms:block/storage_duct_hatch_back"
+			shape: "square"
+			tasks: [{
+				id: "272FEB7B812521C1"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:anthralite_or_diamond)"
+					}
+				}
+				title: "Any Anthralite or Diamond equipment"
+				type: "item"
+			}]
+			title: "Diamond \\& Anthralite"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["463D4147BABB26EA"]
+			description: [
+				"&bTitanium&r tools mine very fast, its weapons attack faster but deal less damage and its armor has innate &6Projectile Protection II&r"
+				""
+				"Titanium is found in some structures but primarily on and around the Titanium Monolith. Titanium ore spawns around it in the shape of an arrow pointing towards it."
+			]
+			id: "0F9FA151A3F333FC"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "caverns_and_chasms:block/storage_duct_hatch_back"
+			shape: "square"
+			tasks: [{
+				id: "734149FEF5714C6D"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_titanium_equipment)"
+					}
+				}
+				title: "Any Titanium equipment"
+				type: "item"
+			}]
+			title: "Titanium"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"463D4147BABB26EA"
+				"0861B3BDAB8CF346"
+			]
+			id: "1C88C9D8F7A1FE04"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "caverns_and_chasms:block/storage_duct_hatch_back"
+			shape: "square"
+			tasks: [{
+				id: "0CDC4F45EA9A61A6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:meteorite_or_necromium)"
+					}
+				}
+				title: "Any #terraimmundus:meteorite_or_necromium"
+				type: "item"
+			}]
+			title: "Meteorite \\& Necromium"
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"1C88C9D8F7A1FE04"
+				"3F498515E8FB78D3"
+			]
+			description: [
+				"&bTreated Brass&r armor has much higher &bArmor&r than Meteorite, and slightly higher durability, but &cno Armor Toughness&r."
+				""
+				"Additionally, it has high &6Knockback Resistance&r, which also applies to self-knockback from heavy guns."
+			]
+			icon: {
+				Count: 1
+				id: "scguns:treated_brass_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3630AACB128C900B"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "caverns_and_chasms:block/storage_duct_hatch_back"
+			shape: "square"
+			tasks: [{
+				id: "2F09779D71C15E88"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:treated_brass_armor)"
+					}
+				}
+				title: "Any Treated Brass armor"
+				type: "item"
+			}]
+			title: "Treated Brass Armor"
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1C88C9D8F7A1FE04"
+				"14F82701CF80FF8A"
+			]
+			description: ["&bDiamond Steel&r armor has less armor and toughness than Meteorite, but provides &6+2.5 maximum health&r per armor piece."]
+			icon: {
+				Count: 1
+				id: "scguns:diamond_steel_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "62446C677A03B1E1"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "caverns_and_chasms:block/storage_duct_hatch_back"
+			shape: "square"
+			tasks: [{
+				id: "3CFAFC2081DABDE6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:diamond_steel_armor)"
+					}
+				}
+				title: "Any Diamond Steel armor"
+				type: "item"
+			}]
+			title: "Diamond Steel Armor"
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2A5A144D3DA2C2D3"
+				"1C88C9D8F7A1FE04"
+			]
+			description: ["&bFerriscite&r and &bDiascite&r tools have special abilities, but relatively low durability compared to Meteorite, but are easily repairable."]
+			icon: {
+				Count: 1
+				id: "sculkhorde:diascite_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "55EE5CEC5ED1A925"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "caverns_and_chasms:block/storage_duct_hatch_back"
+			shape: "square"
+			tasks: [{
+				id: "160382272AE4F0B6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:diascite_or_ferriscite)"
+					}
+				}
+				title: "Any Ferriscite or Diascite tool"
+				type: "item"
+			}]
+			title: "Diascite \\& Ferriscite Tools"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5B0F6F233E9D4132"]
+			description: ["&bSilver&r tools and weapons deal magic-piercing magic damage, and its armor grants magic protection, but they have low durability."]
+			id: "743F71A8112DEEB4"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "caverns_and_chasms:block/storage_duct_hatch_back"
+			shape: "square"
+			tasks: [{
+				id: "47B37D66D7E7175C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_silver_equipment)"
+					}
+				}
+				title: "Any #terraimmundus:any_silver_equipment"
+				type: "item"
+			}]
+			title: "Silver"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"696B6C09CBD13B91"
+				"494DAC960FEC5542"
+				"1C88C9D8F7A1FE04"
+			]
+			description: [
+				"Using the &bPurity Upgrade Smithing Template&r, &6Meteorite&r and &6Necromium&r weapons can be upgraded to be devastating against the Sculk."
+				""
+				"Additionally, they're fully &bunbreakable.&r"
+			]
+			icon: {
+				Count: 1
+				id: "sculkhorde:blade_of_purity"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "329BA3A9D82146F5"
+			quest_enhance_disable_scroll_paging: false
+			quest_enhance_quest_background: "caverns_and_chasms:block/storage_duct_hatch_back"
+			shape: "square"
+			tasks: [{
+				id: "2993899DB2F8DB64"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:purity_weapon)"
+					}
+				}
+				title: "Any #terraimmundus:purity_weapon"
+				type: "item"
+			}]
+			title: "Purity Weapons"
+			x: 4.5d
+			y: -2.5d
 		}
 	]
 	title: "Equipment \\& Utilities"
