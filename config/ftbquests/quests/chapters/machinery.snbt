@@ -10,7 +10,28 @@
 	order_index: 1
 	progression_mode: "linear"
 	quest_enhance_decorative_lines: [ ]
-	quest_enhance_hidden_dependency_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [
+		{
+			dependency: "q:861b3bdab8cf346"
+			reveal_on_hover: 0b
+			source: "q:3d143dc0d0e3eaea"
+		}
+		{
+			dependency: "q:6e0a73eb220748b0"
+			reveal_on_hover: 0b
+			source: "q:3d143dc0d0e3eaea"
+		}
+		{
+			dependency: "q:d99ff482e47d94f"
+			reveal_on_hover: 0b
+			source: "q:3d143dc0d0e3eaea"
+		}
+		{
+			dependency: "q:5d813063849f7366"
+			reveal_on_hover: 0b
+			source: "q:3d143dc0d0e3eaea"
+		}
+	]
 	quest_links: [ ]
 	quests: [
 		{
@@ -782,11 +803,18 @@
 			y: -15.0d
 		}
 		{
-			dependencies: ["74487E0EF55041DE"]
+			dependencies: [
+				"74487E0EF55041DE"
+				"0861B3BDAB8CF346"
+				"6E0A73EB220748B0"
+				"0D99FF482E47D94F"
+				"5D813063849F7366"
+			]
 			description: ["These materials need other tier 3 materials to be produced."]
 			hide_until_deps_complete: true
 			icon: "thermal:netherite_gear"
 			id: "3D143DC0D0E3EAEA"
+			min_required_dependencies: 2
 			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			tasks: [{

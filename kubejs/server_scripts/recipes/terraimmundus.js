@@ -14,14 +14,14 @@ ServerEvents.recipes((e) => {
 
     e.recipes.thermal.smelter(
         [
-            Item.of('minecraft:netherite_ingot').withChance(1.5),
+            Item.of('minecraft:netherite_ingot').withChance(1.2),
             Item.of('caverns_and_chasms:silver_nugget').withChance(0.5),
         ],
         'minecraft:netherite_scrap',
     );
     e.recipes.thermal.pulverizer(
         [
-            Item.of('thermal:netherite_dust').withChance(1.25),
+            Item.of('thermal:netherite_dust').withChance(1.2),
             Item.of('thermal:silver_dust').withChance(0.05),
         ],
         'minecraft:netherite_scrap',
@@ -38,7 +38,7 @@ ServerEvents.recipes((e) => {
     );
     e.recipes.thermal.smelter(
         [
-            Item.of('netherite_ingot').withChance(1),
+            Item.of('netherite_ingot').withChance(1.2),
             Item.of('thermal:rich_slag').withChance(0.2),
             Item.of('caverns_and_chasms:silver_ingot').withChance(0.2),
         ],
@@ -105,8 +105,8 @@ ServerEvents.recipes((e) => {
 
     e.recipes.thermal.smelter_catalyst(
         'caverns_and_chasms:spinel',
-        3,
-        3,
+        2,
+        2,
         2,
         0,
         1,
@@ -307,7 +307,7 @@ ServerEvents.recipes((e) => {
         e.replaceInput({ output: item }, '#forge:storage_blocks/raw_tin', 'caverns_and_chasms:raw_tin_block')
     })
 
-    e.smelting('caverns_and_chasms:tin_ingot', 'caverns_and_chasms:raw_tin').xp(0.7)
+    //e.smelting('caverns_and_chasms:tin_ingot', 'caverns_and_chasms:raw_tin').xp(0.7)
     e.blasting('caverns_and_chasms:tin_ingot', 'caverns_and_chasms:raw_tin').xp(0.7)
     e.blasting('caverns_and_chasms:tin_block', 'caverns_and_chasms:raw_tin_block').xp(0.7 * 9)
 

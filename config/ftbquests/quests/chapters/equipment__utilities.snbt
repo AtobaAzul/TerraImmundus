@@ -1636,7 +1636,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(terraimmundus:any_silver_equipment)"
 					}
 				}
-				title: "Any #terraimmundus:any_silver_equipment"
+				title: "Any Silver equipment"
 				type: "item"
 			}]
 			title: "Silver"
