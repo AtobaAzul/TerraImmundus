@@ -5,11 +5,10 @@
 	filename: "machinery"
 	group: ""
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_complete: true
 	hide_quest_until_deps_visible: true
 	id: "1BA7C5962118DA0A"
 	order_index: 1
-	progression_mode: "flexible"
+	progression_mode: "linear"
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
@@ -140,6 +139,7 @@
 				""
 				"Machines are the means of progression, and your goal is not automating everything, &obut&r automation (or semi-automation, as is for most things) will greatly save &6time&r, which is really important."
 			]
+			hide_until_deps_complete: true
 			icon: "thermal:rf_coil"
 			id: "77DCAEC282F587D8"
 			min_required_dependencies: 2
@@ -161,7 +161,6 @@
 				""
 				"Make sure to look at JEI!"
 			]
-			hide_until_deps_visible: true
 			icon: "thermal:upgrade_augment_1"
 			id: "49DC3081B249E505"
 			quest_enhance_disable_scroll_paging: false
@@ -200,7 +199,6 @@
 		{
 			dependencies: ["77DCAEC282F587D8"]
 			description: ["The Redstone Furnace is an electric furnace."]
-			hide_until_deps_visible: true
 			id: "0E032066601BE2E9"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -214,7 +212,6 @@
 		{
 			dependencies: ["77DCAEC282F587D8"]
 			description: ["The Sawmill cuts wood more efficiently."]
-			hide_until_deps_visible: true
 			id: "27BC2D5870035CBF"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -229,7 +226,6 @@
 			dependencies: ["77DCAEC282F587D8"]
 			description: ["The Fluid Encapsulator fills things with fluid."]
 			hide_dependent_lines: true
-			hide_until_deps_visible: true
 			id: "560398E1B9B2E686"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -247,7 +243,6 @@
 				""
 				"Can replace fluid buckets in recipes with its built-in fluid tank."
 			]
-			hide_until_deps_visible: true
 			id: "0977F7D2416B4A0F"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -261,7 +256,7 @@
 		{
 			dependencies: ["77DCAEC282F587D8"]
 			description: ["Devices are machines that don't necessarily craft items or use power to operate. Likewise, they are still upgradeable."]
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			icon: "thermal:redstone_servo"
 			id: "63D7EA0B4D706D20"
 			quest_enhance_disable_scroll_paging: false
@@ -278,6 +273,7 @@
 		{
 			dependencies: ["37A920C24A5F734D"]
 			description: ["These materials need a Pulverizer to be produced."]
+			hide_until_deps_complete: true
 			icon: "thermal:bronze_gear"
 			id: "6ED2FB0EE2A1D5A7"
 			quest_enhance_disable_scroll_paging: false
@@ -623,6 +619,7 @@
 		{
 			dependencies: ["1F380A26E21B724F"]
 			description: ["These materials need the Induction Smelter to be produced."]
+			hide_until_deps_complete: true
 			icon: "thermal:sapphire_gear"
 			id: "74487E0EF55041DE"
 			quest_enhance_disable_scroll_paging: false
@@ -787,6 +784,7 @@
 		{
 			dependencies: ["74487E0EF55041DE"]
 			description: ["These materials need other tier 3 materials to be produced."]
+			hide_until_deps_complete: true
 			icon: "thermal:netherite_gear"
 			id: "3D143DC0D0E3EAEA"
 			quest_enhance_disable_scroll_paging: false

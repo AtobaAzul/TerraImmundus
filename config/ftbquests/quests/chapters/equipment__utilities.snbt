@@ -2,14 +2,14 @@
 	autofocus_id: "620C81DC608E0C67"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
+	disable_toast: true
 	filename: "equipment__utilities"
 	group: ""
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_complete: true
 	hide_quest_until_deps_visible: true
 	id: "49E364CDE2F08EF2"
 	order_index: 2
-	progression_mode: "flexible"
+	progression_mode: "linear"
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
@@ -232,7 +232,7 @@
 		{
 			dependencies: [
 				"5865797006BBAAE2"
-				"5946FA410A64EAC2"
+				"7F827B2C0F0F5F50"
 			]
 			description: [
 				"Grants 18 more inventory slots"
@@ -262,7 +262,7 @@
 					type: "item"
 				}
 			]
-			x: -8.0d
+			x: -7.0d
 			y: 1.0d
 		}
 		{
@@ -283,7 +283,7 @@
 				item: "supplementaries:sack"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -6.5d
 			y: 0.0d
 		}
 		{
@@ -439,7 +439,7 @@
 				}
 			]
 			title: "Automobiles"
-			x: -6.5d
+			x: -7.5d
 			y: 0.0d
 		}
 		{
@@ -468,8 +468,8 @@
 				type: "item"
 			}]
 			title: "Aircraft"
-			x: -5.5d
-			y: -2.0d
+			x: -8.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -496,7 +496,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.0d
 			y: -1.0d
 		}
 		{
@@ -549,8 +549,8 @@
 				type: "item"
 			}]
 			title: "Bundles"
-			x: -7.0d
-			y: 1.0d
+			x: -5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -581,8 +581,8 @@
 				item: "miners_delight:copper_pot"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 1.0d
+			x: -8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -612,8 +612,8 @@
 				item: "brewinandchewin:keg"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 0.0d
+			x: -9.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -637,7 +637,7 @@
 				type: "item"
 			}]
 			title: "Drawers"
-			x: -7.0d
+			x: -6.0d
 			y: -1.0d
 		}
 		{
@@ -1001,7 +1001,6 @@
 			id: "10680BF86F7699B9"
 			quest_enhance_disable_scroll_paging: false
 			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
-			quest_enhance_quest_view_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [{
 				id: "5218A60BE3ABD8DD"
@@ -1025,7 +1024,6 @@
 			id: "7E884602C3C6482F"
 			quest_enhance_disable_scroll_paging: false
 			quest_enhance_quest_background: "minecraft:block/smithing_table_top"
-			quest_enhance_quest_view_background: "quark:block/iron_plate"
 			shape: "square"
 			tasks: [{
 				id: "0CC8B07BD910F38A"
@@ -1314,8 +1312,8 @@
 				type: "item"
 			}]
 			title: "Crude Dressing"
-			x: -5.0d
-			y: -1.0d
+			x: -5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5865797006BBAAE2"]
@@ -1344,8 +1342,8 @@
 				type: "item"
 			}]
 			title: "Healing Foods \\& Drinks"
-			x: -5.5d
-			y: 0.0d
+			x: -5.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [

@@ -5,11 +5,10 @@
 	filename: "temp"
 	group: ""
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_complete: true
 	hide_quest_until_deps_visible: true
 	id: "63CE31612052418B"
 	order_index: 0
-	progression_mode: "flexible"
+	progression_mode: "linear"
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
@@ -23,6 +22,8 @@
 				""
 				"An important notice: Terra Immundus world's are much smaller than the average Minecraft world, being 6k by 6k blocks, later expanding to vanilla's size when defeating the horde."
 			]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			icon: "minecraft:campfire"
 			id: "5865797006BBAAE2"
 			quest_enhance_disable_scroll_paging: false
@@ -40,6 +41,8 @@
 		{
 			dependencies: ["1F380A26E21B724F"]
 			description: ["A critical resource needed for fighting against the Sculk."]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			id: "5CF1BB9629E2308F"
 			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
@@ -63,6 +66,8 @@
 				"As per the standard of modded Minecraft, use &6JEI&r to see item recipes and uses."
 				"While mousing over an item, press &l&6R&r&r to view the recipe, and &l&6U&r&r to see its uses."
 			]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			icon: "sculkhorde:infested_crafting_table_block"
 			id: "178FC7958159A73B"
 			quest_enhance_disable_scroll_paging: false
@@ -82,6 +87,8 @@
 			dependencies: ["178FC7958159A73B"]
 			description: ["Terra Immundus removes &4The Nether&r and &5The End&r. Most content of these dimensions are obtainable by either crafting, loot or worldgen."]
 			disable_toast: true
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			icon: "sob:portal_drink"
 			id: "0D1DC5177700C2E7"
 			optional: true
@@ -110,6 +117,7 @@
 				"The following quests will guide you through all the steps needed to kill the Horde, but be warned: It won't be quick, or easy."
 			]
 			disable_toast: true
+			hide_details_until_startable: true
 			hide_text_until_complete: false
 			icon: "minecraft:sculk"
 			id: "1BAB3EA6B4E23C8A"
@@ -128,9 +136,9 @@
 		}
 		{
 			dependencies: ["34D0F980772AC588"]
-			description: [""]
+			description: ["You've found it, and it has found you."]
 			hide_details_until_startable: true
-			hide_text_until_complete: true
+			hide_text_until_complete: false
 			id: "3C02B44B3D3AC7BA"
 			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
@@ -154,7 +162,7 @@
 				""
 				"At this stage, &4raids&r can begin happening, more and more types Sculk mobs can spawn and &3nodes&r can begin spawning."
 			]
-			hide_details_until_startable: false
+			hide_details_until_startable: true
 			hide_text_until_complete: false
 			icon: "sculkhorde:dormant_heart_of_the_horde"
 			id: "2E65DD6560146216"
@@ -179,6 +187,7 @@
 				""
 				"At this stage, more nodes can spawn."
 			]
+			hide_details_until_startable: true
 			hide_text_until_complete: false
 			icon: "sculkhorde:heart_of_the_horde"
 			id: "459851BFCA5DBE34"
@@ -199,6 +208,8 @@
 		{
 			dependencies: ["2E65DD6560146216"]
 			description: ["Sculkspar is a resource you can obtain from Sculk Living Rock structures, found around &bnodes&r."]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			id: "3F4A0EA3840EAF6F"
 			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
@@ -217,6 +228,8 @@
 				""
 				"Brewing Stands use Vehement Coal instead of Blaze Powder."
 			]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			id: "60CDE4F974B62505"
 			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
@@ -239,6 +252,8 @@
 		{
 			dependencies: ["3C02B44B3D3AC7BA"]
 			description: ["Crafted from &3Crying Souls,&r obtained from &3Weeping Obsidian&r, and &ePurity Shards&r."]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			id: "2E4CCA642B5A8A76"
 			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
@@ -265,6 +280,8 @@
 				""
 				"It can be retrieved as an item again by right-clicking it."
 			]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			id: "494DAC960FEC5542"
 			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
@@ -279,6 +296,8 @@
 		{
 			dependencies: ["3C02B44B3D3AC7BA"]
 			description: ["Rarely found growing as large crystals in infected areas. Requires a &6Meteorite level pickaxe&r to mine. "]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			id: "696B6C09CBD13B91"
 			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
@@ -301,8 +320,7 @@
 				"Using it against the Ancient Brain Node will defeat the horde."
 			]
 			hide_details_until_startable: true
-			hide_until_deps_complete: false
-			hide_until_deps_visible: true
+			hide_text_until_complete: false
 			icon: "sculkhorde:heart_of_purity"
 			id: "3D379BF4A8DEDB16"
 			quest_enhance_disable_scroll_paging: false
@@ -338,6 +356,8 @@
 				""
 				"Sculk Bees turn leaves and other biomatter into sculk mass."
 			]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			id: "1332B5B3C6A099E8"
 			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
@@ -352,6 +372,8 @@
 		{
 			dependencies: ["2E65DD6560146216"]
 			description: ["The Sculk Enderman is a &cminiboss&r that appears during raids, killing it yields 1-3 &bEcho Shards&r and the &bSculk Enderman Cleaver&r"]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			icon: "sculkhorde:sculk_enderman_cleaver"
 			id: "5A5AB046ADE04618"
 			quest_enhance_disable_scroll_paging: false
@@ -373,6 +395,8 @@
 				"68E32D7F6258206D"
 			]
 			description: ["The Soul Harvester is a crafting block that can make &bDiascite&r, &bFerriscite&r and most importantly, the &eHeart of the Horde&r."]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			id: "27F77519858CEE7F"
 			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
@@ -387,6 +411,8 @@
 		{
 			dependencies: ["34D0F980772AC588"]
 			description: ["The Sporemeter measures Sculk mass and its current state. Great for keeping track of how fast the Sculk is growing - or how much damage your efforts have done."]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			id: "64994C3363A6A83E"
 			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
@@ -406,6 +432,8 @@
 				""
 				"Wither Skeletons spawn deep underground, as well as spawning when a Skeleton dies to lava. The chance for a skull is increased to 10% + 5% per looting level."
 			]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			icon: "minecraft:nether_star"
 			id: "68E32D7F6258206D"
 			quest_enhance_disable_scroll_paging: false
@@ -424,6 +452,8 @@
 		{
 			dependencies: ["5CF1BB9629E2308F"]
 			description: ["Purity flasks purify sculk and give entities the Purity effect, which prevents harmful effects from the Sculk, such as Burrowed, and harms the Sculked."]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			id: "3619C13AB3AB1166"
 			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
@@ -446,8 +476,8 @@
 				"The infection begins at the &eUndeveloped&r stage."
 			]
 			hide_details_until_startable: true
+			hide_text_until_complete: false
 			id: "34D0F980772AC588"
-			invisible: true
 			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			tasks: [{
@@ -467,6 +497,8 @@
 				""
 				"Items dropped into the acid will have their durability damaged and curses lifted."
 			]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			id: "016E081895DD344D"
 			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
@@ -488,6 +520,7 @@
 				""
 				"If there are 2 or more nodes, all players recieve the Lure effect, letting the Sculk Horde know where you are at all times, unless wearing a hazmat suit set."
 			]
+			hide_details_until_startable: true
 			hide_text_until_complete: false
 			icon: "sculkhorde:sculk_node"
 			id: "2697ED79FB45819C"
@@ -511,6 +544,8 @@
 				"27F77519858CEE7F"
 			]
 			description: ["Ferriscite \\& Diascite are end-game materials used for some powerful tools and guns"]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			id: "2A5A144D3DA2C2D3"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [
@@ -541,6 +576,8 @@
 				""
 				"As well as their standard effects, beacons apply Purity, regardless of effects selected, and harm Sculk enemies and purify the area around them."
 			]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			id: "2AFB15D807466DB4"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -560,6 +597,8 @@
 				""
 				"The following quests will cover both the vanilla progression and the Terra Immundus enhancements."
 			]
+			hide_details_until_startable: true
+			hide_text_until_complete: false
 			icon: {
 				Count: 1
 				id: "minecraft:stone_pickaxe"
