@@ -20,14 +20,14 @@ ServerEvents.recipes((e) => {
 
         e.smithing(
             `minecraft:golden_${type}`,
-            'minecraft:leather',
+            ['minecraft:leather', 'farmersdelight:canvas'],
             ['minecraft:iron_' + type, '#caverns_and_chasms:copper_' + type + suffix],
             '#forge:ingots/gold'
         );
 
         e.smithing(
             `caverns_and_chasms:silver_${type}`,
-            'minecraft:leather',
+            ['minecraft:leather', 'farmersdelight:canvas'],
             ['minecraft:iron_' + type, '#caverns_and_chasms:copper_' + type + suffix],
             '#forge:ingots/silver'
         );
@@ -36,10 +36,28 @@ ServerEvents.recipes((e) => {
 
         e.smithing(
             `kubejs:tin_${type}`,
-            'minecraft:leather',
+            ['minecraft:leather', 'farmersdelight:canvas'],
             ['minecraft:diamond_' + type, 'scguns:anthralite_' + type],
             'caverns_and_chasms:tin_block'
         );
+
+        
+        e.smithing(
+            `minecraft:netherite_${type}`,
+            'minecraft:netherite_upgrade_smithing_template',
+            'scguns:anthralite_' + type,
+            '#forge:ingots/netherite'
+        );
+
+        
+        e.smithing(
+            `caverns_and_chasms:necromium_${type}`,
+            'minecraft:netherite_upgrade_smithing_template',
+            'scguns:anthralite_' + type,
+            '#forge:ingots/necromium'
+        );
+
+
     })
 
 
@@ -231,14 +249,14 @@ ServerEvents.recipes((e) => {
         e.remove({ output: 'scguns:treated_brass_' + part })
         e.smithing(
             `scguns:diamond_steel_${part}`,
-            'minecraft:leather',
+            ['minecraft:leather', 'farmersdelight:canvas'],
             ['minecraft:netherite_' + part, 'caverns_and_chasms:necromium_' + part],
             'scguns:diamond_steel_ingot'
         );
 
           e.smithing(
             `scguns:treated_brass_${part}`,
-            'minecraft:leather',
+            ['minecraft:leather', 'farmersdelight:canvas'],
             ['minecraft:netherite_' + part, 'caverns_and_chasms:necromium_' + part],
             'scguns:treated_brass_ingot'
         );
